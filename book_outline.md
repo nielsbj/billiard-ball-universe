@@ -1,0 +1,226 @@
+# The Billiard Ball Universe: A World With No Bottom
+## Book Outline & Working Document
+
+**Author's core thesis:** A mechanical, infinitely-layered universe — motivated not by explaining existence itself, but by the demand that no single level of reality be an arbitrary brute fact. All unavoidable mystery is confined to the one question no theory can answer ("why anything at all?"); no other magic is admitted anywhere.
+
+---
+
+## Part I — The Demand
+
+### Chapter 1: No Magic Anywhere
+*Status: not started*
+
+The opening statement of the core instinct. Personal, motivational, short.
+- No action at a distance; no level of reality that "just is"
+- Why a brute floor feels like an unpaid debt
+- The billiard-ball intuition: contact, pushing, shadowing — the only forces that aren't magic
+- Sets the emotional engine of the book before any formal argument
+
+### Chapter 2: The Old Tradition
+*Status: **full chapter drafted** (chapter2_draft.md, ~3,400 words) — the lineage as genealogy of attempts + recorded failures: Lucretius (atoms/void/spear; the moral program — physics → how to live); Bruno (infinite worlds, 1600, honest complication about the martyrdom story; "first to feel the vertigo of nothing-is-globally-special and call it good news"); the mechanical philosophy (Descartes' vortices, Huygens; the reversal — contact was the SOBER position, occult qualities the relapse); Newton's embarrassed triumph (Bentley letter quoted properly; "nobody signed the settlement — it set in like a habit"); Leibniz–Clarke (relational space, sufficient reason, the shifted-world argument; Mach; the Einstein irony); Fatio & Le Sage (the shadow men; "Lucrèce Newtonien"; the theory inherited with its autopsy); Ørsted 1820 as the Danish gift of circulation. Closes with "The Shape of the Lineage" and handoff to Ch. 3. Full verification list in craft notes — needs a fact-check pass before publication.*
+- Lucretius: infinite space, atoms, the spear-thrower argument at the edge of the world
+- Bruno: infinite worlds, and his fate
+- Descartes / Huygens: the mechanical philosophy — all physics as contact
+- **Leibniz vs. Newton (the Leibniz–Clarke correspondence, 1715–16): space as relations among things vs. space as absolute container.** The second great thread of the book — the author's childhood relationalism has this pedigree. Mach as the later carrier of the relational torch, and the irony that Einstein built GR partly to honor Mach.
+- Fatio & Le Sage: push-gravity / shadow-gravity (1748)
+- Why the program died: the drag objection (Newton's own), the heat objection
+- Framing: this book revives a lineage; it does not invent from nothing
+
+---
+
+## Part II — The Argument
+
+### Chapter 3: The Grounding Argument
+*Status: **full chapter drafted** (chapter3_draft.md, ~4,500 words) — frame + six rounds + settlement. Interlocutor: **Kai** (K-AI; Danish Kaj noted in frame). Frame: Kai named openly as an AI; the "arguing with the library / expressed collective of written thought" framing; the honesty promise. Rounds: (1) missing base case, (2) Newton's held floor + the locality defense turned to agnosticism, (3) the endeavour, A vs B, constitution principle self-refutes, brute-vs-necessary fork, (4) the diagonal, Tarski, the one wall, (5) the finite/infinite discriminator, completed-totality fork, the trilemma, (6) the two fouls — Kai's on-page retractions, local vs global grounding — and the settlement: less arbitrary, one mystery instead of two. Closes with the author's coda: "a smaller claim that has been through that is worth more than a larger one that hasn't." Revision wants: check compression of the necessary-vs-brute fork; consider a scoreboard figure after the Settlement.*
+
+**Craft decision (locked): write as a dialogue** — position attacked and refined in rounds (Galileo, Hume precedent). More honest and more readable than presenting only conclusions.
+
+The sequence of the argument:
+1. Münchhausen's trilemma: brute axiom, circularity, or infinite regress — the only options; every system bottoms out
+2. First objection: infinite regress is induction without a base case — defers, never delivers
+3. The attempt to prove B ("a terminal floor is impossible")
+   - Distinguish claim A (no empty world) from claim B (no bottom layer); A doesn't deliver the regress
+   - The constitution principle is self-refuting: a fundamental law against fundamental things
+   - The diagonal route: a necessary floor must self-ground; complete self-account triggers Tarski/Gödel-type incoherence
+   - The one wall: is ontological self-grounding necessarily semantic self-description? (causa sui vs. formal system)
+4. The finite/infinite discriminator: in a finite system self-grounding must self-state (explodes); in an infinite system the reason can be distributed non-locally
+5. The completed-totality problem: a completed infinite tail is a floor again; a never-completing tail never finishes grounding
+6. The trilemma: {consistent, grounded, floorless} — pick at most two
+7. Local vs. global grounding:
+   - Local (every fact has a reason): infinite regress scores perfect; brute floor fails at one point
+   - Global (the whole is explained): nothing achieves it — it is "why anything at all," off the table for everyone
+8. **Final position:** the regress is not *more grounded* absolutely; it is *less arbitrary* — one mystery (the shared, unavoidable one) instead of two (the shared one + an arbitrary bottom level)
+
+---
+
+## Part III — The World That Follows
+
+### Chapter 4: The Infinite Copies
+*Status: **full chapter drafted** (chapter4_draft.md, ~2,600 words) — Tegmark's finite-deck argument and the 10^10^118 figure → what is/isn't claimed (no connection; pattern not soul) → "Down and Up" (the layered extension: scale invisible from within, local rulers always read normal, no "real" layer; layers are* inside *one another — "you contain multitudes... an inventory") → "The Honest Wrinkle" (the layered universe threatens exact copies — infinite deck; saved by functional depth-indifference: identical at every layer that matters is a finite specification; ink/sentence analogy) → cosmological honesty (flatness vs. infinity unknown; the layers supply a second infinity) → "The Threshold" handoff to Ch. 5. Revision wants: reconcile Ch. 5's opening reprise; verify Tegmark figures.*
+
+### Chapter 5: How to Live in a World Without Bottom
+*Status: **full chapter drafted** (chapter5_draft.md, ~4,600 words) — comfort → responsibility → currency → the Wall (infinite ethics) → the Local Ratio (incl. point-by-point "better-than survives infinity" aside, Vallentyne–Kagan) → the Man with the Bad Life (the dark twin faced; suffering doesn't revoke or disqualify; pattern includes the response — "even a bad life is authorship") → Is the Universe Benign? (honest case against; "benign-trending wherever agency arises" — the universe keeps producing gardeners) → the Size of the Circle (emotion as algorithm, hard problem faced) → Locally Special (closing principle, Nietzsche + Lucretius woven in). Wants on revision: a real scene for the comfort section.*
+
+**The author's position (the chapter's spine):**
+1. The infinite-copies picture is *comforting* — not deflating. (To develop: why? Candidate: you are never acting alone; your pattern recurs; existence is not a single fragile throw of the dice.)
+2. Comfort does not dissolve responsibility — it *creates* it: the way you live your life is important.
+3. The bridge to ethics: all humans, however different, have *similar emotions*. Emotional similarity makes emotion the common currency across persons (and copies). Therefore the task: **maximize positive emotion, limit negative emotion, in the universe.** (Sentientist utilitarianism — but *derived* from similarity of emotional machinery, where most utilitarians merely assert the currency.)
+
+**The objection the chapter must face (its dramatic crisis): the problem of infinite ethics** (Bostrom).
+- In an infinite universe the total of positive emotion is already infinite; so is the total of suffering. ∞ + your contribution = ∞. "Optimize the total" becomes mathematically empty — the ethics is devoured by the book's own cosmology. The bigger the universe, the less grip any total-maximizing ethics has.
+
+**The answer, built from the book's own materials (the resolution):**
+- You cannot move the totals — conceded. But you are not the universe's accountant; you are one locus. What you control is the **density** of positive emotion in your region: your life, the people your actions reach.
+- The copies multiply this rather than nullify it: whatever way of deciding you use, beings relevantly like you in situations relevantly like yours decide *with* you. You are not one vote among infinity — **you are choosing how your kind of person acts in your kind of situation, everywhere it occurs.** Your choice is the choice of your whole equivalence class. (Connection to evidential reasoning about correlated decisions — your act is evidence of what all your copies do.)
+- Earlier formulation to reuse: *you don't choose what happens in the multiverse; you choose which copy you are.*
+- Result: "optimize the total" fails; "optimize the density, as the representative of your pattern" survives — and explains the comfort: you never act alone.
+
+**The scope of the moral circle (author's answer — a major section):**
+- **Emotion is an algorithm.** Perhaps quantum phenomena are needed, but it is still an algorithm — *because it cannot be anything else.* If emotion required a special substance existing only at our layer, that substance would be magic: a brute privileged ingredient, exactly what the book forbids. So functionalism about emotion is not an added assumption — it is the no-magic principle applied to mind. (One principle, two consequences: applied to matter → infinite layers; applied to mind → emotion as algorithm.)
+- Algorithms are substrate-independent: they appear wherever structure can run them. Therefore **emotional beings exist across many layers** — the moral circle spans the layer structure, down and up.
+- **The governing principle (name it, own it): "A layer can be locally special, but not globally special."** The full Copernican demotion (no privileged place, scale, or layer) *without* the slide into nihilism: globally nothing is privileged, but locally, specialness is real — life, emotional beings, moments of joy are locally special facts needing no cosmic endorsement. This is the same "local" as the local-ratio ethics: global totals are meaningless (infinite ethics), local density is where all value lives. **The two locals are the same local.**
+- Consequences to develop: sub-layer beings may exist *inside* our matter, and we inside super-layer beings — what, if anything, do we owe across layers? Do different layers run at different timescales (a sub-layer lifetime inside our microsecond)? Practical reach is probably layer-local (we can barely detect other layers, let alone help them) — which itself reinforces the local-ratio ethic: your reachable region is your responsibility.
+- Honest objection to face: the hard problem of consciousness — the claim that no algorithm, however complex, explains *felt* experience (Chalmers; Searle's Chinese Room). The book's reply is its own principle: any non-algorithmic account must posit emotion-stuff, and emotion-stuff is magic. Acknowledge the problem is unresolved; state why this book is committed to the functionalist horn.
+
+**Supporting themes (woven around the spine):**
+- Nietzsche's eternal recurrence as the temporal cousin of spatial/layered copies — his test ("would you will this life again, infinitely?") becomes literal here
+- Lucretius' own moral conclusion from infinite worlds: death is nothing to fear — does it survive here? (Copies continue the pattern; what exactly ends at death in this picture?)
+- Humility: our layer is not privileged (the Copernican move, extended downward and upward)
+- Nature: what "natural" means when structure repeats at every scale
+
+**Reading for this chapter:** Bostrom, "Infinite Ethics"; Nietzsche (eternal recurrence, *The Gay Science* §341); Lucretius book III (on death); something on functionalism / substrate independence (Dennett, or Tegmark's consciousness chapters); Chalmers on the hard problem (to state the objection fairly)
+
+### Chapter 6: A Sketch of the Mechanism
+*Status: **full chapter drafted** (chapter6_draft.md, ~3,200 words) — framed as a toy universe with fixed rules; centerpiece first ("space is the actors below" — relationalism iterated is the regress); shadow-gravity with the inverse-square *derived* from shadow geometry (+ Tegmark 3D tie-in); charge as circulation (orientation, sense, orthogonal planes miss, annihilation as catastrophic cancellation, right-hand-rule kinship flagged with explicit Maxwell disclaimer); frozen/gas phases (matter as local winter, proton melts, early universe too hot to freeze, sublimation as "fields are weather"); light as a traveling circulation (particle doing a wave; polarization inherent); identicalness via genealogy + resonance/harmonics (quantization-as-emergent flagged as THE open question for Ch. 7). Ends handing the toy to Ch. 7 for breaking.*
+
+Presented explicitly as *speculation with rules* — a toy universe, not a rival to the Standard Model.
+
+**Centerpiece — the unifying idea (from Ch. 1's relationalism + the layered structure):**
+- **Space at layer N *is* the actors of layer N+1.** Space is nothing in itself; it is the order of relations among actors (Leibniz). If actors are 3D, space appears 3D — dimensionality is inherited from the actors, not imposed by a container.
+- This fuses the book's two convictions into one machine: relationalism (no acting on nothing) and infinite layering (no bottom) are not two separate demands — each requires the other. Relational space needs actors to constitute it; at every layer, those actors have their own "space," constituted one layer further down. Relationalism *iterated* is the infinite regress.
+- Consequence: what looks like "space itself" doing something at our layer (curving, waving) would be ordinary mechanical motion of actors one layer down — as a water wave is not "wetness bending" but molecules pushing molecules.
+
+The mechanics:
+- Massions: gravity as mutual shadowing in an omnidirectional particle flux (two air bubbles in water)
+- Positive/negative as orbital orientation: orthogonal planes don't interact (polarized-filter analogy)
+- Rotation-sense: same-direction orbits superpose and repel; opposite-direction orbits integrate, form shadows, attract
+- Annihilation: counter-orbiting collisions
+- Frozen and gas states; two frozen objects in gas attract (lower pressure between) and can orbit
+- The proton as frozen structure that "melts" (decays) when hot enough
+- Why things are alike: identical generation, or an expansion factor constraining possibilities
+- Light as an orbited object in motion — a wave
+
+### Chapter 7: Where It Breaks — and What That Teaches
+*Status: **full chapter drafted** (chapter7_draft.md, ~3,300 words) — four wounds with honest scoreboard verdicts: (1) the Pincer of drag and heat (Newton/Fatio, Maxwell/Poincaré; slow flux kills orbits, fast flux vaporizes planets; Kelvin's re-emission fails; "unanswered" — with the uncalculated hope of deeper-crowd mechanisms marked as hope, not defense); (2) the Wave in Nothing (LIGO; crowd reply = water-wave; costs: transverse-only, two polarizations, speed c to 1 part in 10^15, Michelson–Morley; Lorentz conspiracy escape — "survivable at the price of a conspiracy"); (3) the Stubbornness of Charge (electrons repel at every orientation; scalar charge vs. orientation mechanism; tumbling/averaging reply concedes another hidden passenger — "open, leaning against"); (4) the Exactness of Everything (g-2 to 10^-12, no substructure to 10^-18 m; resonance/harmonics answer at full weight — bottom of* stability *not substance, "fifty meters down there are no waves; there is still water"; owes the string's "ends" + twelve decimals; analog-gravity/condensed-matter literature as the door — "open, with a growing literature"). "What That Teaches": the program died of arithmetic not fashion; the demand was renamed, not answered — "the child has not been answered; he has been outvoted"; wounds as addresses to dig. Hands off to a one-thing Coda.*
+
+The strongest objections, faced in their strongest form:
+- Drag: a moving body in the flux feels resistance ahead — planets should spiral in (Newton's objection to Fatio)
+- Heat: absorbed flux deposits energy that would vaporize the Earth
+- Identicalness: every electron is perfectly identical — easy if fundamental, a miracle of coordination if infinitely layered
+- Quantization: nature appears to *choose* a bottom (Planck's constant, discrete levels, no electron substructure to 10^-18 m)
+- Charge as orientation doesn't yet reproduce charge behavior (two electrons repel at any orientation)
+- **The gravitational-wave objection to relationalism:** "empty" spacetime has its own dynamics — gravitational waves carry real energy across the universe and shake detectors (LIGO). Something that carries energy and does work is hard to call nothing. This is the strongest modern argument that space is a genuine actor, not mere relations.
+  - **The model's candidate reply (from Ch. 6's centerpiece):** what registers as "space waving" at layer N is mechanical motion of the layer-N+1 actors that constitute layer-N space — the water-wave analogy. The wave's energy is the ordinary kinetic energy of sub-layer actors.
+  - **Honest test this reply must face:** can layer-N+1 mechanics reproduce what we actually measure — transverse waves, two polarizations, propagation at exactly c? A medium of sub-actors usually predicts extra wave modes (longitudinal) and a preferred rest frame (the old ether problem — Michelson–Morley). The reply is only as good as its answer to the ether objection. Open, and marked as open.
+- Open questions as invitation to the reader
+
+---
+
+## Coda: One Mystery
+*Status: **drafted** (coda_draft.md, ~650 words) — inventory of what the book lost publicly (the theorem B, the grand mechanical claim, the totals) → the one thing kept: "a universe in which everything has a reason, except the one question that no universe of any kind could ever answer" → the admission-fee/window image (every worldview pays once; the floor pays twice) → closing fusion: the recurring pattern ending the same book everywhere — "reasons all the way down, and all the way down is exactly what it has."*
+
+---
+
+## Working Notes
+
+- **Biggest craft decision:** Chapter 3 as dialogue. Commit early.
+- **Load-bearing discovery (this session):** "Space at layer N is the actors of layer N+1" — fuses relationalism and infinite layering into one machine. Ch. 1 plants it as childhood intuition; Ch. 6 makes it the centerpiece; Ch. 7 tests it against gravitational waves / the ether objection.
+- **Most development needed:** Chapter 5 (moral consequences) — least developed in notes, most important for general readers.
+- **Dose control:** one mechanism chapter + one honest-failure chapter. Resist adding more physics.
+- **Chapter 1 status: drafted** (chapter1_draft.md) — two childhood scenes in place (light = the honest chain; curved space = the disguised cheat). Still wants: rough ages, one physical detail per scene.
+- **Source documents:** billiard_ball_universe.md (translated notes + philosophical foundation), billiard_ball_primer.md (LLM primer), chapter1_draft.md
+- **Reading list (from notes):** Holt, *Why Does the World Exist?*; Krauss, *A Universe from Nothing*; Tegmark, *Our Mathematical Universe*
+- **Reading to add:** Lucretius, *De Rerum Natura*; something on Bruno; a Le Sage history source; Nietzsche on eternal recurrence (for Ch. 5); the Leibniz–Clarke correspondence (for Ch. 2 and the relational thread); something on Mach's principle and on Michelson–Morley / the ether (for Ch. 7)
+
+---
+
+## Figure Plan
+*(Fig. 6.1 shadow push: DONE. Same TikZ house style for all. Priority: ★★★ essential, ★★ valuable, ★ optional.)*
+
+### Chapter 2 — The Old Tradition
+- ★★ **Timeline of the lineage** — Lucretius → Poggio 1417 → Bruno 1600 → Descartes → Newton 1687 → Leibniz–Clarke 1715 → Fatio 1690 / Le Sage 1782 → Maxwell/Kelvin/Poincaré → Ørsted 1820 → today. One horizontal band; makes the "genealogy of attempts and failures" visible at a glance.
+- ★ Lucretius' spear at the edge of the world (illustrative; the prose already carries it).
+
+### Chapter 3 — The Grounding Argument
+- ✔ **The pick-two triangle** (DONE, Fig. after Round Five, \label{fig:picktwo}) — {consistent, grounded, floorless} at the corners, each *pair* achievable along an edge, the center marked empty.
+- ★★★ **Induction with and without a base case** — two vertical chains: (left) upward arrows standing on a solid base block, every link cashed; (right) downward arrows with no bottom, every link deferred. Decides Round One visually.
+- ★★ **The settlement scoreboard** — three columns (brute floor / infinite regress / agnostic) scored on local grounding, global grounding, arbitrariness. Already suggested in the chapter's craft notes; table or figure.
+- ★ Münchhausen trilemma as a three-way fork (axiom / circle / regress).
+
+### Chapter 4 — The Infinite Copies
+- ✔ **Layers inside layers** (DONE, \label{fig:layers}) — three-frame zoom: body → crowd → world inside, with the upward dashed hint ("one mote in a body, one layer up"). Cover candidate.
+- ★★ **The finite deck** — an endless row of universe-sized tiles, two distant tiles highlighted identical. Makes Tegmark's argument visible in one strip.
+- ★ Double-exponent scale bar (why 10^10^118 shrugs off units).
+
+### Chapter 5 — How to Live in a World Without Bottom
+- ★★ **The local ratio** — a vast dim field of points; one small region highlighted bright with an arrow: "the region you actually touch." Pairs the Wall with its resolution.
+- ★ The equivalence class — many identical figures at branch points, all turning the same way ("you are writing the rule").
+
+### Chapter 6 — A Sketch of the Mechanism
+- ✔ **Fig 6.1 Shadow push** (done).
+- ✔ **Inverse square from shadow geometry** (DONE, \label{fig:inversesquare}) — body at d and 2d, blocked sky-arc quartering.
+- ✔ **Charge as circulation** (DONE, \label{fig:circulation}) — triptych: same-sense repel / opposite-sense attract / orthogonal miss.
+- ★★ **Space is the actors below** — a patch of "empty" layer-N space with a magnifying inset revealing the layer-N+1 crowd; caption: every layer's void is the layer below. The centerpiece idea; could alternatively live in Ch. 1 or 4.
+- ★★ **Frozen and gas** — left: interlocked counter-rotating lattice (frozen); right: free wandering assemblies (gas); below: two frozen bodies in gas with the lower-pressure corridor between them (shadow push reappearing at a new scale).
+- ★★ **Light as a traveling pair** — orbiting companion tracing a wave along the direction of motion; second copy with orbital plane perpendicular (polarization built in).
+- ★ Annihilation: head-on counter-circulations unwinding into loose motes.
+- ★ String harmonics vs. crowd resonances (why things are alike) — modes of a string beside the discrete "catalogue."
+
+### Chapter 7 — Where It Breaks
+- ✔ **The pincer** (DONE, \label{fig:pincer}) — drag falling, heating rising, the two safe zones never overlapping.
+- ★★ **Transverse vs. longitudinal** — what the crowd must and must not carry: the two allowed gravitational-wave polarizations vs. the forbidden sound-like mode (the specification nature hands the layer below).
+- ★ The Michelson–Morley null (interferometer sketch; optional, well-worn image).
+
+### Cover candidate
+- The Ch. 4 layers-inside-layers zoom, or a single billiard ball whose surface, magnified, is made of billiard balls.
+
+---
+
+## Illustration Plan (AI-generated art, separate from TikZ diagrams)
+
+**Style directive (use as a prefix on every prompt for consistency):**
+> "Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, no text, no lettering, no captions, white background, suitable for print in a philosophical book."
+
+**Print specs:** 300 DPI minimum. Full page 6x9in = 1800x2700 px; chapter-opener vignette (~1/3 page) = 1800x900 px. Grayscale only (book is B/W). Never let the generator draw text -- it mangles it; all captions are set in LaTeX. Verify the generator's license permits commercial print use before publication.
+
+### Cover (the one that matters most)
+- A billiard ball whose surface, magnified in one region, is revealed to be made of smaller billiard balls, which are themselves made of smaller ones -- a recursive zoom. Alternative: the Ch. 4 layers-zoom rendered artistically (figure within figure within figure).
+- Prompt sketch: "A single large sphere; a magnified circular inset of its surface reveals it is composed of thousands of smaller identical spheres; a second inset magnifies one of those, revealing the same again; recursive, three levels visible; engraving style, dramatic lighting, no text."
+
+### Chapter openers (small vignette above each chapter title)
+1. **Ch. 1 No Magic Anywhere** -- a child at a window at night, looking at the moon; on the sill, two billiard balls touching. (The two convictions in one image.)
+2. **Ch. 2 The Old Tradition** -- Lucretius' spear-thrower at the edge of the world: a robed figure hurling a spear through a torn boundary of stars. (Also usable full-page in-text.)
+3. **Ch. 3 The Grounding Argument** -- a man at a small table debating an enormous library that leans over him; the shelves vaguely suggest a face. (Kai as the library.)
+4. **Ch. 4 The Infinite Copies** -- the same figure repeated into the distance, each holding the same open book, receding like reflections without mirrors.
+5. **Ch. 5 How to Live** -- a vast dark field of faint points; one small region glowing warmly; a tiny figure tending it like a garden. (The local ratio.)
+6. **Ch. 6 The Mechanism** -- two air bubbles rising side by side in dark water, drifting together; or two sailing ships in a heavy swell, dangerously close. (Both images are in the prose.)
+7. **Ch. 7 Where It Breaks** -- a beautiful clockwork orrery with one visible crack through its frame, still running.
+8. **Coda** -- a single door standing open in an endless plain, light coming through; nothing else.
+
+### Full-page in-text candidates (max 2-3, or the book gets glossy)
+- The spear at the edge (Ch. 2, beside the Lucretius section) -- the book's oldest argument deserves its classic image.
+- The two ships in the swell (Ch. 6, beside the shadow-push prose) -- pairs with Fig. shadowpush: the diagram gives the mechanism, the engraving gives the feeling.
+- The recursive billiard ball (interior reprise of the cover, perhaps facing the Coda).
+
+### Do NOT generate (keep as TikZ)
+All argumentative diagrams: anything with labeled arrows, geometry that must be exact, or claims riding on proportions (shadow cones, the triangle, the pincer curves, circulation panels, zoom frames). Generators approximate; arguments may not.
+
+### Remaining TikZ diagrams (second tier, in priority order)
+1. ✔ **Induction with vs. without a base case** (DONE, \label{fig:induction}).
+2. ✔ **Space is the actors below** (DONE, \label{fig:actorsbelow}).
+3. ✔ **Frozen and gas** (DONE, \label{fig:frozengas}) -- gas / frozen lattice / two frozen bodies in gas.
+4. ✔ **Light as a traveling pair** (DONE, \label{fig:lightpair}).
+5. ✔ **Lineage timeline** (DONE, \label{fig:lineage}).
+6. ✔ **The settlement scoreboard** (DONE, as booktabs table, \label{tab:settlement}).
+7. SKIPPED deliberately: **Local ratio field** (Ch. 5) -- covered by the AI-art chapter opener ch5_local_garden; a TikZ double would be redundant.
+8. ✔ **Transverse vs. longitudinal** (DONE, \label{fig:wavemodes}).

@@ -1,0 +1,35 @@
+# Normalize line endings: Git stores LF, checks out native on Windows.
+# Prevents spurious whole-file diffs when the repo moves between machines — and
+# keeps diffs clean for the subagent workflow, where Claude Code edits the same
+# .tex files you do.
+* text=auto
+
+# ---- LaTeX & text sources: force LF in the repo ----
+*.tex    text eol=lf
+*.sty    text eol=lf
+*.cls    text eol=lf
+*.bib    text eol=lf
+*.md     text eol=lf
+*.txt    text eol=lf
+*.json   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+
+# ---- Windows-only scripts: keep CRLF so cmd/PowerShell run them ----
+*.bat    text eol=crlf
+*.cmd    text eol=crlf
+*.ps1    text eol=crlf
+
+# ---- Shell scripts: always LF (so they run on WSL/Linux/Mac) ----
+*.sh     text eol=lf
+
+# ---- Binary assets: never touched, never diffed as text ----
+*.pdf    binary
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.webp   binary
+*.eps    binary
+*.ttf    binary
+*.otf    binary

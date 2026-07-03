@@ -1,0 +1,239 @@
+{
+  "project": "billiard-ball-universe-book",
+  "generated_at": "2026-07-03T08:57:57",
+  "out_dir": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated",
+  "note": "AI-generated with OpenAI. You own these per OpenAI terms. Copy the files into the game asset folder, then wire them in by id.",
+  "delivered": [
+    {
+      "id": "cover_recursive_ball",
+      "file": "cover_recursive_ball_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\cover_recursive_ball_v1.png",
+      "model": "gpt-image-2",
+      "size": "1024x1536",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A single large billiard ball; a magnified circular inset of its surface reveals it is composed of thousands of smaller identical billiard balls; a second inset magnifies one of those, revealing the same again; recursive, three levels of zoom visible; dramatic side lighting. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "cover_recursive_ball",
+      "file": "cover_recursive_ball_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\cover_recursive_ball_v2.png",
+      "model": "gpt-image-2",
+      "size": "1024x1536",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A single large billiard ball; a magnified circular inset of its surface reveals it is composed of thousands of smaller identical billiard balls; a second inset magnifies one of those, revealing the same again; recursive, three levels of zoom visible; dramatic side lighting. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "cover_recursive_ball",
+      "file": "cover_recursive_ball_v3.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\cover_recursive_ball_v3.png",
+      "model": "gpt-image-2",
+      "size": "1024x1536",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A single large billiard ball; a magnified circular inset of its surface reveals it is composed of thousands of smaller identical billiard balls; a second inset magnifies one of those, revealing the same again; recursive, three levels of zoom visible; dramatic side lighting. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch1_child_window",
+      "file": "ch1_child_window_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch1_child_window_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A small child seen from behind at a tall window at night, looking up at the moon; on the windowsill in the foreground, two billiard balls touching each other. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch1_child_window",
+      "file": "ch1_child_window_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch1_child_window_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A small child seen from behind at a tall window at night, looking up at the moon; on the windowsill in the foreground, two billiard balls touching each other. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch2_spear_edge",
+      "file": "ch2_spear_edge_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch2_spear_edge_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A robed ancient Roman figure mid-throw, hurling a spear through a torn, crumbling boundary wall at the edge of a field of stars; beyond the tear, more stars continue without end. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch2_spear_edge",
+      "file": "ch2_spear_edge_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch2_spear_edge_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A robed ancient Roman figure mid-throw, hurling a spear through a torn, crumbling boundary wall at the edge of a field of stars; beyond the tear, more stars continue without end. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch3_library_debate",
+      "file": "ch3_library_debate_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch3_library_debate_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A man seated at a small table with papers, in debate with an enormous library whose towering shelves lean over him; the arrangement of shelves and books very faintly suggests a calm face. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch3_library_debate",
+      "file": "ch3_library_debate_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch3_library_debate_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A man seated at a small table with papers, in debate with an enormous library whose towering shelves lean over him; the arrangement of shelves and books very faintly suggests a calm face. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch4_repeated_figure",
+      "file": "ch4_repeated_figure_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch4_repeated_figure_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "The same man repeated many times, receding into the distance in a straight line across an empty plain, each copy holding the same open book in the same pose, like reflections without mirrors. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch4_repeated_figure",
+      "file": "ch4_repeated_figure_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch4_repeated_figure_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "The same man repeated many times, receding into the distance in a straight line across an empty plain, each copy holding the same open book in the same pose, like reflections without mirrors. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch5_local_garden",
+      "file": "ch5_local_garden_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch5_local_garden_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A vast dark field of faint scattered points of light stretching to the horizon; in the foreground one small region glows warmly, where a tiny human figure tends it like a garden with a watering can. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch5_local_garden",
+      "file": "ch5_local_garden_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch5_local_garden_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A vast dark field of faint scattered points of light stretching to the horizon; in the foreground one small region glows warmly, where a tiny human figure tends it like a garden with a watering can. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch6_bubbles",
+      "file": "ch6_bubbles_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch6_bubbles_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "Two air bubbles rising side by side through deep dark water, drifting toward each other, fine streams of smaller bubbles around them; the water between the two bubbles noticeably calm. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch6_bubbles",
+      "file": "ch6_bubbles_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch6_bubbles_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "Two air bubbles rising side by side through deep dark water, drifting toward each other, fine streams of smaller bubbles around them; the water between the two bubbles noticeably calm. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch7_cracked_orrery",
+      "file": "ch7_cracked_orrery_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch7_cracked_orrery_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A beautiful intricate clockwork orrery of planets on brass arms, still visibly in motion, with one long clean crack running through its frame. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "ch7_cracked_orrery",
+      "file": "ch7_cracked_orrery_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\ch7_cracked_orrery_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A beautiful intricate clockwork orrery of planets on brass arms, still visibly in motion, with one long clean crack running through its frame. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "coda_open_door",
+      "file": "coda_open_door_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\coda_open_door_v1.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A single door standing open in the middle of an endless empty plain under a vast sky, warm light streaming through the doorway from the other side; nothing else on the plain. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "coda_open_door",
+      "file": "coda_open_door_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\coda_open_door_v2.png",
+      "model": "gpt-image-2",
+      "size": "1536x1024",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "A single door standing open in the middle of an endless empty plain under a vast sky, warm light streaming through the doorway from the other side; nothing else on the plain. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "plate_spear_edge",
+      "file": "plate_spear_edge_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\plate_spear_edge_v1.png",
+      "model": "gpt-image-2",
+      "size": "1024x1536",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "Full-page composition: a robed ancient figure hurling a spear through a torn boundary at the edge of a star-filled universe, the tear revealing endless further stars; monumental, vertical composition. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "plate_spear_edge",
+      "file": "plate_spear_edge_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\plate_spear_edge_v2.png",
+      "model": "gpt-image-2",
+      "size": "1024x1536",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "Full-page composition: a robed ancient figure hurling a spear through a torn boundary at the edge of a star-filled universe, the tear revealing endless further stars; monumental, vertical composition. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "plate_two_ships",
+      "file": "plate_two_ships_v1.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\plate_two_ships_v1.png",
+      "model": "gpt-image-2",
+      "size": "1024x1536",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "Two tall sailing ships side by side in a heavy ocean swell, dangerously close, waves breaking on their outer sides while the narrow water between their hulls lies flat and calm; vertical composition. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    },
+    {
+      "id": "plate_two_ships",
+      "file": "plate_two_ships_v2.png",
+      "path": "D:\\Niels\\Proj-2026\\Everything\\code-claude\\art\\generated\\plate_two_ships_v2.png",
+      "model": "gpt-image-2",
+      "size": "1024x1536",
+      "quality": "high",
+      "background": "opaque",
+      "prompt": "Two tall sailing ships side by side in a heavy ocean swell, dangerously close, waves breaking on their outer sides while the narrow water between their hulls lies flat and calm; vertical composition. Style: Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+    }
+  ],
+  "errors": []
+}

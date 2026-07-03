@@ -1,0 +1,48 @@
+{
+  "project": "billiard-ball-universe-book",
+  "defaults": {
+    "model": "gpt-image-2",
+    "size": "1536x1024",
+    "quality": "high",
+    "background": "opaque",
+    "n": 2,
+    "style": "Black-and-white copperplate engraving / woodcut style, fine hatching, high contrast, monochrome ink on white paper, no text, no lettering, no captions, no borders, suitable for print in a philosophical book"
+  },
+  "items": [
+    { "id": "cover_recursive_ball",
+      "prompt": "A single large billiard ball; a magnified circular inset of its surface reveals it is composed of thousands of smaller identical billiard balls; a second inset magnifies one of those, revealing the same again; recursive, three levels of zoom visible; dramatic side lighting",
+      "size": "1024x1536", "quality": "high", "n": 3 },
+
+    { "id": "ch1_child_window",
+      "prompt": "A small child seen from behind at a tall window at night, looking up at the moon; on the windowsill in the foreground, two billiard balls touching each other" },
+
+    { "id": "ch2_spear_edge",
+      "prompt": "A robed ancient Roman figure mid-throw, hurling a spear through a torn, crumbling boundary wall at the edge of a field of stars; beyond the tear, more stars continue without end" },
+
+    { "id": "ch3_library_debate",
+      "prompt": "A man seated at a small table with papers, in debate with an enormous library whose towering shelves lean over him; the arrangement of shelves and books very faintly suggests a calm face" },
+
+    { "id": "ch4_repeated_figure",
+      "prompt": "The same man repeated many times, receding into the distance in a straight line across an empty plain, each copy holding the same open book in the same pose, like reflections without mirrors" },
+
+    { "id": "ch5_local_garden",
+      "prompt": "A vast dark field of faint scattered points of light stretching to the horizon; in the foreground one small region glows warmly, where a tiny human figure tends it like a garden with a watering can" },
+
+    { "id": "ch6_bubbles",
+      "prompt": "Two air bubbles rising side by side through deep dark water, drifting toward each other, fine streams of smaller bubbles around them; the water between the two bubbles noticeably calm" },
+
+    { "id": "ch7_cracked_orrery",
+      "prompt": "A beautiful intricate clockwork orrery of planets on brass arms, still visibly in motion, with one long clean crack running through its frame" },
+
+    { "id": "coda_open_door",
+      "prompt": "A single door standing open in the middle of an endless empty plain under a vast sky, warm light streaming through the doorway from the other side; nothing else on the plain" },
+
+    { "id": "plate_spear_edge",
+      "prompt": "Full-page composition: a robed ancient figure hurling a spear through a torn boundary at the edge of a star-filled universe, the tear revealing endless further stars; monumental, vertical composition",
+      "size": "1024x1536", "quality": "high", "n": 2 },
+
+    { "id": "plate_two_ships",
+      "prompt": "Two tall sailing ships side by side in a heavy ocean swell, dangerously close, waves breaking on their outer sides while the narrow water between their hulls lies flat and calm; vertical composition",
+      "size": "1024x1536", "quality": "high", "n": 2 }
+  ]
+}
