@@ -150,10 +150,24 @@ res = client.images.edit(
   — for a hard zero-drift guarantee, animate the single sprite with code transforms
   (bob/sway/squash) instead of a second image.
 
-## Rights
+## Rights, IP & provenance
 
-OpenAI assigns image ownership to the user — usable and sellable, AI attribution optional.
-No per-image licensing step.
+- **Ownership (conservative):** under OpenAI's current terms, OpenAI assigns you its rights
+  in the Output and **you are responsible** for the content. Whether a purely AI-generated
+  image is *copyrightable* varies by jurisdiction. The generator writes a conservative
+  `rights_note` into each manifest and points to the live terms
+  (<https://openai.com/policies/terms-of-use>) — don't restate ownership more strongly than that.
+- **Don't prompt for someone else's IP.** The generator scans prompts for a heuristic set of
+  brands / franchises / characters / "in the style of <Name>" phrasing and, on a real run,
+  **blocks** on a hit. If it's a false positive or the human confirms they hold the rights,
+  re-run with `--allow-ip-risk` (recorded). It's a tripwire, not a clearance check — don't
+  write prompts like "Mario" or "in the style of <living artist>".
+- **Provenance is automatic.** Every PNG carries an embedded provenance chunk (id, prompt,
+  model, timestamp, provider, terms URL, disclosure, pixel `sha256`, caller), mirrored to
+  `get-graphic.log.jsonl`. Verify any asset with `get-graphic.py --verify <file-or-folder>`.
+- **Identify yourself to the generator.** Always pass `--caller-id "<your code-claude id>"` (or
+  set the `GETGRAPHIC_CALLER` env var) when you invoke it, so every log line and embedded chunk
+  records which code-claude generated the asset. Add `--disclosure "..."` for how AI use is disclosed. **Kept safe automatically:** every generated image is also copied into the shared asset archive (`_asset_archive/graphics/`, content-addressed + a timestamped copy) so an original survives even if the game copy is edited or lost — `--no-archive` skips it, `--archive DIR` redirects.
 
 ## After generating
 
