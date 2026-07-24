@@ -1,4 +1,6 @@
 @echo off
+cd /d "%~dp0"
+echo BUILD-STAMP %date% %time%
 REM Full build cycle for The Billiard Ball Universe (pdflatex + biber)
 pdflatex -interaction=nonstopmode billiard_ball_universe.tex
 biber billiard_ball_universe
