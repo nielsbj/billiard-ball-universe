@@ -103,3 +103,52 @@ None found in the passages read during this run.
 Stage-1 prose patches applied per `PROSE_PATCHES_stage1.md`; discrepancy and caution rows closed. All four applied verbatim (Patch 3's three magnitudes matched the fetched Science and Method values exactly). Both editions rebuilt clean after application (digital and print: errors 0, overfull 0).
 
 **One leftover for an author patch:** the pincer paragraph (Ch. 7, First Wound) still contains the now-stale prose parenthetical "*(Exact figures to be checked against Poincaré's calculation before publication; the qualitative verdict is not in dispute.)*" — Patch 3 inserted the figures two paragraphs later, so this sentence should now be deleted, but it is prose and needs an author patch. Flagged in the Ch. 7 craft note.
+
+---
+
+## Run 2 — the two new [CC] rows (TODO.md §3D-new)
+
+| item | detail checked | source | verdict | note |
+|---|---|---|---|---|
+| Jaynes / Gibbs | Am. J. Phys. 33, 391–398 (1965); the "anthropomorphic" point | https://doi.org/10.1119/1.1971557 (Jaynes archive text) | CONFIRMED | §VI: "entropy is an anthropomorphic concept … a property, not of the physical system, but of the particular experiments you or I choose to perform on it"; the phrase credited by Jaynes to E. P. Wigner in the acknowledgments. The book's gas-mixing Gibbs-paradox sentence is the standard formulation and consistent; the book does not (yet) invoke Jaynes by name — entry `jaynes1965` added for when it might. Craft-note item 13 resolved |
+| laplace1796 | which work the Ch. 2 sentence rests on | S. Carlip, "Aberration and the Speed of Gravity" (gr-qc/9909087), ref. [5] | CORRECTED-IN-BIB | The quantitative finite-speed-of-gravity argument (bound ≥ 7×10⁶ c from the Moon's motion) is in *Traité de mécanique céleste*, Vol. IV (1805), Book X, ch. VII — not the 1796 *Exposition*. Entry re-anchored as `laplace1805` (English: Bowditch trans., Chelsea 1966); the 1796 Exposition noted as the popular predecessor. Book prose ("Laplace probed what the finite speed of a gravitational stream would do to orbits") is qualitatively correct and untouched; it now cites `laplace1805`. Last VERIFY flag in ref.bib cleared — **0 remain** |
+
+---
+
+## Stage 2 — per-passage citation pass
+
+`\nocite{*}` deleted; 56 citation points inserted per the entry→passage mapping below (first-invocation rule; the author's three worked examples applied verbatim, including `…a part in a thousand million million~\cite{ligo2017}`, `…directly imaged in the laboratory~\cite{coddington2003}, in a dilute-gas condensate,` and `Bell proved~\cite{bell1964} that…`).
+
+### Entry → passage mapping (62 entries now in References)
+
+**Ch. 2 (history):** lucretius → "the universe has a boundary"; greenblatt2011+palmer2014 → "named Poggio Bracciolini"; bruno1584 → "but infinite *worlds*"; rowland2008 → the "greater fear" sentence; descartes1644 → "a universe with no void at all"; huygens1690 → "rejected the pulling as a physical claim"; newton1687 → "worked as nothing in the history of thought had ever worked"; janiak2014 → after the quoted Bentley passage; leibnizclarke → "five rounds of letters with Samuel Clarke"; mach1883 → "Ernst Mach revived it"; fatio1690 → "In 1690 Fatio proposed"; lesage1782 → after *Lucrèce Newtonien*; maxwell1875 → "its thermal impossibility"; kelvin1873 → "re-emit what they absorbed"; poincare1908 → "closed the ledger with the arithmetic of drag and heat"; laplace1805 → "what the finite speed of a gravitational stream would do to orbits"; oersted1820 → "beside a current-carrying wire".
+**Ch. 3 (dialogue):** sextus → the trilemma sentence ("or regress forever"); goedel1931 and tarski1956 → their respective theorem statements in Round Four (main dialogue prose; the footnote mentions were skipped as excluded zones).
+**Ch. 4–5:** tegmark2014 → "whose calculation this chapter leans on"; bostrom2011 → "the problem of infinite ethics"; vallentynekagan1997 → "point by point"; nietzsche1974 → the demon sentence; chalmers1996 → "They call it the hard problem"; dennett1991 → "in beads on wires".
+**Ch. 6:** boersma1996 → the two-ships sentence (as hedged by Patch 2); ehrenfest1917 → "inverse-cube law — under which no orbit is stable"; uzan2003+damourdyson1996 → "steady across billions of light-years of quasar light"; einstein1905photo → "the photoelectric effect that began the quantum century".
+**Ch. 7:** asakuraoosawa1954 → "the *depletion force* of colloid physics"; einstein1920 → "space without ether is unthinkable"; ligo2016 → "watched a ripple pass through the Earth"; ligo2017 → the worked-example sentence; coddington2003 → the worked-example sentence; tisza1938+landau1941 → "exactly such a two-fluid system"; alfven1942 → the field-line-tension sentence; thomson1880 → "the tension of its own circulation"; michelsonmorley1887 → "looking for exactly that rest frame in 1887"; lorentz1904 → "*derives* the contraction that hides the frame"; bell1987 → "the very lesson Bell urged teachers of relativity to keep" (first invocation; the more famous "Lorentz's ether" sentence in the Fifth Wound is the second — flag if you prefer it there); bell1964 → "Bell proved~\cite{} that" (worked example); hensen2015+giustina2015+shalm2015 → "decisively so since 2015"; couder2006 → "riding the wave it generates"; andersen2015 → "failed replication"; bush2015 → "statistics from pilot-wave guidance"; kelvin1852 → "Kelvin saw it in 1852"; planck1900 → "the cure, in 1900, was Planck's quantum"; ehrenfest1911 → "in 1911, was Paul Ehrenfest"; albert2000 → "why entropy *began* low"; hofmann2018 → "has not drifted measurably over the ages"; armano2018 → "the quietest accelerometers ever built"; fan2023 → "to about one part in a trillion"; volovik2003 → "particle-like excitations"; barcelo2011 → "analogues of curved spacetime and horizons"; verlinde2011 → "rather than a fundamental pull".
+
+### Uncited entries (dropped from References — decide: cite somewhere or accept removal)
+
+- `holt2012`, `krauss2012` — the reading-list origin books; neither Holt nor Krauss is mentioned anywhere in the text.
+- `albert1985` — the Münchhausen-trilemma attribution lives **only in a Ch. 3 footnote** (excluded zone); no main-text hook exists.
+- `aspect1982` — the text jumps from Bell 1964 to "decisively so since 2015"; the 1982 experiment is never individually invoked. Natural spot if wanted: "has been measured, again and again".
+- `darwin1905` — the elastic-scatterer result is *used* ("it fills it to the last ball") but Darwin is never invoked by name; add there if wanted.
+- `searle1980` — the Ch. 5 objection is the hard problem (Chalmers), not the Chinese Room; citing Searle would misattribute.
+- `pitaevskii2016` — textbook backup; the critical-velocity passage is carried by landau1941. Could be folded in as `\cite{landau1941,pitaevskii2016}` at "below a critical speed feels literally no friction".
+- `ligo2017graviton` — the graviton-mass bound is not stated in prose; natural spot if wanted: the "no dispersion" clause.
+- `jaynes1965` — added in run 2; the book states the Gibbs paradox but never invokes Jaynes. Kept for a possible endnote.
+
+(`edwards2002` remains in the References via the cross-reference in lesage1782's note — it did not vanish.)
+
+### Vanished-entries diff (References before vs. after `\nocite{*}` removal)
+
+Vanished, all intentional per the uncited list above: albert1985, aspect1982, darwin1905, holt2012, jaynes1965, krauss2012, ligo2017graviton, pitaevskii2016, searle1980. Nothing beloved vanished unexpectedly.
+
+### Build lines
+
+- Digital edition: `errors: 0, overfull: 0, undefined citations: 0, pages: 142`
+- Print edition (`\digitaleditionfalse` test build, then reverted): `errors: 0, overfull: 0, undefined citations: 0, pages: 142`
+
+**Build-tooling note:** `cmd /c build.bat` silently fails when invoked from this harness's bash shell (cmd does not inherit the working directory) — earlier in this session two "build validations" read a stale log and reported clean without building. Caught and redone: all results above are from direct `pdflatex`/`biber` runs, verified against fresh log timestamps. When building manually, run `build.bat` from a real cmd/PowerShell prompt in the repo root, or use the pdflatex sequence.
+
+**Stage 2 complete.**
