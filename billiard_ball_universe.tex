@@ -294,10 +294,11 @@ Stand back, and the genealogy has a shape.
     8.80/above/{1887}/{Michelson},
     9.68/below/{1908}/{Poincar\'e}} {
     \draw[line width=0.8pt] (\x,-0.09) -- (\x,0.09);
+    \fill (\x,0) circle (0.045);
     \ifthenelse{\equal{\pos}{above}}{
-      \node[anchor=south, align=center, text width=1.42cm, inner xsep=1pt] at (\x,0.16) {\scriptsize \yr\\[-3pt]\scriptsize \who};
+      \node[anchor=south, align=center, text width=1.6cm, inner xsep=1pt] at (\x,0.16) {\scriptsize \yr\\[-3pt]{\scriptsize\itshape \who}};
     }{
-      \node[anchor=north, align=center, text width=1.42cm, inner xsep=1pt] at (\x,-0.16) {\scriptsize \yr\\[-3pt]\scriptsize \who};
+      \node[anchor=north, align=center, text width=1.6cm, inner xsep=1pt] at (\x,-0.16) {\scriptsize \yr\\[-3pt]{\scriptsize\itshape \who}};
     }
   }
 \end{tikzpicture}
@@ -352,7 +353,7 @@ Your tower runs the other way. Layer N depends on N+1 --- the dependency points 
 \begin{tikzpicture}[>=stealth]
   % ------- left: induction (base case + upward step) -------
   \node[anchor=south] at (1.6,5.15) {\small\textbf{induction}};
-  \draw[fill=bbuBlue!28, line width=0.9pt] (0.3,0) rectangle (2.9,0.7);
+  \draw[fill=bbuBlue!28, line width=0.9pt] (-0.6,0) rectangle (3.8,0.7);
   \node at (1.6,0.35) {\small $P(0)$ --- proven, stands alone};
   \foreach \i/\lab in {1/{$P(1)$},2/{$P(2)$},3/{$P(3)$}} {
     \draw[black!60] (0.55,{0.35+\i*1.15-0.3}) rectangle (2.65,{0.35+\i*1.15+0.3});
@@ -461,9 +462,9 @@ So, pushed to the end, your discriminator yields a theorem, and it is exact: \te
   \node[anchor=north east] at (G) {\textbf{grounded}};
   \node[anchor=north west] at (F) {\textbf{floorless}};
   % edge labels: what each PAIR buys
-  \node[anchor=east, align=center, text width=3.0cm] at ($(C)!0.5!(G)+(-0.25,0)$)
+  \node[anchor=east, align=center, text width=3.0cm] at ($(C)!0.5!(G)+(-0.4,0)$)
     {\small the brute floor\\[-1pt]{\scriptsize (one arbitrary\\[-3pt] bottom level)}};
-  \node[anchor=west, align=center, text width=3.2cm] at ($(C)!0.5!(F)+(0.25,0)$)
+  \node[anchor=west, align=center, text width=3.2cm] at ($(C)!0.5!(F)+(0.4,0)$)
     {\small the endless regress\\[-1pt]{\scriptsize (grounding never\\[-3pt] completes)}};
   \node[anchor=north, align=center, text width=4.6cm] at ($(G)!0.5!(F)+(0,-0.22)$)
     {\small self-grounding without a floor\\[-1pt]{\scriptsize (total self-account --- explodes by Tarski)}};
@@ -606,61 +607,15 @@ A being at another layer has no way to feel its scale, and this is worth a momen
 Now the compounding. Tegmark's universe is one infinite level, and it already repeats you endlessly. Ours is infinitely many levels, each vast beyond the visible, stacked without end in both directions. The copies multiply along two axes at once: outward through every layer's space, and through the layers themselves. And the geometry has one more property that I find impossible to think about without vertigo, though it follows directly: the layers are not side by side. They are \emph{inside} one another. The deeper layers are not elsewhere --- they are the fine structure of the matter in your own hand. If your pattern recurs three layers down, that occurrence is not in some remote place. It may be, in the most literal spatial sense, \emph{within} the room you are sitting in --- within \emph{you}. And our layer, in turn, is the fine structure of arrangements vaster than we can survey, so that every occurrence of you is also \emph{inside} something, a detail in a body or a storm or a thought at a scale that will never know we are here. You contain multitudes was a poet's exaggeration. In this cosmology it is an inventory.
 
 
+% Figure authored as a proofviz sketch (proofs/bbu_layers.sketch.js);
+% regenerate with `node scripts/make-deliverables.mjs bbu_layers`, copy the
+% PDFs here and `pdfcrop --margins 6` each. Panel captions are baked into
+% the panels themselves.
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[>=stealth]
-  \def\fw{2.8} % frame width/height
-  % ---------- upward hint: all of frame 1 is a mote one layer up ----------
-  \draw[black!35, dashed] (0,\fw) -- (-1.05,\fw+1.0);
-  \draw[black!35, dashed] (\fw,\fw) -- (\fw+1.05,\fw+1.0);
-  \draw[black!40, line width=0.9pt] (-1.15,\fw+1.05) arc[start angle=210, end angle=330, radius=2.95];
-  \node[anchor=south, black!55, align=center, text width=5.2cm] at (1.5,\fw+1.12)
-    {\small\itshape \ldots{} and all of this: one mote\\ in a body, one layer up};
-  % ---------- frame 1: our layer ----------
-  \begin{scope}
-    \draw[black!60] (0,0) rectangle (\fw,\fw);
-    \shade[ball color=black!65] (1.35,1.5) circle (0.62);
-    \fill[black!45] (0.45,2.35) circle (0.06);
-    \fill[black!45] (2.35,0.5) circle (0.05);
-    \fill[black!45] (2.3,2.3) circle (0.07);
-    \fill[black!45] (0.5,0.6) circle (0.05);
-    % zoom region on the ball
-    \draw[black!80, dashed, line width=0.7pt] (1.42,1.32) rectangle (1.82,1.72);
-    \node[anchor=north, align=center, text width=2.9cm] at (1.4,-0.15)
-      {\small a body at our layer};
-  \end{scope}
-  % zoom cone 1 -> 2
-  \draw[black!45, dashed] (1.82,1.72) -- (3.7,2.8);
-  \draw[black!45, dashed] (1.82,1.32) -- (3.7,0);
-  % ---------- frame 2: its matter, one layer down ----------
-  \begin{scope}[xshift=3.7cm]
-    \draw[black!60] (0,0) rectangle (\fw,\fw);
-    % the crowd
-    \foreach \p in {(0.4,0.5),(0.9,1.1),(0.5,1.9),(1.1,2.4),(1.7,0.6),(2.1,1.3),(1.6,1.8),(2.4,2.2),(0.9,0.35),(2.35,0.6),(1.35,0.9),(0.35,1.35),(2.45,1.7),(1.9,2.45),(0.75,2.5)}
-      \fill[black!55] \p circle (0.075);
-    % the mote we open
-    \fill[black!75] (1.45,1.5) circle (0.10);
-    \draw[black!80, dashed, line width=0.7pt] (1.24,1.29) rectangle (1.66,1.71);
-    \node[anchor=north, align=center, text width=2.9cm] at (1.4,-0.15)
-      {\small its matter: the crowd\\ one layer down};
-  \end{scope}
-  % zoom cone 2 -> 3
-  \draw[black!45, dashed] (5.36,1.71) -- (7.4,2.8);
-  \draw[black!45, dashed] (5.36,1.29) -- (7.4,0);
-  % ---------- frame 3: inside the mote, a world ----------
-  \begin{scope}[xshift=7.4cm]
-    \draw[black!60] (0,0) rectangle (\fw,\fw);
-    \shade[ball color=black!65] (1.3,1.45) circle (0.45);
-    % an orbiting companion
-    \draw[black!50] (1.3,1.45) ellipse [x radius=0.95, y radius=0.38];
-    \fill[black!70] (2.25,1.45) circle (0.07);
-    \fill[black!45] (0.5,2.4) circle (0.05);
-    \fill[black!45] (2.4,0.5) circle (0.05);
-    \fill[black!45] (2.35,2.35) circle (0.06);
-    \node[anchor=north, align=center, text width=2.6cm] at (1.2,-0.15)
-      {\small inside the mote: a world,\\ orbits, skies --- and on,\\ without end};
-  \end{scope}
-\end{tikzpicture}
+\includegraphics[width=0.32\textwidth]{figures/bbu_layers_body}\hfill
+\includegraphics[width=0.32\textwidth]{figures/bbu_layers_crowd}\hfill
+\includegraphics[width=0.32\textwidth]{figures/bbu_layers_world}
 \caption{Layers inside layers. The layers are not side by side; they are inside one another. A body at our layer (left), magnified, is a crowd of motes --- the layer below, which constitutes our matter and our ``empty'' space alike (middle). Open any mote and there is structure again: bodies, orbits, room for skies (right) --- and so on, without end, in both directions: the dashed lines above the first frame continue outward, because everything shown is itself one mote in a body at the layer above. Scale is invisible from within; every frame's inhabitants measure themselves person-sized and their moment as now, and each is correct.}
 \label{fig:layers}
 \end{figure}
@@ -837,26 +792,13 @@ This book has already argued (Chapter 1) that space is nothing in itself --- not
 But that argument, taken seriously, has a consequence that took me years to see, and it is the closest thing this book has to a discovery. If space is constituted by actors, then the actors of any layer need actors \emph{below them} to constitute \emph{their} space. Relationalism does not stop. Iterate it, and it \emph{is} the infinite regress: \textbf{the space of layer N is the actors of layer N+1.} What we move through and call emptiness is, one layer down, a sea of things. Their arrangement is our geometry. Their motions are our physics of ``empty space.'' What they permit is what we call the laws of where things can be.
 
 
+% Figure authored as a proofviz sketch (proofs/bbu_actorsbelow.sketch.js);
+% regenerate with `node scripts/make-deliverables.mjs bbu_actorsbelow`, copy
+% the PDFs here and `pdfcrop --margins 6` each. Panel labels are baked in.
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[>=stealth]
-  % ------- frame 1: layer N, "empty" space -------
-  \draw[black!60] (0,0) rectangle (3.6,3.6);
-  \shade[ball color=black!65] (0.75,2.7) circle (0.32);
-  \shade[ball color=black!65] (2.85,0.85) circle (0.32);
-  \draw[black!80, dashed, line width=0.7pt] (1.55,1.55) rectangle (2.25,2.25);
-  \node[anchor=north, align=center, text width=3.7cm] at (1.8,-0.15)
-    {\small layer $N$: two bodies\\ and ``empty'' space};
-  % zoom cone
-  \draw[black!45, dashed] (2.25,2.25) -- (6.6,3.6);
-  \draw[black!45, dashed] (2.25,1.55) -- (6.6,0);
-  % ------- frame 2: the same region, layer N+1 -------
-  \draw[black!60] (6.6,0) rectangle (10.2,3.6);
-  \foreach \p in {(6.95,0.45),(7.5,0.9),(8.2,0.4),(8.9,0.8),(9.6,0.5),(7.1,1.5),(7.8,1.8),(8.5,1.4),(9.2,1.75),(9.85,1.3),(6.9,2.5),(7.6,2.9),(8.3,2.5),(9.0,3.05),(9.7,2.6),(7.3,3.25),(8.7,3.2),(8.05,1.05),(9.45,2.15),(6.8,3.1),(8.0,2.15),(9.9,3.3)}
-    \fill[black!55] \p circle (0.075);
-  \node[anchor=north, align=center, text width=3.7cm] at (8.4,-0.15)
-    {\small the same ``emptiness'',\\ one layer down: a crowd};
-\end{tikzpicture}
+\includegraphics[width=0.48\textwidth]{figures/bbu_actorsbelow_bodies}\hfill
+\includegraphics[width=0.48\textwidth]{figures/bbu_actorsbelow_crowd}
 \caption{The first rule of the sketch: space is the actors below. The ``empty'' space of layer $N$ (left) --- the void through which its bodies supposedly act --- is, magnified, the crowd of layer $N{+}1$ (right). Their arrangement is our geometry; their motions are our physics of empty space; and their own space is another crowd, without end. Once the void is a crowd, ``empty space transmits forces'' stops being a mystery: transmission is just what crowds do.}
 \label{fig:actorsbelow}
 \end{figure}
@@ -877,54 +819,18 @@ That push is gravity. Not a pull --- nothing in this universe pulls; pulling-at-
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[>=stealth, scale=0.76]
-% ---------- Panel (a): a lone body ----------
-\begin{scope}[xshift=-4.6cm]
-  \foreach \a in {0,30,...,330} {
-    \draw[->, thick, black!45]
-      ({2.0*cos(\a)},{2.0*sin(\a)}) -- ({1.05*cos(\a)},{1.05*sin(\a)});
-  }
-  \shade[ball color=black!70] (0,0) circle (0.42);
-  \node[anchor=north, align=center, text width=4.6cm] at (0,-2.7)
-    {\small (a) alone: hit equally from\\ all sides --- no net force};
-\end{scope}
-% ---------- Panel (b): two bodies shading each other ----------
-\begin{scope}[xshift=3.4cm]
-  \def\bx{1.45}   % half-separation
-  \def\br{0.42}   % body radius
-  % the quiet corridor (mutual shadow) between the bodies
-  \fill[bbuGold!25] (-\bx,\br) rectangle (\bx,-\br);
-  % outer flux onto the LEFT body (from its outward hemisphere)
-  \foreach \a in {110,140,170,200,230,250} {
-    \draw[->, thick, black!45]
-      ({-\bx+1.9*cos(\a)},{1.9*sin(\a)}) -- ({-\bx+1.02*cos(\a)},{1.02*sin(\a)});
-  }
-  % outer flux onto the RIGHT body (mirror)
-  \foreach \a in {-70,-40,-10,20,50,70} {
-    \draw[->, thick, black!45]
-      ({\bx+1.9*cos(\a)},{1.9*sin(\a)}) -- ({\bx+1.02*cos(\a)},{1.02*sin(\a)});
-  }
-  % a little flux from above/below still reaches the corridor sides
-  \foreach \x in {-\bx,\bx} {
-    \draw[->, thick, black!45] (\x,1.9) -- (\x,1.02);
-    \draw[->, thick, black!45] (\x,-1.9) -- (\x,-1.02);
-  }
-  % blocked flux inside the corridor: dashed, no arrowheads land
-  \draw[dashed, black!35] (-\bx+\br+0.08,0.18) -- (\bx-\br-0.08,0.18);
-  \draw[dashed, black!35] (\bx-\br-0.08,-0.18) -- (-\bx+\br+0.08,-0.18);
-  % the bodies
-  \shade[ball color=black!70] (-\bx,0) circle (\br);
-  \shade[ball color=black!70] (\bx,0) circle (\br);
-  % net push
-  \draw[->, line width=1.6pt] (-\bx-0.95,0) -- (-\bx-\br-0.06,0);
-  \draw[->, line width=1.6pt] (\bx+0.95,0) -- (\bx+\br+0.06,0);
-  % corridor label, below the band, with a small pointer
-  \node[black!55, align=center] at (0,-1.15) {\small\itshape thinned rain};
-  \draw[black!40, ->] (0,-0.92) -- (0,-0.30);
-  \node[anchor=north, align=center, text width=5.6cm] at (0,-2.7)
-    {\small (b) together: each shades the other ---\\ the unshaded rain pushes them together};
-\end{scope}
-\end{tikzpicture}
+% Figure authored as a proofviz sketch (proofs/bbu_shadowpush.sketch.js);
+% regenerate with `node scripts/make-deliverables.mjs bbu_shadowpush`, copy
+% the PDFs here and `pdfcrop --margins 6` each. The sketch machine-checks
+% that the 'alone' rain directions sum to zero (no net force).
+\begin{minipage}[t]{0.45\textwidth}\centering
+\includegraphics[width=\linewidth]{figures/bbu_shadowpush_alone}\\
+{\small (a) alone: hit equally from all sides --- no net force}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.51\textwidth}\centering
+\includegraphics[width=\linewidth]{figures/bbu_shadowpush_together}\\
+{\small (b) together: each shades the other --- the unshaded rain pushes them together}
+\end{minipage}
 \caption{The shadow push. (a)~A lone body in the universal rain of massions is struck equally from every direction: the flux is omnipresent and, alone, undetectable. (b)~Two bodies each absorb part of the flux passing through them, so each casts a shadow --- a thinning of the rain on its far side --- and each sits partly in the other's shadow. The rain still hammers them from every outward direction, but from the direction of the neighbour it arrives diminished (dashed). The imbalance (bold arrows) presses them together: not a pull, but mutual sheltering. Because the shadow a body casts covers an angle of its neighbour's sky, and angular size falls off as the square of the distance, the push inherits the inverse-square law from geometry itself.}
 \label{fig:shadowpush}
 \end{figure}
@@ -934,34 +840,18 @@ That push is gravity. Not a pull --- nothing in this universe pulls; pulling-at-
 The sketch even yields the right \emph{shape} of law, and this is worth pausing on. How much of your neighbor's shadow do you sit in? That depends on the angle it covers in your sky --- and the angular size of a shadow falls off as the square of the distance. Double the separation and the neighbor blocks a quarter of the directions it blocked before. An inverse-square law, not assumed, but \emph{inherited from geometry itself} --- from the mere fact that shadows shrink with distance in three-dimensional space. Newton's exponent, the sacred 2, stops being a decree and becomes a consequence: it is the dimensionality of the crowd, showing through. (And a reader of Tegmark's argument, quoted in this book's earliest notes, will see the same fact from the other side: in four spatial dimensions, shadow-geometry would give an inverse-cube law --- under which no orbit is stable~\cite{ehrenfest1917}. A universe of shadow-gravity that contains observers watching stable orbits will be a universe of three-dimensional crowds. The sketch does not just permit our dimensionality; it is most at home in it.)
 
 
+% Figure authored as a proofviz sketch (proofs/bbu_inverse_square.sketch.js);
+% regenerate with `node scripts/make-deliverables.mjs bbu_inverse_square`,
+% copy the PDFs from exports/bbu_inverse_square/ into figures/, then
+% `pdfcrop --margins 6 <f>.pdf <f>.pdf` each (the export canvas has margins).
+% The sketch carries machine checks: tangency, α(2d)≈α(d)/2, blocked solid
+% angle at 2d ≈ 1/4 (exact as ρ/d→0).
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[>=stealth]
-  % ---- panel: distance d ----
-  \begin{scope}
-    \shade[ball color=black!70] (0,0) circle (0.30);
-    \draw[black!30, dashed] (0,0) circle (2.05);              % the sky
-    \shade[ball color=black!45] (3.0,0) circle (0.52);        % neighbour at d
-    % shadow cone: tangents from observer centre to neighbour edges
-    \fill[bbuGold!22] (0,0) -- (2.955,0.512) arc[start angle=9.85, end angle=-9.85, radius=3.0] -- cycle;
-    \draw[black!45] (0,0) -- (2.955,0.512);
-    \draw[black!45] (0,0) -- (2.955,-0.512);
-    % covered arc of the sky, emphasised
-    \draw[bbuRed, line width=1.8pt] (2.05,0) ++(9.85:0) arc[start angle=9.85, end angle=-9.85, radius=2.05];
-    \node[anchor=north, align=center] at (1.4,-2.3) {\small at distance $d$: the neighbour\\ blocks this arc of the sky};
-  \end{scope}
-  % ---- panel: distance 2d ----
-  \begin{scope}[yshift=-6.1cm]
-    \shade[ball color=black!70] (0,0) circle (0.30);
-    \draw[black!30, dashed] (0,0) circle (2.05);
-    \shade[ball color=black!45] (6.0,0) circle (0.52);        % neighbour at 2d
-    \fill[bbuGold!22] (0,0) -- (5.978,0.518) arc[start angle=4.95, end angle=-4.95, radius=6.0] -- cycle;
-    \draw[black!45] (0,0) -- (5.978,0.518);
-    \draw[black!45] (0,0) -- (5.978,-0.518);
-    \draw[bbuRed, line width=1.8pt] (2.05,0) ++(4.95:0) arc[start angle=4.95, end angle=-4.95, radius=2.05];
-    \node[anchor=north, align=center] at (2.6,-2.3) {\small at distance $2d$: half the angular width ---\\ one quarter of the sky directions};
-  \end{scope}
-\end{tikzpicture}
+\includegraphics[width=0.9\textwidth]{figures/bbu_inverse_square_near}\\[0.4em]
+{\small at distance $d$: the neighbour blocks the red patch of the sky --- the sphere of directions the rain arrives from}\\[1.1em]
+\includegraphics[width=0.9\textwidth]{figures/bbu_inverse_square_far}\\[0.4em]
+{\small at distance $2d$: half the angular width --- one quarter of the sky directions}
 \caption{Newton's exponent, inherited from geometry. How hard the shadow push acts on a body depends on how much of its sky the neighbour blocks. Double the separation and the neighbour's angular width halves, so the blocked patch of sky --- an area on the sphere of directions --- shrinks to one quarter. The imbalance in the rain, and with it the push, falls off as the square of the distance: not a decree, but the dimensionality of the crowd showing through. (In four spatial dimensions the same geometry would give an inverse cube, under which no orbit is stable.)}
 \label{fig:inversesquare}
 \end{figure}
@@ -983,54 +873,22 @@ And orientation gives a third possibility that plain gravity lacks: two orbital 
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[>=stealth]
-  % ---------- (i) same sense: clash, repel ----------
-  \begin{scope}[xshift=-3.85cm]
-    \draw[black!60, ->, line width=0.9pt] (-0.85,0) ++(40:0.45) arc[start angle=40, end angle=340, radius=0.45];
-    \draw[black!60, ->, line width=0.9pt] (0.85,0) ++(40:0.45) arc[start angle=40, end angle=340, radius=0.45];
-    \fill[black!70] (-0.85,0) circle (0.10);
-    \fill[black!70] (0.85,0) circle (0.10);
-    % facing streams clash head-on (tip to tip)
-    \draw[->, thick] (-0.14,0.42) -- (-0.14,0.10);
-    \draw[->, thick] (0.14,-0.42) -- (0.14,-0.10);
-    \node at (0,0) {\footnotesize$\times$};
-    % repulsion
-    \draw[->, bbuRed, line width=1.5pt] (-1.45,0) -- (-1.95,0);
-    \draw[->, bbuRed, line width=1.5pt] (1.45,0) -- (1.95,0);
-    \node[anchor=north, align=center, text width=3.2cm] at (0,-1.15)
-      {\small (i) same sense:\\ streams meet head-on\\ --- pile up, repel};
-  \end{scope}
-  % ---------- (ii) opposite sense: align, attract ----------
-  \begin{scope}[xshift=0cm]
-    \draw[black!60, ->, line width=0.9pt] (-0.85,0) ++(40:0.45) arc[start angle=40, end angle=340, radius=0.45];
-    \draw[black!60, <-, line width=0.9pt] (0.85,0) ++(20:0.45) arc[start angle=20, end angle=320, radius=0.45];
-    \fill[black!70] (-0.85,0) circle (0.10);
-    \fill[black!70] (0.85,0) circle (0.10);
-    % facing streams run together: quiet corridor
-    \fill[bbuBlue!14] (-0.30,-0.42) rectangle (0.30,0.42);
-    \draw[->, black!45] (-0.14,0.38) -- (-0.14,-0.38);
-    \draw[->, black!45] (0.14,0.38) -- (0.14,-0.38);
-    % attraction
-    \draw[->, bbuBlue, line width=1.5pt] (-1.65,0) -- (-1.25,0);
-    \draw[->, bbuBlue, line width=1.5pt] (1.65,0) -- (1.25,0);
-    \node[anchor=north, align=center, text width=3.2cm] at (0,-1.15)
-      {\small (ii) opposite sense:\\ streams align and cancel\\ --- quiet space, attract};
-  \end{scope}
-  % ---------- (iii) orthogonal planes: no transaction ----------
-  \begin{scope}[xshift=3.85cm]
-    % left assembly: orbit seen face-on
-    \draw[black!60, ->, line width=0.9pt] (-0.85,0) ++(40:0.45) arc[start angle=40, end angle=340, radius=0.45];
-    \fill[black!70] (-0.85,0) circle (0.10);
-    % right assembly: orbit seen edge-on (perpendicular plane)
-    \draw[black!60, line width=0.9pt] (0.85,-0.45) -- (0.85,0.45);
-    \draw[black!60, ->, line width=0.9pt] (0.85,0.45) -- (0.80,0.30);
-    \draw[black!60, ->, line width=0.9pt] (0.85,-0.45) -- (0.90,-0.30);
-    \fill[black!70] (0.85,0) circle (0.10);
-    \node[black!55] at (0,0) {\small$\perp$};
-    \node[anchor=north, align=center, text width=3.2cm] at (0,-1.15)
-      {\small (iii) orthogonal planes:\\ the circulations thread past\\ --- no interaction};
-  \end{scope}
-\end{tikzpicture}
+% Figure authored as a proofviz sketch (proofs/bbu_circulation.sketch.js);
+% regenerate with `node scripts/make-deliverables.mjs bbu_circulation`, copy
+% the PDFs here and `pdfcrop --margins 6` each. The sketch machine-checks
+% that the two ring planes in (iii) are orthogonal (n1*n2 = 0).
+\begin{minipage}[t]{0.32\textwidth}\centering
+\includegraphics[width=\linewidth]{figures/bbu_circulation_same}\\
+{\small (i) same sense: streams meet head-on --- pile up, repel}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}\centering
+\includegraphics[width=\linewidth]{figures/bbu_circulation_opposite}\\
+{\small (ii) opposite sense: streams align and cancel --- quiet space, attract}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}\centering
+\includegraphics[width=\linewidth]{figures/bbu_circulation_ortho}\\
+{\small (iii) orthogonal planes: the circulations thread past --- no interaction}
+\end{minipage}
 \caption{Charge as circulation. Each charged assembly sheds circulating streams of its own substance. (i)~Two assemblies circulating the \emph{same} sense present head-on streams where they face each other: the streams pile up and the assemblies are pressed apart --- like repels like. (ii)~\emph{Opposite} senses present aligned streams: they cancel, quiet the space between (shaded), and the shadow push does the rest --- opposites attract, by the same mechanism as gravity but fiercer. (iii)~Orbital planes at right angles neither pile nor cancel: the circulations pass through one another's business without transacting, as two crossed polarizing filters pass no common light.}
 \label{fig:circulation}
 \end{figure}
@@ -1064,11 +922,13 @@ Second: \textbf{a frozen thing can melt.} A structure held by interlocked circul
   % ------- (ii) frozen -------
   \begin{scope}[xshift=4.05cm]
     \foreach \i in {0,1,2} \foreach \j in {0,1,2} {
+      % opposite senses on the two sublattices, told apart by shade as well as
+      % arrowhead (the heads alone are too subtle at this size)
       \pgfmathparse{mod(\i+\j,2)==0 ? 1 : 0}
       \ifnum\pgfmathresult>0
-        \draw[black!60, ->] ({0.55+\i*1.05},{0.55+\j*1.05}) ++(30:0.26) arc[start angle=30, end angle=310, radius=0.26];
+        \draw[black!70, ->] ({0.55+\i*1.05},{0.55+\j*1.05}) ++(30:0.26) arc[start angle=30, end angle=310, radius=0.26];
       \else
-        \draw[black!60, <-] ({0.55+\i*1.05},{0.55+\j*1.05}) ++(30:0.26) arc[start angle=30, end angle=310, radius=0.26];
+        \draw[bbuBlue!80, <-] ({0.55+\i*1.05},{0.55+\j*1.05}) ++(30:0.26) arc[start angle=30, end angle=310, radius=0.26];
       \fi
     }
     % bonds
@@ -1087,8 +947,8 @@ Second: \textbf{a frozen thing can melt.} A structure held by interlocked circul
     \fill[bbuGold!25] (1.25,1.05) rectangle (2.15,1.95); % quiet corridor between
     \draw[fill=black!35] (0.55,1.15) rectangle (1.25,1.85);
     \draw[fill=black!35] (2.15,1.15) rectangle (2.85,1.85);
-    \draw[->, bbuBlue, line width=1.3pt] (0.35,1.5) -- (0.6,1.5);
-    \draw[->, bbuBlue, line width=1.3pt] (3.05,1.5) -- (2.8,1.5);
+    \draw[->, bbuBlue, line width=1.4pt] (0.12,1.5) -- (0.57,1.5);
+    \draw[->, bbuBlue, line width=1.4pt] (3.28,1.5) -- (2.83,1.5);
     \node[anchor=north, align=center, text width=3.0cm] at (1.7,-0.15)
       {\small (iii) two frozen bodies\\ in a gas drift together};
   \end{scope}
@@ -1110,34 +970,14 @@ And the oldest of all the questions about light --- is it a particle or a wave? 
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[>=stealth]
-  % ------- main: the pair in motion, companion tracing a wave -------
-  \draw[black!35, dashed] (0,0.9) -- (7.5,0.9);
-  % companion's trace
-  \draw[bbuGold, line width=1.0pt, domain=0:6.6, smooth, samples=80]
-    plot (\x,{0.9+0.62*sin(\x*120)});
-  % past positions of the mote (fading)
-  \fill[black!20] (0.75,0.9) circle (0.09);
-  \fill[black!35] (2.9,0.9) circle (0.09);
-  \fill[black!50] (5.05,0.9) circle (0.09);
-  % current pair
-  \fill[black!75] (6.6,0.9) circle (0.11);
-  \draw[black!55] (6.6,0.9) ellipse [x radius=0.42, y radius=0.62];
-  \draw[black!55, ->] (6.6,0.9) ++(60:0.5) arc[start angle=60, end angle=140, x radius=0.42, y radius=0.62];
-  \fill[black!70] ({6.6+0.42*cos(20)},{0.9+0.62*sin(20)}) circle (0.07);
-  \draw[->, line width=1.1pt] (6.85,1.95) -- (7.55,1.95);
-  \node[anchor=south] at (7.2,2.0) {\small motion};
-  \node[anchor=north, align=center, text width=6.6cm] at (3.6,-0.25)
-    {\small the smallest assembly --- one mote, one wheeling companion --- set moving: what passes any fixed point is a circulation arriving periodically};
-  % ------- inset: perpendicular plane = the other polarization -------
-  \draw[black!35] (8.6,0.0) -- (10.5,0.0);
-  \draw[black!60, line width=0.9pt] (9.55,0.28) -- (9.55,1.52);
-  \draw[black!60, ->, line width=0.9pt] (9.55,1.52) -- (9.48,1.30);
-  \draw[black!60, ->, line width=0.9pt] (9.55,0.28) -- (9.62,0.50);
-  \fill[black!75] (9.55,0.9) circle (0.11);
-  \node[anchor=north, align=center, text width=2.5cm] at (9.55,-0.25)
-    {\small the same traveler,\\ plane turned $90^{\circ}$:\\ polarization};
-\end{tikzpicture}
+% Figure authored as a proofviz sketch (proofs/bbu_lightpair.sketch.js);
+% regenerate with `node scripts/make-deliverables.mjs bbu_lightpair`, copy
+% the PDFs here and `pdfcrop --margins 6` each. The sketch machine-checks
+% constant orbit radius and axial advance per turn = lambda.
+\includegraphics[width=0.66\textwidth]{figures/bbu_lightpair_travel}\\[0.2em]
+\parbox{0.9\textwidth}{\centering\small the smallest assembly --- one mote, one wheeling companion --- set moving: what passes any fixed point is a circulation arriving periodically}\\[0.9em]
+\includegraphics[width=0.66\textwidth]{figures/bbu_lightpair_pol}\\[0.2em]
+{\small the same traveler, plane turned $90^{\circ}$: polarization}
 \caption{The first sketch of light: an object orbited by another, in motion --- a particle doing a wave. The traveling pair is as localized as any particle and delivers its pushes in discrete arrivals; the pattern of those arrivals along the path is as periodic as any wave, with a frequency (the wheeling rate) and an orientation (the plane of the orbit). Turn the plane ninety degrees (right) and you have the other polarization --- not a property bolted on, but geometry the object could not help having. The section keeps this picture --- demoted: as the portrait of a localized wave-packet of the medium, not the traveler itself.}
 \label{fig:lightpair}
 \end{figure}
@@ -1270,7 +1110,7 @@ Recall the exchange rate that closed the pincer: energy per unit of momentum equ
   \fill[black!9]  (0,1.6) rectangle (9.6,3.0);
   \fill[black!13] (0,0.0) rectangle (9.6,1.4);
   \node[anchor=east] at (9.45,4.28) {\small layer $N$ --- flux speed $u$};
-  \node[anchor=east] at (9.45,2.68) {\small layer $N{+}1$ --- faster: $w \gg u$};
+  \node[anchor=east] at (9.45,2.82) {\small layer $N{+}1$ --- faster: $w \gg u$};
   \node[anchor=east] at (9.45,1.08) {\small layer $N{+}2$ --- faster still};
   \node at (4.8,-0.32) {\small $\vdots$};
   % the body in layer N
@@ -1290,7 +1130,7 @@ Recall the exchange rate that closed the pincer: energy per unit of momentum equ
   % energy sold down
   \foreach \x in {2.35,2.6,2.85} \draw[->, bbuRed] (\x,3.30) -- (\x,2.88);
   \foreach \x in {2.05,2.35,2.6,2.85,3.15} \draw[->, bbuRed!75] (\x,1.58) -- (\x,1.18);
-  \node[anchor=west, align=center, text width=3.0cm] at (3.35,2.35)
+  \node[anchor=west, align=left, text width=5.2cm] at (3.4,2.1)
     {\small energy sold down, into ever-faster channels --- momentum-cheap};
 \end{tikzpicture}
 \caption{The cascade escape, drawn. A body buys its momentum in its own layer's slow flux --- the shadow push, the gravity --- and sells the energy that rides in with it \emph{downward}, into the faster channels of the layers below, where the same energy carries almost no momentum and cannot repaint the shadow. The gap of the fourth wound is the valve: our layer's modes refuse the throughput, so it passes through matter without warming it. Each layer's books are covered by the layer above --- and the reader knows, by now, the price of a ledger with no first account.}
@@ -1314,19 +1154,19 @@ So the honest scoreboard, revised: on drag and heat, \emph{within any single lay
   \node[rotate=90, anchor=south] at (-0.25,2.3) {\small severity of the effect};
   % tolerable threshold
   \draw[dashed, black!55] (0,1.5) -- (9.0,1.5);
-  \node[anchor=south east, black!55] at (8.95,1.5) {\small tolerable};
+  \node[anchor=south west, black!55] at (0.15,1.52) {\small tolerable};
   % drag curve: falls with flux speed
   \draw[bbuBlue, line width=1.1pt, domain=0.35:9.0, smooth, samples=60]
     plot (\x,{4.4*exp(-0.56*\x)+0.12});
-  \node[anchor=south west, bbuBlue] at (0.42,3.6) {\small drag (kills orbits)};
+  \node[anchor=south west, bbuBlue] at (2.05,2.35) {\small drag (kills orbits)};
   % heating curve: rises with flux speed
   \draw[line width=1.1pt, bbuRed, domain=0:8.35, smooth, samples=60]
     plot (\x,{0.55*exp(0.26*\x)});
-  \node[anchor=south, bbuRed] at (7.0,4.05) {\small heating (kills planets)};
-  % zone labels
-  \node[anchor=north, align=center, text width=2.4cm] at (0.95,4.5)
+  \node[anchor=north west, bbuRed] at (5.7,2.05) {\small heating (kills planets)};
+  % zone labels: inside their zones, clear of both curves
+  \node[anchor=north, align=center, text width=1.9cm] at (0.95,4.55)
     {\small planets\\ don't vaporize};
-  \node[anchor=north, align=center, text width=2.6cm] at (7.3,4.5)
+  \node[anchor=north, align=center, text width=2.6cm] at (7.5,1.35)
     {\small orbits\\ survive};
   % the gap
   \draw[<->, line width=1.0pt] (1.95,-0.55) -- (5.55,-0.55);
@@ -1359,13 +1199,14 @@ Imagine a lattice of rings hanging in space --- rows and columns of little circl
   \draw[->, line width=1.0pt] (4.5,3.0) -- (5.9,3.0);
   \node[anchor=south] at (5.2,3.05) {\small the pattern travels; the rings stay};
   % inset: the two polarizations
-  \begin{scope}[xshift=9.85cm, yshift=1.95cm]
+  \node[anchor=south, align=center] at (9.70,2.95) {\small the two flavours};
+  \begin{scope}[xshift=9.70cm, yshift=1.95cm]
     \draw[black!65, line width=0.8pt] (0,0) circle (0.40);
     \draw[->, bbuBlue] (0.44,0) -- (0.72,0);   \draw[->, bbuBlue] (-0.44,0) -- (-0.72,0);
     \draw[->, bbuBlue] (0,0.72) -- (0,0.44);   \draw[->, bbuBlue] (0,-0.72) -- (0,-0.44);
     \node[anchor=north] at (0,-0.80) {\small $+$};
   \end{scope}
-  \begin{scope}[xshift=9.85cm, yshift=0.15cm]
+  \begin{scope}[xshift=9.70cm, yshift=0.15cm]
     \draw[black!65, line width=0.8pt] (0,0) circle (0.40);
     \draw[->, bbuBlue] (0.31,0.31) -- (0.51,0.51);   \draw[->, bbuBlue] (-0.31,-0.31) -- (-0.51,-0.51);
     \draw[->, bbuBlue] (0.51,-0.51) -- (0.31,-0.31); \draw[->, bbuBlue] (-0.51,0.51) -- (-0.31,0.31);
@@ -1389,11 +1230,13 @@ And now collect the debt that Chapter~6's upgrade quietly issued. If light is th
 \begin{tikzpicture}[>=stealth]
   % ---- (a) light: dipole ----
   \begin{scope}[xshift=-2.7cm]
+    % rest ring dashed; the whole ring displaced upward as one --- dipole
     \draw[black!35, dashed] (0,0) circle (0.95);
-    \foreach \a in {0,30,...,330} {
-      \fill[black!65] ({0.95*cos(\a)},{0.95*sin(\a)+0.22}) circle (0.065);
-      \draw[->, bbuGold] ({0.95*cos(\a)},{0.95*sin(\a)-0.05}) -- ({0.95*cos(\a)},{0.95*sin(\a)+0.30});
-    }
+    \draw[black!65, line width=0.9pt] (0,0.30) circle (0.95);
+    \foreach \a in {0,30,...,330}
+      \fill[black!65] ({0.95*cos(\a)},{0.95*sin(\a)+0.30}) circle (0.065);
+    \foreach \a in {0,60,120,180,240,300}
+      \draw[->, bbuGold] ({0.95*cos(\a)},{0.95*sin(\a)}) -- ({0.95*cos(\a)},{0.95*sin(\a)+0.26});
     \node[anchor=north, align=center, text width=4.4cm] at (0,-1.35)
       {\small (a) light passing: the ring\\ swings \emph{together} --- dipole};
   \end{scope}
@@ -1401,6 +1244,8 @@ And now collect the debt that Chapter~6's upgrade quietly issued. If light is th
   \begin{scope}[xshift=2.7cm]
     \draw[black!35, dashed] (0,0) circle (0.95);
     \draw[black!65, line width=0.9pt] (0,0) ellipse [x radius=1.22, y radius=0.72];
+    \foreach \a in {0,30,...,330}
+      \fill[black!65] ({1.22*cos(\a)},{0.72*sin(\a)}) circle (0.065);
     \draw[->, bbuBlue] (1.0,0) -- (1.42,0);
     \draw[->, bbuBlue] (-1.0,0) -- (-1.42,0);
     \draw[->, bbuBlue] (0,0.98) -- (0,0.60);
@@ -1507,8 +1352,8 @@ Prepare two particles together and send them far apart --- kilometres, or contin
   \node[anchor=west, bbuRed] at (9.43,1.5) {\small $b$};
   \node[anchor=north, align=center, text width=3.0cm] at (9.12,0.3)
     {\small station B: setting chosen freely, at the last moment; outcome $\pm 1$};
-  % bottom annotation
-  \node[anchor=north, align=center, text width=8.6cm] at (5.2,-1.05)
+  % bottom annotation (below the station texts, which reach y ≈ −1.4)
+  \node[anchor=north, align=center, text width=8.6cm] at (5.2,-1.62)
     {\small compared afterwards, the outcomes correlate in a pattern (Bell, 1964) that no properties carried along by the particles can produce};
 \end{tikzpicture}
 \caption{The Bell experiment. Two particles prepared together are sent far apart, to stations whose settings are chosen freely at the last moment; each station records an outcome. Compared afterwards, the outcomes correlate in a pattern that, by Bell's theorem, no properties carried along by the particles --- no local hidden variables, however ingenious their machinery --- can produce. No message crosses and nothing usable travels; only the bookkeeping refuses to stay local. This is the theorem aimed at the billiard-ball universe by definition.}
