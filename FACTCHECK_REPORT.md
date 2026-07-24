@@ -152,3 +152,11 @@ Vanished, all intentional per the uncited list above: albert1985, aspect1982, da
 **Build-tooling note:** `cmd /c build.bat` silently fails when invoked from this harness's bash shell (cmd does not inherit the working directory) — earlier in this session two "build validations" read a stale log and reported clean without building. Caught and redone: all results above are from direct `pdflatex`/`biber` runs, verified against fresh log timestamps. When building manually, run `build.bat` from a real cmd/PowerShell prompt in the repo root, or use the pdflatex sequence.
 
 **Stage 2 complete.**
+
+---
+
+## Post-Stage-2 author rulings (applied)
+
+Niels ruled on the four open items: (1) the stale Poincaré deferral parenthetical — **removed from prose** (author-authorized); (2) bell1987 placement — stays at first invocation; (3) uncited entries — **cite what you can**: added `aspect1982` ("measured, again and again"), `darwin1905` ("fills it to the last ball"), `pitaevskii2016` (the critical-velocity clause), `ligo2017graviton` (the no-dispersion precision clause), `jaynes1965` (the Gibbs-paradox "open sore" sentence), `albert1985` (the Münchhausen footnote naming Hans Albert). **Not cited:** `searle1980` (the book's Ch. 5 objection is the hard problem, not the Chinese Room — citing would misattribute) and `holt2012`/`krauss2012` (never invoked; the "something rather than nothing" passages are the book's own question, not those books' treatments) — these three drop from the References, accepted; (4) the stray download PDF stays untracked.
+
+Final state: **68 of 71 entries cited.** Builds after the rulings: digital `errors: 0, overfull: 0, undefined: 0, pages: 143`; print `errors: 0, overfull: 0, undefined: 0, pages: 143`.
