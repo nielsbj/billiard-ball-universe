@@ -26,7 +26,8 @@
 | 6 | Production: cover, proof (§6) | NIELS + CC | spread over 2 weeks (proof shipping) |
 | 7 | Launch (§7) | NIELS | ongoing |
 
-## 2. Phase 1 — only you can do these [NIELS]
+## 2. Phase 1 — only you can do these [NIELS] — **CLOSED (interview 2026-07-24; woven as PROSE_PATCHES_phase1.md)**
+*Answers: light = age ~8, father, sleepless evening. Curved space = age ~10, TV-or-radio. Copies idea = same year, comforted at once, brother not comforted. Notes ~age 50 (~2019), charge same season; returns at ~25 and ~40 with little written. Bio: Danish software engineer. Pull quote #1. Ch. 5 echo kept; Democritus one sentence.*
 
 **2.1 The two childhood scenes (Ch. 1 + Epilogue).** For each, one honest sentence of *place* is enough. Memory prompts: How old were you, within two years? Indoors or outdoors? Who was in the room, or was it a book — which book? What did you *do* right after (say something, say nothing, walk somewhere)? Write the answers as plain facts; I/code-claude will weave them in without inflating them.
 **2.2 The comfort scene (Ch. 5).** One real occasion the copies idea helped: roughly when, what it displaced (a fear? a grief? an ordinary bad night?). If no single occasion exists, say so — "it has always been background comfort" is itself usable and honest.
@@ -81,6 +82,8 @@
 - Landau critical velocity — any superfluidity textbook (Pitaevskii & Stringari); cite the textbook. [CC]
 - G. H. Darwin 1905 elastic Le Sage — Proc. Roy. Soc. A 76 (1905); find exact title/pages via NASA ADS (ui.adsabs.harvard.edu — free). [CC]
 - Michelson–Morley 1887 — Am. J. Sci. 34, 333 — everywhere; confirm bib details. [CC]
+
+**RUN-2 STATUS (Stages 1+2 COMPLETE):** repo HEAD 6408972 — zero VERIFY flags in ref.bib; \nocite{*} gone; 68/71 entries cited (searle1980/holt2012/krauss2012 dropped by ruling); jaynes1965 in; laplace re-anchored to 1805. Post-stage-2 micro-patches (Bell double-cite, substructure →10⁻²⁰ m, Lorentz 1892 wording, herrmann2009 MM cite, craft-note closures incl. Fatio-hedge-is-final, build.bat hardening) shipped as `POST_STAGE2_PATCHES.md`. **Remaining after it applies: Phase 1 (§2, NIELS), Phase 4 read-through (now unblocked), Phase 5 index, Phases 6–7 production/launch.**
 
 **RUN-1 STATUS:** Stage 1 executed by code-claude — see `FACTCHECK_REPORT.md` in the repo. All [CC] rows below are closed except as noted there (Fatio wording NOT-REACHED; hedge stays). Four prose fixes shipped as `PROSE_PATCHES_stage1.md`. Only the two NEW rows below remain open.
 

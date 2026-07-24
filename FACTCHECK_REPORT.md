@@ -160,3 +160,26 @@ Vanished, all intentional per the uncited list above: albert1985, aspect1982, da
 Niels ruled on the four open items: (1) the stale Poincaré deferral parenthetical — **removed from prose** (author-authorized); (2) bell1987 placement — stays at first invocation; (3) uncited entries — **cite what you can**: added `aspect1982` ("measured, again and again"), `darwin1905` ("fills it to the last ball"), `pitaevskii2016` (the critical-velocity clause), `ligo2017graviton` (the no-dispersion precision clause), `jaynes1965` (the Gibbs-paradox "open sore" sentence), `albert1985` (the Münchhausen footnote naming Hans Albert). **Not cited:** `searle1980` (the book's Ch. 5 objection is the hard problem, not the Chinese Room — citing would misattribute) and `holt2012`/`krauss2012` (never invoked; the "something rather than nothing" passages are the book's own question, not those books' treatments) — these three drop from the References, accepted; (4) the stray download PDF stays untracked.
 
 Final state: **68 of 71 entries cited.** Builds after the rulings: digital `errors: 0, overfull: 0, undefined: 0, pages: 143`; print `errors: 0, overfull: 0, undefined: 0, pages: 143`.
+
+---
+
+## Post-Stage-2 patches applied (POST_STAGE2_PATCHES.md)
+
+| patch | status | note |
+|---|---|---|
+| A — bell1987 doubled at star-witness sentence | APPLIED | numeric style, same key twice, as authorized |
+| B — substructure → "a hundred thousand times smaller than a proton" | APPLIED | interior fragment; sentence's `\cite` untouched |
+| C — Lorentz "argued, from 1892 onward … would *produce*" | APPLIED | interior fragment; `\cite{lorentz1904}` untouched |
+| E — herrmann2009 | VERIFIED + APPLIED | arXiv:1002.1284 confirmed: PRD 80, 105011 (2009), Δc/c ~ 1×10⁻¹⁷ — "improved a billionfold" holds vs. MM's ~10⁻⁸. Cited at the main-text occurrence only; Appendix B occurrence left uncited by design |
+| D — craft-note closures | APPLIED | closed per POST_STAGE2 §D: phonon framing, polarization patterns, branch structure (all approved); Fatio hedge ruled FINAL (whole Ch. 2 craft note deleted — Democritus decision also recorded, no edit needed); Ch. 7 item 14 deleted (Lorentz nuance resolved by §C) |
+| F — build.bat hardening | APPLIED | `cd /d "%~dp0"` + BUILD-STAMP prepended; MANUAL.md automation note added; MANUAL.md now in the repo |
+
+No patch STOPPED — every OLD matched verbatim.
+
+## Phase 1 closed (PROSE_PATCHES_phase1.md)
+
+All patches applied verbatim: P1 (light scene: age ~8, his father, a sleepless evening), P2 (curved-space verdict: age ~10, television-or-radio), P3 (the comfort and the brother — paragraph inserted, request-draftnote deleted), P4 (epilogue re-dated: five items replacing the four placeholders; the two 2026 items unchanged), P5 (epilogue status → Draft 1), P6 (BOOK_COVER.md: pull quote #1 chosen, options 2–3 deleted, bio in place), P7 (TODO.md replaced with the Phase-1-CLOSED version; the misnamed "TODO .md" duplicate removed). The Ch. 1 draftnote was trimmed to its one unresolved remainder (the border-intuition scene — still optional).
+
+**Builds:** digital `errors: 0, overfull: 0, undefined: 0, pages: 143`; print `errors: 0, overfull: 0, undefined: 0, pages: 143`. (Validated under a temporary jobname — the tracked `billiard_ball_universe.pdf` was locked by an open viewer during the run; rebuild it with `build.bat` after closing the viewer, then commit the PDF. A cold build needs the pdflatex→biber→pdflatex→biber→pdflatex cycle once: the `\cite{edwards2002}` nested in lesage1782's bib note resolves on the second biber pass.)
+
+**Remaining open:** Phase 4 (cold read-through — now unblocked), Phase 5 (index population), Phases 6–7 (cover art, wrap PDF, spine at final page count, proof, launch), and the optional border-intuition scene.
