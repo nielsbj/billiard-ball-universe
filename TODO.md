@@ -141,6 +141,10 @@ Quantitative claims in the Sixth Wound section — no new bib entries (textbook/
 - **The Dirac unification claim** — "In the standard picture these are not three facts but one — Dirac's equation delivers all of them together." Check this is fair: the Dirac equation gives spin-½ and g = 2; exclusion follows via spin–statistics. If "all of them together" overstates (spin–statistics is a separate theorem), STOP and report. [CC]
 - **L = p·d = ℏ** from p = ℏ/d: elementary, recompute. Note the book claims d and m both cancel — confirm. [CC]
 
+### 3D-witten. Opened by the run-3 attribution fix [CC]
+- `witten1983` — the prose now names Witten and 1983 for the skyrmion's fermionic quantization. **Check which of the two 1983 Nucl. Phys. B223 papers is the correct anchor:** "Current Algebra, Baryons, and Quark Confinement" (433--444, currently cited) versus the companion "Global Aspects of Current Algebra" (422--432), which carries the Wess--Zumino argument. Confirm pages, add the DOI, and **report rather than switch unilaterally.** [CC]
+> **RESULT (2026-07-26) — CLOSED (run 3, commit 78d0760, before this row reached the repo).** Confirmed against CrossRef/ADS: "Current Algebra, Baryons, and Quark Confinement" (Nucl. Phys. B223, 433–444, DOI `10.1016/0550-3213(83)90064-0`) is the correct primary for the skyrmion's fermionic quantization (fermion for odd N_c); DOI added, VERIFY cleared. The companion "Global Aspects of Current Algebra" (422–432, DOI `10.1016/0550-3213(83)90063-9`) carries the Wess–Zumino term and is noted in the entry as the natural co-citation. Not switched — chat-claude's pick was correct.
+
 ### 3D. Chapter 4/5 + philosophy
 - Tegmark numbers (10^{10^{118}}; ~10^{10^{29}} m) — **Where:** https://arxiv.org/abs/astro-ph/0302131 ("Parallel Universes"), §2 — match the two double exponents. [CC]
 - `albert2000` — *Time and Chance*, Harvard UP — the Past Hypothesis naming; confirm and clear. [CC]
