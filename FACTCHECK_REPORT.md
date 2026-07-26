@@ -183,3 +183,9 @@ All patches applied verbatim: P1 (light scene: age ~8, his father, a sleepless e
 **Builds:** digital `errors: 0, overfull: 0, undefined: 0, pages: 143`; print `errors: 0, overfull: 0, undefined: 0, pages: 143`. (Validated under a temporary jobname — the tracked `billiard_ball_universe.pdf` was locked by an open viewer during the run; rebuild it with `build.bat` after closing the viewer, then commit the PDF. A cold build needs the pdflatex→biber→pdflatex→biber→pdflatex cycle once: the `\cite{edwards2002}` nested in lesage1782's bib note resolves on the second biber pass.)
 
 **Remaining open:** Phase 4 (cold read-through — now unblocked), Phase 5 (index population), Phases 6–7 (cover art, wrap PDF, spine at final page count, proof, launch), and the optional border-intuition scene.
+
+## Collapse section added (PROSE_PATCHES_collapse.md), 2026-07-26
+
+New unverified Ch. 7 section — "The Ladder Under Load: What a Star Does When It Loses" — inserted before "What That Teaches", with figure `fig:collapseladder`, three Dictionary entries (Degeneracy pressure; Singularity; White dwarf & neutron star), two footnotes, and five bib entries. **All five bib entries carry VERIFY flags on purpose — 5 new VERIFY flags now open** (chandrasekhar1931, baadezwicky1934, oppenheimervolkoff1939, bekenstein1973, eht2019). The section is **deliberately shipped uncited**; citation placement is deferred until these clear. See `TODO.md` §3D-collapse. `tab:wounds` deliberately unchanged (the saturation problem's promotion to a Sixth Wound is Niels's open decision).
+
+**Builds:** digital `errors: 0, overfull: 0, pages: 151`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 151`; flag reverted to digital and rebuilt.

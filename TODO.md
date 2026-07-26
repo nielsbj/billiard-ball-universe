@@ -91,6 +91,15 @@
 - Gibbs paradox / Jaynes's "anthropomorphic" entropy (Ch. 7 craft note, no prior row). **Where:** E. T. Jaynes, "Gibbs vs Boltzmann Entropies", Am. J. Phys. 33, 391 (1965) — free at bayes.wustl.edu/etj (the Jaynes archive). Check: the anthropomorphic/coarse-graining point as invoked in the entropy section. [CC]
 - `laplace1796` (last remaining VERIFY, not previously a row). **Where:** Laplace, *Exposition du système du monde* (1796) — Gallica/Internet Archive; note the famous speed-of-gravity bound (≥ ~7×10⁶ c) is from *Mécanique Céleste* (1805). Check: which work the Ch. 2 sentence actually rests on; adjust the bib entry (not the prose) accordingly, or report if the prose implies the wrong work. [CC]
 
+### 3D-collapse. Added by the sixth author-driven expansion (Ch. 7 "The Ladder Under Load") [CC]
+Five new bib entries, **all shipped VERIFY-flagged and the section deliberately uncited** until these clear. When they do, run the small Stage-2-style citation placement noted at the end of this block.
+- `chandrasekhar1931` — *The Maximum Mass of Ideal White Dwarfs*, ApJ 74, 81–82 (1931). Check: pages/volume, **and** the biographical claim that he computed the limit at nineteen on the voyage from India to England (commonly told; confirm age and voyage before publication). [CC]
+- `baadezwicky1934` — *On Super-novae*, PNAS 20, 254–259 (1934). Check: the neutron-star proposal and its companion paper; pages. [CC]
+- `oppenheimervolkoff1939` — *On Massive Neutron Cores*, Phys. Rev. 55, 374–381 (1939). Check: pages; the modern maximum-mass value (~2–3 M_⊙) should be cited to a current source (e.g. the GW170817 constraints already in `ref.bib`). [CC]
+- `bekenstein1973` — *Black Holes and Entropy*, Phys. Rev. D 7, 2333–2346 (1973). Check: pages. Underwrites the area-entropy invoice item. [CC]
+- `eht2019` — *First M87 EHT Results. I*, ApJL 875, L1 (2019). Check: the imaging claim as stated in the saturation invoice. [CC]
+- **After all five clear:** place `\cite{chandrasekhar1931}` at the one-and-a-half-solar-mass limit; `\cite{baadezwicky1934}` and `\cite{oppenheimervolkoff1939}` at the neutron-star sentences; `\cite{bekenstein1973}` at the area-entropy invoice item; `\cite{eht2019}` at the Event Horizon Telescope sentence. Report placements; invent no others.
+
 ### 3D. Chapter 4/5 + philosophy
 - Tegmark numbers (10^{10^{118}}; ~10^{10^{29}} m) — **Where:** https://arxiv.org/abs/astro-ph/0302131 ("Parallel Universes"), §2 — match the two double exponents. [CC]
 - `albert2000` — *Time and Chance*, Harvard UP — the Past Hypothesis naming; confirm and clear. [CC]
