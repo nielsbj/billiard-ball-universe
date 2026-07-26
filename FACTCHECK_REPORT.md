@@ -280,3 +280,13 @@ Ran the five collapse-section flags. All five entries' **bibliographic fields ar
 **Remaining open on §3D-collapse:** the two new entries above (`baadezwicky1934cr`, `eht2022`) and their placements — awaiting Niels/chat-claude. Everything else in the collapse section is cited and verified.
 
 **Builds (collapse fact-check, live citations):** biber clean (0 warnings/errors, 0 undefined); digital `errors: 0, overfull: 0, undefined: 0, pages: 163`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 163`; flag reverted to digital and rebuilt. Page count unchanged (the four newly-cited entries fit the existing bibliography pages).
+
+### Run-4 held citations resolved (BIB_PATCH_collapse_targets.md, 2026-07-26)
+
+The two held §3D-collapse citations are fixed — bibliography-only, no prose changes (the sentences were accurate; only the reference targets were wrong):
+- **`baadezwicky1934cr`** added ("Cosmic Rays from Super-novae," PNAS 20 (5), 259–263, DOI `10.1073/pnas.20.5.259`) and cited at "the mass of a sun inside the space of a city." `baadezwicky1934` ("On Super-novae") re-noted and retained uncited for the supernova claim itself.
+- **`eht2022`** added ("First Sagittarius A* EHT Results. I," ApJL 930 (2), L12, DOI `10.3847/2041-8213/ac6674`) and cited at "the ring the Event Horizon Telescope photographed" (the Sixth Wound sentence about our galaxy's centre). `eht2019` (M87) re-noted and retained uncited for a future first-image mention.
+
+Both new DOIs match the run-4 CrossRef/ADS verification (the transcription chat-claude asked me to check is correct). **§3D-collapse is fully closed.** The only Ch. 7 item still open is `witten1983` (§3D-witten) — but that was already resolved in commit `78d0760`: confirmed as the correct primary ("Current Algebra, Baryons, and Quark Confinement," B223, 433–444, DOI `10.1016/0550-3213(83)90064-0`), DOI added, companion "Global Aspects" (422–432) noted. No action outstanding.
+
+**Builds (run-4 bib patch, live citations):** biber clean (0 warnings/errors, 0 undefined); digital `errors: 0, overfull: 0, undefined: 0, pages: 164`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 164`; flag reverted to digital and rebuilt. Page count 163 → **164** (the two new references added one bibliography page).
