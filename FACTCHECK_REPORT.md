@@ -211,3 +211,43 @@ New unverified Ch. 7 section — "The Ladder Under Load: What a Star Does When I
 **New section "Where the Stiffness Might Come From" (PROSE_PATCHES_stiffness.md → superseded by PROSE_PATCHES_stiffness (1).md + PATCH_2_correction.md, 2026-07-26) — author-requested, entirely unverified:** the collapse chapter's open debt (degeneracy pressure explained by a prohibition, which the book may not use) is now reported on rather than left standing. The section argues from superfluid quantized circulation that two of the three pieces of an exclusion account lie in laboratory glassware — the confinement relation p = ℏ/d (mass cancelling), the degenerate n^(5/3) exponent from one-circulation-per-cell, and the same/opposite energy asymmetry that splits double quanta and pairs opposites — while stating immediately that this does **not** prove exclusion (the one-per-cell packing rule *is* the exclusion, and is not derived). A literal-spin passage (Patch 5) follows: the third wound's tumbling read as spin, the superluminal-surface objection dissolved as a local-c artefact (already established twice in the chapter), magnitude L = ℏ free from the same relation, and two honest failures owned (one unit not a half; g wrong by two) folded into "three twos" that Dirac unifies. Six new VERIFY-flagged bib entries (`onsager1949`, `feynman1955`, `vinen1961`, `shin2004`, `finkelstein1968`, `skyrme1961`); the section ships **uncited**, as the collapse material did. Two Dictionary entries added (**Quantized circulation**; **Soliton; skyrmion**). The collapse "debt" paragraph now points forward to this section via a **one-sentence string patch** (PATCH_2_correction.md): the original patch named a "regenerated SECTION_collapse.tex" it did not ship and quoted the change with an ellipsis — the file was correctly *not* reconstructed, and the single old→new sentence was applied instead. New fact-check rows: `TODO.md` §3D-stiffness (Finkelstein–Rubinstein flagged highest-risk; Onsager/Feynman priority not to be asserted in prose) and §3D-spin (Dirac-unification claim carries a STOP instruction if it overstates).
 
 **Builds (stiffness section):** digital `errors: 0, overfull: 0, undefined: 0, pages: 163`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 163`; flag reverted to digital and rebuilt. (151 → 153 → 155 → 157 → 163 across v1–v5.2 + stiffness.)
+
+---
+
+## Fact-check pass — stiffness + spin sections (2026-07-26)
+
+Ran the `TODO.md` §3D-stiffness and §3D-spin rows. Arithmetic recomputed from constants; bibliographic details verified against CrossRef/ADS/publisher pages by three researchers. Rule observed throughout: `ref.bib` details corrected freely; **prose fairness/attribution issues reported here, not edited**.
+
+**Arithmetic / physics — all CONFIRMED (no prose change):**
+
+| Claim (prose) | Value stated | Recomputed | Verdict |
+|---|---|---|---|
+| κ = h/m, helium-4 | "~a ten-millionth of m²/s" | 9.97×10⁻⁸ m²/s | ✅ |
+| degenerate coefficient | "within a factor of about six" | (3/5)(3π²)^(2/3) = 5.74 | ✅ |
+| surface speed @ classical e⁻ radius | "a hundred and seventy times c" | 171.3 c | ✅ |
+| surface speed @ 10⁻²⁰ m | "nearer fifty million times" | 4.83×10⁷ c | ✅ |
+| size cross-ref to 4th wound | "hundred-thousandth of a proton" (10⁻²⁰ m) | proton/10⁵ ≈ 8×10⁻²¹ m; 4th wound says "a hundred thousand times smaller than a proton" | ✅ consistent |
+| L = p·d = ℏ, d & m cancel | ℏ | exact (p=ℏ/d has no m; L=ℏ has no d) | ✅ |
+| classical g vs electron g | "wrong by a factor of two" | classical uniformly-charged sphere g=1; electron g≈2.002 | ✅ |
+
+**Bibliography — all six CONFIRMED; DOIs added; VERIFY flags cleared. One factual error fixed:**
+
+| Key | Result |
+|---|---|
+| `onsager1949` | Fields correct. DOI `10.1007/BF02780991`; issue S2 (Suppl.). Priority note: cite with `feynman1955`, no ranking. |
+| `feynman1955` | Fields correct. Added editor (Gorter, C. J.), address, DOI `10.1016/S0079-6417(08)60077-3`. |
+| `vinen1961` | Fields correct. Added issue 1301, DOI `10.1098/rspa.1961.0029`. |
+| `shin2004` | Fields correct (9 authors, order OK). DOI `10.1103/PhysRevLett.93.160406`. "Observed to split" fairly supported — canonical citation. |
+| `finkelstein1968` | Fields correct. Added issue 11, DOI `10.1063/1.1664510`. Claim judged **FAIR** (see below). |
+| `skyrme1961` | **CORRECTED: year 1961 → 1962** (Nucl. Phys. 31 is 1962). DOI `10.1016/0029-5582(62)90775-7`. Key left `skyrme1961` to avoid cross-repo drift — recommend renaming `skyrme1962`. Prose attribution open (see below). |
+
+**Fairness verdicts:**
+- **Finkelstein–Rubinstein (highest-risk) — FAIR.** The 1968 abstract states that a rotating kink in a nonlinear bosonic field can carry half-odd angular momentum (double-valued state functionals / covering-space quantization) and that spin–statistics "follows from continuity alone." The book says F&R "showed the possibility" and does not conflate with Witten — accurate, appropriately hedged. No change needed.
+
+**OPEN — author decisions (prose NOT edited, per STOP rule):**
+1. **Dirac unification (§3D-spin).** *"In the standard picture these are not three facts but one — Dirac's equation delivers all of them together."* **Overstates.** Dirac's equation delivers spin-½ and g=2 together, but Pauli exclusion (two-per-state) comes from the *spin–statistics theorem* (Pauli 1940 / relativistic QFT) — a separate result that takes spin-½ as input. The three are tightly linked and all hinge on spin-½, but the equation does not single-handedly output exclusion. *Suggested fair phrasing:* "Dirac's equation delivers spin-½ and g = 2 together in one stroke; the third two — that no two electrons share a state — follows once the spin–statistics theorem forces spin-½ fields to be fermions. Spin-½ is the common root of all three." (Keeps the "one root" framing without claiming the equation outputs all three.)
+2. **Skyrme attribution (§3D-stiffness).** *"Skyrme's model of the nucleon — a soliton in a field of bosons that comes out as a spin-one-half particle."* Proposing the nucleon as a bosonic-field soliton is fair to Skyrme (1962); the **spin-½ fermionic quantization** was established by **Witten (1983)** (Wess–Zumino term + Finkelstein–Rubinstein constraint), not by Skyrme. *Suggested fair phrasing:* "…a soliton in a field of bosons — which, when properly quantized (Witten, 1983), comes out as a spin-½ fermion." Same nuance sits in the **Soliton; skyrmion** Dictionary entry.
+
+Both open items are attribution nuances, not errors of physics; the book's core argument is unaffected either way. Left for Niels; a note for chat-claude covers the upstream `ref.bib` year fix and the two prose choices.
+
+**Build after `ref.bib` corrections:** biber clean (0 warnings/errors); digital `errors: 0, overfull: 0, undefined: 0, pages: 163`. (Entries are uncited, so the bibliography output is unchanged; corrections stand for when citations are placed.)
