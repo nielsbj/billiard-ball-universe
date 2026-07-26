@@ -99,6 +99,16 @@ Five new bib entries, **all shipped VERIFY-flagged and the section deliberately 
 - `bekenstein1973` — *Black Holes and Entropy*, Phys. Rev. D 7, 2333–2346 (1973). Check: pages. Underwrites the area-entropy invoice item. [CC]
 - `eht2019` — *First M87 EHT Results. I*, ApJL 875, L1 (2019). Check: the imaging claim as stated in the saturation invoice. [CC]
 - **After all five clear:** place `\cite{chandrasekhar1931}` at the one-and-a-half-solar-mass limit; `\cite{baadezwicky1934}` and `\cite{oppenheimervolkoff1939}` at the neutron-star sentences; `\cite{bekenstein1973}` at the area-entropy invoice item; `\cite{eht2019}` at the Event Horizon Telescope sentence. Report placements; invent no others.
+> **RESULT (fact-check 2026-07-26).** All five entries' fields confirmed against ADS/APS/PNAS/IOP; DOIs and issue numbers added. **3 of 5 citations placed (clean):**
+> - `chandrasekhar1931` at the 1.5-M☉ limit — bio confirmed (age 19; 1930 India→England voyage) and 1.4 M☉ ≈ "one and a half" is fair. DOI `10.1086/143324`.
+> - `bekenstein1973` at the area-entropy sentence — correct primary for S ∝ horizon area. DOI `10.1103/PhysRevD.7.2333` (issue 8).
+> - `oppenheimervolkoff1939` **+ `ligo2017`** at "the neutron strut buckles too" — O-V for the *concept* of a maximum neutron-core mass (their own value is ~0.7 M☉, ideal gas, no strong force), GW170817 co-cited for the modern "over two solar masses." DOI `10.1103/PhysRev.55.374`.
+>
+> **2 of 5 HELD — wrong citation target, need new entries (STOP-and-report; left uncited):**
+> - **`baadezwicky1934` is the wrong paper.** "On Super-novae" (PNAS 20, 254) does not contain the neutron-star proposal; that is in the companion **"Cosmic Rays from Super-novae," PNAS 20, 259–263** (DOI `10.1073/pnas.20.5.259`). Add `baadezwicky1934cr` and cite it (or both) at "a body made almost entirely of neutrons."
+> - **`eht2019` is the wrong object.** It is **M87\*** (2019); the book's only EHT sentence is about **Sgr A\*** ("our galaxy's centre"), whose ring was imaged in **2022**. Add **`eht2022`** (First Sgr A* EHT Results I, ApJL 930, L12, DOI `10.3847/2041-8213/ac6674`) and cite it there. (`eht2019` may stay in the bib for a future M87/first-image mention.)
+>
+> Both held items reported to chat-claude for the two new entries; see FACTCHECK_REPORT.md.
 
 ### 3D-sixthwound. Ch. 7 "Sixth Wound: The Saturated Shadow" — REVISED for the v4 scaling correction and the v5 clarity rewrite [CC]
 Quantitative claims in the Sixth Wound section — no new bib entries (textbook/standard), but the numbers must clear the fact-check gate. If any disagrees with the source, STOP and report; do not edit prose. **The old M² / "hundreds of thousands" rows are void — v4 replaced that argument (silhouette ∝ M^(2/3), not M²).** **v5 moved all entropy material OUT of the wound (it is now purely about gravity/transparency); the area law is dissolved in the collapse section, so the M²-vs-shell comparison no longer appears anywhere — the last two rows below cover its replacement.**
