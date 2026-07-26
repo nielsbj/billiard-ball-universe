@@ -100,11 +100,13 @@ Five new bib entries, **all shipped VERIFY-flagged and the section deliberately 
 - `eht2019` — *First M87 EHT Results. I*, ApJL 875, L1 (2019). Check: the imaging claim as stated in the saturation invoice. [CC]
 - **After all five clear:** place `\cite{chandrasekhar1931}` at the one-and-a-half-solar-mass limit; `\cite{baadezwicky1934}` and `\cite{oppenheimervolkoff1939}` at the neutron-star sentences; `\cite{bekenstein1973}` at the area-entropy invoice item; `\cite{eht2019}` at the Event Horizon Telescope sentence. Report placements; invent no others.
 
-### 3D-sixthwound. Added by the collapse-v3 expansion (Ch. 7 "Sixth Wound: The Saturated Shadow") [CC]
-Quantitative claims in the new Sixth Wound section — no new bib entries (these are textbook/standard), but the numbers must clear the fact-check gate. If any disagrees with the source, STOP and report; do not edit prose.
-- **Schwarzschild radius ∝ mass.** The section: "a collapsed body's radius grows in proportion to its mass, so its silhouette … grows as the *square* of its mass." Confirm r_s = 2GM/c² (radius linear in M; blocking area ∝ r² ∝ M²). Standard GR; any relativity text (or `plato.stanford.edu` for the qualitative claim). [CC]
-- **The "hundreds of thousands" factor.** The section: between "a hole of ten suns and the one at the centre of this galaxy the two rules differ by a factor of hundreds of thousands." Check: Sgr A* ≈ 4.3×10⁶ M_⊙ (GRAVITY/Genzel–Ghez; Nobel 2020) ÷ 10 M_⊙ ≈ 4×10⁵ — i.e. the M²/M = M ratio. Confirm the mass of Sgr A* and that the arithmetic lands at "hundreds of thousands." [CC]
-- **Earth "eight thousand miles thick."** Mean diameter ≈ 7,918 mi (equatorial 7,926). "Eight thousand" is a fair round figure — confirm it reads as an approximation. [CC]
+### 3D-sixthwound. Ch. 7 "Sixth Wound: The Saturated Shadow" — REVISED for the v4 scaling correction [CC]
+Quantitative claims in the Sixth Wound section — no new bib entries (textbook/standard), but the numbers must clear the fact-check gate. If any disagrees with the source, STOP and report; do not edit prose. **The old M² / "hundreds of thousands" rows are void — v4 replaced that argument (silhouette ∝ M^(2/3), not M²).**
+- **Mean density inside a Schwarzschild horizon falls as M⁻².** Check the three figures as stated: ~nuclear density at 10 M☉; near that of a heavy oil at Sgr A* (~10⁶ kg/m³); thinner than room air at 10¹⁰ M☉ (~0.18 kg/m³). Arithmetic is elementary — recompute rather than look up (mean ρ = M / (4/3 π r_s³), r_s = 2GM/c² ⇒ ρ ∝ M⁻²). [CC]
+- **The 75× and 1000× figures.** Cube root of (4.3×10⁵) ≈ 75; cube root of 10⁹ = 1000. Confirm Sgr A* ≈ 4.3×10⁶ M☉ (GRAVITY/Genzel–Ghez; Nobel 2020) and that "the whole observed range of holes" spanning ~10 to ~10¹⁰ M☉ is fair. [CC]
+- **Binary-pulsar transparency bound.** Claim: pulsar timing verifies gravity tracking mass at neutron-star densities, ~4×10¹⁷ kg/m³. **Where:** Hulse–Taylor and the double pulsar J0737−3039; Kramer et al. 2021 (Phys. Rev. X 11, 041050) is the current precision reference. Check the density figure and that the inference (gravity tracks mass at that density) is fairly stated — **if the framing overreaches, STOP and report.** [CC]
+- **White dwarfs shrink as they gain mass.** Standard R ∝ M^(−1/3) for non-relativistic degenerate matter; confirm the statement as phrased. [CC]
+- **Earth "eight thousand miles thick."** Mean diameter ≈ 7,918 mi (equatorial 7,926) — "eight thousand" is a fair round figure. (Retained from v3; the sentence is unchanged.) [CC]
 - EHT M87 shadow and LIGO inspiral-waveform agreement are already covered by `eht2019` (§3D-collapse) and the existing GW170817 entry; no new rows.
 
 ### 3D. Chapter 4/5 + philosophy
