@@ -100,6 +100,13 @@ Five new bib entries, **all shipped VERIFY-flagged and the section deliberately 
 - `eht2019` — *First M87 EHT Results. I*, ApJL 875, L1 (2019). Check: the imaging claim as stated in the saturation invoice. [CC]
 - **After all five clear:** place `\cite{chandrasekhar1931}` at the one-and-a-half-solar-mass limit; `\cite{baadezwicky1934}` and `\cite{oppenheimervolkoff1939}` at the neutron-star sentences; `\cite{bekenstein1973}` at the area-entropy invoice item; `\cite{eht2019}` at the Event Horizon Telescope sentence. Report placements; invent no others.
 
+### 3D-sixthwound. Added by the collapse-v3 expansion (Ch. 7 "Sixth Wound: The Saturated Shadow") [CC]
+Quantitative claims in the new Sixth Wound section — no new bib entries (these are textbook/standard), but the numbers must clear the fact-check gate. If any disagrees with the source, STOP and report; do not edit prose.
+- **Schwarzschild radius ∝ mass.** The section: "a collapsed body's radius grows in proportion to its mass, so its silhouette … grows as the *square* of its mass." Confirm r_s = 2GM/c² (radius linear in M; blocking area ∝ r² ∝ M²). Standard GR; any relativity text (or `plato.stanford.edu` for the qualitative claim). [CC]
+- **The "hundreds of thousands" factor.** The section: between "a hole of ten suns and the one at the centre of this galaxy the two rules differ by a factor of hundreds of thousands." Check: Sgr A* ≈ 4.3×10⁶ M_⊙ (GRAVITY/Genzel–Ghez; Nobel 2020) ÷ 10 M_⊙ ≈ 4×10⁵ — i.e. the M²/M = M ratio. Confirm the mass of Sgr A* and that the arithmetic lands at "hundreds of thousands." [CC]
+- **Earth "eight thousand miles thick."** Mean diameter ≈ 7,918 mi (equatorial 7,926). "Eight thousand" is a fair round figure — confirm it reads as an approximation. [CC]
+- EHT M87 shadow and LIGO inspiral-waveform agreement are already covered by `eht2019` (§3D-collapse) and the existing GW170817 entry; no new rows.
+
 ### 3D. Chapter 4/5 + philosophy
 - Tegmark numbers (10^{10^{118}}; ~10^{10^{29}} m) — **Where:** https://arxiv.org/abs/astro-ph/0302131 ("Parallel Universes"), §2 — match the two double exponents. [CC]
 - `albert2000` — *Time and Chance*, Harvard UP — the Past Hypothesis naming; confirm and clear. [CC]
