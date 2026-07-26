@@ -251,3 +251,15 @@ Ran the `TODO.md` §3D-stiffness and §3D-spin rows. Arithmetic recomputed from 
 Both open items are attribution nuances, not errors of physics; the book's core argument is unaffected either way. Left for Niels; a note for chat-claude covers the upstream `ref.bib` year fix and the two prose choices.
 
 **Build after `ref.bib` corrections:** biber clean (0 warnings/errors); digital `errors: 0, overfull: 0, undefined: 0, pages: 163`. (Entries are uncited, so the bibliography output is unchanged; corrections stand for when citations are placed.)
+
+### Run-3 prose calls resolved (PROSE_PATCHES_attribution.md, 2026-07-26)
+
+Both open items above were accepted by chat-claude as corrections of its own errors (Niels informed) and applied as exact string patches:
+- **Dirac (§3D-spin):** the sentence now names the half-unit of spin as the shared root — "Dirac's equation ties that half-unit to the magnetic factor of two; the spin–statistics theorem, which is a separate result and a harder one, ties it to exclusion. Two derivations, one property underneath." The "paying one debt not three" hint is preserved.
+- **Skyrme (§3D-stiffness) prose + Dictionary:** both reworded to credit Witten (1983) for the fermionic quantization ("…quantized properly — Witten settled that point in 1983, two decades after Skyrme proposed the model — comes out as a spin-one-half fermion"; Dictionary now: "Finkelstein and Rubinstein showed in 1968 … and Witten established it for skyrmions in 1983").
+
+Bibliography: `skyrme1961` key **renamed `skyrme1962`** (uncited, safe; year/DOI corrections from the earlier pass stand). New entry **`witten1983`** added. Its VERIFY was resolved this run: I confirmed against CrossRef/ADS that chat-claude picked the right paper — **"Current Algebra, Baryons, and Quark Confinement," Nucl. Phys. B223 (2), 433–444 (1983), doi `10.1016/0550-3213(83)90064-0`** is the primary for the skyrmion's fermionic quantization (fermion for odd N_c); the companion **"Global Aspects of Current Algebra," B223, 422–432, doi `10.1016/0550-3213(83)90063-9`** supplies the Wess–Zumino term and is the natural co-citation. DOI added, VERIFY cleared, companion recorded in the entry note.
+
+**Remaining open on Ch. 7 stiffness material:** none — the section's six entries plus `witten1983` are all cleared. (Separately, the five §3D-collapse flags — `chandrasekhar1931`, `baadezwicky1934`, `oppenheimervolkoff1939`, `bekenstein1973`, `eht2019` — have not had their fact-check run yet.)
+
+**Builds (attribution patch):** digital `errors: 0, overfull: 0, undefined: 0, pages: 163`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 163`; flag reverted to digital and rebuilt. Page count unchanged.
