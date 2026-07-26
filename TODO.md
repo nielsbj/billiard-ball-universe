@@ -112,6 +112,22 @@ Quantitative claims in the Sixth Wound section — no new bib entries (textbook/
 - **"Not everyone reads black-hole entropy this way"** (collapse section). The book acknowledges programmes that read the area law as a census of real interior states. Confirm this is a fair characterisation (string-theoretic microstate counting — Strominger–Vafa 1996 — is the obvious referent). If a citation would help, propose one and report; **do not add one unprompted.** [CC]
 - **Neutrino cross-section analogy** (v5.2 Sixth Wound). The book: a small massion stopping-chance is "of the same family as the one that lets a neutrino cross a great thickness of lead without noticing it is there, and nobody calls the neutrino tuned." Confirm the analogy is fairly stated — neutrinos have famously tiny cross-sections (the textbook figure is ~a light-year of lead for even-odds interaction); "a great thickness of lead" is qualitatively safe. Standard particle physics; no citation needed unless one is wanted. [CC]
 
+### 3D-stiffness. The superfluid/exclusion section (new, all unverified) [CC]
+*Six new VERIFY-flagged entries. The whole section is a sketch, not a claim — check that the prose does not overstate anywhere.*
+- `vinen1961` — the measurement that circulation comes in quanta of h/m. Confirm pages, and that Vinen is the right primary citation for the *detection*. [CC]
+- `onsager1949` / `feynman1955` — priority for the quantized-circulation idea is genuinely tangled (Onsager's is a conference remark). **Report what can honestly be cited; do not assert priority in prose.** [CC]
+- `shin2004` — doubly-quantized vortices observed to split. Confirm this supports the book's sentence "as doubly-quantized vortices are observed to do". [CC]
+- `finkelstein1968` — that structures in a bosonic medium can be quantized as fermions. **Highest-risk claim in the section.** Confirm the result is fairly stated; note that Witten (1983) supplied the statistics argument for skyrmions specifically. If the book overstates, STOP and report. [CC]
+- `skyrme1961` — the nucleon-as-soliton model. Confirm attribution. [CC]
+- **Numbers:** κ = h/m ≈ 9.97×10⁻⁸ m²/s for helium-4 ("about a ten-millionth of a square metre per second"); core ≈ 1 Å; the claim that the crude estimate lands "within a factor of about six" of the degenerate energy density — the exact ratio is (3/5)(3π²)^(2/3) ≈ 5.74. Recompute all three. [CC]
+- **The scaling claim** p = ℏ/d and u ∝ n^(5/3): elementary; recompute rather than look up. [CC]
+
+### 3D-spin. The literal-spin passage in the stiffness section [CC]
+- **"A hundred and seventy times the speed of light"** at the classical electron radius, and **"nearer fifty million times"** at 10⁻²⁰ m. Recompute from L = (2/5)mrv with L = ℏ/2: r = 2.818×10⁻¹⁵ m → ~171c; r = 10⁻²⁰ m → ~4.8×10⁷c. Confirm both, and that "the hundred-thousandth of a proton quoted in the fourth wound" matches the figure actually used there. [CC]
+- **g-factor.** The book says a rotating ball of charge has a magnetic moment "wrong by a factor of two" for the electron. Standard: classical uniformly-charged rotating sphere gives g = 1; electron g ≈ 2.0023. Confirm the claim as phrased, and that it is fair to call it a factor of two. [CC]
+- **The Dirac unification claim** — "In the standard picture these are not three facts but one — Dirac's equation delivers all of them together." Check this is fair: the Dirac equation gives spin-½ and g = 2; exclusion follows via spin–statistics. If "all of them together" overstates (spin–statistics is a separate theorem), STOP and report. [CC]
+- **L = p·d = ℏ** from p = ℏ/d: elementary, recompute. Note the book claims d and m both cancel — confirm. [CC]
+
 ### 3D. Chapter 4/5 + philosophy
 - Tegmark numbers (10^{10^{118}}; ~10^{10^{29}} m) — **Where:** https://arxiv.org/abs/astro-ph/0302131 ("Parallel Universes"), §2 — match the two double exponents. [CC]
 - `albert2000` — *Time and Chance*, Harvard UP — the Past Hypothesis naming; confirm and clear. [CC]
