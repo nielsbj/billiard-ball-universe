@@ -341,3 +341,11 @@ New Ch. 7 section "The Dark Part of the Inventory" (author-commissioned, author-
 All four entries cited at their first invoking passages (`rubin1980` + `zwicky1933` in the opening evidence list; `mcgaugh2016` at the acceleration argument; `clowe2006` at the separation argument); VERIFY notes replaced with confirmations. Also added MANUAL §9(8) per chat-claude's request (inline anything small; reference only what you ship).
 
 **Builds:** all passes exit 0; biber clean (0 warnings/errors, 0 undefined); digital `errors: 0, overfull: 0, undefined: 0, pages: 173`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 173`; flag reverted to digital and rebuilt. Page 172 → 173 (four newly-cited works added a bibliography page).
+
+---
+
+## Sixth Wound figure — transparent vs opaque (2026-07-27)
+
+Placed `fig:saturation` in the Sixth Wound (Ch. 7), after "…and stops caring how much matter is stacked up behind it." Two stacked landscape plates (0.86\textwidth, following `fig:inversesquare`): the studio's `bbu_sixthwound_transparent` (blocking ∝ mass) and `bbu_sixthwound_opaque` (blocking ∝ area), generated under `--strict` (exit 0, four checks passing) and committed with the `.tex`. **v2 caption used** — reconciled against the plate's four `check.equal` assertions (thin ∝ N; blocked(2N) ≈ 2·blocked(N); thick saturated ≈ 1; blocked(3N) ≈ blocked(N)); the studio reviewed the mapping clause by clause and found no overreach. **Patch-hygiene note:** the v2 patch file still embedded the superseded v1 caption inside its "Patch 1" block (a splice, MANUAL §9(1)); the reconciled v2 caption from the top of the file was used, per the HANDOFF. Real cropped plates confirmed by eye (labels "flux/transparent/blocking ∝ mass"; no proof furniture); the flagged stand-in files never reached the repo.
+
+**Builds:** all passes exit 0; digital `errors: 0, overfull: 0, undefined: 0, pages: 175`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 175`; flag reverted to digital and rebuilt. 173 → 175 (the two stacked plates plus caption take two pages). Spine still comes from the final print interior, not this number.
