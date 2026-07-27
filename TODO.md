@@ -180,6 +180,7 @@ Tag with `\Ix{...}` (terms; auto-lowercased) and `\Iy{...}` (persons) at each **
 2. **Print interior:** flip `\digitaleditiontrue` → `false`; rebuild; verify zero errors/overfull; this is the KDP interior PDF. Flip back for the distributed digital PDF.
 3. Recalculate spine at the FINAL page count (pages × 0.002252 in) — last step before the wrap PDF.
 4. KDP previewer → **order one physical proof** → check: engraving darkness, gray tones in figures distinguishable, gutter comfort on the widest figures (pincer, cascade) → publish.
+5. **Verify the self-checking figure claim before print [NIELS, 5 minutes].** The making-of note ("A Note on How This Book Was Made") says the three-dimensional figures are made by a program that "refuses to produce the picture at all if a claim in the caption stops being true." In the proofviz studio, deliberately break one `check.equal` in a sketch and run `node scripts/make-deliverables.mjs bbu_<name>`; confirm it *fails* rather than exporting. If it exports anyway, tell chat-claude — the sentence retreats to the already-true "drawn in code, so that the geometry could be checked rather than eyeballed." This is the one chapter whose whole value is being exactly right about how the book was made.
 
 ## 7. Phase 7 — launch
 - Early readers: 2–3 people; the ask, in one line: *"I don't need praise — I need to know where it's wrong, and whether the honesty holds. Blurb only if you mean it."*
