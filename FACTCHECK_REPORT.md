@@ -290,3 +290,19 @@ The two held §3D-collapse citations are fixed — bibliography-only, no prose c
 Both new DOIs match the run-4 CrossRef/ADS verification (the transcription chat-claude asked me to check is correct). **§3D-collapse is fully closed.** The only Ch. 7 item still open is `witten1983` (§3D-witten) — but that was already resolved in commit `78d0760`: confirmed as the correct primary ("Current Algebra, Baryons, and Quark Confinement," B223, 433–444, DOI `10.1016/0550-3213(83)90064-0`), DOI added, companion "Global Aspects" (422–432) noted. No action outstanding.
 
 **Builds (run-4 bib patch, live citations):** biber clean (0 warnings/errors, 0 undefined); digital `errors: 0, overfull: 0, undefined: 0, pages: 164`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 164`; flag reverted to digital and rebuilt. Page count 163 → **164** (the two new references added one bibliography page).
+
+---
+
+## §3D-geometry — the packing-not-resonance passage (2026-07-27)
+
+New Ch. 7 material ("Where the Stiffness Might Come From," v8 geometry patch) reframes quantization as tight **packing** rather than standing-wave **resonance**, and openly revises the fourth wound's resonance account (division of labour: *packing for the lumps, resonance for the likeness*). It also adds a fourth-wound footnote pointing forward to the revision, and gathers a third quantum relation, **E = ℏω/2**, from the section's one assumed fact. Four check rows opened under TODO §3D-geometry.
+
+**Confirmed on recompute (3 of 4):**
+- **`E = ℏω/2` from a fixed circulation.** κ = h/m, v = κ/2πr, ω = v/r, E = ½mv² ⟹ E/ω = mκ/4π = h/4π = **ℏ/2 exactly**; both m and r cancel. The three-relations-from-one-fact result (p = ℏ/d, L = ℏ, E = ℏω/2) is sound.
+- **"Real glasses are like that."** Fair — dense amorphous solids have a characteristic nearest-neighbour spacing (a shortest length) but no long-range orientational order, hence isotropic on average.
+- **Topological-quantization framing.** Hedged throughout ("if that is right," "I do not know whether such a thing can be had"); no overstatement.
+
+**Held then corrected (1 of 4) — the anisotropy word-form:**
+v8 worded the Michelson–Morley descendant bound as "a part in **a hundred thousand million million million**" = **10²³**, which contradicts its source `herrmann2009` (10⁻¹⁷) and the second wound's own "improved a **billionfold**" framing (~10⁻¹⁷) — a six-order-of-magnitude overstatement. Held per the STOP-and-report rule rather than silently adjusted; discrepancy reported to chat-claude (`nbj/REPORT_TO_CHATCLAUDE_geometry.md`). chat-claude reissued **v9** (`nbj/V9_NOTE.md`, `SECTION_stiffness (3).tex`): figure dropped one "million" → **10¹⁷**, plus an added clause naming it *the same* bound the second wound leaned on. v9 applied; the gate fired and did its job.
+
+**Builds (v9 applied, live citations):** all four passes exit 0; digital `errors: 0, overfull: 0, undefined: 0, pages: 166`; print (`\digitaleditionfalse`) `errors: 0, overfull: 0, pages: 166`; flag reverted to digital and rebuilt. (chat-claude validated v9 at 165 pp in its environment; my TeX Live 2024 build lands one page higher — a bibliography/footnote line crossing a page boundary, not a content difference. Flagged for the Phase 6 spine calculation.) **§3D-geometry closed.**
