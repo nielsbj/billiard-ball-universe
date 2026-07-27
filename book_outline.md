@@ -396,4 +396,7 @@ Process detail is in the commit log and FACTCHECK_REPORT.md; what follows is wha
 12. **The repo is master for every shared file.** MANUAL changes travel as section text; patches are written fresh and never derived from a predecessor.
 13. **Six entries stay uncited by decision:** searle1980, holt2012, krauss2012 (ruled uncited), baadezwicky1934 and eht2019 (superseded, retained with explanatory notes), edwards2002 (cited inside another note). A future audit finding "six uncited entries" should stop here.
 14. **The spine width comes from the final print interior only** — after draft notes are off and the index is in. No earlier page count is load-bearing.
-Remaining project work is Niels's: verify all six plates under `--strict` before print; Phase 4 read-through; Phase 5 index; Phases 6–7 production/launch.
+
+### State at close of 2026-07-27
+176 pp. Zero live VERIFY flags. 90 bib entries, 84 cited (85 lines in References, counting `edwards2002` pulled in via another entry's note). 24 figures + 2 tables, all placed; all six 3D plates carry falsifiable checks. 33 footnotes. 7 draftnotes remaining. Index infrastructure present, unpopulated (`\printindex` commented). Flags at `\draftnotestrue` / `\digitaleditiontrue`.
+Remaining, all Niels's: cold read-through; index population; verify all plates under `--strict`; KDP disclosure decisions; cover art, wrap PDF, spine from final interior, physical proof; early readers and launch.
