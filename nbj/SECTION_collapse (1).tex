@@ -1,0 +1,78 @@
+\section{The Ladder Under Load: What a Star Does When It Loses}
+
+There is a complaint I would make against this book if I were reading it rather than writing it. It has argued, for six chapters, that the world is layered without end --- and it has never once shown the tower under stress. Every picture so far has been of a universe going quietly about its business: rain falling, shadows overlapping, crowds holding their shape. A tower that only has to stand still is not much of a tower. What happens when you lean on it?
+
+The universe runs that experiment for us, on a schedule, in public. The apparatus is called a star, and the experiment begins when the star runs out of fuel.
+
+A star is a long argument between two pressures: the crowd pressing it inward, and the heat of its own burning pressing outward. When the fuel is gone the heat fails, and the star falls inward until something else stops it. Something else does. In a star of modest mass the something is the electrons: crowded past a certain closeness they refuse to be crowded further --- not because they repel one another, though they do, but because the world will not permit two of them into the same state. That refusal is stiff enough to hold the mass of the sun in a ball the size of the Earth.\footnote{Degeneracy pressure: the stiffness that arises because identical particles of certain kinds cannot occupy the same state. It is not a force between them; it is a prohibition on their arrangement. (Dictionary.)} The result is a white dwarf, and our own sun will make one.
+
+Load it further and the electrons lose. Above about one and a half times the mass of the sun --- Chandrasekhar computed the figure at nineteen, on the voyage from India to England --- the electron strut buckles, electrons are crushed into protons, and what stands up out of the wreckage is a body made almost entirely of neutrons: the mass of a sun inside the space of a city. The neutrons hold in their turn, by the same refusal plus the shove of the strong force, until something over two solar masses, where the neutron strut buckles too.
+
+And then, in the standard picture, there is nothing left. No third strut is known. The equations run on to a place where the density is infinite and the volume is nothing --- a singularity\footnote{Singularity: a point in a theory's predictions where a quantity becomes infinite. Physicists generally read such a point as the theory failing rather than as a description of something real.} --- and the physicists who use the word will tell you, without being pressed, that it is not a description of anything. It is the mark left where the theory stopped working.
+
+Look at the shape of that story, because the shape is the whole point. Each rung is the same event at a finer scale: a structure's resistance is exceeded, its constituents are crushed into a smaller arrangement, and the smaller arrangement's own stiffness takes the weight. Heat fails; electrons hold. Electrons fail; neutrons hold. That is not an analogy for this book's thesis. It is this book's thesis, observed, twice, in objects we can point a telescope at.
+
+And now notice what is doing the holding, because this is where I must be careful with my own enthusiasm. Degeneracy pressure is not a force in the ordinary sense. The standard account calls it exclusion: two identical particles of certain kinds are not permitted into the same state, and the not-permitting is stiff enough to carry a star. As physics that is not in dispute --- the white dwarfs are up there. But as an \emph{explanation} it is, in this book's terms, unfinished, because a prohibition is not a push. A rule that forbids, with nothing doing the forbidding, is the same species of object as a force that pulls across empty space with nothing in between; I have spent seven chapters declining that, and I cannot take the decline back here merely because the prohibition is holding up something I want.
+
+So let me write the debt where debts belong, in the open. If this book is right, exclusion is not a decree handed down but a congestion: something about two identical arrangements of the crowd that cannot be pressed into one region without the crowd itself objecting, and objecting harder the closer they are pressed. The materials for such an account are already lying in Chapter~6 --- matter, here, is circulation, and circulations sharing a region are not a neutral matter. I do not have the account. I want to say so in the same breath as the claim, because this ladder is the best evidence the book has, and evidence that rests on an unexplained prohibition is evidence with a hole in the middle of it.
+
+What survives is weaker and still worth having. Whatever the stiffness turns out to be made of, it evidently comes layer by layer: each rung has its own version of it, and therefore its own limit mass. This ladder of collapse is the tower seen edge-on, under load.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=stealth]
+  % the load
+  \draw[->, bbuBlue, line width=1.6pt] (0.55,7.45) -- (0.55,0.30);
+  \node[anchor=south, bbuBlue] at (0.55,7.55) {\small the load};
+  % observed rungs
+  \foreach \y/\body/\strut in {%
+    6.5/a star/heat holds,
+    4.6/a white dwarf/electron degeneracy holds,
+    2.7/a neutron star/neutron degeneracy holds} {
+    \draw[line width=0.9pt] (1.35,\y) rectangle (5.65,\y+0.8);
+    \node at (3.5,\y+0.4) {\small \body};
+    \node[anchor=west, bbuGold, align=left, text width=2.9cm] at (5.9,\y+0.4) {\small \strut};
+  }
+  % the unknown rung
+  \draw[bbuGold, dashed, line width=0.9pt] (1.35,0.8) rectangle (5.65,1.6);
+  \node[align=center, text width=3.9cm] at (3.5,1.2) {\small a body, held --- one floor down, or two};
+  \node[anchor=west, bbuGold, align=left, text width=2.9cm] at (5.9,1.2) {\small a strut we cannot name};
+  % failures
+  \foreach \y/\why in {6.1/fuel gone, 4.2/above $\approx 1.4\,M_\odot$, 2.3/above $\approx 2\,M_\odot$} {
+    \draw[->, bbuRed, line width=1.0pt] (3.5,\y+0.30) -- (3.5,\y-0.30);
+    \node[anchor=west, bbuRed] at (3.72,\y) {\small \why};
+  }
+  \node at (3.5,0.42) {$\vdots$};
+  \node[anchor=north, align=center, text width=6.8cm] at (3.5,0.15)
+    {\small how much further, we cannot see from here};
+\end{tikzpicture}
+\caption{The ladder under load. Each rung is the same event at a finer scale: a structure's resistance is exceeded, its constituents are crushed into a smaller arrangement, and that arrangement's own stiffness takes the weight. The first three rungs are observed --- our sun will make the second, and we have photographed the third. The standard picture has no fourth rung and puts a singularity there instead: everything, in no volume at all, which is a floor by another name. The tower's fourth rung is an ordinary thing in extraordinary circumstances --- a body, held up by the layer below.}
+\label{fig:collapseladder}
+\end{figure}
+
+Which makes the top of the ladder the interesting place. The standard picture, past the neutron rung, offers a completed infinity: everything, in no volume at all. I have spent this book declining exactly that kind of object --- not because infinities are distasteful, but because \emph{and here it stops, and do not ask what it is made of} is the move Chapter~1 called cheating when it was an edge, and Chapter~3 called arbitrary when it was a floor. A singularity is a floor. It is the most extreme floor anyone has ever proposed.
+
+The tower does not need it. Past the neutron rung there is another rung: the layer below, taking the load on its own strut. The matter is not destroyed and does not become infinite. It is crushed into an arrangement our layer has no words for, and held up by a stiffness our layer cannot measure.
+
+Here I want to be careful, because there is an overclaim available and I do not want it. That the tower is endless is a claim about the \emph{world}; how far a particular star falls is a claim about an \emph{event}. The two use the same word and are not the same claim, and this book asserts the first. The tower has no floor.
+
+The second rests on something I believe and cannot prove, so let me put it forward as what it is. I think that what happens in a layer is local to that layer and its neighbours --- that influence passes between adjacent floors and not across the tower, in just the way this book insists that influence passes between adjacent bodies and not across empty space. It is the same rule turned on its side: no action at a distance, and none at a depth either. If that is right, a collapse is not a plunge down an open shaft. It is a sequence of separate events, each one a floor being overwhelmed and handing the load to the floor beneath, and there is no reason for such a sequence to run forever and every reason to expect it to stop at the first floor stiff enough to take the weight. A black hole would then be a body that has fallen a rung, or a few, and is sitting there, held --- exactly as a neutron star sits held one rung below a white dwarf. It has a state. It has structure. It is simply not our layer's structure.
+
+I believe that firmly, and I want to be exact about the standing of it: I cannot prove it, and I am not claiming the alternative impossible. I made that mistake once already, in Chapter~3, where I went in to prove that no bottom was \emph{possible} and had the impossibility taken off me by an opponent who was right to take it. A conjecture held firmly and an impossibility established are different objects, and confusing them is the one error this book has already paid for once.
+
+And from the outside the difference does not show. A body that has descended one floor and a body descending without end present the same face: dark, dense, and censored. The horizon does not report the number. So the modest claim is the one the evidence carries --- some rungs below ours, and we cannot say how many --- and anyone who tells you the number is telling you more than they have. That includes the singularity, which is the claim that the number is infinite.
+
+Which suggests the name is wrong. \emph{Black hole} was coined inside a picture in which there is nothing at the centre but a point of infinite density --- a hole, in the plain sense that there is nothing there. In this book's picture there is a great deal there: a very dense body, made of the layer below, doing what dense bodies do. Not a hole. A star a floor or two down, wearing a horizon.
+
+And the horizon itself gets demoted, by machinery this chapter has already bought and paid for. The second wound gave every layer its own light and its own speed limit; the fifth wound spent that coin, buying channels below ours that outrun our light. Apply it here and the famous sentence changes meaning. \emph{Nothing escapes} means nothing escapes \emph{at our layer's speed} --- and the layer below is not bound by our layer's speed. Its light is faster. A horizon is a local ordinance, exactly as $c$ is: black at our layer, and not necessarily black at the next.
+
+That has a consequence I did not expect when I began this section. What falls in does not reach a bottom and does not vanish. It goes down a layer. Whatever the standard picture means when it worries that information is destroyed at a singularity, the tower's version is milder and stranger: nothing is destroyed. It is demoted --- kept, in a currency our instruments do not read.
+
+Now the bill, because a section that only collects is a section this book does not print.
+
+The first item is serious, and it is old. This chapter's gravity works by shadow: a body pushes because it blocks. But a body can only block what reaches it, and once a body blocks \emph{everything} --- once it is opaque to the flux --- then packing more mass behind the shadow adds nothing to the shadow. The push saturates. Ordinary matter is nearly transparent to the crowd, which is exactly why gravity tracks mass so faithfully in the ordinary world; but a body collapsed a floor down is the obvious candidate for opacity, and if it is opaque its push should scale with the size of its shadow rather than with the mass inside it. Nature has been unkind about where it put the test. Black holes are precisely where we now measure gravity best: stars whipping around the dark mass at our galaxy's centre, the ringed shadow the Event Horizon Telescope photographed, the waveforms of inspiralling pairs matching general relativity to many decimal places. If the shadow saturates, that agreement is a coincidence, and I do not believe in coincidences of that size. Whether this deserves a sixth entry in the table above, or is better read as the sharpest possible form of the first wound's demand that the crowd be very nearly transparent, I have gone back and forth. What I will not do is leave it unstated.
+
+The second item is lighter, and I state it because a reader who knows the field will otherwise state it for me. Black holes are credited with an entropy, and it is famously proportional to the \emph{area} of the horizon rather than to the volume inside. The entropy section of this chapter counted arrangements in volumes, layer by layer. Why the counting should change shape at a horizon, the tower does not tell me, and I have no account of it.
+
+So the section closes as the good ones do, with a gain and a bill on the same page. The gain is real: the tower's least testable claim --- structure below structure, without a bottom in sight --- turns out to be something the sky demonstrates twice over in objects we have photographed, and the one place where the standard picture openly admits an absurdity is the very place the tower does not need one. The bill is real too: the same collapsed bodies that make the case are where the mechanism is likeliest to fail. That is the trade this chapter keeps making, and I would rather own both halves than either.
+

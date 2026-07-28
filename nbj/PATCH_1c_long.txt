@@ -1,0 +1,15 @@
+PATCH 1c, long replacements. Exact-string; each occurs once.
+
+=== A ===
+OLD:
+and a fifth --- the deepest --- where a theorem is aimed at this book's first sentence, and the book's earlier purchases turn out, on the word of the theorem's own author, to be the recommended remedy.
+
+NEW:
+a fifth --- the deepest --- where a theorem is aimed at this book's first sentence, and the book's earlier purchases turn out, on the word of the theorem's own author, to be the recommended remedy; and a sixth that nobody handed me, which I found while writing this chapter and which is the least settled thing in the book.
+
+=== B ===
+OLD:
+Fifth: derive no-signalling --- turn the toy's newest conspiracy into a theorem, as quantum mechanics long ago did for its own. Any one of the five,
+
+NEW:
+Fifth: derive no-signalling --- turn the toy's newest conspiracy into a theorem, as quantum mechanics long ago did for its own. Sixth: fix the massion's stopping chance per unit of matter, and find the density at which the shadow saturates --- showing either that saturation lies far beyond collapsed matter, which saves the proportionality to mass and costs the mechanical account of the area law, or that it does not, in which case the gravity of black holes must be shown to track their mass and not their silhouette. Any one of the six,
