@@ -121,6 +121,7 @@
 % ---------------------------
 % Title page
 % ---------------------------
+\frontmatter
 \begin{titlepage}
 \centering
 \vspace*{1.6in}
@@ -133,7 +134,35 @@
 {\small Draft 1 --- \today\par}
 \vspace*{0.5in}
 \end{titlepage}
-\frontmatter
+% ---- imprint (verso of the title page) ----
+\thispagestyle{empty}
+\null\vfill
+{\small\noindent
+Copyright \textcopyright{} 2026 by Niels Bonde Jensen. All rights reserved.
+
+\noindent No part of this book may be reproduced in any form without written
+permission from the author, except for brief quotations in reviews or discussion.
+
+\noindent First edition, 2026.
+
+\noindent ISBN: [paperback ISBN --- assigned at publication]
+
+\noindent Interior figures and illustrations: see \emph{A Note on How This Book Was Made}.
+
+\noindent Manuscript, sources, and the full correction record:
+[repository URL --- public at publication].
+
+\noindent Typeset by the author in Palatino.
+\par}
+\cleardoublepage
+% ---- dedication ----
+\thispagestyle{empty}
+\null\vspace*{0.28\textheight}
+\begin{center}
+{\large\itshape For my brother, who was not comforted.}
+\end{center}
+\vfill
+\cleardoublepage
 \tableofcontents
 
 \addchap{How to Read This Book}
