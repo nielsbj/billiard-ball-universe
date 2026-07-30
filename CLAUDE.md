@@ -5,22 +5,29 @@ A philosophical trade book (6×9 in, ~93 pp typeset): an infinitely layered, mec
 universe, argued on grounds of minimal arbitrariness. Complete illustrated Draft 1;
 current work is **revision**, not drafting.
 
+## Repository layout (post REPO-2 restructure, 2026-07-30 — REPO_SPEC §3)
+`manuscript/` (tex, ref.bib, build.bat, built PDF) · `figures/` (16 plate PDFs +
+`programs/`+`harness/` declared snapshot of proofviz + PROVENANCE) · `art/` (chapter
+plates + generation provenance) · `cover/` (cover_wrap.tex, cover_art_build.tex, tiles,
+PROVENANCE, BOOK_COVER) · `record/` (correction record: patches, reports, gates) ·
+`memos/` (RM-1 + successors) · `process/` (MANUAL, FILE_OWNERSHIP, book_outline, TODOs) ·
+README/LICENSE/ERRATA at root. `nbj/` is the private drop-zone (gitignored, never public).
+Remote: private `github.com/nielsbj/billiard-ball-universe` (working dir still named code-claude).
+
 ## Read these first (in order)
-1. `book_outline.md` — chapter-by-chapter status, figure plan (what's drawn, what remains),
-   illustration plan for AI-generated art, revision to-do notes.
-2. `billiard_ball_primer.md` — the philosophical position in the author's voice.
-   Internalize it before touching prose: what the book claims (less arbitrary, one mystery)
-   and what it does NOT claim (explaining why anything exists).
-3. `chapter*_draft.md` + `coda_draft.md` — the markdown sources the .tex was generated from.
-   The `.tex` is now the living master; the .md files are reference.
+1. `process/book_outline.md` — chapter-by-chapter status, figure plan, illustration plan, to-dos.
+2. The philosophical position in the author's voice: the book claims *less arbitrary, one mystery*
+   and does NOT claim to explain why anything exists. (The primer file is retired; the position
+   lives in the manuscript itself and `process/`.)
+3. `manuscript/billiard_ball_universe.tex` is the living master; any `*_draft.md` are reference only.
 
 ## Build
-- Windows: `build.bat` (pdflatex → biber → pdflatex ×2, then greps for Overfull).
-- Manual: `pdflatex -interaction=nonstopmode billiard_ball_universe.tex`,
-  `biber billiard_ball_universe`, then pdflatex twice more.
+- **From `manuscript/`.** Manual: `pdflatex -interaction=nonstopmode billiard_ball_universe.tex`,
+  `biber billiard_ball_universe`, then pdflatex twice more. `manuscript/build.bat` wraps this
+  (cd's to its own dir). `\graphicspath{{../}}` lets `art/…` and `figures/…` resolve from root.
+- Cover builds separately from `cover/`: `pdflatex cover_wrap.tex` (×2); art via `cover_art_build.tex`.
 - **Zero-overfull policy**: a build with any `Overfull \hbox` is not done.
-- Bibliography is biblatex+biber (`ref.bib`). Currently `\nocite{*}` (draft: list all);
-  revision task = replace with real `\cite{...}` calls at the invoking passages.
+- Bibliography is biblatex+biber (`manuscript/ref.bib`); real `\cite{...}` calls (no `\nocite{*}`).
 
 ## LaTeX conventions (match, don't reinvent)
 - KOMA `scrbook`, 11 pt `mathpazo` (Palatino), 6×9 in, `parskip=half-`,
