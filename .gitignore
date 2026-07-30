@@ -107,3 +107,11 @@ venv/
 # settings.local.json is per-developer local permissions — never committed.
 .claude/settings.local.json
 # NOTE: CLAUDE.md is intentionally NOT ignored — it is committed.
+
+# ---- Drop-zone ----
+# nbj/ is Niels's private drop-zone for chat-claude outputs (duplicates, handoffs, scratch).
+# Never public: authoritative patches/reports are curated into record/ instead.
+nbj/
+
+# Beta reader draft (emailed deliverable, regenerable) — not versioned
+bbu_reader_draft*.pdf
