@@ -1,0 +1,21 @@
+LicenseRef-BBU-AllRightsReserved
+
+The Billiard Ball Universe — All Rights Reserved (published for inspection)
+
+Copyright (c) 2026 Niels Bonde Jensen. All rights reserved.
+
+This material is published in this repository for transparency, verification,
+and correction — so the book's claims and the way it was made can be inspected.
+Publishing it here does not license it.
+
+You may read it, quote from it within fair use, and open issues reporting errors.
+You may NOT reproduce, redistribute, republish, or create derivative works from
+it, in whole or in part, without the written permission of the copyright holder.
+Publication in this repository places nothing in the public domain and grants no
+license to reuse.
+
+This license also covers third-party material reproduced here for inspection
+only — notably the figure-verification harness in `figures/harness/`, reproduced
+from the proofviz tool (which is under development and not released). No promise
+is made about that tool's future publication, and no right to use it is granted
+by its appearance here.

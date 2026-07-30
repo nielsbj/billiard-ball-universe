@@ -1,4 +1,6 @@
 @echo off
+REM SPDX-FileCopyrightText: 2026 Niels Bonde Jensen
+REM SPDX-License-Identifier: MIT
 cd /d "%~dp0"
 echo BUILD-STAMP %date% %time%
 REM Full build cycle for The Billiard Ball Universe (pdflatex + biber)

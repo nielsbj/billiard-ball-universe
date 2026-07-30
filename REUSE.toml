@@ -1,0 +1,36 @@
+version = 1
+
+# Licensing map (REUSE 3.0). The rule: ALL RIGHTS RESERVED by default; MIT is the
+# marked exception. Later entries take precedence over earlier ones.
+# Human-readable summary + rationale: LICENSE.md. Full texts: LICENSES/.
+
+# ---- Default: everything is all-rights-reserved (book text, art, PDFs, prose) ----
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "2026 Niels Bonde Jensen"
+SPDX-License-Identifier = "LicenseRef-BBU-AllRightsReserved"
+
+# ---- MIT exceptions: code and method (the reusable parts) ----
+[[annotations]]
+path = [
+  "figures/programs/**",
+  "manuscript/build.bat",
+  "cover/cover_wrap.tex",
+  "cover/cover_art_build.tex",
+  "cover/cover_tiles.spec.json",
+  "cover/PROVENANCE.md",
+  "figures/PROVENANCE.md",
+  "art/art_specs/**",
+  "art/generated/**",
+  "art/provenance/**",
+]
+SPDX-FileCopyrightText = "2026 Niels Bonde Jensen"
+SPDX-License-Identifier = "MIT"
+
+# ---- Reproduced for inspection only: the figure-check harness ----
+# From proofviz (pinned ec9db61). NOT MIT — an MIT grant is irreversible and proofviz
+# is unreleased. Published so the book's figure verification is inspectable, not reusable.
+[[annotations]]
+path = "figures/harness/**"
+SPDX-FileCopyrightText = "2026 Niels Bonde Jensen; reproduced from proofviz (ec9db61) for inspection only"
+SPDX-License-Identifier = "LicenseRef-BBU-AllRightsReserved"
