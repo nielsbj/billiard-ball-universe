@@ -9,11 +9,15 @@
 _m*.tex
 _m*.log
 gen_candidates*.py
-candidate_*.png
+*candidate*.png
+*candidate*.json
 recursive_ball_*.png
+round2_candidate_*.png
+ball.png
 ball_sq.png
 crowd.png
 crowd2.png
+thumb_front.png
 contact_sheet*.png
 tiles_contact.png
 art_squint*.png
