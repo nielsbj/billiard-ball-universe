@@ -115,3 +115,6 @@ nbj/
 
 # Beta reader draft (emailed deliverable, regenerable) — not versioned
 bbu_reader_draft*.pdf
+
+# Built book PDF — not committed except tagged releases (see process/PDF_POLICY.md)
+manuscript/billiard_ball_universe.pdf
