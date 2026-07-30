@@ -1,0 +1,76 @@
+% cover_wrap.tex --- KDP full-wrap builder for The Billiard Ball Universe (Concept A: The Engraved Plate)
+% ONE number to update at the end: \PAGECOUNT. Flip \ARTFINALtrue when cover_recursive_ball.png exists.
+\documentclass{article}
+\usepackage{calc}
+\newcommand\PAGECOUNT{182}                                   % <-- FINAL page count goes here, last
+\newlength\spinew \setlength\spinew{0.002252in * \real{\PAGECOUNT}}  % KDP white paper
+\newlength\bleed  \setlength\bleed{0.125in}
+\newlength\wrapw  \setlength\wrapw{12in + \spinew + 2\bleed}
+\newlength\wraph  \setlength\wraph{9in + 2\bleed}
+\usepackage[paperwidth=\wrapw,paperheight=\wraph,margin=0pt]{geometry}
+\usepackage[T1]{fontenc}
+\IfFileExists{tgpagella.sty}{\usepackage{tgpagella}}{\usepackage{mathpazo}}
+\usepackage{microtype,tikz,graphicx,xcolor}
+\definecolor{ivory}{HTML}{F4EFE4}\definecolor{ink}{HTML}{1A1A1A}\definecolor{oxblood}{HTML}{6B2E2E}
+\newif\ifARTFINAL \ARTFINALtrue
+\newif\ifOXRULE   \OXRULEtrue
+\newcommand\ARTW{3.7in}   % art width; SQUARE source per brief (portrait source would overflow the front)
+\pagestyle{empty}
+\begin{document}\color{ink}
+\begin{tikzpicture}[remember picture,overlay,shift={(current page.south west)},x=1in,y=1in]
+  \fill[ivory] (0,0) rectangle (\wrapw,\wraph);
+  % panel trim coordinates (inches): back [0.125,6.125], spine, front [6.125+s, 12.125+s]
+  \pgfmathsetmacro\s{\spinew/1in}
+  \pgfmathsetmacro\fL{6.125+\s}      % front trim left
+  \pgfmathsetmacro\fC{\fL+3.0}       % front centerline
+  % ---- double frames, inset 0.28in from trim ----
+  \foreach \a/\b in {0.6/1.6}{}
+  \draw[ink,line width=1.6pt] (0.125+0.28,0.125+0.28) rectangle (6.125-0.28,9.125-0.28);
+  \draw[ink,line width=0.6pt] (0.125+0.28+0.055,0.125+0.28+0.055) rectangle (6.125-0.28-0.055,9.125-0.28-0.055);
+  \draw[ink,line width=1.6pt] (\fL+0.28,0.125+0.28) rectangle (\fL+6-0.28,9.125-0.28);
+  \draw[ink,line width=0.6pt] (\fL+0.28+0.055,0.125+0.28+0.055) rectangle (\fL+6-0.28-0.055,9.125-0.28-0.055);
+  % ================= FRONT =================
+  % Title is a three-line stack: the long line "BILLIARD BALL" is 473pt at 60pt --- far wider
+  % than the ~393pt inner panel --- so it is set at 46pt (362pt) and "THE" rides as a kicker.
+  \node[anchor=north] at (\fC,9.125-0.58) {\fontsize{13}{15}\selectfont\textls[180]{NO MAGIC ANYWHERE}};
+  \node[anchor=north] at (\fC,9.125-1.05) {\fontsize{26}{28}\bfseries\selectfont\textls[120]{THE}};
+  \node[anchor=north] at (\fC,9.125-1.55) {\fontsize{46}{48}\bfseries\selectfont BILLIARD BALL};
+  \node[anchor=north] at (\fC,9.125-2.25) {\fontsize{46}{48}\bfseries\selectfont UNIVERSE};
+  \ifOXRULE \draw[oxblood,line width=1.1pt] (\fC-1.55,9.125-3.05) -- (\fC+1.55,9.125-3.05);
+  \else     \draw[ink,line width=0.6pt]     (\fC-1.55,9.125-3.05) -- (\fC+1.55,9.125-3.05); \fi
+  % art band, centered; square \ARTW x \ARTW
+  \pgfmathsetmacro\artw{3.7}
+  \ifARTFINAL
+    \node[anchor=north] at (\fC,9.125-3.28) {\includegraphics[width=\ARTW]{cover_recursive_ball}};
+  \else
+    \draw[ink,line width=0.6pt] (\fC-\artw/2,9.125-3.28-\artw) rectangle (\fC+\artw/2,9.125-3.28);
+    \draw[ink,line width=0.4pt] (\fC-\artw/2,9.125-3.28-\artw) -- (\fC+\artw/2,9.125-3.28);
+    \draw[ink,line width=0.4pt] (\fC-\artw/2,9.125-3.28) -- (\fC+\artw/2,9.125-3.28-\artw);
+    \node at (\fC,9.125-3.28-\artw/2) {\small cover\_recursive\_ball --- placeholder (square, per brief)};
+  \fi
+  \node[anchor=north] at (\fC,9.125-7.32) {\fontsize{22}{24}\itshape\selectfont A World With No Bottom};
+  \node[anchor=south] at (\fC,0.125+0.60) {\fontsize{19}{21}\selectfont\textls[120]{NIELS BONDE JENSEN}};
+  % ================= SPINE =================
+  \node[rotate=-90,anchor=center] at (6.125+\s/2,9.125-2.55) {\fontsize{11.5}{13}\selectfont\textls[60]{THE BILLIARD BALL UNIVERSE}};
+  \node[rotate=-90,anchor=center] at (6.125+\s/2,0.125+2.05) {\fontsize{11.5}{13}\selectfont\textls[60]{NIELS BONDE JENSEN}};
+  \fill[ink] (6.125+\s/2,4.625) circle (0.055); \draw[ivory,line width=0.5pt] (6.125+\s/2,4.625)++(-0.02,0.03) arc (130:310:0.036);
+  % ================= BACK =================
+  \node[anchor=north west,text width=4.6in,align=left] at (0.125+0.62,9.125-0.72) {%
+    {\fontsize{15}{18}\bfseries\selectfont A universe with no bottom --- argued by an author who shows you where he loses.\par}\vspace{9pt}
+    {\fontsize{10.5}{14.5}\selectfont
+    As a child, Niels Bonde Jensen decided that two things were cheating: forces that pull across empty space, and borders that end the questions. This book is the adult case for the universe the child demanded --- infinitely layered, everything pushing, everything made of something smaller, without end.\par\vspace{5.5pt}
+    It is not a book that claims victory. Its central argument was fought out, round by round, against an artificial mind armed with the strongest objections in the written tradition --- and the concessions, in both directions, are kept on the page. Its physics chapter grades its own wounds: the three-hundred-year-old pincer of drag and heat; the gravitational waves of LIGO; Bell's theorem, aimed at the book's first sentence by name. Where the toy universe breaks, the breaks are shown --- in a table, which the book then reads backward, as a specification of the layer below.\par\vspace{5.5pt}
+    What survives is smaller and harder than what the author walked in with: not proof, but a universe with exactly one mystery --- why there is anything at all --- and no magic anywhere else. Along the way: why an infinite universe contains other yous; why that is comforting rather than crushing; why your responsibility is the local ratio of joy to suffering; and why, globally, nothing is special --- while locally, you are.\par}\vspace{8pt}
+    \begin{center}\begin{minipage}{3.7in}\centering
+      \rule{3.1in}{0.5pt}\\[5pt]
+      {\fontsize{13}{16}\itshape\selectfont ``Globally nothing is special. Locally, you are. Live there.''}\\[5pt]
+      \rule{3.1in}{0.5pt}
+    \end{minipage}\end{center}\vspace{8pt}
+    % Bottom two lines constrained to 2.9in so they clear the KDP barcode reserve
+    % (box left edge x=3.775in; text left edge x=0.745in -> 0.745+2.9=3.645 < 3.775).
+    \noindent\parbox{2.9in}{%
+      {\fontsize{9}{12}\selectfont For physicists, and for the interested layman: footnotes decode every term, a dictionary and a primer wait in the appendices, and nothing essential hides outside the plain prose.\par}\vspace{6pt}
+      {\fontsize{9}{12}\itshape\selectfont Niels Bonde Jensen is a Danish software engineer. He has believed the universe has no bottom since before he could say why.\par}}};
+  \fill[white] (6.125-0.35-2.0,0.125+0.35) rectangle (6.125-0.35,0.125+0.35+1.2); % KDP barcode zone
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,31 @@
+{
+  "project": "billiard-cover-tiles",
+  "defaults": {
+    "model": "gpt-image-1.5",
+    "size": "1024x1024",
+    "quality": "high",
+    "background": "transparent"
+  },
+  "items": [
+    {
+      "id": "engraved_ball",
+      "n": 2,
+      "prompt": "Black-and-white copperplate steel engraving, fine parallel and cross hatching only, pure black ink, high contrast, no gray wash, no gradients, no text, no lettering, transparent background. A single perfect plain billiard ball, viewed straight on, filling the frame: a flawless smooth sphere with no number, no stripe, no surface texture, no craters. Its roundness is modeled entirely by fine curved hatching lines that follow the sphere's latitude and longitude, densest cross-hatching at the lower right limb, opening to a single crisp unhatched specular highlight in the upper left --- the glassy sheen of a polished billiard ball. Light from the upper left. Nothing else in the image: no shadow, no table, no background, no frame."
+    },
+    {
+      "id": "crowd_of_balls",
+      "n": 2,
+      "prompt": "Black-and-white copperplate steel engraving, fine parallel and cross hatching only, pure black ink, high contrast, no gray wash, no gradients, no text, no lettering, transparent background. A close-packed crowd of small identical smooth spheres, all exactly the same size, arranged in loose hexagonal packing that fills the entire frame edge to edge, roughly eight to nine spheres across the width --- no more. Every sphere is a miniature plain billiard ball shaded with the same fine curved hatching, lit from the upper left with a small white highlight, and there are clear white gaps visible between neighboring spheres so each ball reads as a distinct object, never merging into gray texture. Slight natural irregularity in the packing, like cannonballs heaped in a Victorian arsenal engraving. No frame, no border, nothing but the spheres."
+    },
+    {
+      "id": "orbit_of_balls",
+      "n": 2,
+      "prompt": "Black-and-white copperplate steel engraving, fine parallel and cross hatching only, pure black ink, high contrast, no gray wash, no gradients, no text, no lettering, transparent background. A miniature two-body system built of billiard balls, in the manner of a planetary diagram from a Victorian astronomy monograph: one medium plain sphere just left of center, finely hatched with an upper-left highlight, and one much smaller identical sphere sitting on a thin single-ruled elliptical orbit line that sweeps around the central sphere, the ellipse drawn as one fine engraver's line passing behind the central sphere. Vast empty space around both bodies --- the composition is mostly blank. Both spheres are the same kind of object, differing only in size. No frame, no border, no stars, nothing else."
+    },
+    {
+      "id": "vortex_of_balls",
+      "n": 2,
+      "prompt": "Black-and-white copperplate steel engraving, fine parallel and cross hatching only, pure black ink, high contrast, no gray wash, no gradients, no text, no lettering, transparent background. A whirlpool built entirely of tiny identical spheres: two or three distinct spiral arms curling inward, each arm a flowing chain of small plain billiard balls, the balls slightly shrinking and crowding closer together as the arms wind toward the center, with wide clear white gaps between the arms so the spiral gesture reads instantly as rotation. The very center is an open white eye with no balls in it. Every sphere is finely hatched with the same upper-left light and tiny white highlight. The whole vortex reads like an engraved maelstrom from a nineteenth-century scientific plate, but made of beads. No frame, no border, no motion-blur lines, nothing but the spheres."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+# Cover working dir: keep sources + final art + tiles; ignore build artifacts and scratch.
+
+# LaTeX build artifacts + regenerable proofs
+*.aux
+*.log
+*.pdf
+
+# Scouting throwaways (kept locally, not versioned)
+_m*.tex
+_m*.log
+gen_candidates*.py
+candidate_*.png
+recursive_ball_*.png
+ball_sq.png
+crowd.png
+crowd2.png
+contact_sheet*.png
+tiles_contact.png
+art_squint*.png
+art_thumb*.png
+art_on_ivory*.png
+art_on_white*.png
+wrap_full.png
+wrap_300.png
+front_panel.png
+on_ivory.png
+on_white.png
+proof_hybrid.png
+iv_*.png
+bc*.png
+back*.png
+z_*.png
+
+# Abandoned identical-spheres approach + intermediate specs
+elements/
+cover_elements.spec.json
+cover_recursive_ball.spec.json
+
+# Per-run delivery manifests (provenance is embedded in the PNGs + the committed spec)
+tiles/delivery_*.json
+generated/
