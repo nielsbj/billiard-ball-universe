@@ -12,12 +12,14 @@ inspectable inside the book repo.
   each a `.sketch.js`. These emit the plates in `figures/*.pdf` and carry the caption's
   geometric assertions as in-code checks.
 - **`harness/`** — the core of the strict checker: `figure-lint.js`, `geometry-check.js`,
-  `interpret-runner.js`, `lint-proof.mjs`. **Not self-contained here:** they import
-  `camera.js`, `sketch.js`, `interpret.js`, `geometry.js`, `figure-shapes.js`, and
-  `stage-framing.js` from proofviz `src/`. To *run* `--strict` you need the upstream proofviz
-  environment (Node + those modules); the snapshot exists so the checking logic can be *read*
-  in-repo, not so it runs turnkey. [RULING PENDING: vendor the remaining `src/` modules for a
-  runnable snapshot, or keep the pointer-to-upstream form — Niels's call at flip.]
+  `interpret-runner.js`, `lint-proof.mjs`. **Reproduced from proofviz (pinned at `ec9db61`)
+  solely so the verification of the book's claims is inspectable in-repo** — not so it runs
+  turnkey. It is not self-contained: it imports `camera.js`, `sketch.js`, `interpret.js`,
+  `geometry.js`, `figure-shapes.js`, and `stage-framing.js`, which are **the engine of proofviz —
+  a separate tool, under development, and deliberately not reproduced here.** Those modules stay
+  in proofviz; this repo makes no claim on them and no promise about proofviz's future
+  publication. The harness is here to be *read* (inspectable, not turnkey); to *run* `--strict`
+  you use the proofviz studio at the pinned commit. This is the settled form for this edition.
 
 ## Regenerate (under --strict, from the proofviz studio)
 Run the strict lint/geometry pass over a program and export the plate; a build with any failed

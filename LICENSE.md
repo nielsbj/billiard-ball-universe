@@ -14,9 +14,13 @@ permission. Publishing the source here does not place the book in the public dom
 license to republish it.
 
 ## Code — MIT License
-Applies to: `figures/programs/` and `figures/harness/` (the figure programs and their strict
-self-checks), `cover/cover_wrap.tex` and `cover/cover_art_build.tex` (the cover builders), and
-`manuscript/build.bat` (the build script). The self-checking-figures method is meant to be reused.
+Applies to: `figures/programs/` (the seven plate programs — book-authored figure sources),
+`cover/cover_wrap.tex` and `cover/cover_art_build.tex` (the cover builders), and
+`manuscript/build.bat` (the build script). The plate-program method is meant to be reused.
+
+(`cover/cover_wrap.tex` and `cover/cover_art_build.tex` carry a carve-out: the *code* is MIT; the
+cover copy embedded in them — headline, blurb, pull quote, reader line, biography — is book text,
+all rights reserved.)
 
 > MIT License — Copyright (c) 2026 Niels Bonde Jensen
 >
@@ -35,6 +39,15 @@ self-checks), `cover/cover_wrap.tex` and `cover/cover_art_build.tex` (the cover 
 > DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 > OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+## Reproduced for inspection — `LicenseRef-BBU-AllRightsReserved`
+Applies to: `figures/harness/` (the strict self-check code — `figure-lint.js`,
+`geometry-check.js`, `interpret-runner.js`, `lint-proof.mjs`). This code is **reproduced from
+proofviz** (pinned at `ec9db61`) **solely so the verification of the book's figures is inspectable
+here**. proofviz is a separate tool, under development and **not released**; because an MIT grant
+is irreversible, this code is published for **inspection and verification only — all rights
+reserved, no license to reuse, redistribute, or derive**. No promise is made about proofviz's
+future publication.
+
 ## Prompts and provenance
-The AI-image prompts and `PROVENANCE.md` files (in `art/` and `cover/`) are method, not book —
-open under the same MIT terms as the code.
+The AI-image prompts and `PROVENANCE.md` files (in `art/`, `cover/`, and `figures/`) are method,
+not book — open under the same MIT terms as the code.
