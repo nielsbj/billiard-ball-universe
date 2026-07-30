@@ -34,3 +34,9 @@ SPDX-License-Identifier = "MIT"
 path = "figures/harness/**"
 SPDX-FileCopyrightText = "2026 Niels Bonde Jensen; reproduced from proofviz (ec9db61) for inspection only"
 SPDX-License-Identifier = "LicenseRef-BBU-AllRightsReserved"
+
+# ---- Config / meta: CC0-1.0 (public-domain dedication), per convention ----
+[[annotations]]
+path = [".gitignore", ".gitattributes", "cover/.gitignore", "REUSE.toml"]
+SPDX-FileCopyrightText = "2026 Niels Bonde Jensen"
+SPDX-License-Identifier = "CC0-1.0"

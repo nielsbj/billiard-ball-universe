@@ -15,6 +15,7 @@ license is declared in `REUSE.toml`, with full texts in `LICENSES/`. Run `reuse 
 | Book text & bibliography (`manuscript/`), all art & plates (`art/`, `figures/*.pdf`, `cover/*.png`), the correction record (`record/`), process & memos (`process/`, `memos/`) | **`LicenseRef-BBU-AllRightsReserved`** — read & quote (fair use) & report errors; **no** reproduction/redistribution/derivatives without permission |
 | Figure programs (`figures/programs/`), build & cover-builder code (`manuscript/build.bat`, `cover/*.tex`), generation manifests/prompts/PROVENANCE (`cover/cover_tiles.spec.json`, `*/PROVENANCE.md`, `art/art_specs/`, `art/generated/`, `art/provenance/`) | **`MIT`** — the reusable method |
 | Figure-check harness (`figures/harness/`) | **`LicenseRef-BBU-AllRightsReserved`** — reproduced from proofviz (unreleased) for **inspection only**, not reuse |
+| Config & meta (`.gitignore`, `.gitattributes`, `cover/.gitignore`, `REUSE.toml`) | **`CC0-1.0`** — public-domain dedication, per convention |
 
 **Carve-out** (in the file headers of `cover/cover_wrap.tex` and `cover/cover_art_build.tex`):
 the *code* is MIT; the cover copy embedded in it — headline, blurb, pull quote, reader line,
