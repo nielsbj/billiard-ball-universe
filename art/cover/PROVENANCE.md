@@ -18,6 +18,14 @@ Model **gpt-image-1.5**, 1024², transparent, high quality, via the sanctioned g
 originals archived to `_asset_archive/graphics`. Spec + exact prompts: `cover_tiles.spec.json`.
 Masters in `tiles/`; chosen variants (v1) staged as `cover_ball/crowd/orbit/vortex.png`.
 
+Regenerated with (dry-run first for the cost estimate, then without `--dry-run` on approval):
+```
+python get-graphic.py --spec cover_tiles.spec.json --out tiles --caller-id "code-claude-billiard-cover"
+```
+The generator handles the OpenAI key itself, embeds a provenance chunk in every PNG (verify with
+`get-graphic.py --verify <file>`), and copies an original to the shared archive. This file plus
+`cover_tiles.spec.json` are a self-contained record of the cover's own image provenance.
+
 | id | role | prompt summary |
 |----|------|----------------|
 | `engraved_ball` | mother ball; reused scaled for the ellipsis dots | plain billiard ball, steel-engraving hatching, glassy upper-left highlight, no number/stripe |
