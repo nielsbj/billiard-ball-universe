@@ -13,5 +13,8 @@ Archive (OTS-4): the Claude account-export zip is stamped too; its .ots is here,
   c224a4ab0f276c18704da11d17b0c35088f471ab06ac59e6939cdc1cc81efd71   archive/data-93119b11-...-batch-0000.zip
 
 Proofs in this directory (*.ots) contain hashes and Merkle paths only — public-safe.
-Status: STAMPED 2026-07-30 (calendars aggregated). UPGRADE PENDING (OTS-2): run `ots upgrade` after Bitcoin
-confirmation (~hours→a day) and record the block height here. Verify with the ots client / an explorer.
+Status: STAMPED 2026-07-30 (calendars aggregated). UPGRADED 2026-07-31 — OTS-2 complete: Bitcoin attestations
+embedded in all four proofs. Blocks 960284 / 960285 / 960302 / 960337 (one per calendar; earliest 960284,
+mined 2026-07-30 17:23:26 UTC). Cross-check: block 960284 merkle root
+5a53663606d29a437f3a23b1d6df29261a49aa067f8b354dc4e6388ab8d49c89 per blockstream.info matches the proof.
+Verify anytime with the ots client / an explorer.
