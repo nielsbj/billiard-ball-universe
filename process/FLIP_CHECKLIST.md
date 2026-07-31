@@ -17,6 +17,6 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       sets the final `\PAGECOUNT`.
 - [ ] **Release PDF** — `git add -f manuscript/billiard_ball_universe.pdf` in that release commit
       (see `PDF_POLICY.md`).
-- [ ] **OpenTimestamps Phase 2 (OTS-3)** — anchor the release: `timestamps/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*
+- [ ] **OpenTimestamps Phase 2 (OTS-3)** — anchor the release in a new batch folder per the `timestamps/README.md` convention: `timestamps/YYYY-MM-DD-first-edition-1.0/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, record block heights in `timestamps/README.md` (anchors stay frozen), commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*
 - [ ] **Tag** the release commit `first-edition-1.0`; `README.md` names it "the book you are holding."
 - [ ] **Flip repository visibility to public.** Nothing else should need touching.

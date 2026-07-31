@@ -1,0 +1,23 @@
+ANCHOR — The Billiard Ball Universe: A World With No Bottom
+Batch 2026-07-31: the conversation archives. OpenTimestamps (Bitcoin) evidence of existence at a date.
+
+date:      2026-07-31
+git HEAD:   0f38bdd (repo state at batch start; the draft itself is anchored by batch 2026-07-30-draft)
+
+The ChatGPT account-export zip (exported 2026-07-30 16:22), counterpart to the Claude export in the
+2026-07-30-draft batch. The zip stays outside git (it contains unrelated private chats); only this proof
+of its hash is public-safe.
+  9f35cd53635ef7e9e3761d7172f95e6b12a80d319a61f7a3a86841118284885c   ed720115906fa0c1b5dec22f73bb6123519463199df7235bd4aa6acc6f580d32-2026-07-30-16-22-31-098905ac383b4364bcc3cfd2f3ffd1bb.zip
+
+The five verbatim book-conversation extracts (two Claude chats, three ChatGPT threads), stamped
+pre-scrub: any future redaction (CONV-1) can be proven honest against these dated originals, and
+provenance of the book chats can be shown without ever revealing the full export zips. The files
+stay in archive/ (outside git).
+  f123d874000b41cfca731ca6ce2f527445522f4001e08af66dae07cc0d68fabc   2026-06-25_billard_ball.md
+  ea38c26e532b997e913fa2c6f5ccc42281ac42a0184e889ff087683ffa615e2f   2026-07-29_corpuscle_velocity_and_gravitational_heating_paradox.md
+  733b6660c535176f8134cbdb502f60f69529fbc00d0b1e45753d2af138d1def4   chatgpt_electron-spin-explained.md
+  748937edbbe477d1b7a57280a1f01b632391ab8b93c599744f260ecac180c055   chatgpt_poincare-heat-and-drag.md
+  f242927354fb447a7f367e03ebce3d922eef33825179963cb798cf3d577377c4   chatgpt_understanding-4-9-bound.md
+
+Anchors are frozen at stamping; status (block heights, upgrade state) lives in timestamps/README.md.
+Proofs (*.ots) contain hashes and Merkle paths only — public-safe.
