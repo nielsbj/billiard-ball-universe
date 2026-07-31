@@ -6,7 +6,7 @@ git HEAD:   f79ba9b229be6538f2b284bf8cda740cbf579c45   (commits to the entire re
 
 sha256:
   f988aed5bf74d5e10fe627bab043cb9df061e7b4e3ab5d3b6fa5bc09716119f9   manuscript/billiard_ball_universe.tex
-  25bf5f23f4116751150ef5531cb0b1a44b4d6e6bf1b6b3aa00d6fb6eb5735e02   manuscript/billiard_ball_universe.pdf   (draft edition, 184 pp; gitignored — its .ots is committed here)
+  25bf5f23f4116751150ef5531cb0b1a44b4d6e6bf1b6b3aa00d6fb6eb5735e02   manuscript/billiard_ball_universe.pdf   (draft edition, 184 pp; byte-exact copy committed here as billiard_ball_universe.pdf, recovered 2026-07-31 from the external-disk mirror — verify in place with `ots verify`)
   4062b5f1b8c15464e4c7c9f8743eec52cec6afc58be9ee385e73bc0746752100   cover/cover_wrap.tex
 
 Archive (OTS-4): the Claude account-export zip is stamped too; its .ots is here, the zip stays in archive/ (outside git).
