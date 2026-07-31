@@ -11,6 +11,9 @@ sha256:
 
 Archive (OTS-4): the Claude account-export zip is stamped too; its .ots is here, the zip stays in archive/ (outside git).
   c224a4ab0f276c18704da11d17b0c35088f471ab06ac59e6939cdc1cc81efd71   archive/data-93119b11-...-batch-0000.zip
+Archive (CONV-0c), added 2026-07-31: the ChatGPT account-export zip (exported 2026-07-30 16:22), stamped from the
+external-disk mirror; its .ots is here, the zip stays outside git. STAMPED 2026-07-31, upgrade pending (~a day).
+  9f35cd53635ef7e9e3761d7172f95e6b12a80d319a61f7a3a86841118284885c   ed720115...-098905ac383b4364bcc3cfd2f3ffd1bb.zip
 
 Proofs in this directory (*.ots) contain hashes and Merkle paths only — public-safe.
 Status: STAMPED 2026-07-30 (calendars aggregated). UPGRADED 2026-07-31 — OTS-2 complete: Bitcoin attestations
