@@ -20,6 +20,8 @@ inspectable inside the book repo.
   in proofviz; this repo makes no claim on them and no promise about proofviz's future
   publication. The harness is here to be *read* (inspectable, not turnkey); to *run* `--strict`
   you use the proofviz studio at the pinned commit. This is the settled form for this edition.
+  Proofviz itself is a tool for making and developing mathematical visualizations of proofs; the
+  strict verification mode used for this book is one small, early part of it.
 
 ## Regenerate (under --strict, from the proofviz studio)
 Run the strict lint/geometry pass over a program and export the plate; a build with any failed
