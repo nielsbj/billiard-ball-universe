@@ -39,7 +39,7 @@ As a child, Niels Bonde Jensen decided that two things were cheating: forces tha
 
 It is not a book that claims victory. Its central argument was fought out, round by round, against an artificial mind armed with the strongest objections in the written tradition — and the concessions, in both directions, are kept on the page. Its physics chapter grades its own wounds: the three-hundred-year-old pincer of drag and heat; the gravitational waves of LIGO; Bell's theorem, aimed at the book's first sentence by name. Where the toy universe breaks, the breaks are shown — in a table.
 
-What survives is smaller and harder than what the author walked in with: not proof, but a universe with exactly one mystery — why there is anything at all — and no magic anywhere else. Along the way: why an infinite universe contains other yous; why that is comforting rather than crushing; why your responsibility is the local ratio of joy to suffering; and why, globally, nothing is special — while locally, you are.
+What survives is smaller and harder than what the author walked in with: not proof, but a universe with exactly one mystery — why there is anything at all — and no magic anywhere else. Along the way: why an infinite universe contains other yous; why that is comforting rather than crushing; why your responsibility is the local surplus of joy over suffering; and why, globally, nothing is special — while locally, you are.
 
 **Reader line (small, beneath blurb):**
 > For physicists, and for the interested layman: footnotes decode every term, a dictionary and a primer wait in the appendices, and nothing essential hides outside the plain prose.

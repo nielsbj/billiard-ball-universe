@@ -74,7 +74,7 @@ Remote: private `github.com/nielsbj/billiard-ball-universe` (working dir still n
 - Never let the book claim more than "less arbitrary, one mystery." Claims of proof
   of B (no bottom layer) were retracted in Ch. 3 and must stay retracted.
 - Preserve the author's key phrases verbatim where they appear: "it is clearly cheating",
-  "the local ratio", "locally special, not globally special", "no magic anywhere",
+  "the local surplus", "locally special, not globally special", "no magic anywhere",
   "the point is: it has to make sense".
 
 ## Git
