@@ -163,7 +163,7 @@ The strongest objections, faced in their strongest form:
 - ★ Double-exponent scale bar (why 10^10^118 shrugs off units).
 
 ### Chapter 5 — How to Live in a World Without Bottom
-- ★★ **The local ratio** — a vast dim field of points; one small region highlighted bright with an arrow: "the region you actually touch." Pairs the Wall with its resolution.
+- ★★ **The local surplus** — a vast dim field of points; one small region highlighted bright with an arrow: "the region you actually touch." Pairs the Wall with its resolution. **[unbuilt; superseded by the shipped art program]** — Ch. 5 ships no diagram at all; the chapter opener `ch5_local_garden` already renders this image (see the illustration plan below), so this entry was never separately built.
 - ★ The equivalence class — many identical figures at branch points, all turning the same way ("you are writing the rule").
 
 ### Chapter 6 — A Sketch of the Mechanism
@@ -202,7 +202,7 @@ The strongest objections, faced in their strongest form:
 2. **Ch. 2 The Old Tradition** -- Lucretius' spear-thrower at the edge of the world: a robed figure hurling a spear through a torn boundary of stars. (Also usable full-page in-text.)
 3. **Ch. 3 The Grounding Argument** -- a man at a small table debating an enormous library that leans over him; the shelves vaguely suggest a face. (Kai as the library.)
 4. **Ch. 4 The Infinite Copies** -- the same figure repeated into the distance, each holding the same open book, receding like reflections without mirrors.
-5. **Ch. 5 How to Live** -- a vast dark field of faint points; one small region glowing warmly; a tiny figure tending it like a garden. (The local ratio.)
+5. **Ch. 5 How to Live** -- a vast dark field of faint points; one small region glowing warmly; a tiny figure tending it like a garden. (The local surplus.)
 6. **Ch. 6 The Mechanism** -- two air bubbles rising side by side in dark water, drifting together; or two sailing ships in a heavy swell, dangerously close. (Both images are in the prose.)
 7. **Ch. 7 Where It Breaks** -- a beautiful clockwork orrery with one visible crack through its frame, still running.
 8. **Coda** -- a single door standing open in an endless plain, light coming through; nothing else.
