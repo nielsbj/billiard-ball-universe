@@ -64,6 +64,11 @@ Remote: private `github.com/nielsbj/billiard-ball-universe` (working dir still n
 6. **Author scenes**: Ch. 1 wants rough ages/details for the two childhood memories;
    Ch. 5 wants a real moment the copies idea comforted him (marked in draftnotes).
 
+## Patch workflow
+- **Every inline patch you apply gets mirrored into `record/` as a dated file at apply time, by you,
+  from the paste you received** — transport stays inline, but the applier holds the verbatim text and
+  is therefore the natural scribe, so the correction record stays complete.
+
 ## Voice rules (the most important section)
 - The author is Danish, writing in English. Keep sentences direct and declarative;
   the book's voice is personal conviction, not academic hedging — but it is
