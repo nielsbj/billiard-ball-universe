@@ -148,41 +148,56 @@ The strongest objections, faced in their strongest form:
 *(Fig. 6.1 shadow push: DONE. Same TikZ house style for all. Priority: ★★★ essential, ★★ valuable, ★ optional.)*
 
 ### Chapter 2 — The Old Tradition
-- ★★ **Timeline of the lineage** — Lucretius → Poggio 1417 → Bruno 1600 → Descartes → Newton 1687 → Leibniz–Clarke 1715 → Fatio 1690 / Le Sage 1782 → Maxwell/Kelvin/Poincaré → Ørsted 1820 → today. One horizontal band; makes the "genealogy of attempts and failures" visible at a glance.
-- ★ Lucretius' spear at the edge of the world (illustrative; the prose already carries it).
+- ✔ **Timeline of the lineage** (DONE, \label{fig:lineage}) — Lucretius → Poggio 1417 → Bruno 1600 → Descartes → Newton 1687 → Leibniz–Clarke 1715 → Fatio 1690 / Le Sage 1782 → Maxwell/Kelvin/Poincaré → Ørsted 1820 → today. One horizontal band; makes the "genealogy of attempts and failures" visible at a glance.
+- ✔ **Lucretius' spear at the edge of the world** — built as engraving rather than TikZ: the full-page plate `art/plate_spear_edge` stands beside the Lucretius section. **[superseded by the shipped art program]**
 
 ### Chapter 3 — The Grounding Argument
 - ✔ **The pick-two triangle** (DONE, Fig. after Round Five, \label{fig:picktwo}) — {consistent, grounded, floorless} at the corners, each *pair* achievable along an edge, the center marked empty.
-- ★★★ **Induction with and without a base case** — two vertical chains: (left) upward arrows standing on a solid base block, every link cashed; (right) downward arrows with no bottom, every link deferred. Decides Round One visually.
-- ★★ **The settlement scoreboard** — three columns (brute floor / infinite regress / agnostic) scored on local grounding, global grounding, arbitrariness. Already suggested in the chapter's craft notes; table or figure.
-- ★ Münchhausen trilemma as a three-way fork (axiom / circle / regress).
+- ✔ **Induction with and without a base case** (DONE, \label{fig:induction}) — two vertical chains: (left) upward arrows standing on a solid base block, every link cashed; (right) downward arrows with no bottom, every link deferred. Decides Round One visually.
+- ✔ **The settlement scoreboard** (DONE, as booktabs table, \label{tab:settlement}) — three columns (brute floor / infinite regress / agnostic) scored on local grounding, global grounding, arbitrariness. Already suggested in the chapter's craft notes; table or figure.
+- **Münchhausen trilemma as a three-way fork** (axiom / circle / regress). **[unbuilt; dropped]**
 
 ### Chapter 4 — The Infinite Copies
 - ✔ **Layers inside layers** (DONE, \label{fig:layers}) — three-frame zoom: body → crowd → world inside, with the upward dashed hint ("one mote in a body, one layer up"). Cover candidate.
-- ★★ **The finite deck** — an endless row of universe-sized tiles, two distant tiles highlighted identical. Makes Tegmark's argument visible in one strip.
-- ★ Double-exponent scale bar (why 10^10^118 shrugs off units).
+- ✔ **The finite deck** (DONE, \label{fig:finitedeck}) — an endless row of universe-sized tiles, two distant tiles highlighted identical. Makes Tegmark's argument visible in one strip.
+- **Double-exponent scale bar** (why 10^10^118 shrugs off units). **[unbuilt; dropped]**
 
 ### Chapter 5 — How to Live in a World Without Bottom
-- ★★ **The local surplus** — a vast dim field of points; one small region highlighted bright with an arrow: "the region you actually touch." Pairs the Wall with its resolution. **[unbuilt; superseded by the shipped art program]** — Ch. 5 ships no diagram at all; the chapter opener `ch5_local_garden` already renders this image (see the illustration plan below), so this entry was never separately built.
-- ★ The equivalence class — many identical figures at branch points, all turning the same way ("you are writing the rule").
+- **The local surplus** — a vast dim field of points; one small region highlighted bright with an arrow: "the region you actually touch." Pairs the Wall with its resolution. **[unbuilt; superseded by the shipped art program]** — Ch. 5 ships no diagram at all; the chapter opener `ch5_local_garden` already renders this image (see the illustration plan below), so this entry was never separately built.
+- **The equivalence class** — many identical figures at branch points, all turning the same way ("you are writing the rule"). **[unbuilt; dropped]**
 
 ### Chapter 6 — A Sketch of the Mechanism
-- ✔ **Fig 6.1 Shadow push** (done).
+- ✔ **Fig 6.1 Shadow push** (DONE, \label{fig:shadowpush}).
 - ✔ **Inverse square from shadow geometry** (DONE, \label{fig:inversesquare}) — body at d and 2d, blocked sky-arc quartering.
 - ✔ **Charge as circulation** (DONE, \label{fig:circulation}) — triptych: same-sense repel / opposite-sense attract / orthogonal miss.
-- ★★ **Space is the actors below** — a patch of "empty" layer-N space with a magnifying inset revealing the layer-N+1 crowd; caption: every layer's void is the layer below. The centerpiece idea; could alternatively live in Ch. 1 or 4.
-- ★★ **Frozen and gas** — left: interlocked counter-rotating lattice (frozen); right: free wandering assemblies (gas); below: two frozen bodies in gas with the lower-pressure corridor between them (shadow push reappearing at a new scale).
-- ★★ **Light as a traveling pair** — orbiting companion tracing a wave along the direction of motion; second copy with orbital plane perpendicular (polarization built in).
-- ★ Annihilation: head-on counter-circulations unwinding into loose motes.
-- ★ String harmonics vs. crowd resonances (why things are alike) — modes of a string beside the discrete "catalogue."
+- ✔ **Space is the actors below** (DONE, \label{fig:actorsbelow}) — a patch of "empty" layer-N space with a magnifying inset revealing the layer-N+1 crowd; caption: every layer's void is the layer below. The centerpiece idea; could alternatively live in Ch. 1 or 4.
+- ✔ **Frozen and gas** (DONE, \label{fig:frozengas}) — left: interlocked counter-rotating lattice (frozen); right: free wandering assemblies (gas); below: two frozen bodies in gas with the lower-pressure corridor between them (shadow push reappearing at a new scale).
+- ✔ **Light as a traveling pair** (DONE, \label{fig:lightpair}) — orbiting companion tracing a wave along the direction of motion; second copy with orbital plane perpendicular (polarization built in).
+- **Annihilation**: head-on counter-circulations unwinding into loose motes. **[unbuilt; dropped]**
+- **String harmonics vs. crowd resonances** (why things are alike) — modes of a string beside the discrete "catalogue." **[unbuilt; dropped]**
 
 ### Chapter 7 — Where It Breaks
 - ✔ **The pincer** (DONE, \label{fig:pincer}) — drag falling, heating rising, the two safe zones never overlapping.
-- ★★ **Transverse vs. longitudinal** — what the crowd must and must not carry: the two allowed gravitational-wave polarizations vs. the forbidden sound-like mode (the specification nature hands the layer below).
-- ★ The Michelson–Morley null (interferometer sketch; optional, well-worn image).
+- ✔ **Transverse vs. longitudinal** (DONE, \label{fig:wavemodes}) — what the crowd must and must not carry: the two allowed gravitational-wave polarizations vs. the forbidden sound-like mode (the specification nature hands the layer below).
+- **The Michelson–Morley null** (interferometer sketch; optional, well-worn image). **[unbuilt; dropped]**
+
+### Built beyond this plan (census 2026-08-02)
+*Nine figures and one table ship that this plan never proposed — they arrived with the Ch. 6–7
+expansions, after the plan above was written. Listed so the census closes: every `fig:` and `tab:`
+label in the manuscript now appears somewhere on this page.*
+- ✔ **The rain and the song** (`\label{fig:rainandsong}`, Ch. 6) — the same crowd doing its two things: gravity as its streaming, light as its transverse song.
+- ✔ **The cascade escape** (`\label{fig:cascade}`, Ch. 7) — momentum bought in the slow layer, energy sold into the fast one.
+- ✔ **What the wave does** (`\label{fig:ringlattice}`, Ch. 7) — a lattice of rings of free test particles, each column a later beat of the same pulse.
+- ✔ **The two songs have different shapes** (`\label{fig:dipolequadrupole}`, Ch. 7) — dipole swing vs. quadrupole kneading.
+- ✔ **The Bell experiment** (`\label{fig:bellsetup}`, Ch. 7) — two particles, two freely-chosen settings, two distant stations.
+- ✔ **The two regimes** (`\label{fig:saturation}`, Ch. 7) — the sixth wound: same body, same rain, opaque vs. transparent.
+- ✔ **Entropy, layer-indexed** (`\label{fig:grainladder}`, Ch. 7) — what layer *N* can say about a region, and what the layer below can.
+- ✔ **The ladder under load** (`\label{fig:collapseladder}`, Ch. 7) — each rung the same collapse event at a finer scale.
+- ✔ **Why two like circulations are a bad bargain** (`\label{fig:circulationpair}`, Ch. 7) — energy as the square of circulation.
+- ✔ **The state of the wounds** (`\label{tab:wounds}`, Ch. 7) — booktabs table, not a figure: each wound against its price, with the hidden frame and the downward remainder recurring.
 
 ### Cover candidate
-- The Ch. 4 layers-inside-layers zoom, or a single billiard ball whose surface, magnified, is made of billiard balls.
+- ✔ **BUILT** as the recursive billiard ball, `art/cover_recursive_ball.png`, carried onto the wrap by `cover/cover_wrap.tex`. (The Ch. 4 layers-zoom was the alternative and was not used.)
 
 ---
 
@@ -198,19 +213,19 @@ The strongest objections, faced in their strongest form:
 - Prompt sketch: "A single large sphere; a magnified circular inset of its surface reveals it is composed of thousands of smaller identical spheres; a second inset magnifies one of those, revealing the same again; recursive, three levels visible; engraving style, dramatic lighting, no text."
 
 ### Chapter openers (small vignette above each chapter title)
-1. **Ch. 1 No Magic Anywhere** -- a child at a window at night, looking at the moon; on the sill, two billiard balls touching. (The two convictions in one image.)
-2. **Ch. 2 The Old Tradition** -- Lucretius' spear-thrower at the edge of the world: a robed figure hurling a spear through a torn boundary of stars. (Also usable full-page in-text.)
-3. **Ch. 3 The Grounding Argument** -- a man at a small table debating an enormous library that leans over him; the shelves vaguely suggest a face. (Kai as the library.)
-4. **Ch. 4 The Infinite Copies** -- the same figure repeated into the distance, each holding the same open book, receding like reflections without mirrors.
-5. **Ch. 5 How to Live** -- a vast dark field of faint points; one small region glowing warmly; a tiny figure tending it like a garden. (The local surplus.)
-6. **Ch. 6 The Mechanism** -- two air bubbles rising side by side in dark water, drifting together; or two sailing ships in a heavy swell, dangerously close. (Both images are in the prose.)
-7. **Ch. 7 Where It Breaks** -- a beautiful clockwork orrery with one visible crack through its frame, still running.
-8. **Coda** -- a single door standing open in an endless plain, light coming through; nothing else.
+1. ✔ **Ch. 1 No Magic Anywhere** `ch1_child_window` -- a child at a window at night, looking at the moon; on the sill, two billiard balls touching. (The two convictions in one image.)
+2. ✔ **Ch. 2 The Old Tradition** `ch2_spear_edge` -- Lucretius' spear-thrower at the edge of the world: a robed figure hurling a spear through a torn boundary of stars. (Also usable full-page in-text.)
+3. ✔ **Ch. 3 The Grounding Argument** `ch3_library_debate` -- a man at a small table debating an enormous library that leans over him; the shelves vaguely suggest a face. (Kai as the library.)
+4. ✔ **Ch. 4 The Infinite Copies** `ch4_repeated_figure` -- the same figure repeated into the distance, each holding the same open book, receding like reflections without mirrors.
+5. ✔ **Ch. 5 How to Live** `ch5_local_garden` -- a vast dark field of faint points; one small region glowing warmly; a tiny figure tending it like a garden. (The local surplus.)
+6. ✔ **Ch. 6 The Mechanism** `ch6_bubbles` -- two air bubbles rising side by side in dark water, drifting together; or two sailing ships in a heavy swell, dangerously close. (Both images are in the prose.)
+7. ✔ **Ch. 7 Where It Breaks** `ch7_cracked_orrery` -- a beautiful clockwork orrery with one visible crack through its frame, still running.
+8. ✔ **Coda** `coda_open_door` -- a single door standing open in an endless plain, light coming through; nothing else.
 
 ### Full-page in-text candidates (max 2-3, or the book gets glossy)
-- The spear at the edge (Ch. 2, beside the Lucretius section) -- the book's oldest argument deserves its classic image.
-- The two ships in the swell (Ch. 6, beside the shadow-push prose) -- pairs with Fig. shadowpush: the diagram gives the mechanism, the engraving gives the feeling.
-- The recursive billiard ball (interior reprise of the cover, perhaps facing the Coda).
+- ✔ **BUILT** — the spear at the edge, `art/plate_spear_edge`, full page beside the Lucretius section.
+- ✔ **BUILT** — the two ships in the swell, `art/plate_two_ships`, full page beside the shadow-push prose, facing `fig:shadowpush` as intended.
+- The recursive billiard ball (interior reprise of the cover, facing the Coda). **[pending Niels's ruling; preview in nbj/]** — live on `process/TODO-NIELS.md` §2; tiles exist, so it is near-free to compose if ruled yes. Must be decided before the page count locks.
 
 ### Do NOT generate (keep as TikZ)
 All argumentative diagrams: anything with labeled arrows, geometry that must be exact, or claims riding on proportions (shadow cones, the triangle, the pincer curves, circulation panels, zoom frames). Generators approximate; arguments may not.
