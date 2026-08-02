@@ -52,6 +52,16 @@ _minted*/
 # billiard_ball_universe.pdf
 # AI-generated illustration masters live in art/ and ARE committed (they are
 # sources, not build artifacts) -- do not add art/ here.
+#
+# One exception: art/cover/ is the SUPERSEDED cover working directory from before the
+# REPO-2 restructure, not a master. The live cover is cover/, and art/cover/'s copies are
+# stale -- its cover_wrap.tex still carries the retired "local ratio", its
+# cover_art_build.tex predates both the SPDX headers and the zoomcone refactor (4d7f7be),
+# and its PROVENANCE.md lacks the regeneration section. Committing it would duplicate the
+# cover and write the retired phrase into public history. Kept on disk (and on the
+# external mirror) as generation history -- candidate rounds, contact sheets, the
+# gen_candidates scripts -- which its own nested .gitignore was already curating.
+art/cover/
 
 # ---- Environment / secrets ----
 # If any tooling talks to an LLM endpoint, keys live here — never commit them.
