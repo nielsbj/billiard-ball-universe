@@ -1,27 +1,6 @@
 # TODO-NIELS.md
 *Your ledger — every remaining item on the project that only you can move, in dependency order. Started 2026-07-30. Safe to commit under process/ (it is repo-destined) on one absolute condition, stated here so the file itself enforces it: **no beta-reader names ever appear in this file** — names live only in archive/, outside git. Refer to readers as R1, R2… here.*
 
-## Machine note — laptop stint ended 2026-08-03, back to the desktop
-*Delete this section once you are settled on the desktop; it is transient, not ledger.*
-- **`git pull` first.** The laptop pushed nine commits (`686501f`…`cc3c819`): both OTS batches
-  upgraded, the proofviz sentence, the beta-send ledger, the local-surplus patch and its record
-  mirror, the illustration-plan reconciliation.
-- **Expect the same stale-duplicate pile at the desktop's repo root.** A sync restore had put the
-  whole pre-REPO-2 flat layout back at the root (`TODO.md`, `billiard_ball_universe.tex`, `ref.bib`,
-  `build.bat` and ~20 more, plus Dropbox-style `TODO (32).md` conflict copies). All were verified
-  older than the tracked copies under `manuscript/`, `process/`, `record/`, and deleted on the
-  laptop — but they were untracked, so **git did not carry that deletion across**. Tells: the root
-  `tex` lacks `\graphicspath{{../}}`, the root `build.bat` lacks the makeindex step. The tracked
-  subdirectory copies are authoritative.
-- **`art/cover/` now sits in `.gitignore`** (`cc3c819`) — it is the superseded pre-REPO-2 cover
-  working dir, stale enough that its `cover_wrap.tex` still says "local ratio". Its going quiet in
-  `git status` on the desktop is expected, not a loss.
-- **Laptop-only, will not be on the desktop:** the staged reader-draft PDF on the laptop Desktop.
-  Its source is `bbu_reader_draft_2026-07.pdf` on the external mirror — but see the supersession
-  warning in §1 before sending anything.
-- **Nothing is pending on OpenTimestamps.** Both batches are upgraded and verified; the next stamp
-  is OTS-3 at release.
-
 ## 0. Done — recorded because ledgers should show movement
 - [x] Brother's yes — 2026-07-30. The dedication stands. Gate one cleared.
 - [x] Claude account export archived; both chats extracted; Dropbox copy confirmed.
@@ -44,25 +23,30 @@
       rest of the ledger needs no edit). A weekday deadline reads as a real one.
 - [ ] Fill the reader note: **[N] = 180** (confirmed 2026-08-01 against the reader-draft PDF),
       **[date] = 20 August 2026**. The note itself lives outside this repo.
-- [ ] Send the **re-cut** reader draft. **Verified 2026-08-01 — the check is done, do not redo it:**
-      the file is `bbu_reader_draft_2026-07.pdf` on the external mirror (sha256 `edca984a…`),
-      180 pp, fan2023 note on **p. 172** reading "one part in a million million", and clean of
-      draft apparatus. One email per reader: note + PDF.
-      **⚠ SUPERSEDED 2026-08-02 by the local-surplus patch — read this before sending.**
-      The staged PDF predates commit `7ccb004`: it says **"local ratio" six times and "local
-      surplus" none**, so its Ch. 5 carries the retired keyword, closing line included. The
-      current text is the reverse. Pagination is unaffected — both are 180 pp, so `[N] = 180`
-      and every page reference still hold. Decide:
-      - **If not yet sent** (the send-date line below is still blank): re-cut and send the new
-        one. Recipe, since the reader draft is not a repo state: set `\draftnotesfalse` (line
-        111), change the title line `{\small Draft 1 --- \today\par}` (line 135) to the reader
-        wording — the July cut read *"Reader's draft --- July 2026 --- please do not share"*,
-        so update the month — build, then **revert both edits**. Verify: 180 pp, 0 overfull,
-        `local surplus` present and `local ratio` absent.
-      - **If already sent**: do not re-send. Tell R1 in one line that Ch. 5's keyword changed
-        from *ratio* to *surplus* and why, or simply keep it in mind when his notes arrive —
-        if he independently reports that a ratio rewards the small numb life, he has found
-        what the patch already fixed, which is worth knowing either way.
+- [x] **The re-cut is built and staged — done 2026-08-03 at the desktop. The supersession is
+      closed; nothing about it is left to decide.** The file to attach is
+      **`bbu_reader_draft_2026-08.pdf` at the repo root** (sha256 `3182e939…c7323e1c`,
+      14,130,409 bytes; gitignored by `bbu_reader_draft*.pdf`, as an emailed deliverable should
+      be). Cut by the recipe below, and both tex edits were reverted afterwards — the tex is
+      byte-identical to `1db6b8d` and the working PDF is back to the 184 pp draft-apparatus build.
+      Verified against the July cut, not merely in isolation:
+      - 180 pp · **0 overfull** · no `Craft notes` anywhere (draft apparatus off)
+      - `local surplus` ×6, `local ratio` ×0 — exactly the mirror of July's ×0/×6
+      - full-text diff July→August is **only** the title line and the Ch. 5 surplus rewrite
+      - **pagination identical page-for-page** at every landmark (all four Part pages, both
+        Ch. 5 section heads, Coda, Epilogue) and the fan2023 "one part in a million million"
+        note sits on the same page in both. So `[N] = 180` and every page reference hold.
+      - *Ledger correction, harmless:* that note is on **PDF p. 108**, not p. 172 — the older
+        entry's page number was wrong, but it was wrong about July too, so nothing downstream
+        moves.
+      Recipe, recorded because the reader draft is not a repo state and this will be needed
+      again: set `\draftnotesfalse` (line 111), change the title line `{\small Draft 1 ---
+      \today\par}` (line 135) to *"Reader's draft --- <month> 2026 --- please do not share"*,
+      run `manuscript/build.bat`, then **revert both edits and rebuild**.
+- [ ] Send it. One email per reader: note + `bbu_reader_draft_2026-08.pdf`.
+      The superseded `bbu_reader_draft_2026-07.pdf` is still sitting beside it at the repo root —
+      **delete it or move it aside before you attach anything**, since the two names differ by one
+      character and only one of them says *surplus*.
 - [ ] Mark the send date here: ______
 
 ## 2. During the beta window — sized exactly for these three weeks
