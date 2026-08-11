@@ -113,7 +113,7 @@ Five new bib entries, **all shipped VERIFY-flagged and the section deliberately 
 
 ### 3D-sixthwound. Ch. 7 "Sixth Wound: The Saturated Shadow" — REVISED for the v4 scaling correction and the v5 clarity rewrite [CC]
 Quantitative claims in the Sixth Wound section — no new bib entries (textbook/standard), but the numbers must clear the fact-check gate. If any disagrees with the source, STOP and report; do not edit prose. **The old M² / "hundreds of thousands" rows are void — v4 replaced that argument (silhouette ∝ M^(2/3), not M²).** **v5 moved all entropy material OUT of the wound (it is now purely about gravity/transparency); the area law is dissolved in the collapse section, so the M²-vs-shell comparison no longer appears anywhere — the last two rows below cover its replacement.**
-- **Mean density inside a Schwarzschild horizon falls as M⁻².** Check the three figures as stated: ~nuclear density at 10 M☉; near that of a heavy oil at Sgr A* (~10⁶ kg/m³); thinner than room air at 10¹⁰ M☉ (~0.18 kg/m³). Arithmetic is elementary — recompute rather than look up (mean ρ = M / (4/3 π r_s³), r_s = 2GM/c² ⇒ ρ ∝ M⁻²). [CC]
+- **Mean density inside a Schwarzschild horizon falls as M⁻².** Check the three figures as stated: ~nuclear density at 10 M☉; near that of a heavy oil at Sgr A* (~10⁶ kg/m³) **[ROW CORRECTED 2026-08-11: ~10⁶ kg/m³ is a tonne per litre — a thousand times water — NOT heavy oil (~0.9×10³ kg/m³); this ledger row carried the unit slip and the prose inherited it — found by the 2026-08-10 hostile read (Tier 1 #1), prose fixed at commit fa023d8 (E12)]**; thinner than room air at 10¹⁰ M☉ (~0.18 kg/m³). Arithmetic is elementary — recompute rather than look up (mean ρ = M / (4/3 π r_s³), r_s = 2GM/c² ⇒ ρ ∝ M⁻²). [CC]
 - **The 75× and 1000× figures.** Cube root of (4.3×10⁵) ≈ 75; cube root of 10⁹ = 1000. Confirm Sgr A* ≈ 4.3×10⁶ M☉ (GRAVITY/Genzel–Ghez; Nobel 2020) and that "the whole observed range of holes" spanning ~10 to ~10¹⁰ M☉ is fair. [CC]
 - **Binary-pulsar transparency bound.** Claim: pulsar timing verifies gravity tracking mass at neutron-star densities, ~4×10¹⁷ kg/m³. **Where:** Hulse–Taylor and the double pulsar J0737−3039; Kramer et al. 2021 (Phys. Rev. X 11, 041050) is the current precision reference. Check the density figure and that the inference (gravity tracks mass at that density) is fairly stated — **if the framing overreaches, STOP and report.** [CC]
 - **White dwarfs shrink as they gain mass.** Standard R ∝ M^(−1/3) for non-relativistic degenerate matter; confirm the statement as phrased. [CC]
@@ -122,6 +122,46 @@ Quantitative claims in the Sixth Wound section — no new bib entries (textbook/
 - **Gibbs paradox as characterised** (collapse section, area-law dissolution). "The entropy of mixing appears or vanishes according to whether the experimenter can tell the gases apart." This wording already exists in the entropy section, cited to `jaynes1965`; confirm the new collapse-section restatement doesn't overreach beyond it. [CC]
 - **"Not everyone reads black-hole entropy this way"** (collapse section). The book acknowledges programmes that read the area law as a census of real interior states. Confirm this is a fair characterisation (string-theoretic microstate counting — Strominger–Vafa 1996 — is the obvious referent). If a citation would help, propose one and report; **do not add one unprompted.** [CC]
 - **Neutrino cross-section analogy** (v5.2 Sixth Wound). The book: a small massion stopping-chance is "of the same family as the one that lets a neutrino cross a great thickness of lead without noticing it is there, and nobody calls the neutrino tuned." Confirm the analogy is fairly stated — neutrinos have famously tiny cross-sections (the textbook figure is ~a light-year of lead for even-odds interaction); "a great thickness of lead" is qualitatively safe. Standard particle physics; no citation needed unless one is wanted. [CC]
+> **RESULT (2026-08-11) — CLOSED (formal execution; the section had no RESULT block).** The 2026-08-10
+> hostile read discovered this section was never formally executed — and that its first row carried the
+> very error ("heavy oil" at ~10⁶ kg/m³) that then survived into the prose *because* the ledger was the
+> fact-check's source (see the row correction above; prose fixed at fa023d8, mirror
+> `record/PROSE_PATCH_hostile_read_tier1_2026-08-10.md` E12). All rows now executed against the
+> **post-Tier-1 prose** (manuscript lines ~1411–1454, 1613–1621):
+> - **M⁻² densities** — recomputed: ρ̄ = 1.84×10¹⁹·(M☉/M)² kg/m³ → 1.84×10¹⁷ (10 M☉, "roughly nuclear" ✓);
+>   9.96×10⁵ (4.3×10⁶ M☉ — "about a tonne per litre --- a thousand times water", the corrected Tier-1
+>   wording ✓); 0.184 kg/m³ (10¹⁰ M☉, thinner than room air at 1.2 kg/m³ ✓). All three anchors as now
+>   phrased are right.
+> - **75× and 1000×** — recomputed: (4.3×10⁵)^⅓ = 75.5 ✓; (10⁹)^⅓ = 1000 ✓. Sgr A* mass confirmed
+>   4.297×10⁶ M☉ (GRAVITY collaboration; "4.3 million suns" exact to its own precision). Range "~10 to
+>   ~10¹⁰ M☉" for observed holes is fair (stellar holes from ~3–5 M☉; largest quasar holes ~10¹⁰⁺).
+> - **Binary-pulsar transparency bound** — the density figure checks: NS mean density (1.4 M☉, 12 km)
+>   recomputes to 3.9×10¹⁷ kg/m³ = "something like four times ten to the seventeenth" ✓; calling it "the
+>   density of an atomic nucleus" is fair (nuclear saturation 2.7×10¹⁷, same order). **Framing sub-item
+>   FIRED — already reported:** the hostile read (Tier 2, L1427/L1435, found independently by both Ch. 7
+>   readers) flags the pulsar/EHT mass-consistency support as circular (all masses in it are measured
+>   gravitationally); the valid form is inspiral waveforms (gravity vs. inertia) + PSR J0337+1715. This
+>   is exactly this row's "if the framing overreaches, STOP and report" case; it is reported in
+>   `record/HOSTILE_PHYSICS_READ_2026-08-10.md` and rides with the pending Tier 2/3 rulings — not
+>   re-reported here, not edited.
+> - **White dwarfs shrink with mass** — standard R ∝ M^(−1/3) for non-relativistic degeneracy; the prose
+>   ("white dwarfs actually shrink as they gain mass") is correct as phrased ✓.
+> - **Earth thickness** — row text is stale ("eight thousand miles"): RULE-1 D3 converted the prose to
+>   "nearly thirteen thousand kilometres thick"; mean diameter 12,742 km ✓.
+> - **EHT row** — superseded: the sentence now cites `eht2022` (Sgr A*), placed and closed under
+>   §3D-collapse.
+> - **Gibbs restatement (collapse section, L1617)** — the wording "appears or vanishes according to
+>   whether the experimenter can tell the gases apart" is an exact echo of the entropy section's
+>   jaynes1965-cited statement (L1496); it does not overreach beyond it ✓. (The separate Tier 2 question
+>   of whether "open sore for a century and a half" itself overstates is queued for rulings.)
+> - **"Not everyone reads black-hole entropy this way" (L1619)** — fair: "serious programmes that read it
+>   as a census of real interior states" correctly characterises string-theoretic microstate counting.
+>   Proposed citation if one is ever wanted (NOT added, per the row): Strominger & Vafa, *Microscopic
+>   Origin of the Bekenstein-Hawking Entropy*, Phys. Lett. B 379, 99–104 (1996). (The Tier 2 note that
+>   the Bekenstein-bound/GSL form of the objection is understated is queued for rulings.)
+> - **Neutrino analogy** — fair as phrased; ~MeV neutrinos have even-odds interaction over ~light-year of
+>   lead; "a great thickness of lead" understates if anything ✓.
+> No prose touched; no bib changes needed (section's quantitative claims are textbook/recompute-class).
 
 ### 3D-stiffness. The superfluid/exclusion section (new, all unverified) [CC — CHECKED 2026-07-26]
 *Six new VERIFY-flagged entries. The whole section is a sketch, not a claim — check that the prose does not overstate anywhere.*
