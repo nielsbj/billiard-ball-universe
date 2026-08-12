@@ -9,11 +9,17 @@ exactly as shipped except where the rulings file says otherwise.*
 ## Applier's record (code-claude)
 
 - **Applied: B1–B3, B5–B32** (30 edits) plus B20's conditional second part — 31 in all.
-- **B4 NOT applied — stays open as the [NIELS] row** per the rulings: the manuscript's
-  10^{10^{118}} awaits Niels's physical copy of *Our Mathematical Universe* (web verification
-  2026-08-12 was inconclusive: the 2003 paper's figure is 10^{10^{115}}, but a plausible
-  book-specific trace gives the finer triple 10^{10^{28}} / 10^{10^{92}} / 10^{10^{118}}).
-  On 115: patch the single instance + tegmark2014's bib annotation together and report.
+- **B4 — CLOSED same day, no edit** (the row was held as [NIELS] pending the physical book; web
+  verification 2026-08-12 was inconclusive: the 2003 paper's figure is 10^{10^{115}}, but a
+  plausible book-specific trace gives the finer triple 10^{10^{28}} / 10^{10^{92}} / 10^{10^{118}}).
+  Rider received 2026-08-12, verbatim: *"B4 rider closed: person-copy exponent verified
+  10^{10^{29}} against the author's physical copy, same edition and pages. Manuscript and bib
+  annotation correct as they stand; no follow-up patch. Zero open items on P1–P6."* Closure is the
+  author's, against the physical copy of *Our Mathematical Universe*; the manuscript's paired
+  figures (10^{10^{29}} person-copy; 10^{10^{118}} universe-copy, Ch. 4's single instance) and
+  tegmark2014's annotation stand as they are. Applier's note for the trail: the rider names the
+  person-copy exponent explicitly; the universe-copy figure closes under "correct as they stand,
+  same edition and pages."
 - **B19 applied on the six-form OLD** as shipped (P1's E3 deliberately left the L1109 head numeral
   to B19; the contingency did not fire).
 - **B20 applied in the RULED revision** (not the shipped clause — see
