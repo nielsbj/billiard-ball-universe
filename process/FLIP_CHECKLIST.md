@@ -6,6 +6,12 @@ anything below requires real work, the airlock rule ("commit as if public") was 
 - [ ] **All `[RULING PENDING]` markers resolved** — `grep -rn "RULING PENDING"` returns zero
       (currently: the `first-edition-1.0` tag lines in `README.md` and `ERRATA.md`).
 - [ ] **Scrub gate re-run** on the final state (REPO_SPEC §5), clean.
+- [ ] **Float gate clean, both editions** — grep the full build log for `Overfull` *and* for
+      `Float too large for page by`; zero hits of either, same tolerance as the zero-overfull
+      policy. Added by H1 (2026-08-13): `tab:wounds` overran the text height by 123 pt and struck
+      the folio on p. 125, and the log had been saying so for several builds while the gate
+      watched only `Overfull`. A truncated log does not count as a pass — if the log ends at
+      `\begin{document}` the PDF was locked by an open viewer; close it and rebuild.
 - [ ] **Real gitleaks CI pass** — the pre-flip manual scan was regex/keyword only and honestly
       could not do entropy detection; run gitleaks-the-tool (GitHub Action or a machine with it
       installed) over full history for the entropy pass before going public.
