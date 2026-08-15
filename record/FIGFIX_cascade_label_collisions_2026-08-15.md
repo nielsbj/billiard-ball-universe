@@ -1,11 +1,62 @@
-# FIGFIX — two label collisions in `fig:cascade` (Figure 7.1), fixed 2026-08-15
+# FIGFIX — label defects in `fig:cascade` (Figure 7.1), fixed 2026-08-15
 
-**STATUS: FIXED.** Two overlapping-text defects in the cascade figure, both pre-existing, both
-closed by coordinate/width changes only. No artwork, no wording, no bounding box changed. Both
-editions 0/0, **198 pp — unchanged**.
+**STATUS: FIXED, in two passes.** Three defects in the cascade figure, all pre-existing, all closed
+by coordinate/width/anchor changes only. No artwork and no wording changed. Both editions 0/0,
+**198 pp — unchanged**.
 
 *Reported by Niels off the page (folio 95), from a screen crop of the "the gap: / the floor"
-label. Investigation found a second collision he had not flagged.*
+label. Investigation found a second collision he had not flagged. **Pass one fixed the collisions
+but left the underlying wrap in place; Niels rejected it — "better, but not fixed" — and pass two
+fixed the cause.** Both passes are recorded below, because the first one is the instructive
+mistake.*
+
+## Pass two — the correction Niels was right to demand
+
+Pass one (below) removed the *overlaps* by lowering the gap/cascade node, but left it a **4-line
+centred wrap** that still (a) read as a broken block rather than a deliberate label, and (b) hung
+**past the bands' left edge at x=0**, because `anchor=east` at x=2.05 with `text width=2.2cm` put
+the node's left edge at x=−0.15. Dodging the symptom, not treating the cause.
+
+The cause is that the two authored phrases do not fit the space: they measure **2.67 cm** and
+**3.39 cm**, and the clear strip left of the ball is only **2.1 cm** wide. But the individual words
+all fit that strip:
+
+| word | width |
+|---|---|
+| `the gap:` | 1.25 cm |
+| `the floor` | 1.31 cm |
+| `the cascade:` | 1.86 cm |
+| `the valve` | 1.42 cm |
+
+So the pairs are now set as **two separate left-aligned callouts**, each pinned by its top-left
+corner and each placed beside what it names:
+
+```
+\node[anchor=north west, align=left, inner sep=0pt, text width=2.0cm] at (0.15,3.78)
+  {\small the gap:\\ the floor};
+\node[anchor=north west, align=left, inner sep=0pt, text width=2.0cm] at (0.15,2.72)
+  {\small the cascade:\\ the valve};
+```
+
+- **Left-aligned**, so the four lines share a left edge instead of zig-zagging on a centre.
+- **x = 0.15**, an inset chosen to match the house treatment on the other side: the layer labels are
+  anchored east at 9.45 against a band edge at 9.6, i.e. the same 0.15. Nothing hangs outside the
+  artwork any more, and the picture's bounding box is now exactly the bands' 9.6 cm, so the figure
+  sits truly centred for the first time.
+- **Split into two**, so "the gap: the floor" reads as one statement and "the cascade: the valve" as
+  another, rather than as one four-line pile. The first sits at the body's underside beside the
+  valve dashes; the second one layer down, where the cascade goes.
+- Three candidate treatments (keep-centred, two callouts, one left-aligned block) were rendered
+  side by side in the standalone preview and compared before anything touched the master.
+
+*"the floor" still straddles the seam between band $N$ and band $N{+}1$. That is not a defect and
+was not repaired: two lines need 0.887 cm and the clear space between the momentum arrow at y=3.9
+and the band floor at y=3.2 is 0.7 cm, so it cannot be avoided — and the word landing on the layer
+boundary is, if anything, apt, since that boundary is what "the floor" names.*
+
+---
+
+## Pass one — as originally applied (the collisions)
 
 ## What was wrong
 
@@ -67,16 +118,18 @@ Measured: `energy sold down, into ever-faster` = **5.33 cm**, `channels --- mome
 
 ## The fix
 
-| | before | after |
-|---|---|---|
-| A — gap/cascade label | `at (2.05,3.05)` | `at (2.05,2.72)` |
-| B — energy caption | `anchor=west, text width=5.2cm, at (3.4,2.1)` | `anchor=north west, inner sep=0pt, text width=5.5cm, at (3.4,2.48)` |
+| | before | pass one | pass two (final) |
+|---|---|---|---|
+| A — gap/cascade label | `anchor=east, align=center, text width=2.2cm, at (2.05,3.05)` | `at (2.05,2.72)` | **two nodes**, `anchor=north west, align=left, inner sep=0pt, text width=2.0cm`, at `(0.15,3.78)` and `(0.15,2.72)` |
+| B — energy caption | `anchor=west, text width=5.2cm, at (3.4,2.1)` | `anchor=north west, inner sep=0pt, text width=5.5cm, at (3.4,2.48)` | unchanged from pass one |
 
-**A** keeps the 4-line rendering. Setting it as the intended 2 lines needs `text width` ≥ 3.39 cm,
-which at `anchor=east` on x=2.05 would push the node's left edge to x ≈ −1.6 — 1.6 cm outside the
-bands, unbalancing the whole picture. There is no room in the composition for the two-line form, so
-the node was lowered instead: its top now sits at y≈3.74, **0.16 cm clear** of the arrow, and its
-bottom at y≈1.70, clear of the lower red arrows (top y=1.58).
+**A, pass one** kept the 4-line rendering and only lowered the node — top to y≈3.74, **0.16 cm
+clear** of the arrow, bottom to y≈1.70, clear of the lower red arrows (top y=1.58). The reasoning
+recorded at the time was that setting the label as the intended 2 lines needs `text width` ≥ 3.39 cm,
+which at `anchor=east` on x=2.05 pushes the node's left edge to x ≈ −1.6, 1.6 cm outside the bands.
+That much was correct. **What it missed is that the label never had to stay one node.** Splitting
+the pairs lets each line fit the 2.1 cm strip on its own, which is what pass two does. Lesson worth
+keeping: when a TikZ label does not fit, ask whether it should be *one* label before moving it.
 
 **B** is set in two lines at 5.5 cm and pinned by its top corner. Top at y=2.48 gives **0.24 cm**
 clearance below the layer label's descenders; `inner sep=0pt` lets the two lines finish at y≈1.59,
@@ -110,10 +163,15 @@ where Niels happened to look at it closely.
   of ≈2 min), following the `nbj/toymap_preview.tex` precedent; the fix was only ever applied to
   the master once it rendered clean in isolation.
 
-## Note for Niels — the PDF is locked again
+*(Pass one's gates were run against a byte-identical copy under a separate jobname, because the
+master PDF was locked by an open viewer at the time — the 1340-line log that greps as a false 0/0.
+Pass two's gates, below, were run on the master itself with the viewer closed.)*
 
-The master build hit `! I can't write on file billiard_ball_universe.pdf` (the 1340-line log that
-greps as a false 0/0). Every number above was measured against a byte-identical copy of the master
-under a different jobname; the truncated log and aux were deleted so they cannot be mistaken for a
-pass. **Close the PDF viewer and run `manuscript/build.bat` once** to refresh the artifact — the
-committed `.tex` is correct and complete.
+## Gates — pass two, on the master
+
+- **Both editions — digital and print: 0 errors / 0 `Overfull` / 0 `Float too large for page by` /
+  0 undefined.** Log 2231 lines, not truncated.
+- **`Underfull \vbox` 4, `\hbox` 2** — unchanged throughout, same pages.
+- **Page count 198 pp — unchanged.**
+- **Rastered folio 95 at 300 dpi (digital) and 250 dpi (print).** Every label now sits inside the
+  bands, nothing overlaps a rule, an arrow, the ball, or another label, in colour or in grayscale.

@@ -1183,10 +1183,17 @@ Recall the exchange rate that closed the pincer: energy per unit of momentum equ
   % the valve at the body's floor
   \draw[line width=1.2pt] (2.18,3.34) -- (2.45,3.34);
   \draw[line width=1.2pt] (2.75,3.34) -- (3.02,3.34);
-  % 2.2cm wraps both lines in two, so this node is 4 lines and ~2cm tall; centred at
-  % 3.05 its top reached y=4.07 and the momentum arrow at y=3.9 struck "the gap:".
-  \node[anchor=east, align=center, text width=2.2cm] at (2.05,2.72)
-    {\small the gap: the floor\\ the cascade: the valve};
+  % Two callouts, not one wrapped node. "the gap: the floor" is 2.67cm and
+  % "the cascade: the valve" 3.39cm at \small, but the clear strip left of the ball is
+  % only 2.1cm, so a single node at 2.2cm wrapped BOTH lines into four ragged centred
+  % ones, hung past the bands' left edge at x=0, and (centred at y=3.05) reached y=4.07
+  % where the momentum arrow at y=3.9 struck "the gap:". Each word fits the strip on its
+  % own, so the pairs are set as two left-aligned blocks pinned by their top-left corner,
+  % each beside what it names: the floor at the body's underside, the valve one layer down.
+  \node[anchor=north west, align=left, inner sep=0pt, text width=2.0cm] at (0.15,3.78)
+    {\small the gap:\\ the floor};
+  \node[anchor=north west, align=left, inner sep=0pt, text width=2.0cm] at (0.15,2.72)
+    {\small the cascade:\\ the valve};
   % energy sold down
   \foreach \x in {2.35,2.6,2.85} \draw[->, bbuRed] (\x,3.30) -- (\x,2.88);
   \foreach \x in {2.05,2.35,2.6,2.85,3.15} \draw[->, bbuRed!75] (\x,1.58) -- (\x,1.18);
