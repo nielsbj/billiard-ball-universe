@@ -237,6 +237,28 @@ def main(argv):
     if not os.path.exists(path):
         sys.stderr.write(f"no such PDF: {path}\n")
         return 2
+
+    # Refuse to certify a PDF the current source did not produce. pdflatex leaves
+    # the previous PDF in place when it dies, so without this the gate cheerfully
+    # passes a stale file and reports the book clean when the build never ran --
+    # which is exactly what it did on 2026-08-16 with the PDF open in a viewer.
+    stem = os.path.splitext(path)[0]
+    tex, log = stem + ".tex", stem + ".log"
+    if os.path.exists(tex) and os.path.getmtime(tex) > os.path.getmtime(path):
+        sys.stderr.write(
+            f"STALE: {os.path.basename(tex)} is newer than {os.path.basename(path)}.\n"
+            "The build did not produce this PDF; nothing here can be trusted.\n")
+        return 2
+    if os.path.exists(log):
+        with open(log, encoding="utf-8", errors="replace") as fh:
+            tail = fh.read()
+        if "Fatal error occurred" in tail:
+            sys.stderr.write(
+                f"BUILD FAILED: {os.path.basename(log)} records a fatal error.\n")
+            if "I can't write on file" in tail:
+                sys.stderr.write(
+                    "The PDF is locked -- close it in your viewer and rebuild.\n")
+            return 2
     doc = fitz.open(path)
     total = narrow = 0
     for pno in range(len(doc)):

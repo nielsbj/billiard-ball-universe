@@ -31,7 +31,12 @@ is not a build.
    book also produce. Figure 7.5 printed into its own paragraph on p. 105 for several
    builds, and figure 4.2's plate box had been slicing *"is an inventory."* in half on
    p. 43 with nobody the wiser. It needs Python with `pymupdf` and `numpy`; if it cannot
-   run it says so and exits 2. Full rationale, thresholds and known gap:
+   run it says so and exits 2. It also **refuses to judge a PDF the current source did not
+   produce** — if the `.tex` is newer than the `.pdf`, or the `.log` records a fatal error,
+   it exits 2 rather than passing. That refusal was added the same day, after it certified
+   a build that never ran: the PDF was open in a viewer, `pdflatex` died on "I can't write
+   on file", left the previous PDF in place, and the gate called it clean. Full rationale,
+   thresholds and known gap:
    `record/HOTFIX_H3_intextsep_negative_stretch_2026-08-16.md`.
 
 Expect one standing note from gate 3: *"5 stacked-fraction overlap(s) below the 8 pt

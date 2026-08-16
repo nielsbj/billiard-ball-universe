@@ -194,6 +194,29 @@ in this position: its wave dots contributed only 3 px, and it was TEXT, via the 
 that caught it. The three checks are meant to be read together, and none of them is a substitute
 for looking at the float pages.
 
+### Addendum, same day: the gate would certify a build that never ran
+
+Found within hours, while applying P15. The master PDF was open in a viewer, so `pdflatex` died
+with `I can't write on file billiard_ball_universe.pdf` and produced nothing — and `build.bat`
+printed **"Collision gate clean."** It had just checked the *previous* PDF, which pdflatex leaves
+in place when it dies. The log was 1 340 lines against a healthy 2 251, the exact truncated-log
+trap H1 recorded, and the new gate walked straight past it.
+
+A gate that passes when the build failed is worse than no gate, so `check_collisions.py` now
+refuses to judge before it looks at anything:
+
+- if a `<stem>.tex` sits beside the PDF and is **newer** than it → `STALE`, exit 2;
+- if `<stem>.log` contains `Fatal error occurred` → `BUILD FAILED`, exit 2, and if it also
+  contains `I can't write on file`, it names the cause: close the PDF in your viewer.
+
+Both refusals exit 2, which `build.bat` already reports as DID NOT RUN rather than as a pass.
+Verified against the failed build: `STALE: billiard_ball_universe.tex is newer than
+billiard_ball_universe.pdf` → exit 2.
+
+The general lesson, which the float gate learned in H1 and this gate has now learned too: **every
+check in this build needs to be able to say "I could not run", and that must never look like
+"clean."**
+
 ### Verification
 
 Run against the pre-fix build (`git show HEAD~1:manuscript/…`, rebuilt) and the fixed one:
