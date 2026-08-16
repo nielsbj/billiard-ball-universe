@@ -1,26 +1,67 @@
 # MANUAL — building, revising, and extending the book
 
-This is the operational reference. For *what the book argues*, read
-`billiard_ball_primer.md`; for AI-collaborator context, `HANDOFF_OPUS.md`.
+This is the operational reference. For *what the book argues*, read the manuscript
+itself and `process/book_outline.md` — the old `billiard_ball_primer.md` is retired and
+the position now lives on the page. For AI-collaborator context, `CLAUDE.md` at the root
+(`HANDOFF_OPUS.md` is likewise gone).
 
 ---
 
 ## 1. Building
 
-Full cycle (Windows): `build.bat`
+Full cycle (Windows), from `manuscript/`: `build.bat`
 Manual: `pdflatex -interaction=nonstopmode billiard_ball_universe.tex` →
 `biber billiard_ball_universe` → `pdflatex` twice more.
 
-Rules:
-- **Zero-overfull policy.** `findstr /C:"Overfull" billiard_ball_universe.log` must be empty.
-  An overfull line physically protrudes into the margin; fix it, don't ship it.
+### The three gates — all zero-tolerance
+
+`build.bat` runs all three and prints the verdict. A build that has not passed all three
+is not a build.
+
+1. **Zero overfull.** `findstr /C:"Overfull" billiard_ball_universe.log` must be empty.
+   An overfull line physically protrudes into the margin; fix it, don't ship it.
+2. **No float too large** (added by H1, 2026-08-13). `findstr /C:"Float too large for
+   page by"` must be empty. Such a float runs into the bottom margin and can strike the
+   folio — `tab:wounds` did exactly that on p. 125, and the log had been saying so for
+   several builds while the gate watched only `Overfull`.
+3. **No collisions** (added by H3, 2026-08-16). `python check_collisions.py` must exit 0.
+   This one reads the built **PDF**, not the log, because *the log cannot see the defect
+   at all*: a float that overlaps its own page's text produces no `Overfull`, no `Float
+   too large`, nothing — at most an `Underfull \vbox`, which eight healthy pages of this
+   book also produce. Figure 7.5 printed into its own paragraph on p. 105 for several
+   builds, and figure 4.2's plate box had been slicing *"is an inventory."* in half on
+   p. 43 with nobody the wiser. It needs Python with `pymupdf` and `numpy`; if it cannot
+   run it says so and exits 2. Full rationale, thresholds and known gap:
+   `record/HOTFIX_H3_intextsep_negative_stretch_2026-08-16.md`.
+
+Expect one standing note from gate 3: *"5 stacked-fraction overlap(s) below the 8 pt
+width threshold, not counted."* Those are the inline `\frac`s on folios 90, 93, 142, 170
+and 178. If that count moves, find out why.
+
+### Float placement — the trap under gate 3
+
+`\intextsep` is **rigid** in the preamble (`\setlength{\intextsep}{12pt}`) and must stay
+that way. LaTeX's here-placement of a float emits `\vskip -\parskip` after the box; under
+KOMA's `parskip=half-` that is `6.8pt plus 6.8pt`, so it puts *negative stretch* on the
+page. Once a page's total stretch goes negative, `\flushbottom` sets glue at a negative
+ratio — and TeX applies stretch unbounded in either direction. The elastic `12pt plus 2pt`
+above the float was being set to about **−33 pt**, hauling the figure up into the text. A
+rigid length has nothing to invert. Do not restore the plus/minus components, and do not
+"fix" a collision by changing one figure's `[htbp]` — that treats one page and leaves the
+trap armed for every other float in the book.
+
+### Other build notes
+
 - If biber is unavailable somewhere, the document *content* can be preview-built by
   swapping the biblatex block for classic BibTeX (`\bibliographystyle{unsrt}` +
   `\bibliography{ref}`) — styling differs, content identical. The committed master
   stays biblatex/biber.
 - Automation note: always verify a fresh 'Output written' line (or the BUILD-STAMP)
   from the current run — never trust a log grep alone; cmd-invoked runs from
-  harnesses can silently no-op on working directory.
+  harnesses can silently no-op on working directory. Likewise a **truncated log is not a
+  pass**: if it ends near `\begin{document}` with "I can't write on file …pdf", the PDF
+  was locked by an open viewer and the build never reached the body — it then reports
+  zero of everything because it typeset nothing. A healthy run is ~2 250 lines.
 
 ## 2. Draft mode vs. reading copy
 
