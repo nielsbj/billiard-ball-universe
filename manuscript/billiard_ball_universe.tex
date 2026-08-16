@@ -92,6 +92,14 @@
 \renewcommand{\floatpagefraction}{0.85}
 \setcounter{topnumber}{3}
 \setcounter{totalnumber}{5}
+% Rigid \intextsep. LaTeX's here-placement of a float emits \vskip -\parskip after
+% it; with KOMA's parskip=half- (\parskip = 6.8pt plus 6.8pt) that puts NEGATIVE
+% stretch on the page. When a page's remaining stretch goes negative, \flushbottom's
+% glue-setting runs at a negative ratio and the elastic part of \intextsep inverts:
+% the 12pt plus 2pt above the float was being set to about -33pt, pulling the figure
+% up into the last lines of text (fig. 7.5 on p. 105; fig. 4.2 on p. 43). A rigid
+% length has nothing to invert. Do not restore the plus/minus components.
+\setlength{\intextsep}{12pt}
 \usepackage{booktabs}
 \usepackage{ifthen}
 \usepackage{array}
