@@ -2,7 +2,9 @@
 
 **STATUS: CLOSED.** One preamble line. The reported collision is gone, a second unreported
 collision (fig. 4.2, p. 43) went with it, page count is unchanged at 200, and the build gate is
-still 0/0/0.
+still 0/0/0. The gate itself was the second half of the job: neither collision was visible to it,
+so `manuscript/check_collisions.py` now reads the built PDF and both `build.bat` and
+`FLIP_CHECKLIST.md` call it. See "The gate could not see this class" below.
 
 *Reported by Niels off the page: "on pdf book page 105, figure 7.5 it goes into the text above."
 No bundle — diagnosed and fixed in code-claude. Mirrored here per the patch workflow.*
@@ -122,10 +124,14 @@ y-shifts only — not one word of text reflowed, and the page count held at 200.
 were live collisions:
 
 - **p. 105 / fig. 7.5** — the reported one.
-- **p. 43 / fig. 4.2 (`fig:layers`)** — the dashed "continues outward" arcs and the gold dots above
-  the first frame were printed across the paragraph's last line, *"is an inventory."* This was
-  never reported because it clips **graphics into text**, not text into text, so it leaves no trace
-  in `pdftotext` and no warning in the log. It is now clear by 22.5 pt.
+- **p. 43 / fig. 4.2 (`fig:layers`)** — worse than the reported one, and never noticed. The three
+  panels are `\includegraphics` plates, and each carries an opaque **white background rectangle**.
+  That rectangle was printed over the paragraph's last line, *"is an inventory."*, slicing it
+  horizontally about a point above its baseline: at 400 dpi the descender of the *y* is gone and
+  every letter is cut off mid-stroke. The dashed "continues outward" arcs and the gold dots crossed
+  the paragraph as well. It left no trace anywhere — `pdftotext` still extracts the full line,
+  because the characters are all still in the text layer; only the pixels were painted over. It is
+  now clear by 22.5 pt.
 
 The other six (pp. 31, 67, 70, 77, 97, 103) moved 2.0–7.0 pt — the same glue being set correctly
 instead of inverted, on pages where the inversion had not been large enough to collide.
@@ -143,14 +149,60 @@ instead of inverted, on pages where the inversion had not been large enough to c
   so only badness-10000 cases are reported at all. **Not treated as a regression, but recorded
   rather than buried.**
 
-## For FLIP_CHECKLIST — the gate cannot see this class
+## The gate could not see this class. It can now.
 
-Overfull/float-too-large greps do **not** catch a float that overlaps its own page's text. The
-check that does, and that found both collisions here, is a geometric one on the built PDF: extract
-every text line's bounding box per page and flag any two that overlap vertically by >3 pt and
-horizontally by >2 pt; then do the same for drawing rects against body-text lines to catch the
-graphics-into-text variant. Inline fractions (½mv², ⁹⁄₈) are the only false positives in this book
-— three of them, on pp. 90, 93 and 178 — so the expected clean result is "three known math hits and
-nothing else."
+`Overfull`/`Float too large` greps do **not** catch a float that overlaps its own page's text.
+`manuscript/check_collisions.py` was written for this and wired into `build.bat` and
+`FLIP_CHECKLIST.md`. It reads the built PDF; 200 pp in about 6 s; exit 0 clean, 1 collisions,
+2 could not run.
 
-Recommend adding it as a gate item before the flip.
+### Why it does not use the PDF's own vector geometry
+
+The obvious implementation — ask the PDF where the drawings are — **does not work on this book**,
+and it is worth recording so nobody rebuilds it that way. For the `figures/` plates placed with
+`\includegraphics`, both `get_drawings()` and `get_bboxlog()` report the graphic's *internal*
+coordinates, neither scaled by the placement nor clipped: on p. 43 they claim each plate is
+226.9 pt wide and runs from x = −0.4 to x = 453.2, off both edges of a 432 pt page, when the plate
+is actually set 104 pt wide (`width=0.32\textwidth`). A gate built on those numbers would be
+wrong by a factor of 2.2 on exactly the sixteen figures most likely to collide. The checker
+therefore takes geometry from the text layer (reliable) and from **rendered pixels** (definitive).
+
+### The three checks, and the numbers each threshold sits on
+
+| check | what it catches | threshold | measured separation |
+|---|---|---|---|
+| **TEXT** | a figure's own labels printing over prose | overlap > 8 pt wide, > 2 pt tall | real p. 105 collision **25.5 pt** wide; the only other overlaps in the book are inline `\frac`s at **4.0–5.5 pt** |
+| **INK** | foreign ink inside a paragraph — rules, dots, curves, plate edges | ≥ 8 eroded px | p. 43 intrusion **132 px**; healthy pages never exceed **2 px** |
+| **BLANK** | prose painted over by a plate's white background | ink stops > 1.0 pt above the line's own baseline | p. 43's cut line **1.71 pt**; across all **4 672** prose lines in the book the worst healthy line is **0.54 pt** (99.9th pct 0.53) |
+
+Notes on the two deliberate exclusions, both measured rather than guessed:
+
+- `\lettrine` drop caps are *supposed* to sit in the text block, so a one-glyph line taller than
+  1.8× the page's normal line height is exempt from TEXT. Without this, every chapter opener fires.
+- Chapter titles are not paragraphs, and the ornament near them puts 8–13 px of legitimate ink
+  beside them, so INK only judges blocks of ≥ 3 lines. Without this, folios 65 and 165 fire.
+
+The stacked-fraction overlaps are **counted and printed, not silently dropped** — the run ends with
+"5 stacked-fraction overlap(s) below the 8 pt width threshold, not counted." If that number moves,
+something changed.
+
+### What it does not catch
+
+A figure that grazes a paragraph with one or two dots and carries no label and no white background
+lands at 1–3 px — under INK's floor, and invisible to TEXT and BLANK. The p. 105 figure was in fact
+in this position: its wave dots contributed only 3 px, and it was TEXT, via the `travel` label,
+that caught it. The three checks are meant to be read together, and none of them is a substitute
+for looking at the float pages.
+
+### Verification
+
+Run against the pre-fix build (`git show HEAD~1:manuscript/…`, rebuilt) and the fixed one:
+
+```
+pre-fix    p. 43   INK    132 px of non-text ink inside the paragraph at 'Now the compounding…'
+           p. 43   BLANK  ink stops 1.7 pt above the baseline in 'is an inventory.'
+           p. 105  TEXT   'quicken downward. Every layer has its own c;' over 'travel' (25x2 pt)
+           p. 105  TEXT   'ordinance, not a law of the world. Hold the ' over 'travel' (25x5 pt)
+           200 pages, 4 collisions -> exit 1
+fixed      200 pages, 0 collisions -> exit 0
+```

@@ -12,6 +12,20 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       the folio on p. 125, and the log had been saying so for several builds while the gate
       watched only `Overfull`. A truncated log does not count as a pass — if the log ends at
       `\begin{document}` the PDF was locked by an open viewer; close it and rebuild.
+- [ ] **Collision gate clean, both editions** — `python manuscript/check_collisions.py <pdf>`;
+      zero collisions, exit 0. Added by H3 (2026-08-16): figure 7.5 was printing into the last two
+      lines of its paragraph on p. 105, and figure 4.2's plate box was cutting *"is an inventory."*
+      in half on p. 43 — and **the float gate above cannot see either one.** A float that overlaps
+      its own page's text produces no `Overfull`, no `Float too large`, nothing; at most an
+      `Underfull \vbox`, which eight healthy pages of this book also produce. The check reads the
+      built PDF, not the log: text lines from different blocks sharing space (TEXT), foreign ink
+      inside a paragraph (INK), and prose whose glyphs stop short of their own baseline, which is
+      what a plate's white background painted over text looks like (BLANK). It needs Python with
+      `pymupdf` and `numpy`; if it cannot run it says so and exits 2, and **a build where it did
+      not run is not a build that passed** — same trap as the truncated log above. Expect the
+      trailing note "5 stacked-fraction overlap(s) below the 8 pt width threshold, not counted":
+      those are the inline `\frac`s on folios 90, 93, 142, 170 and 178, measured at 4.0–5.5 pt
+      against 25.5 pt for the real p. 105 collision. If that count moves, look at why.
 - [ ] **Real gitleaks CI pass** — the pre-flip manual scan was regex/keyword only and honestly
       could not do entropy detection; run gitleaks-the-tool (GitHub Action or a machine with it
       installed) over full history for the entropy pass before going public.

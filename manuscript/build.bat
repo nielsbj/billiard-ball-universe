@@ -18,4 +18,23 @@ REM   the folio -- tab:wounds did exactly that on p. 125 and the log said so for
 REM   several builds while the gate was only watching Overfull.
 findstr /C:"Overfull" billiard_ball_universe.log
 findstr /C:"Float too large for page by" billiard_ball_universe.log
-echo Build done. Any Overfull or "Float too large" lines above must be fixed (zero-tolerance gate).
+REM The log cannot see a float that overlaps the text column: no Overfull, no
+REM "Float too large", nothing. Figure 7.5 printed into the text on p. 105 for
+REM several builds, and fig. 4.2 had been doing the same on p. 43 unreported,
+REM while every log line above said the book was clean (H3, 2026-08-16). The
+REM check below reads the built PDF instead of the log.
+echo.
+echo --- collision gate (H3): figures printing into the text ---
+python check_collisions.py
+if errorlevel 2 (
+  echo COLLISION GATE DID NOT RUN - needs Python with PyMuPDF and numpy:
+  echo     pip install pymupdf numpy
+  echo A build is NOT verified until this check has actually run.
+) else if errorlevel 1 (
+  echo COLLISION GATE FAILED - see the pages listed above.
+) else (
+  echo Collision gate clean.
+)
+echo.
+echo Build done. Any Overfull, "Float too large", or collision lines above must be
+echo fixed (zero-tolerance gate).
