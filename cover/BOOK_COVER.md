@@ -77,7 +77,7 @@ What survives is smaller and harder than what the author walked in with: not pro
 3. Pull quote — italic, ~13 pt, centered, thin rules above and below.
 4. Reader line — 9 pt.
 5. Bio — 9 pt italic.
-6. **Barcode zone** — pure white rectangle 2.0 × 1.2 in, bottom right, 0.35 in from trim edges (KDP requirement; KDP overlays the ISBN barcode there).
+6. **Barcode** — pure white rectangle 2.0 × 1.2 in, bottom right of the back panel, 0.35 in from the trim edges (KDP's reserve), i.e. **bottom, nearest the spine**, which is also what the Danish registry instructs ("nederst nærmest ryggen"). **We print the symbol ourselves** — a real EAN-13 for our own ISBN `978-87-977519-1-6`, drawn at 90 % magnification by `gen_ean13.py` into `ean13.tex` and placed by `\EANthirteen`. We do *not* let KDP overlay its barcode: that one carries KDP's free ISBN, which is Amazon-locked and would split the edition IngramSpark has to share. Human-readable `ISBN 978-87-977519-1-6` above the bars, the thirteen EAN digits below in the standard 1 + 6 + 6 layout. Verify after any cover change with `scan_ean13.py`, which rasterises the built wrap at 1200 dpi and decodes the bars back to the digits.
 
 **Spine:** ivory ground continues; title and author in caps, ~11–12 pt, top-to-bottom; ball glyph (a tiny solid circle with one hatched crescent) centered between them.
 

@@ -20,6 +20,11 @@
 \newif\ifARTFINAL \ARTFINALtrue
 \newif\ifOXRULE   \OXRULEtrue
 \newcommand\ARTW{3.7in}   % art width; SQUARE source per brief (portrait source would overflow the front)
+% EAN-13 for our own ISBN 978-87-977519-1-6. Generated (see the file's header);
+% we print the barcode ourselves rather than let KDP overlay one, because KDP's
+% overlay carries KDP's free ISBN, which is Amazon-locked and would split the
+% edition Phase 2 needs to keep whole.
+\input{ean13}
 \pagestyle{empty}
 \begin{document}\color{ink}
 \begin{tikzpicture}[remember picture,overlay,shift={(current page.south west)},x=1in,y=1in]
@@ -76,6 +81,10 @@
     \noindent\parbox{2.9in}{%
       {\fontsize{9}{12}\selectfont For physicists, and for the interested layman: footnotes decode every term, a dictionary and a primer wait in the appendices, and nothing essential hides outside the plain prose.\par}\vspace{6pt}
       {\fontsize{9}{12}\itshape\selectfont Niels Bonde Jensen is a Danish software engineer. He has believed the universe has no bottom since before he could say why.\par}}};
-  \fill[white] (6.125-0.35-2.0,0.125+0.35) rectangle (6.125-0.35,0.125+0.35+1.2); % KDP barcode zone
+  % Barcode. The reserve stays 2.0 x 1.2in at 0.35in from the trim edges (KDP's
+  % requirement); the symbol sits centred inside it. Bottom of the back panel,
+  % nearest the spine, per DBC's own instruction ("nederst naermest ryggen").
+  \fill[white] (6.125-0.35-2.0,0.125+0.35) rectangle (6.125-0.35,0.125+0.35+1.2); % barcode reserve
+  \EANthirteen{4.1144}{0.621}
 \end{tikzpicture}
 \end{document}

@@ -81,7 +81,12 @@
 ## 4. Convergence — fires only after §3
 - [ ] Approve the final interior build (both editions 0/0) and its **final page count**: ______
 - [ ] KDP setup: account, new paperback title, metadata (title, subtitle, author, description = the back-cover blurb, categories/keywords — chat-claude drafts these on ask), pricing (yours), territories.
-- [ ] ISBN: assigned at KDP upload → give it to code-claude for the imprint placeholder.
+- [x] **ISBN — done, and the route changed: it did not come from KDP.** Registered with DBC
+      2026-08-10: publisher of record **Niels Bonde Jensen**, forlagsnummer 977519, this paperback
+      **978-87-977519-1-6**. Now in the kolofon (with a publisher line, which the page had never
+      carried) and in a real EAN-13 on the back cover — see `record/ISBN_AND_BARCODE_2026-08-20.md`.
+      **KDP is therefore set up with your own ISBN**, not KDP's free one: theirs is Amazon-locked
+      and would split the edition IngramSpark has to share. Expanded Distribution stays **OFF**.
 - [ ] Confirm "First edition, 2026" is still true of the calendar; if it slips, the year changes with it.
 - [ ] Cover: code-claude sets final \PAGECOUNT → spine computes → KDP previewer → **order the one physical proof**. Judge the proof on paper: links black, ivory right, plates crisp, spine centered.
 - [ ] On proof approval: the release commit — imprint URL + ISBN + \PAGECOUNT in one commit, tagged first-edition-1.0 → code-claude runs the flip checklist (pending markers zero, CI gitleaks + reuse lint, beta-name sweep) → **flip the repo public** → publish on KDP. One day, all of it.
