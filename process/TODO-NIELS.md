@@ -3,6 +3,14 @@
 
 ## 0. Done — recorded because ledgers should show movement
 - [x] Brother's yes — 2026-07-30. The dedication stands. Gate one cleared.
+      **Reopened and closed again 2026-08-20: no change.** *"For my brother, who was not comforted."*
+      was weighed against plain *"For my brother"* and against naming him. Kept, because it is not
+      an unclear line but a plant: it pays off in Ch. 5's comfort section (*"I remember telling my
+      brother. He was not comforted… this chapter is, among other things, my long answer to him"*)
+      and again in the Epilogue's dated list. Plain *"For my brother"* could preface any book; this
+      could only preface this one. **Naming him was set aside deliberately, not forgotten** — the
+      yes of 30 July was to a line that names nobody, and putting a real private person's name in
+      print beside that story is a larger ask that would need its own fresh yes.
 - [x] Claude account export archived; both chats extracted; Dropbox copy confirmed.
 - [x] ChatGPT snippets archived (three threads, verbatim, provenance headers).
 - [x] All repo rulings delivered (route, process/, licenses, email, name, figures).
