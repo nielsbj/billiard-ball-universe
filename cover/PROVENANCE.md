@@ -82,6 +82,26 @@ ground and still decodes, check digit valid, quiet zones far above the seven-mod
    473pt wide on a ~393pt panel and ran off the page (no LaTeX warning; absolutely-placed node).
 2. Back bio + reader line wrapped in a 2.9in `\parbox` so they clear the KDP barcode reserve.
 
+## Paper stock — CREAM (ruled 2026-08-20)
+Recorded here because it is a **design ruling, not an inherited constant**, and because until today
+it was the latter: every spine number in this project assumed KDP white (0.002252 in/page) purely
+because that was the constant someone first typed. Nothing recorded a choice.
+
+`cover_wrap.tex` now computes the spine at **0.0025 in/page** (KDP cream). At the final 202 pp:
+spine **0.5050 in**, full wrap **12.7550 × 9.25 in**. White would have given 0.4549 in and
+12.7049 in — 0.05 in apart, which is enough to throw the wrap, so **the constant and `\PAGECOUNT`
+have to be right together**; either alone being correct is not a check that passed.
+
+*Reasoning, both directions.* Cream is the warmer, more period-correct stock for an engraved-plate
+book, and it sits with the parchment cover so the finished object reads as one printed thing rather
+than a warm cover wrapped round a bright-white block. Against it: cream warms and slightly muddies
+halftone reproduction, and this interior carries **ten grayscale plates** — eight chapter engravings
+and two full-page plates, plus the cover ball reprised facing the Coda. Code-claude recommended
+white on exactly that ground and the ruling went the other way, with the cost accepted rather than
+overlooked. The consequence is a proof-day duty: **judge the plates on cream paper before approving**,
+alongside the sanguine hatching check. If the plates are muddy on the proof, the remedy is the stock,
+and changing it moves the spine — so it must be caught at the proof, not after.
+
 ## Held
 `\PAGECOUNT` = 182 is a placeholder. Set the real count last, from the final interior
 (index + beta changes), then rebuild the spine and proof. No upload before that.

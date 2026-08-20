@@ -40,12 +40,13 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       installable in the authoring environment; run `reuse lint` in CI and confirm zero errors.
 - [ ] **Beta-name sweep** — grep full history for the reader list held in `archive/`; expect zero
       (readers live only outside the repo).
-- [ ] **Paper stock chosen — this gates the spine and has never actually been decided.** Every
-      number in `BOOK_COVER.md` silently assumes KDP **white** (0.002252 in/page → 0.4549 in at
-      202 pp). Cream is 0.0025 in/page → 0.5050 in: **0.05 in apart**, enough to throw the wrap if
-      it surfaces late. Cream is the warmer, more period-correct stock for an engraved-plate book —
-      but this interior carries ten grayscale plates, and cream muddies halftones where white holds
-      them. White is the recommendation and the zero-work option; it just needs a conscious yes.
+- [x] **Paper stock — CREAM, ruled 2026-08-20.** `cover_wrap.tex` now computes the spine at
+      **0.0025 in/page** (was 0.002252, KDP white — an inherited default, not a decision). At 202 pp
+      that is **0.5050 in**, and the wrap **12.7550 × 9.25 in**. The constant and `\PAGECOUNT` must
+      be correct *together*: get one right and the other wrong and the wrap is wrong twice over.
+      **Carries a known cost:** cream muddies halftones, and this interior has ten grayscale plates.
+      The recommendation had been white on that ground; the ruling went the other way with the cost
+      accepted, so the plates are now a proof-day inspection item rather than a settled matter.
 - [ ] **Imprint placeholders filled** — repository URL ✅ (2026-08-17) and ISBN ✅ (2026-08-20,
       `978-87-977519-1-6`, in the kolofon with the publisher line). **Only `\PAGECOUNT` remains**,
       set in the release commit: 202 pp → spine 0.4549 in → full wrap 12.7049 × 9.25 in.

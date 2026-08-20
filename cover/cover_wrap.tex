@@ -8,7 +8,11 @@
 \documentclass{article}
 \usepackage{calc}
 \newcommand\PAGECOUNT{182}                                   % <-- FINAL page count goes here, last
-\newlength\spinew \setlength\spinew{0.002252in * \real{\PAGECOUNT}}  % KDP white paper
+% CREAM stock, ruled 2026-08-20 (was 0.002252in = KDP white, an inherited default
+% rather than a decision). KDP: white 0.002252 in/page, cream 0.0025 in/page.
+% At the final 202 pp this is 0.5050in, not 0.4549in -- 0.05in apart, so the
+% constant and \PAGECOUNT must be right together or the wrap is wrong twice over.
+\newlength\spinew \setlength\spinew{0.0025in * \real{\PAGECOUNT}}    % KDP cream paper
 \newlength\bleed  \setlength\bleed{0.125in}
 \newlength\wrapw  \setlength\wrapw{12in + \spinew + 2\bleed}
 \newlength\wraph  \setlength\wraph{9in + 2\bleed}

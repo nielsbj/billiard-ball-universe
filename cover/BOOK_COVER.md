@@ -112,15 +112,15 @@ Identical layout; invert the palette — charcoal ground `#14161A`, ivory ink `#
 ## 5. PRODUCTION MECHANICS (KDP)
 
 - **Trim:** 6 × 9 in. **Bleed:** 0.125 in all outer edges.
-- **⚠ PAPER STOCK IS NOT YET A DECISION, and the spine cannot be set until it is.** The formula below assumes **white**. KDP's constant differs by stock, and at 202 pp the difference is 0.05 in — enough to throw the wrap:
+- **Paper stock: CREAM — ruled 2026-08-20.** It had never actually been decided; the white constant was an inherited default that every number in this file silently assumed. It is a design ruling from today forward, not a formula.
   | stock | in/page | spine at 202 pp | full wrap |
   |---|---|---|---|
-  | **white** (assumed) | 0.002252 | **0.4549 in** | 12.7049 × 9.25 in |
-  | cream | 0.0025 | 0.5050 in | 12.7550 × 9.25 in |
+  | **cream** ✅ ruled | 0.0025 | **0.5050 in** | 12.7550 × 9.25 in |
+  | white (rejected) | 0.002252 | 0.4549 in | 12.7049 × 9.25 in |
 
-  The trade-off is real and cuts against the obvious choice. Cream is the warmer, more period-correct stock for an engraved-plate book and sits better beside a parchment cover — **but this interior carries ten grayscale plates**, and cream warms and slightly muddies halftone reproduction where white holds it. Given the plates, white is the recommendation, and it is what every number in this file already assumes.
-- **Spine width = page count × 0.002252 in** (white paper). At the final **202 pages: 0.4549 in**. The cover currently carries `\PAGECOUNT{182}` → 0.4099 in, deliberately: the spine is the last thing set, in the release commit. ⚠ Anything that changes the interior page count changes this.
-- **Full-wrap canvas:** (6 + spine + 6 + 2×0.125) wide × (9 + 2×0.125) tall. At 202 pp: **12.7049 × 9.25 in → 3811 × 2775 px at 300 DPI.**
+  Cream is the warmer, more period-correct stock for an engraved-plate book and sits better beside the parchment cover — the whole object then reads as one printed thing rather than a warm cover wrapped round a bright-white block. **The cost is accepted, not overlooked:** cream warms and slightly muddies halftone reproduction, and this interior carries ten grayscale plates. Code-claude's recommendation had been white on exactly that ground; the ruling went the other way, and the plates therefore become a proof-day inspection item rather than a settled matter (see the print watch-list).
+- **Spine width = page count × 0.0025 in** (cream paper). At the final **202 pages: 0.5050 in**. The cover currently carries `\PAGECOUNT{182}`, deliberately: the spine is the last thing set, in the release commit. ⚠ Anything that changes the interior page count changes this — and the constant and the count must be right *together*, or the wrap is wrong twice over.
+- **Full-wrap canvas:** (6 + spine + 6 + 2×0.125) wide × (9 + 2×0.125) tall. At 202 pp on cream: **12.7550 × 9.25 in → 3827 × 2775 px at 300 DPI.**
 - **Art resolution:** the live master `cover/cover_recursive_ball.png` is 1417 × 1417 and is placed 3.7 in wide → **383 DPI**, comfortably over the 300 DPI floor. (The 1024 × 1536 figure below refers to `art/cover_recursive_ball.png`, a *superseded* earlier candidate that is not what the cover builds from — do not confuse them.) The plate is no longer tinted by hand: `gen_sanguine.py` produces the printed derivative from the master.
 - **Fonts:** TeX Gyre Pagella (free Palatino clone; matches interior exactly). Embed all fonts; flatten to PDF/X-1a or plain PDF with embedded fonts for KDP.
 - **Recommended build route for code-claude:** a standalone LaTeX file — `\documentclass{article}` + `geometry` at full-wrap size + TikZ for zones, rules, and text placement + `\includegraphics` for the art. Same toolchain as the book; deterministic; spine math as a single macro so the final-page-count update is one number. Verify with a 300 DPI raster proof and KDP's online previewer before ordering a physical proof.
