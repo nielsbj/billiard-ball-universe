@@ -239,7 +239,19 @@ Rule: **cite at the first invoking passage**, numeric style, one `\cite` per cla
 
 After the pass: rebuild; the References list will shrink to only cited works — **check nothing beloved vanished** (if a work is context-only, either cite it at its natural spot or accept its removal; do not restore `\nocite`).
 
-## 5. Phase 5 — index population [EITHER]
+## 5. Phase 5 — index population [EITHER] — **FIRST PASS DONE 2026-08-20 (CC)**
+> **RESULT (2026-08-20).** 77 anchors placed from the starter list below plus curated additions —
+> 41 terms, 36 persons, one anchor each at first-or-best occurrence. `\printindex` activated;
+> `makeindex` was already wired into `build.bat`, so no build-script change. One new house macro,
+> `\Iyk{sortkey}{text}`, because `\Iy{\O rsted}` sorts on its leading backslash and lands above
+> Agrippa; `\Iy` also now carries the two proper-noun terms `\Ix` would have lowercased.
+> makeindex: 77 accepted, 0 rejected, 0 warnings. Both editions **202 pp**, 0 errors / 0 Overfull /
+> 0 Float-too-large / 0 collisions (was 200 pp; the index is two pages, folios 191–192, in the TOC).
+> **No prose changed** — proven by stripping every index wrapper back out and diffing against HEAD:
+> the only hunks are the preamble macro, its comment, and `\printindex`. Full report and the four
+> open author questions (second anchors for house terms; the three starter-list terms with no exact
+> home in the prose; names that live only in citations; Index-in-TOC vs References-not) are in
+> `record/INDEX_PASS_2026-08-20.md`.
 
 Tag with `\Ix{...}` (terms; auto-lowercased) and `\Iy{...}` (persons) at each **first or best** occurrence — not every occurrence. Starter list (add as you read): shadow push, massion, the gap, circulation, frozen state, the local surplus, the pincer, cascade, depletion force, ether, Lorentz contraction, Bell inequality, entanglement, superdeterminism, pilot wave, phonon, photon, entropy, coarse-graining, ultraviolet catastrophe, heat death, arrow of time, sufficient reason, trilemma, diagonal theorems, equivalence class; persons: Lucretius, Bruno, Descartes, Huygens, Newton, Leibniz, Fatio, Le Sage, Maxwell, Kelvin, Poincaré, Ørsted, Einstein, Lorentz, Bell, Planck, Ehrenfest, Tegmark, Bohm. Then: uncomment `\printindex`, add `makeindex billiard_ball_universe` between the biber and final pdflatex lines in `build.bat`, rebuild twice.
 

@@ -51,7 +51,16 @@
 
 ## 2. During the beta window — sized exactly for these three weeks
 - [ ] **Finish your own cold read** on the current PDF. Your paper copy died at ~p. 110 two hundred edits ago; the touched-passages list from the patches is your priority route through the back half.
-- [ ] **Index pass**: mark \Ix/\Iy terms through the book; then tell code-claude: uncomment \printindex, add makeindex to build.bat, rebuild, report new page count.
+- [x] **Index pass — first pass done for you, 2026-08-20.** Rather than wait on your marking run,
+      code-claude tagged 77 anchors (41 terms, 36 persons) from TODO.md §5's starter list plus
+      curated additions, activated `\printindex`, and rebuilt: both editions **202 pp**, 0/0, index
+      on folios 191–192. No prose was touched — proven by strip-and-diff against HEAD. What is left
+      is **yours and is a judgement call, not a chore**: every entry currently has exactly one page
+      reference, and the house terms that carry the book (*massion*, *the gap*, *cascade*,
+      *shadow push*, *the local surplus*) deserve the two or three places they do real work.
+      Mark second anchors on your read-through, or say the word and the Dictionary gets tagged as
+      the standing second reference. Three further questions wait in
+      `record/INDEX_PASS_2026-08-20.md` §"Open, for the author".
 - [ ] **Coda-reprise plate — rule yes/no**: the full-page varied-structure recursion facing the Coda (tiles exist; near-free). Weigh the diptych reading — the single open door beside the endless recursion — against art-facing-art crowding. Must be decided **before** the page count locks. → on yes, code-claude composes from the tiles at interior spec.
 - [ ] **Toy-map figure (P10/E5) — the pencil test, rule yes/no**: the one-page map of the toy (flux, lattice, song, shadow push, gap, cascade, plus the ledger corner) drafted at interior spec and previewed in both editions at `nbj/toymap_preview.pdf` (colour) and `nbj/toymap_preview_print.pdf` (grayscale). The E3 box is already in the book and **stays either way** — box for the flip-back, figure for the first read. Must be decided **before** the page count locks; on yes, code-claude lifts the marked block into Ch. 7 ahead of the First Wound and reports the new count.
 - [ ] **R1 as childhood witness — a separate conversation, after he has read.** Ch. 1's open
