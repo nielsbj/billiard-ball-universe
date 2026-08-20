@@ -59,15 +59,27 @@ What survives is smaller and harder than what the author walked in with: not pro
 
 **Overall look:** a nineteenth-century scientific monograph, printed yesterday. Matches the interior (Palatino, B/W engravings) and the book's lineage theme.
 
-- **Ground:** aged ivory paper, flat color `#F4EFE4`, full wrap (front, spine, back).
-- **Ink:** near-black `#1A1A1A` for all type and rules.
-- **Accent:** none, or at most one thin oxblood rule `#6B2E2E` under the title. Two colors maximum, total.
+- **Ground:** aged ivory paper, flat color **`#EDE4CE`**, full wrap (front, spine, back). *(Was `#F4EFE4` until 2026-08-20 — see "The sanguine plate" below.)*
+- **Ink:** near-black `#1A1A1A` for all type and rules. The title stays pure near-black: at thumbnail size its contrast against the ground is the cover's single largest asset and must not be spent on colour.
+- **Accent:** one oxblood rule `#6B2E2E` under the title, **1.8 pt** — not the original 1.1 pt, which was invisible below about 150 px and so contributed nothing to the only view most buyers ever get.
+- **The plate:** the artwork is printed in sanguine, a three-point ramp `#331B17` → `#7E4437` → `#FAF4E7`. Paper plus one ink; the drawing is unchanged.
 - **Frame:** thin double rule (0.6 pt + 1.6 pt, 4 pt apart) inset 0.28 in from trim on front and back, engraving-plate style. Nothing crosses it except the art may touch it.
 
 **Front, zones top to bottom:**
 1. Tagline `NO MAGIC ANYWHERE` — small caps, letterspaced +18%, ~13 pt, centered, 0.65 in below top trim.
 2. Title `THE BILLIARD BALL UNIVERSE` — Palatino (TeX Gyre Pagella) bold, all caps, centered, two lines (`THE BILLIARD BALL` / `UNIVERSE`), ~58–66 pt, tight leading. Thin rule (or the single oxblood rule) beneath.
-3. **The art** — the recursive billiard ball engraving (`cover_recursive_ball` from the illustration spec: a sphere whose magnified inset reveals it is made of spheres, recursively, three zoom levels). Centered, ~3.9 in wide, occupying the middle band. Black engraving on the ivory ground — do NOT box it; let the hatching sit directly on the paper color.
+3. **The art** — the recursive billiard ball engraving (`cover_recursive_ball` from the illustration spec: a sphere whose magnified inset reveals it is made of spheres, recursively, three zoom levels). Centered, ~3.9 in wide, occupying the middle band. Sanguine engraving on the ivory ground — do NOT box it; let the hatching sit directly on the paper color. The build includes the derivative `cover_recursive_ball_sanguine`, generated from the master by `gen_sanguine.py`; the master itself is never modified.
+
+### The sanguine plate (ruled 2026-08-20)
+The thumbnail test was run against the ten current Amazon bestsellers in Physics at true 90 px. The title read well and the pale ground stood out on a dark shelf, but the author's verdict was *"gray is a bit gray, even if it is clear."* Colour direction from a Fable agent identified the fault precisely: the ball is neutral grey on warm cream — a temperature clash, *"a photocopy pasted onto nice paper"* — and at 90 px the hatching optically averages to a grey gradient with a white glare, so it stops reading as an engraving and starts reading as a stock chrome ball-bearing.
+
+Deepening the ground alone was tried and rejected: it produced a better-dressed blank. The fix is the **midtone**. The master is monochrome and bimodal — 40.2 % of the drawing below luminance 64, 46.3 % above 200, only 13.6 % between — and at thumbnail size the eye lands on the ramp's midpoint, exactly where the drawing has nothing. A warm midtone fills that hole.
+
+Two alternatives were built as real covers and rejected on the evidence: **louder oxblood** (ground + accent only, art untouched) improved the cover but left the ball a grey blob; **intaglio blue** (a one-ink blue-black system) was predicted in advance to stay chromatically adjacent to grey and half-solve the problem, and at 90 px proved indistinguishable from as-built. Previews of all four are in `nbj/colour_big.png` and `nbj/colour_shelf.png`.
+
+**On identity:** this does not break the book's monochrome-engraving character. Paper plus one printer's ink is the oldest convention in engraving, and sanguine and red-chalk plates are period-correct; the cover reads as the same plate pulled in red ink. The interior stays grayscale by policy. One hue is a treatment; two would be decoration — do not add a second.
+
+**Print watch-list for the proof:** dark reds shift brown in CMYK, and the hatched field carries more ink than the old black-on-near-white did; the midtone is deliberately desaturated to survive that, so resist pushing it redder. A flat cream field over the whole wrap can band or show handling marks. The proof check formerly written *"ivory right"* now reads **"parchment right, sanguine not maroon."**
 4. Subtitle `A World With No Bottom` — italic, ~22 pt, centered beneath the art.
 5. Author `NIELS BONDE JENSEN` — caps, letterspaced +12%, ~19 pt, centered, 0.6 in above bottom trim.
 
@@ -83,6 +95,8 @@ What survives is smaller and harder than what the author walked in with: not pro
 
 ### Concept B (variant, if A feels too quiet): "The Dark Plate"
 Identical layout; invert the palette — charcoal ground `#14161A`, ivory ink `#F4EFE4`, the engraving inverted (white lines on dark). More dramatic on a screen thumbnail; slightly riskier in print (large dark areas show handling). Produce A first; mock B only if A disappoints as a thumbnail.
+
+> **MOCKED AND REJECTED, 2026-08-20.** A did disappoint as a thumbnail, so B was mocked as instructed (`nbj/variants_90_mag4.png`, rightmost). Inversion turns the ball's specular highlight into a shadow, so a billiard ball reads as a **void** — doing B properly would mean re-lighting the engraving, which is a genuine art change. It also surrenders the one advantage the thumbnail test proved real: on a shelf of ten dark covers, being the only pale one is what draws the eye. And a dark ground turns the mandatory white barcode patch into a glowing rectangle. A was fixed instead, by colour rather than by value — see "The sanguine plate" above.
 
 ---
 

@@ -20,6 +20,7 @@ path = [
   "cover/gen_ean13.py",
   "cover/scan_ean13.py",
   "cover/ean13.tex",
+  "cover/gen_sanguine.py",
   "cover/cover_tiles.spec.json",
   "cover/PROVENANCE.md",
   "figures/PROVENANCE.md",

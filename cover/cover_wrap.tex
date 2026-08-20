@@ -16,7 +16,10 @@
 \usepackage[T1]{fontenc}
 \IfFileExists{tgpagella.sty}{\usepackage{tgpagella}}{\usepackage{mathpazo}}
 \usepackage{microtype,tikz,graphicx,xcolor}
-\definecolor{ivory}{HTML}{F4EFE4}\definecolor{ink}{HTML}{1A1A1A}\definecolor{oxblood}{HTML}{6B2E2E}
+% Sanguine plate, 2026-08-20: the ground moved one step off paper-white and the
+% plate is pulled in red ink. Paper plus one printer's ink -- the drawing is the
+% same drawing. See cover/gen_sanguine.py for the ramp and why it is a tritone.
+\definecolor{ivory}{HTML}{EDE4CE}\definecolor{ink}{HTML}{1A1A1A}\definecolor{oxblood}{HTML}{6B2E2E}
 \newif\ifARTFINAL \ARTFINALtrue
 \newif\ifOXRULE   \OXRULEtrue
 \newcommand\ARTW{3.7in}   % art width; SQUARE source per brief (portrait source would overflow the front)
@@ -46,12 +49,14 @@
   \node[anchor=north] at (\fC,9.125-1.05) {\fontsize{26}{28}\bfseries\selectfont\textls[120]{THE}};
   \node[anchor=north] at (\fC,9.125-1.55) {\fontsize{46}{48}\bfseries\selectfont BILLIARD BALL};
   \node[anchor=north] at (\fC,9.125-2.25) {\fontsize{46}{48}\bfseries\selectfont UNIVERSE};
-  \ifOXRULE \draw[oxblood,line width=1.1pt] (\fC-1.55,9.125-3.05) -- (\fC+1.55,9.125-3.05);
+  % 1.8pt, not 1.1: at 90px a 1.1pt rule is invisible, so the only note of
+  % colour on the thumbnail was doing no work at all.
+  \ifOXRULE \draw[oxblood,line width=1.8pt] (\fC-1.55,9.125-3.05) -- (\fC+1.55,9.125-3.05);
   \else     \draw[ink,line width=0.6pt]     (\fC-1.55,9.125-3.05) -- (\fC+1.55,9.125-3.05); \fi
   % art band, centered; square \ARTW x \ARTW
   \pgfmathsetmacro\artw{3.7}
   \ifARTFINAL
-    \node[anchor=north] at (\fC,9.125-3.28) {\includegraphics[width=\ARTW]{cover_recursive_ball}};
+    \node[anchor=north] at (\fC,9.125-3.28) {\includegraphics[width=\ARTW]{cover_recursive_ball_sanguine}};
   \else
     \draw[ink,line width=0.6pt] (\fC-\artw/2,9.125-3.28-\artw) rectangle (\fC+\artw/2,9.125-3.28);
     \draw[ink,line width=0.4pt] (\fC-\artw/2,9.125-3.28-\artw) -- (\fC+\artw/2,9.125-3.28);
