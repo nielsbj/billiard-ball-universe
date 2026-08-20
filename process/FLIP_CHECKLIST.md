@@ -3,8 +3,15 @@
 Run on publication day, in order. The flip must be a visibility toggle, not a cleanup crisis — if
 anything below requires real work, the airlock rule ("commit as if public") was violated earlier.
 
-- [ ] **All `[RULING PENDING]` markers resolved** — `grep -rn "RULING PENDING"` returns zero
-      (currently: the `first-edition-1.0` tag lines in `README.md` and `ERRATA.md`).
+- [ ] **All `[RULING PENDING]` markers resolved** — currently the `first-edition-1.0` tag lines in
+      `README.md` and `ERRATA.md`, and nothing else. Use:
+      `grep -rn "RULING PENDING" --exclude-dir=.git --exclude-dir=nbj --exclude=FLIP_CHECKLIST.md --exclude=FLIP_DRYRUN_*.md`
+      **The exclusions are not optional and the bare grep can never return zero** (found by the
+      2026-08-20 dry run): this checklist line contains the string it greps for, `nbj/` is the
+      gitignored drop-zone, and the dry-run report quotes the marker while reporting on it. The same
+      trap applies to the personal-residue sweep below — the audit reports quote the very patterns
+      they audit, so `record/FLIP_DRYRUN_*.md` and `record/REPO1_SCRUB_*.md` must be excluded there
+      too or the sweep will report itself and someone will chase ghosts on release day.
 - [ ] **Scrub gate re-run** on the final state (REPO_SPEC §5), clean.
 - [ ] **Float gate clean, both editions** — grep the full build log for `Overfull` *and* for
       `Float too large for page by`; zero hits of either, same tolerance as the zero-overfull
@@ -33,8 +40,15 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       installable in the authoring environment; run `reuse lint` in CI and confirm zero errors.
 - [ ] **Beta-name sweep** — grep full history for the reader list held in `archive/`; expect zero
       (readers live only outside the repo).
-- [ ] **Imprint placeholders filled** — repository URL + ISBN — in the same release commit that
-      sets the final `\PAGECOUNT`.
+- [ ] **Paper stock chosen — this gates the spine and has never actually been decided.** Every
+      number in `BOOK_COVER.md` silently assumes KDP **white** (0.002252 in/page → 0.4549 in at
+      202 pp). Cream is 0.0025 in/page → 0.5050 in: **0.05 in apart**, enough to throw the wrap if
+      it surfaces late. Cream is the warmer, more period-correct stock for an engraved-plate book —
+      but this interior carries ten grayscale plates, and cream muddies halftones where white holds
+      them. White is the recommendation and the zero-work option; it just needs a conscious yes.
+- [ ] **Imprint placeholders filled** — repository URL ✅ (2026-08-17) and ISBN ✅ (2026-08-20,
+      `978-87-977519-1-6`, in the kolofon with the publisher line). **Only `\PAGECOUNT` remains**,
+      set in the release commit: 202 pp → spine 0.4549 in → full wrap 12.7049 × 9.25 in.
 - [ ] **Release PDF** — `git add -f manuscript/billiard_ball_universe.pdf` in that release commit
       (see `PDF_POLICY.md`).
 - [ ] **OpenTimestamps Phase 2 (OTS-3)** — anchor the release in a new batch folder per the `timestamps/README.md` convention: `timestamps/YYYY-MM-DD-first-edition-1.0/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, record block heights in `timestamps/README.md` (anchors stay frozen), commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*

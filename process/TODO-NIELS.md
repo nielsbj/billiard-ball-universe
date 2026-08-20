@@ -94,7 +94,9 @@
 - [ ] **CONV-0c** — export DONE (2026-07-30 16:22; zip on the external mirror, `E:\Niels\Proj-2026\repo\ed720115…zip`, sha256 `9f35cd53…284885c`, OTS-stamped 2026-07-31 with the .ots committed in `timestamps/`). Remaining, at the desktop: zip → archive/ + Dropbox, then tell code-claude to update the chatgpt_README completeness line.
 
 ## 3. Beta close (~20 August)
-- [ ] Collect the replies. Forward findings to chat-claude; rulings → patches → code-claude, the standing pipeline.
+- [x] **Beta window closed 2026-08-20 — no further replies are expected.** The standing pipeline
+      (findings → chat-claude → rulings → patches → code-claude) stays available if anything arrives
+      late, but nothing downstream waits on it any longer.
 - [ ] Thank the readers. If any line of their feedback might be quoted in the public record, ask that reader first; the default is anonymized summary only.
 - [ ] Declare the interior final: no further prose changes without a reopened ledger.
 
