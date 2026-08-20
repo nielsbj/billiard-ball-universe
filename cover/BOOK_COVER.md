@@ -62,7 +62,7 @@ What survives is smaller and harder than what the author walked in with: not pro
 - **Ground:** aged ivory paper, flat color **`#EDE4CE`**, full wrap (front, spine, back). *(Was `#F4EFE4` until 2026-08-20 — see "The sanguine plate" below.)*
 - **Ink:** near-black `#1A1A1A` for all type and rules. The title stays pure near-black: at thumbnail size its contrast against the ground is the cover's single largest asset and must not be spent on colour.
 - **Accent:** one oxblood rule `#6B2E2E` under the title, **1.8 pt** — not the original 1.1 pt, which was invisible below about 150 px and so contributed nothing to the only view most buyers ever get.
-- **The plate:** the artwork is printed in sanguine, a three-point ramp `#331B17` → `#7E4437` → `#FAF4E7`. Paper plus one ink; the drawing is unchanged.
+- **The plate:** the artwork is printed in sanguine, a three-point ramp `#331B17` → `#874531` → `#EDE4CE`, breaking at luminance **0.68**. Paper plus one ink; the drawing is unchanged. **The highlight endpoint is the ground colour exactly** — see "Tuning" below; nothing in the image is lighter than the page, which is what the engraved-plate conceit claims and what the first build was quietly violating.
 - **Frame:** thin double rule (0.6 pt + 1.6 pt, 4 pt apart) inset 0.28 in from trim on front and back, engraving-plate style. Nothing crosses it except the art may touch it.
 
 **Front, zones top to bottom:**
@@ -80,6 +80,15 @@ Two alternatives were built as real covers and rejected on the evidence: **loude
 **On identity:** this does not break the book's monochrome-engraving character. Paper plus one printer's ink is the oldest convention in engraving, and sanguine and red-chalk plates are period-correct; the cover reads as the same plate pulled in red ink. The interior stays grayscale by policy. One hue is a treatment; two would be decoration — do not add a second.
 
 **Print watch-list for the proof:** dark reds shift brown in CMYK, and the hatched field carries more ink than the old black-on-near-white did; the midtone is deliberately desaturated to survive that, so resist pushing it redder. A flat cream field over the whole wrap can band or show handling marks. The proof check formerly written *"ivory right"* now reads **"parchment right, sanguine not maroon."**
+
+### Tuning (same day, and it corrected an error of mine)
+The first sanguine build still read milky at 90 px. The number I had used to judge it was wrong twice over: it was measured across a square crop of which **30.6 % is bare ground**, and the histogram behind it was too coarse. The real distribution of the drawing's light mass is **1.9 % at 0.78–0.85, 1.9 % at 0.85–0.90, 3.5 % at 0.90–0.95, and 38.9 % at 0.95+** — almost all of it pinned at effectively pure white, because the paper gaps *inside* the hatching are drawn as opaque white rather than left transparent.
+
+Two consequences. Moving the ramp breakpoint is nearly inert: 0.50 → 0.68 only redistributes the 3.8 % living between 0.78 and 0.90 (drawing-only luminance 137 → 131). And the highlight endpoint owns **38.9 % of the drawing** — so with `HIGH` at `#FAF4E7` (luminance 244) against a ground of 228, a third of the ball was printing *brighter than the paper around it*. That was the milkiness, not the midtone.
+
+`HIGH` therefore comes down to the ground exactly. The specular glare survives because it reads by **local contrast against surrounding line work**, not by absolute luminance above the page — it is an unhatched disc, not a bright one. Tested one step below ground (`#E4D9BE`) the highlight inverts to ink where the drawing says paper, the glare dies and the tint drifts to a dead olive: **the floor is the ground itself.** Arrival at thumbnail scale improved from luminance 182 / saturation 0.168 to **171 / 0.214** on the diluted metric, and the ball reads as a solid warm object (`nbj/final_shelf.png`, `nbj/tune_highlight.png`).
+
+**Fallback, named in advance so the proof read is binary:** if dot gain closes the hatching gaps and the ball's body fuses into a flat brown field, the fix is **not darker ink** — raise `HIGH` a half step to `#F1E9D6` and rebuild. That is the only sanctioned remedy.
 4. Subtitle `A World With No Bottom` — italic, ~22 pt, centered beneath the art.
 5. Author `NIELS BONDE JENSEN` — caps, letterspaced +12%, ~19 pt, centered, 0.6 in above bottom trim.
 

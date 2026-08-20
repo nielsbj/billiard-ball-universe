@@ -43,7 +43,8 @@ Then the wrap: drop `cover_recursive_ball.png` beside `cover_wrap.tex`, `\ARTFIN
 ## The sanguine derivative (2026-08-20)
 `cover_recursive_ball.png` is the master and is **never modified**. The wrap now includes
 `cover_recursive_ball_sanguine.png`, produced from it by `gen_sanguine.py`, which maps the
-drawing's luminance onto a three-point ramp `#331B17` → `#7E4437` → `#FAF4E7` and preserves alpha.
+drawing's luminance onto a three-point ramp `#331B17` → `#874531` → `#EDE4CE` breaking at 0.68,
+and preserves alpha.
 Delete the derivative and re-run the script to rebuild it; nothing else is needed, and the master's
 embedded generation provenance is untouched because the master is only ever read.
 
@@ -53,6 +54,20 @@ thumbnail size the hatching optically averages toward the ramp's midpoint, so a 
 reproduces the same grey average with a faint cast. The midtone is the whole mechanism. Ramp
 endpoints are Fable's colour direction of 2026-08-20, adopted by the author; the rationale, the two
 rejected alternatives and the print watch-list are in `BOOK_COVER.md` §"The sanguine plate".
+
+**The highlight endpoint is the ground colour, deliberately.** 38.9% of the drawing sits at
+luminance 0.95+ — not the specular glare, which is a small unhatched disc, but the paper gaps inside
+the hatching, drawn as opaque white. Any `HIGH` brighter than the ground prints a second, whiter
+"paper" inside the ball; at `#FAF4E7` (luminance 244) against a 228 ground it did exactly that, and
+that was the milkiness the first build was criticised for. At `HIGH` = ground the gaps *are* the
+paper, as in a real steel engraving. The glare survives on local contrast against the line work
+rather than on absolute luminance. One step below ground (`#E4D9BE`, tested) inverts the highlight
+into ink and kills the glare — the floor is the ground itself, and the only sanctioned fallback if
+dot gain closes the gaps on the proof is to raise `HIGH` a half step to `#F1E9D6` and rebuild.
+Never darker ink: `SHADOW` is already at the ~240% coverage ceiling.
+
+The generator reports the arrival colour it produces — the optical mean over the ball at thumbnail
+scale — so the tuning target stays checkable rather than remembered.
 
 Ground moved `#F4EFE4` → `#EDE4CE` in the same change, and the oxblood rule 1.1 pt → 1.8 pt.
 

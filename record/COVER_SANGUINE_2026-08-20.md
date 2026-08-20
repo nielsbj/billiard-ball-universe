@@ -82,6 +82,62 @@ by policy. One hue is a treatment, two would be decoration — `BOOK_COVER.md` n
   desaturated to survive that, so resist pushing it redder. A flat cream field across the whole wrap
   can band or show handling marks. The old check *"ivory right"* becomes **"parchment right,
   sanguine not maroon."**
-- The ramp endpoints are Fable's first recommendation, applied as given. A tuning pass on the three
-  endpoints against the built result has **not** been done and is the obvious next refinement if the
-  proof or a second look wants one.
+## The tuning pass (same day) — which found an error of mine
+
+The first build still read milky at 90 px, so the ramp was tuned against the built result. The pass
+is worth recording because **the number the tuning was aimed at was wrong, and it was my number.**
+
+*Both errors were mine, in the measurement handed to the colour direction:*
+1. The reported "arrival" figure was measured over a square crop of which **30.6 % is bare ground**
+   with no drawing in it. Diluted, it read luminance 182; measured over the drawing only, the first
+   build was already luminance 137, saturation 0.326 — past the target that was then set for it. The
+   target was unreachable by that metric: even at breakpoint 0.72 it only falls to 177.
+2. The histogram was too coarse. "46.3 % above 0.78 luminance" is true, but the distribution inside
+   that band is **1.9 % / 1.9 % / 3.5 % / 38.9 %** across 0.78–0.85, 0.85–0.90, 0.90–0.95, 0.95+.
+   Almost all of it is effectively pure white — the paper gaps *inside* the hatching are drawn as
+   opaque white, not left transparent.
+
+*What the correction changed.* The breakpoint, the lever the first tuning leaned on, is nearly
+inert: 0.50 → 0.68 only redistributes the 3.8 % of the drawing between 0.78 and 0.90, moving
+drawing-only luminance 137 → 131. Built and measured, not predicted. The lever that matters is the
+**highlight endpoint**, because it owns 38.9 % of the drawing: at `#FAF4E7` (luminance 244) against
+a 228 ground, a third of the ball was printing brighter than the paper around it.
+
+*The ruling, given the corrected data:* `HIGH` comes down to `#EDE4CE`, the ground exactly — one
+step past the floor the earlier direction had set, and the earlier floor was wrong about what it
+protected. It assumed the highlight band *was* the specular glare; it is not. The glare is a small
+unhatched disc that reads by local contrast against surrounding line work, not by absolute
+luminance above the page, and it survives intact. Tested one step below ground (`#E4D9BE`) the
+highlight inverts into ink where the drawing says paper, the glare dies, the tint drifts to a dead
+olive — so the floor is the ground itself. `MID` stays `#874531` and `BREAK` stays 0.68, not because
+either earns its keep on the numbers but because that is the combination that was looked at and
+judged good; sending an unjudged combination to a proof to save a line of config is a bad trade at
+the last cheap moment.
+
+*Final ramp:* `#331B17` → `#874531` → `#EDE4CE`, break 0.68.
+
+| arrival at thumbnail scale (diluted metric) | luminance | saturation |
+|---|---|---|
+| as built, grey | 188.2 | 0.023 |
+| sanguine v1 | 181.6 | 0.168 |
+| v2, midtone + breakpoint only | 178.3 | 0.184 |
+| **final, highlight at ground** | **171.2** | **0.214** |
+
+`gen_sanguine.py` now reports this arrival figure on every run, so the target stays checkable
+instead of remembered. Cover rebuilt 0 errors / 0 Overfull; barcode re-scanned and still decodes.
+
+*One consequence worth keeping.* With `HIGH` at the ground, nothing in the image is lighter than the
+page — which is what "paper plus one printer's ink" claims. The first build was quietly printing a
+second, whiter paper inside the ball. The measurement error did not just move a number; it exposed
+the cover violating its own conceit.
+
+## Open
+
+- **Proof read is now binary, and the fallback is named in advance.** The hatching gaps are 38.9 % of
+  the drawing and at ground level have no luminance headroom at all. On the proof: do the gaps
+  survive as gaps, or does dot gain fuse the ball's body into a flat brown field? Check the sparsest
+  hatching near the glare and the densest that must stay open — the ball-cluster inset and the
+  spiral. **Gaps open → ship. Gaps plugged → one rebuild at `HIGH` = `#F1E9D6`, and never darker
+  ink**, since `SHADOW` is already at the ~240 % coverage ceiling. Also check the specular disc reads
+  one clear step lighter than the hatched tone at arm's length, and that the ball's silhouette does
+  not dissolve into the ground in the thin-hatched top-left quadrant.
