@@ -1140,6 +1140,71 @@ That is not a preface of despair. A model that can be wounded in \emph{specific 
 \fbox{\parbox{0.90\linewidth}{\small \textbf{The toy, for the road.} The \emph{flux} makes gravity: bodies shadow one another's rain and are pushed together. The \emph{lattice} carries light: the crowd's own transverse song. The \emph{gap} --- matter's lowest quantum step, below which energy cannot be absorbed at all --- seals each layer's energy books; the \emph{cascade} --- the hand-off of refused energy to the faster layers below --- carries the intake downward and away. One assumption does double duty: \emph{lower layers are faster}. Two standing purchases --- things assumed, not derived: a hidden rest frame, and energy's regress, downward forever. The running state: the table at this chapter's end.}}
 \end{center}
 
+% ===================== FIGURE-BEGIN =====================
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[>=stealth]
+  % ---------------- the two layers ----------------
+  \fill[black!5]  (0,1.70) rectangle (9.6,4.60);
+  \fill[black!12] (0,0.10) rectangle (9.6,1.30);
+  \node[anchor=east] at (9.45,4.42) {\small our layer};
+  \node[anchor=west] at (0.25,0.95) {\small the layer below --- faster};
+
+  % ---------------- the lattice: rings, caught mid-song ----------------
+  \foreach \r in {2.40,3.00,3.60} {
+    \foreach \i in {0,...,5} {
+      \pgfmathsetmacro{\x}{0.40+\i*0.55}
+      \pgfmathsetmacro{\dy}{0.26*sin(\i*70)}
+      \draw[black!60, line width=0.7pt] (\x,{\r+\dy}) ellipse [x radius=0.15, y radius=0.11];
+    }
+  }
+  % the song: the lattice's own transverse wave, drawn through the middle row
+  \draw[bbuGold, line width=1.1pt, smooth, samples=90, domain=0.30:3.40]
+    plot (\x,{3.00+0.26*sin(((\x-0.40)/0.55)*70)});
+  \draw[->, bbuGold, line width=0.9pt] (3.50,3.00) -- (3.85,3.00);
+
+  % ---------------- the flux: rain through everything ----------------
+  \foreach \p/\a in {(0.75,4.30)/-115,(1.85,4.35)/-70,(2.45,1.95)/40,
+                     (0.55,2.05)/65,(3.60,2.00)/110,(5.30,2.00)/75,
+                     (4.60,3.45)/-25,(7.55,4.32)/-125,(8.85,4.30)/-65,
+                     (5.05,3.75)/-155,(6.35,1.90)/55,(3.30,4.30)/-80,
+                     (6.20,4.30)/-95,(9.15,3.70)/-150,(5.80,2.35)/25}
+    \draw[->, black!45] \p -- +(\a:0.48);
+
+  % ---------------- two bodies, mutual shadow, inward push ----------------
+  \fill[bbuGold!25] (7.00,2.80) rectangle (8.40,3.20);
+  \shade[ball color=black!65] (6.70,3.00) circle (0.30);
+  \shade[ball color=black!65] (8.70,3.00) circle (0.30);
+  \draw[->, bbuBlue, line width=1.3pt] (5.95,3.00) -- (6.32,3.00);
+  \draw[->, bbuBlue, line width=1.3pt] (9.45,3.00) -- (9.08,3.00);
+
+  % ---------------- the gap: the boundary that seals the books ----------------
+  \draw[black!70, line width=0.9pt, dash pattern=on 9pt off 6pt] (0,1.50) -- (9.6,1.50);
+  \node[fill=white, inner sep=1.6pt] at (1.35,1.50) {\small the gap};
+
+  % ---------------- the cascade: energy sold downward ----------------
+  \foreach \x in {6.35,6.70,7.05} \draw[->, bbuRed] (\x,1.68) -- (\x,1.06);
+  \foreach \x in {8.35,8.70,9.05} \draw[->, bbuRed] (\x,1.68) -- (\x,1.06);
+  \foreach \x in {6.35,6.70,7.05,8.35,8.70,9.05} \draw[->, bbuRed!70] (\x,0.88) -- (\x,0.30);
+  \node[anchor=east] at (6.05,0.62) {\small the cascade};
+
+  % ---------------- labels ----------------
+  \node[anchor=south] at (2.05,3.98) {\small the lattice};
+  \node[anchor=west]  at (3.95,3.00) {\small the song};
+  \node[anchor=west]  at (4.20,4.28) {\small the flux};
+  \node[anchor=north, align=center, text width=3.2cm] at (7.70,2.62) {\small the shadow push};
+
+  % ---------------- the ledger corner ----------------
+  \node[draw, anchor=north west, text width=9.2cm, inner sep=5pt, align=left]
+    at (0,-0.30)
+    {\footnotesize \textbf{The ledger.} One assumption, twice: \emph{lower layers are
+     faster}.\\ Two purchases: the hidden frame; the downward regress.};
+\end{tikzpicture}
+\caption{The toy, on one page. Our layer is a crowd doing two things at once: a \emph{flux} streaming through everything (the thin arrows), and a \emph{lattice} holding its shape (the rings). Gravity is what the streaming does --- each body shadows the other's rain, so the push that survives is inward. Light is what the lattice does --- its own transverse song, travelling while the rings stay put. Below our layer's floor lies the \emph{gap}, the refusal that keeps our books exact: energy our modes cannot take in sips is handed on whole, downward, by the \emph{cascade}, into layers that run faster than ours. Every element here is Chapter~6's, and every wound in this chapter is aimed at one of them.}
+\label{fig:toymap}
+\end{figure}
+% ===================== FIGURE-END =====================
+
 \section{First Wound: The Pincer of Drag and Heat}
 
 The oldest objection is Newton's own, raised against Fatio --- the first shadow-gravity man --- before Le Sage was born, and it has never been answered. It goes like this.
@@ -1838,6 +1903,19 @@ What remains, after the testing, is what remained after Chapter 3's battle, and 
 Craft notes (fact-check pass done; cleared items live in ref.bib notes and FACTCHECK\_REPORT.md): (1) [Poincaré figures inserted in the pincer per PROSE\_PATCHES\_stage1.md; the stale deferral parenthetical removed on the author's ruling.] [resolved 2026-07-29: invoked twice (second wound; stiffness section) and verified --- Michelson--Morley 1887 probed $\Delta c/c$ at the $10^{-8}$ level (the expected $v^2/c^2$ of orbital motion); Herrmann et al.\ 2009 (PRD 80, 105011 = herrmann2009) reached $\Delta c/c \sim 1\times10^{-17}$: a billionfold, as the prose says, and the two passages agree with each other.] Electron substructure: [resolved: the prose already states the current bound --- ``a hundred thousand times smaller than a proton'' ($\sim10^{-20}$ m) --- in the fourth wound and the spin section.] All other item-1 checks (Maxwell critique, GW170817 bound, g-2, Kelvin re-emission) confirmed. (13, Entropy section) [resolved: Gibbs paradox statement checked against Jaynes 1965 (Am.~J.~Phys.~33, 391, now in ref.bib as jaynes1965) --- the book's gas-mixing formulation is the standard one; ``entropy is an anthropomorphic concept'' is \S{}VI of that paper, phrase credited by Jaynes to Wigner, should the author ever want it in prose. Kelvin 1852, Planck 1900, Ehrenfest 1911 coinage, and Albert's Past Hypothesis all confirmed earlier.] (12, Fifth Wound) [resolved: all citations confirmed; Bell attribution split in prose per PROSE\_PATCHES\_stage1.md --- ``cheapest'' is Bell's, ``least crazy'' marked as the author's.] (2) The condensed-matter/analog-gravity paragraph should eventually name names in an endnote --- Volovik's helium work, analog horizons in BECs, Verlinde's entropic gravity --- kept out of the main text to preserve voice. (3) [resolved: built as tab:wounds.] (4) [resolved: the Coda delivers exactly one thing.]
 \end{draftnote}
 
+% ---- Coda-reprise plate (ruled in 2026-08-20) ----------------------------
+% The cover's own recursion, reprised full-page on the verso so it faces the
+% Coda's open door across the spread: the endless world beside the one way out.
+% No new asset -- this is the same master the cover is built from, printed here
+% in the interior's grayscale. The parity guard puts it on a verso; \addchap
+% then opens the Coda on the facing recto.
+\clearpage
+\ifodd\value{page}\hbox{}\thispagestyle{empty}\newpage\fi
+{\thispagestyle{empty}\null\vfill
+ \centerline{\includegraphics[height=0.86\textheight,width=\textwidth,keepaspectratio]%
+   {cover/cover_recursive_ball}}
+ \vfill}
+\clearpage
 \addchap{\emph{Coda --- One Mystery}}
 \markboth{Coda --- One Mystery}{Coda --- One Mystery}
 \chapterart{coda_open_door}

@@ -61,8 +61,20 @@
       Mark second anchors on your read-through, or say the word and the Dictionary gets tagged as
       the standing second reference. Three further questions wait in
       `record/INDEX_PASS_2026-08-20.md` §"Open, for the author".
-- [ ] **Coda-reprise plate — rule yes/no**: the full-page varied-structure recursion facing the Coda (tiles exist; near-free). Weigh the diptych reading — the single open door beside the endless recursion — against art-facing-art crowding. Must be decided **before** the page count locks. → on yes, code-claude composes from the tiles at interior spec.
-- [ ] **Toy-map figure (P10/E5) — the pencil test, rule yes/no**: the one-page map of the toy (flux, lattice, song, shadow push, gap, cascade, plus the ledger corner) drafted at interior spec and previewed in both editions at `nbj/toymap_preview.pdf` (colour) and `nbj/toymap_preview_print.pdf` (grayscale). The E3 box is already in the book and **stays either way** — box for the flip-back, figure for the first read. Must be decided **before** the page count locks; on yes, code-claude lifts the marked block into Ch. 7 ahead of the First Wound and reports the new count.
+- [x] **Coda-reprise plate — RULED IN 2026-08-20, and it cost nothing.** *"Both Coda and toy-map
+      plates are fine."* Placed full-page on the verso facing the Coda's open door: the endless
+      recursion beside the one way out. The feared art-facing-art crowding does not materialise —
+      the plate page carries no folio and no text, so the spread reads as one composition.
+      **No new asset was needed:** the "composed from the tiles" preview in `nbj/` turned out to be
+      the cover master flattened to grayscale (mean absolute difference 0.044, max 2), so the book
+      now points at `cover/cover_recursive_ball.png` directly. One `\includegraphics`, nothing
+      duplicated, nothing to keep in sync.
+- [x] **Toy-map figure (P10/E5) — RULED IN 2026-08-20.** Lifted verbatim from the marked block and
+      placed in Ch. 7 immediately after the E3 box and ahead of the First Wound; it heads folio 89,
+      with the First Wound opening below it. The E3 box **stays**, as ruled — box for the flip-back,
+      figure for the first read. It needed no preamble change: the master already defines
+      `bbuBlue`/`bbuRed`/`bbuGold` against `\ifdigitaledition` and already loads the `calc` library,
+      so the grayscale twin (song 0.60, cascade 0.42, push 0.22) came through untouched.
 - [ ] **R1 as childhood witness — a separate conversation, after he has read.** Ch. 1's open
       draftnote (`manuscript/billiard_ball_universe.tex:223`) says the border-intuition still has
       no concrete scene: *"if a memory exists, add it, but the chapter works without it."* R1 was
