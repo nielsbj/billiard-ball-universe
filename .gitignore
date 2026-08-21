@@ -118,6 +118,20 @@ venv/
 .claude/settings.local.json
 # NOTE: CLAUDE.md is intentionally NOT ignored — it is committed.
 
+# ---- Outbound critique handoffs ----
+# chatgpt-cover/ is a scratch bundle for a second opinion on the cover: rendered panels,
+# thumbnails and copies of specs, all derived from committed sources by the recipe in its
+# own README. Regenerable, several MB of rasters, and not part of the book.
+chatgpt-cover/
+# cover-suggestions/ is the same kind of thing pointed inward: cover variants built from
+# copies of cover_wrap.tex so a change can be looked at before it is ruled on. Rebuildable,
+# and nothing in it is authoritative until a variant is applied to cover/ and recorded.
+cover-suggestions/
+# best-cover/ holds the recommended variant as a ready-to-apply package. It becomes
+# authoritative only when it is copied into cover/ and mirrored into record/ -- until
+# then it is a proposal, and a proposal committed beside the real cover is a trap.
+best-cover/
+
 # ---- Drop-zone ----
 # nbj/ is Niels's private drop-zone for chat-claude outputs (duplicates, handoffs, scratch).
 # Never public: authoritative patches/reports are curated into record/ instead.
