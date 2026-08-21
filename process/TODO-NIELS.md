@@ -98,10 +98,16 @@
       (findings → chat-claude → rulings → patches → code-claude) stays available if anything arrives
       late, but nothing downstream waits on it any longer.
 - [ ] Thank the readers. If any line of their feedback might be quoted in the public record, ask that reader first; the default is anonymized summary only.
-- [ ] Declare the interior final: no further prose changes without a reopened ledger.
+- [x] **Declare the interior final — DONE 2026-08-21.** *"interior is final."* No further prose
+      changes without a reopened ledger. The state being declared final: **202 pp, both editions
+      0 errors / 0 Overfull**, index live on folios 191–192, both plates in, ISBN in the kolofon.
+      The last prose-adjacent patch was P17 (`ce4a7d4`), which changed no prose — its one conditional
+      did not fire because the page already carried the paragraph it would have added.
 
 ## 4. Convergence — fires only after §3
-- [ ] Approve the final interior build (both editions 0/0) and its **final page count**: ______
+- [x] **Final interior build approved, and the page count is 202.** Both editions built 2026-08-21:
+      0 errors, 0 Overfull, 202 pp, trim 432 × 648 pt. Identical box counts between editions, as they
+      must be — the only edit that day was a source comment.
 - [ ] KDP setup: account, new paperback title, metadata (title, subtitle, author, description = the back-cover blurb, categories/keywords — chat-claude drafts these on ask), pricing (yours), territories.
 - [x] **ISBN — done, and the route changed: it did not come from KDP.** Registered with DBC
       2026-08-10: publisher of record **Niels Bonde Jensen**, forlagsnummer 977519, this paperback
@@ -110,7 +116,17 @@
       **KDP is therefore set up with your own ISBN**, not KDP's free one: theirs is Amazon-locked
       and would split the edition IngramSpark has to share. Expanded Distribution stays **OFF**.
 - [ ] Confirm "First edition, 2026" is still true of the calendar; if it slips, the year changes with it.
-- [ ] Cover: code-claude sets final \PAGECOUNT → spine computes → KDP previewer → **order the one physical proof**. Judge the proof on paper: links black, ivory right, plates crisp, spine centered.
+- [x] **Cover: `\PAGECOUNT` set to 202 and the spine computed — done 2026-08-21.** Spine
+      **0.5050 in**, wrap **12.7550 × 9.25 in** (3827 × 2775 px at 300 dpi), 0 errors / 0 Overfull,
+      barcode re-scanned and still decodes `9788797751916`. Spine ink centred to within 0.005 in,
+      margins 0.1833 / 0.1783 in against KDP's 0.0625 in minimum. **The cover file is now
+      upload-ready** — `cover/cover_wrap.pdf`.
+- [ ] **Yours now: KDP previewer → order the one physical proof.** Judge the proof on paper:
+      **parchment right, sanguine not maroon**, the hatching gaps open (check the sparsest hatching
+      near the glare and the densest at the ball-cluster inset and the spiral), plates crisp, spine
+      centred, and — added 2026-08-21 — **the black title sits *with* the plate rather than *on* it**.
+      Two fallbacks are named in advance so the read stays binary: gaps plugged by dot gain →
+      `HIGH` = `#F1E9D6` and never darker ink; title reading detached → `#241812`, never oxblood.
 - [ ] On proof approval: the release commit — imprint URL + ISBN + \PAGECOUNT in one commit, tagged first-edition-1.0 → code-claude runs the flip checklist (pending markers zero, CI gitleaks + reuse lint, beta-name sweep) → **flip the repo public** → publish on KDP. One day, all of it.
 
 ## 5. After publication — unhurried

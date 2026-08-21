@@ -47,9 +47,14 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       **Carries a known cost:** cream muddies halftones, and this interior has ten grayscale plates.
       The recommendation had been white on that ground; the ruling went the other way with the cost
       accepted, so the plates are now a proof-day inspection item rather than a settled matter.
-- [ ] **Imprint placeholders filled** — repository URL ✅ (2026-08-17) and ISBN ✅ (2026-08-20,
-      `978-87-977519-1-6`, in the kolofon with the publisher line). **Only `\PAGECOUNT` remains**,
-      set in the release commit: 202 pp → spine 0.4549 in → full wrap 12.7049 × 9.25 in.
+- [x] **Imprint placeholders filled — ALL THREE DONE.** Repository URL ✅ (2026-08-17), ISBN ✅
+      (2026-08-20, `978-87-977519-1-6`, in the kolofon with the publisher line), and `\PAGECOUNT` ✅
+      (2026-08-21, on the author's declaration that the interior is final): **202 pp → spine
+      0.5050 in → full wrap 12.7550 × 9.25 in**, built and measured.
+      *This line previously read "spine 0.4549 in → full wrap 12.7049 × 9.25 in" — the **white**-stock
+      figures, left behind by the cream ruling of 2026-08-20 and contradicting §"Paper stock" above
+      it in this same file. Corrected. It is precisely the failure that section warns about: the
+      constant and the count must be right together, or the wrap is wrong twice over.*
 - [ ] **Release PDF** — `git add -f manuscript/billiard_ball_universe.pdf` in that release commit
       (see `PDF_POLICY.md`).
 - [ ] **OpenTimestamps Phase 2 (OTS-3)** — anchor the release in a new batch folder per the `timestamps/README.md` convention: `timestamps/YYYY-MM-DD-first-edition-1.0/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, record block heights in `timestamps/README.md` (anchors stay frozen), commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*
