@@ -60,29 +60,29 @@
   % art band, centered; square \ARTW x \ARTW
   \pgfmathsetmacro\artw{3.7}
   \ifARTFINAL
-    \node[anchor=north] at (\fC,9.125-3.28) {\includegraphics[width=\ARTW]{cover_recursive_ball_sanguine}};
+    \node[anchor=north] at (\fC,9.125-3.17) {\includegraphics[width=\ARTW]{cover_recursive_ball_sanguine}};
   \else
     \draw[ink,line width=0.6pt] (\fC-\artw/2,9.125-3.28-\artw) rectangle (\fC+\artw/2,9.125-3.28);
     \draw[ink,line width=0.4pt] (\fC-\artw/2,9.125-3.28-\artw) -- (\fC+\artw/2,9.125-3.28);
     \draw[ink,line width=0.4pt] (\fC-\artw/2,9.125-3.28) -- (\fC+\artw/2,9.125-3.28-\artw);
     \node at (\fC,9.125-3.28-\artw/2) {\small cover\_recursive\_ball --- placeholder (square, per brief)};
   \fi
-  \node[anchor=north] at (\fC,9.125-7.32) {\fontsize{22}{24}\itshape\selectfont A World With No Bottom};
-  \node[anchor=south] at (\fC,0.125+0.60) {\fontsize{19}{21}\selectfont\textls[120]{NIELS BONDE JENSEN}};
+  \node[anchor=north] at (\fC,9.125-7.32) {\fontsize{24}{26}\itshape\selectfont A World With No Bottom};
+  \node[anchor=south] at (\fC,0.125+0.60) {\fontsize{18}{20}\selectfont\textls[120]{NIELS BONDE JENSEN}};
   % ================= SPINE =================
   \node[rotate=-90,anchor=center] at (6.125+\s/2,9.125-2.55) {\fontsize{11.5}{13}\selectfont\textls[60]{THE BILLIARD BALL UNIVERSE}};
   \node[rotate=-90,anchor=center] at (6.125+\s/2,0.125+2.05) {\fontsize{11.5}{13}\selectfont\textls[60]{NIELS BONDE JENSEN}};
   \fill[ink] (6.125+\s/2,4.625) circle (0.055); \draw[ivory,line width=0.5pt] (6.125+\s/2,4.625)++(-0.02,0.03) arc (130:310:0.036);
   % ================= BACK =================
   \node[anchor=north west,text width=4.6in,align=left] at (0.125+0.62,9.125-0.72) {%
-    {\fontsize{15}{18}\bfseries\selectfont A universe with no bottom --- argued by an author who shows you where he loses.\par}\vspace{9pt}
+    {\fontsize{15}{18}\bfseries\selectfont\hyphenpenalty=10000\exhyphenpenalty=10000 A universe with no bottom --- argued\\ by an author who shows you where he loses.\par}\vspace{9pt}
     {\fontsize{10.5}{14.5}\selectfont
     As a child, Niels Bonde Jensen decided that two things were cheating: forces that pull across empty space, and borders that end the questions. This book is the adult case for the universe the child demanded --- infinitely layered, everything pushing, everything made of something smaller, without end.\par\vspace{5.5pt}
     It is not a book that claims victory. Its central argument was fought out, round by round, against an artificial mind armed with the strongest objections in the written tradition --- and the concessions, in both directions, are kept on the page. Its physics chapter grades its own wounds: the three-hundred-year-old pincer of drag and heat; the gravitational waves of LIGO; Bell's theorem, aimed at the book's first sentence by name. Where the toy universe breaks, the breaks are shown --- in a table, which the book then reads backward, as a specification of the layer below.\par\vspace{5.5pt}
     What survives is smaller and harder than what the author walked in with: not proof, but a universe with exactly one mystery --- why there is anything at all --- and no magic anywhere else. Along the way: why an infinite universe contains other yous; why that is comforting rather than crushing; why your responsibility is the local surplus of joy over suffering; and why, globally, nothing is special --- while locally, you are.\par}\vspace{8pt}
     \begin{center}\begin{minipage}{3.7in}\centering
       \rule{3.1in}{0.5pt}\\[5pt]
-      {\fontsize{13}{16}\itshape\selectfont ``Globally nothing is special. Locally, you are. Live there.''}\\[5pt]
+      {\fontsize{13}{16}\itshape\selectfont ``Globally nothing is special.\\ Locally, you are. Live there.''}\\[5pt]
       \rule{3.1in}{0.5pt}
     \end{minipage}\end{center}\vspace{8pt}
     % Bottom two lines constrained to 2.9in so they clear the KDP barcode reserve
