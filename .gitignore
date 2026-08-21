@@ -131,6 +131,12 @@ cover-suggestions/
 # authoritative only when it is copied into cover/ and mirrored into record/ -- until
 # then it is a proposal, and a proposal committed beside the real cover is a trap.
 best-cover/
+# FINAL/ is the upload folder assembled for publication day: the three release
+# PDFs (~31 MB of build output), the proof rasters, and copies of specs that are
+# already tracked elsewhere. PDF_POLICY keeps built PDFs out of the tree until
+# the release commit, which force-adds the printed interior alone. This folder
+# is a convenience, not a record -- the record is record/.
+FINAL/
 
 # ---- Drop-zone ----
 # nbj/ is Niels's private drop-zone for chat-claude outputs (duplicates, handoffs, scratch).
