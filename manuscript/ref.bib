@@ -100,6 +100,8 @@
 @book{descartes1644,
   author    = {Descartes, Ren{\'e}},
   title     = {Principia Philosophiae (Principles of Philosophy)},
+  publisher = {Louis Elzevir},
+  address   = {Amsterdam},
   year      = {1644},
   note      = {English: trans. V.~R. Miller and R.~P. Miller, Reidel, Dordrecht, 1983. The vortex theory of planetary motion: Part~III}
 }
@@ -107,6 +109,7 @@
 @book{huygens1690,
   author    = {Huygens, Christiaan},
   title     = {Discours de la cause de la pesanteur},
+  publisher = {Pieter van der Aa},
   address   = {Leiden},
   year      = {1690},
   note      = {Huygens's mechanical account of gravity and his rejection of attraction as a physical primitive. The word ``absurde'' for Newton's attraction is from his letter to Leibniz, 18 Nov.~1690 (``son Principe d'attraction, qui me para{\^i}t absurde''), \emph{Oeuvres compl{\`e}tes} IX, p.~538; the Addition to the Discours expresses the same rejection in different words}
@@ -129,7 +132,7 @@
   publisher = {Cambridge University Press},
   address   = {Cambridge},
   year      = {2014},
-  note      = {Contains the four letters to Richard Bentley (1692/93), incl. the ``so great an absurdity'' passage on action at a distance (letter of 25 Feb.~1692/93; the Newton Project transcript reads ``any competent faculty'' where the printed tradition has ``a competent faculty'')}
+  note      = {Contains the four letters to Richard Bentley (1692/93), incl. the ``so great an absurdity'' passage on action at a distance (letter of 25 Feb.~1692/93). The book quotes the Newton Project transcript, which reads ``any competent faculty''; some printed texts read ``a competent faculty''}
 }
 
 @book{leibnizclarke,
@@ -185,6 +188,10 @@
   author    = {Maxwell, James Clerk},
   title     = {Atom},
   booktitle = {Encyclopaedia Britannica},
+  % Double-braced on purpose: publisher is a biblatex LIST field, so an unbraced
+  % " and " is parsed as a list separator and splits the firm in two.
+  publisher = {{A.\ and C.\ Black}},
+  address   = {Edinburgh},
   edition   = {9},
   volume    = {3},
   pages     = {36--49},
@@ -396,7 +403,7 @@
   address   = {London},
   year      = {1922},
   url       = {https://en.wikisource.org/wiki/Ether_and_the_Theory_of_Relativity},
-  note      = {Leiden inaugural lecture, 5 May 1920 ({\"A}ther und Relativit{\"a}tstheorie); the published translation reads ``according to the general theory of relativity space without ether is unthinkable,'' with the caveat that this ether has no parts trackable through time}
+  note      = {Delivered at Leiden in 1920 ({\"A}ther und Relativit{\"a}tstheorie, the inaugural lecture of 5 May); printed in the 1922 collection cited here, which is why the two years differ. The published translation reads ``according to the general theory of relativity space without ether is unthinkable,'' with the caveat that this ether has no parts trackable through time}
 }
 
 @article{coddington2003,
@@ -694,7 +701,7 @@
   volume    = {6},
   pages     = {809--831},
   year      = {1904},
-  note      = {Contraction derived from motion-altered molecular forces --- the mechanism-sketch behind the Lorentz conspiracy. Full translation on Wikisource}
+  note      = {The 1904 paper crowning the contraction programme begun in 1892: contraction derived from motion-altered molecular forces --- the mechanism-sketch behind the Lorentz conspiracy. Full translation on Wikisource}
 }
 
 @article{chandrasekhar1931,
@@ -709,7 +716,7 @@
 }
 
 @article{baadezwicky1934cr,
-  author    = {Baade, W. and Zwicky, F.},
+  author    = {Baade, Walter and Zwicky, Fritz},
   title     = {Cosmic Rays from Super-novae},
   journal   = {Proceedings of the National Academy of Sciences},
   volume    = {20},
@@ -741,7 +748,7 @@
   pages     = {374--381},
   year      = {1939},
   doi       = {10.1103/PhysRev.55.374},
-  note      = {Cited for the concept of a maximum neutron-core mass, not for its value: the paper's own ideal-gas figure is about 0.7 solar masses, computed without strong-force repulsion. The ``over two solar masses'' in the text is the modern number, co-cited to the GW170817 observation}
+  note      = {Their own computed limit was near 0.7 solar masses --- cited here as the idea's origin, not the modern number. The figure the text uses comes from the direct pulsar measurement co-cited beside it}
 }
 
 @article{bekenstein1973,
@@ -1138,9 +1145,66 @@
   note      = {Gravity as an emergent, entropic phenomenon}
 }
 
+% Added 2026-08-21 (P18). Every field below was checked against the CrossRef
+% record for the DOI given, except wali1991, checked against the BJHS review
+% notice (ISBN 0-226-87054-5).
+@article{fonseca2021,
+  author    = {Fonseca, E. and Cromartie, H. T. and Pennucci, T. T. and others},
+  title     = {Refined Mass and Geometric Measurements of the High-mass {PSR} {J0740}$+$6620},
+  journal   = {The Astrophysical Journal Letters},
+  volume    = {915},
+  pages     = {L12},
+  year      = {2021},
+  url       = {https://doi.org/10.3847/2041-8213/ac03b8},
+  note      = {Radio timing with {NICER} geometry: the heaviest neutron star yet measured with precision, at about two solar masses --- the direct measurement behind this book's ``something over two solar masses''}
+}
+
+@article{bressi2011,
+  author    = {Bressi, G. and Carugno, G. and Della Valle, F. and Galeazzi, G. and Ruoso, G. and Sartori, G.},
+  title     = {Testing the Neutrality of Matter by Acoustic Means in a Spherical Resonator},
+  journal   = {Physical Review A},
+  volume    = {83},
+  pages     = {052101},
+  year      = {2011},
+  url       = {https://doi.org/10.1103/PhysRevA.83.052101},
+  note      = {Ordinary matter is electrically neutral to better than a part in $10^{21}$, measured acoustically --- which is to say the proton's charge and the electron's match to that precision. The bound behind the invoice Chapter~6 files against its two charge mechanisms}
+}
+
+@article{kramer2021,
+  author    = {Kramer, M. and Stairs, I. H. and Manchester, R. N. and others},
+  title     = {Strong-Field Gravity Tests with the Double Pulsar},
+  journal   = {Physical Review X},
+  volume    = {11},
+  pages     = {041050},
+  year      = {2021},
+  url       = {https://doi.org/10.1103/PhysRevX.11.041050},
+  note      = {Sixteen years of timing {PSR} {J0737}$-$3039A/B. The system is over-determined --- more relativistic effects measured than there are unknowns --- so its masses and orbit check against one another, and they hold}
+}
+
+@book{wali1991,
+  author    = {Wali, Kameshwar C.},
+  title     = {Chandra: A Biography of S. Chandrasekhar},
+  publisher = {University of Chicago Press},
+  address   = {Chicago},
+  year      = {1991},
+  note      = {The source for the voyage: Chandrasekhar worked the white-dwarf limit out at nineteen, on the 1930 passage from India to England}
+}
+
+@article{pdg2024,
+  author    = {Navas, S. and others},
+  title     = {Review of Particle Physics},
+  journal   = {Physical Review D},
+  volume    = {110},
+  pages     = {030001},
+  year      = {2024},
+  note      = {The Particle Data Group's compendium; the quark-and-lepton-compositeness listings carry the contact-interaction bounds behind this book's statement about electron substructure. The {LEP} limits run from about 8.5 to 26 TeV, and even the weakest of them puts any structure inside the electron more than ten thousand times smaller than a proton}
+}
+
 @book{laplace1805,
   author    = {Laplace, Pierre-Simon},
-  title     = {Trait{\'e} de m{\'e}canique c{\'e}leste, Volume~IV},
+  title     = {Trait{\'e} de m{\'e}canique c{\'e}leste},
+  volume    = {4},
+  publisher = {Courcier},
   address   = {Paris},
   year      = {1805},
   note      = {Book~X, ch.~VII: the quantitative argument that a finite propagation speed for gravity would perturb the Moon's orbit, with the bound $\geq 7\times10^{6}$ times the speed of light. English: N.~Bowditch, \emph{A Treatise in Celestial Mechanics}, Chelsea, New York, 1966. The popular predecessor is \emph{Exposition du syst{\`e}me du monde} (1796), which lacks the quantitative pinpoint}
