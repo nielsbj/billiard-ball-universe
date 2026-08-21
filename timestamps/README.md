@@ -48,3 +48,49 @@ so it verifies in place — the never-edit-an-anchor rule held.
 
 The release anchor per `process/FLIP_CHECKLIST.md`: tagged commit hash + sha256 of the final
 interior PDFs (digital + print), final cover PDF, and the tex; stamp, upgrade, record here.
+
+**What is not yet stamped, stated plainly:** the finished book. OTS-1 covers the draft as it stood on
+**30 July** — 142-odd pages, before the hostile read, the index, both plates, the ISBN, the sanguine
+cover, and P17–P19. The book now standing at 206 pp is **outside every existing anchor**. That is by
+design (the release anchor wants the tagged commit hash, which does not exist until the proof is
+approved), but it means priority-of-authorship for everything written since 30 July currently rests
+on git history alone, not on a Bitcoin attestation. If the gap matters, an interim stamp of the final
+text is free and independent of OTS-3 — see the runbook's Rule 2 on interim stamps.
+
+## The Windows OpenSSL gotcha — diagnosed and fixed on this desktop, 2026-08-21
+
+`ots` dies on import with:
+
+```
+File "...\site-packages\bitcoin\core\key.py", line 27, in <module>
+    _ssl = ctypes.cdll.LoadLibrary(
+        ctypes.util.find_library('ssl.35') or ctypes.util.find_library('ssl') or ctypes.util.find_library('libeay32'))
+TypeError: LoadLibrary() argument 1 must be str, not None
+```
+
+**It is OpenSSL, not libsecp256k1.** `python-bitcoinlib` 0.12.2 asks ctypes for an OpenSSL DLL under
+three Unix-ish names; on Windows all three return `None`, and `LoadLibrary(None)` raises. The client
+itself is fine — nothing about OpenTimestamps is broken.
+
+**The fix** (first worked out in the *Synthesized Roots* project, whose `timestamp_log.md` recorded
+it): copy Python's own `libcrypto-3.dll` into a folder under the name `libeay32.dll` and put that
+folder on PATH. The shim already existed here from 30 July:
+
+```
+C:\Users\niels\AppData\Roaming\Python\Python314\ssl-shim\libeay32.dll   (5.0 MB)
+```
+
+**What was actually wrong on 2026-08-21 was only PATH.** The shim was never added to the persistent
+user PATH, so it worked in whichever shell had prepended it by hand and failed everywhere else — for
+weeks, silently, until someone tried to stamp. **Fixed durably:** the shim folder is now the first
+entry of the *user* PATH (registry), so every newly-opened terminal has a working `ots`. Verified by
+rebuilding PATH from the registry and running `ots --version` → `v0.7.2` and `ots info` against
+`2026-07-30-draft/billiard_ball_universe.pdf.ots`, which reproduced the recorded file hash
+`25bf5f23…5735e02`.
+
+*Note for anyone scripting this:* `ots` exit codes are sane — `0` on success, `2` on a missing file.
+A `255` seen in a shell pipeline is a broken pipe from truncating the output (`| Select-Object
+-First N`), not an `ots` failure.
+
+**Already-running processes keep their old PATH.** If `ots` still fails in a terminal that was open
+before this change, close it and open a new one.
