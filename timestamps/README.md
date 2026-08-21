@@ -44,6 +44,54 @@ commit to —
 The anchor still hashes to its stamped value (`90d8286d80a2f98c19937da2293874301596c13b8291b32ae4f2b686a257e413`),
 so it verifies in place — the never-edit-an-anchor rule held.
 
+## 2026-08-21-final-text — the finished text (interim stamp)
+
+**Kind: interim protection stamp, not the release anchor.** Taken because the finished 206 pp book
+lay outside every existing anchor: OTS-1 covers a ~142 pp draft from 30 July, and OTS-3 is
+deliberately sequenced after proof approval because it wants the tagged commit hash. That sequencing
+is right for proving *what was published* and useless for proving *when the text existed*. This
+closes the second gap and nothing else.
+
+**Anchored state:** commit `2de4de24080f7c8ca1bd9a1d084f30c6134579ab`, working tree clean; interior
+206 pp both editions at 0 errors / 0 Overfull / 0 Float-too-large / 0 undefined / 0 collisions; spine
+0.5150 in; ISBN 978-87-977519-1-6.
+
+**Seven proofs, all four calendars each** (a.pool + b.pool opentimestamps.org, a.pool.eternitywall,
+ots.btc.catallaxy):
+
+| proof | binds sha256 |
+|---|---|
+| `ANCHOR-2026-08-21-final-text.txt.ots` | `5234ce36…8e0d58ed` (the anchor itself) |
+| `billiard_ball_universe.tex.ots` | `c279d309…c5d776e5` |
+| `ref.bib.ots` | `5be3836a…fd53e402` |
+| `cover_wrap.tex.ots` | `ce6d20b9…28f8fc4e` |
+| `BBU_interior_print_206pp.pdf.ots` | `512ba94c…c0539b43` |
+| `BBU_interior_digital_206pp.pdf.ots` | `6c5b3208…44a6e2ea` |
+| `BBU_cover_wrap_206pp.pdf.ots` | `45861599…49689748` |
+
+Each proof's recorded hash was read back with `ots info` and checked against the anchor; all six file
+hashes match, and the three PDF hashes also match `FINAL/1_upload/CHECKSUMS.sha256`.
+
+**The anchor alone would have sufficed** — it carries all six hashes, so stamping it timestamps them
+transitively. The six direct proofs are redundancy, and they cost nothing: stamps are free and the
+calendars batch thousands of hashes into one Bitcoin transaction.
+
+**Status: PENDING** as of 2026-08-21. `ots upgrade` immediately after stamping returned
+*"Pending confirmation in Bitcoin blockchain"* from all four calendars with no txid yet — normal
+within the first hours. Per the runbook, *"Failed! Timestamp not complete"* is **not** an error and
+**not** a lost proof.
+
+**Next: run `ots upgrade` on each `.ots` in this folder in a day or so**, then record the block
+heights here (anchors stay frozen; status lives in this README). If any proof is still pending after
+about three days with no txid appearing, escalate rather than retrying silently.
+
+**On the PDF proofs specifically.** pdflatex embeds a build timestamp, so rebuilding from the same
+sources does **not** reproduce these bytes. Those three proofs are worth something only while those
+exact files survive — they live in `FINAL/1_upload/` with their `.ots` beside them, and `FINAL/` is
+gitignored. The `.tex`/`.bib` proofs have no such problem: those files are committed, and git keeps
+them byte-exact forever. **If the PDFs are lost, nothing that matters is lost** — the sources are
+anchored, and authorship rests on the sources.
+
 ## first-edition-1.0 — at release (OTS-3, pending)
 
 The release anchor per `process/FLIP_CHECKLIST.md`: tagged commit hash + sha256 of the final

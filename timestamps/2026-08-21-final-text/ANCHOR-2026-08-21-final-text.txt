@@ -1,0 +1,78 @@
+ANCHOR — 2026-08-21 — the final text of the first edition (OTS interim)
+================================================================================
+
+WHAT THIS IS
+------------
+An INTERIM protection stamp, in the sense of the OpenTimestamps runbook's Rule 2.
+It is NOT the release anchor. The release anchor (OTS-3) is a separate, later
+event, tied to the tag `first-edition-1.0` and fired only after the physical
+proof is approved.
+
+WHY IT EXISTS
+-------------
+The only prior anchors for this book are from 30 July 2026 (OTS-1/OTS-2) and
+cover a draft of roughly 142 pages. Everything since then — the hostile read
+(P1–P16), the reference census, the index, both ruled-in plates, the ISBN and
+its EAN-13, the sanguine cover, the pre-release audit that found the shipping
+build was still the draft build, and the patches P17, P18 and P19 including the
+closing concession paragraph — lies outside every existing anchor.
+
+The release anchor is deliberately sequenced after proof approval because it
+wants the tagged commit hash. That is correct for proving WHAT WAS PUBLISHED.
+It is not sufficient for proving WHEN THE TEXT EXISTED. This anchor closes that
+gap and nothing else.
+
+STATE ANCHORED
+--------------
+repository : github.com/nielsbj/billiard-ball-universe (private at this date)
+commit     : 2de4de24080f7c8ca1bd9a1d084f30c6134579ab
+             ("timestamps: the ots client is fixed on this desktop, and the gap
+              is stated")
+working tree at that commit: CLEAN (git status empty)
+
+interior   : 206 pages, both editions
+             0 errors, 0 Overfull, 0 Float-too-large, 0 undefined references,
+             0 figure/text collisions
+trim       : 6 x 9 in (432 x 648 pt)
+paper      : cream
+spine      : 0.5150 in (206 x 0.0025 in)
+full wrap  : 12.7650 x 9.25 in
+ISBN       : 978-87-977519-1-6 (registered with DBC; publisher of record
+             Niels Bonde Jensen, forlagsnummer 977519)
+
+SHA-256 OF THE ANCHORED FILES
+-----------------------------
+Sources (committed in git at the commit above, byte-exact and recoverable):
+
+c279d309718fd6e8f8109012e372c3c5674eed411fa1a823dc903690c5d776e5  manuscript/billiard_ball_universe.tex
+5be3836a2f4004aaca755f03cdf4050353b6c6435136586c63a33f78fd53e402  manuscript/ref.bib
+ce6d20b941f7fabcf64f12d67283110473b555664c806f11d81eb6b128f8fc4e  cover/cover_wrap.tex
+
+Built artifacts (NOT committed — see process/PDF_POLICY.md; the printed interior
+is force-added at the release commit, the others live in FINAL/, gitignored):
+
+512ba94cab5c3bf38d8936e3ccfa8fbba8a782468cbfbe53d1016cedc0539b43  BBU_interior_print_206pp.pdf
+6c5b32084f1f5ebd44c4ff488d1003dca12ebe0627571b66336c6c8344a6e2ea  BBU_interior_digital_206pp.pdf
+458615992e30bf89886be96c38b084a0164ebee5df6d900e3dd4336a49689748  BBU_cover_wrap_206pp.pdf
+
+A WARNING ABOUT THE PDFs
+------------------------
+pdflatex embeds a build timestamp, so rebuilding from the same sources does NOT
+reproduce these bytes. The three PDF proofs are therefore only worth something
+while these exact files survive. The .tex/.bib proofs above do not have this
+problem: they are committed, and git preserves them byte-exact forever.
+
+If the PDFs are lost, nothing important is lost — the sources are anchored, and
+the sources are what authorship rests on.
+
+WHAT IS NOT CLAIMED
+-------------------
+- Not the published edition. No tag exists; the repository is private; no proof
+  copy has been printed or approved.
+- Not a claim that this text is unchanged from here. Proof findings are expected
+  and will be patched; they change the price of a correction, not its
+  possibility.
+- Not a substitute for OTS-3.
+
+This file is frozen. It is itself stamped, so editing it after stamping would
+break its own proof.
