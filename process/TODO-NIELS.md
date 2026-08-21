@@ -94,10 +94,25 @@
 - [ ] **CONV-0c** — export DONE (2026-07-30 16:22; zip on the external mirror, `E:\Niels\Proj-2026\repo\ed720115…zip`, sha256 `9f35cd53…284885c`, OTS-stamped 2026-07-31 with the .ots committed in `timestamps/`). Remaining, at the desktop: zip → archive/ + Dropbox, then tell code-claude to update the chatgpt_README completeness line.
 
 ## 3. Beta close (~20 August)
-- [x] **Beta window closed 2026-08-20 — no further replies are expected.** The standing pipeline
-      (findings → chat-claude → rulings → patches → code-claude) stays available if anything arrives
-      late, but nothing downstream waits on it any longer.
-- [ ] Thank the readers. If any line of their feedback might be quoted in the public record, ask that reader first; the default is anonymized summary only.
+- [x] **Beta window closed 2026-08-20 — and it closed empty. Recorded plainly, 2026-08-21.**
+      The window ran 30 July–20 August. **R1 was invited and never replied. R2 was contingent on R1
+      and never happened. The physicist seat was never filled.** So: **no external human read this
+      book before publication.** Nobody but the author.
+      **What stood in for it** — all of it in `record/`, and all of it machine or author, not a
+      stranger's eyes: the hostile read (P1–P16), the reference census, the cold check, and the
+      pre-release audit of 2026-08-21 that found the shipping build was still the draft build.
+      **The book claims nothing it did not get** — verified 2026-08-21 by sweep: the manuscript makes
+      no acknowledgement of readers, no thanks to a reviewer, no claim of outside review. The only
+      "early readers" phrases in the source are inside suppressed craft notes. Nothing to retract.
+      **Open question, and it is the author's alone:** whether the how-made note should *say* that no
+      one outside read it. The book's standing rule is that concessions stay on the page; this is a
+      concession, and it is currently not on the page.
+      **The reception gate therefore moves to publication, and the errata loop is its instrument** —
+      `README.md`'s issues route, the gate, the patch, the `ERRATA` line, the next printing. The book
+      said it can lose; that is now where it finds out, in public, rather than in a reader's email.
+- [x] **Thank the readers — moot, closed 2026-08-21.** There is no feedback to thank anyone for and
+      none to quote. R1 was asked and did not reply; whether that deserves a word from you is a
+      personal matter, not a project one, and the ledger does not track it.
 - [x] **Declare the interior final — DONE 2026-08-21.** *"interior is final."* No further prose
       changes without a reopened ledger. The state being declared final: **202 pp, both editions
       0 errors / 0 Overfull**, index live on folios 191–192, both plates in, ISBN in the kolofon.
