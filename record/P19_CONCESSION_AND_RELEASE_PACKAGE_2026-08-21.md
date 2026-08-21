@@ -29,7 +29,18 @@ Inserted after it, as its own paragraph:
 
 **The flagged wording change stands.** Sentence one reads *"No one but its author read this book
 before publication"* rather than the earlier phrasing, which implied family readers existed. None
-did. The author may veto by reverting that clause.
+did.
+
+> **RULED "KEEP", 2026-08-21.** The invited-readers clause — *"I invited readers, and the window
+> closed empty"* — was offered for softening and the author ruled **keep**. It stays whole: sought,
+> unanswered, ordinary, conceded. The distinction the seven words carry is between a book that admits
+> nobody came and a book that shows it asked.
+>
+> **This ruling was a no-op on the text, and that is the point** — "keep" is the default state, so
+> nothing was edited, nothing rebuilt, and the working tree stayed clean. The three staged PDFs and
+> their checksums are unaffected and remain valid.
+>
+> **With it, the text of the first edition is closed.** It was the manuscript's last open word.
 
 ### Rule 7, both ends — quoted
 

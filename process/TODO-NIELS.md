@@ -144,7 +144,17 @@
       `HIGH` = `#F1E9D6` and never darker ink; title reading detached → `#241812`, never oxblood.
 - [ ] On proof approval: the release commit — imprint URL + ISBN + \PAGECOUNT in one commit, tagged first-edition-1.0 → code-claude runs the flip checklist (pending markers zero, CI gitleaks + reuse lint, beta-name sweep) → **flip the repo public** → publish on KDP. One day, all of it.
 
-## 5. After publication — unhurried
+## 5. After publication
+- [ ] **Pligtaflevering — this one is law, not housekeeping.** Four copies to the deposit
+      administration (Ballerup) / the Royal Danish Library, within the statutory window. It was not in
+      this ledger before 2026-08-21; it is now, because it is the only item on the list with a legal
+      deadline attached and nothing upstream reminds you of it.
+- [ ] **Lektørudtalelse** — submit and get it accepted; it is what puts the book in front of Danish
+      libraries, and it is week-one work, not someday work.
+- [ ] **Phase 2: IngramSpark**, two to three weeks behind KDP. The whole reason the ISBN came from DBC
+      rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
+      stays **OFF** on KDP (§4).
+- [ ] **The a-kasse conversation**, already scheduled — publishing income and its treatment.
 - [ ] Re-export the Claude data once this chat closes, so the archive holds the full transcript instead of the snapshot (the converter re-runs idempotently).
 - [ ] CONV-1 with chat-claude: the marked-redaction scrub of both transcripts + per-chat INDEX → conversations/ tier goes public.
 - [ ] Watch the letterbox: repo issues → gate → patch → ERRATA line → next printing. The book said it can lose; this is where it finds out.
