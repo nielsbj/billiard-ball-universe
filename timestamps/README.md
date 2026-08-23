@@ -76,14 +76,40 @@ hashes match, and the three PDF hashes also match `FINAL/1_upload/CHECKSUMS.sha2
 transitively. The six direct proofs are redundancy, and they cost nothing: stamps are free and the
 calendars batch thousands of hashes into one Bitcoin transaction.
 
-**Status: PENDING** as of 2026-08-21. `ots upgrade` immediately after stamping returned
-*"Pending confirmation in Bitcoin blockchain"* from all four calendars with no txid yet — normal
-within the first hours. Per the runbook, *"Failed! Timestamp not complete"* is **not** an error and
-**not** a lost proof.
+**Status on the day: PENDING.** `ots upgrade` immediately after stamping returned *"Pending
+confirmation in Bitcoin blockchain"* from all four calendars with no txid yet — normal within the
+first hours. Per the runbook, *"Failed! Timestamp not complete"* is **not** an error and **not** a
+lost proof.
 
-**Next: run `ots upgrade` on each `.ots` in this folder in a day or so**, then record the block
-heights here (anchors stay frozen; status lives in this README). If any proof is still pending after
-about three days with no txid appearing, escalate rather than retrying silently.
+**Upgraded 2026-08-23 (complete).** `ots upgrade` on all seven proofs returned *"Success! Timestamp
+complete"*, one attestation from each of the four calendars, exit 0. Every proof now carries the same
+four Bitcoin attestations — the calendars batched all seven hashes into the same transactions, which
+is why the block set is identical across the folder:
+
+| block | mined (UTC) | merkle root |
+|---|---|---|
+| 963423 | 2026-08-21 10:14:08 | `bb37104b569d70c9e6950e2b7641a13132ea52c6962999d8c877b6e67a999bf3` |
+| 963424 | 2026-08-21 10:15:05 | `1d721e08b7cff9c7ab0c3740a662b810b64021429a82867dc7bf293b189866e8` |
+| 963452 | 2026-08-21 14:17:59 | `07aded43f242bb5d7680dd7f4a0155b98d7a9eeb4def17a882367f11947030ba` |
+| 963480 | 2026-08-21 19:49:07 | `252ecc2c627aec0a8d607a3efb07aa95675cbe9bb2e32c2a6fb545d7f89b19c3` |
+
+Earliest attestation is block 963423, mined 2026-08-21 10:14:08 UTC. The stamp was taken between
+commits `2de4de2` (09:51:03 UTC) and `3287c3f` (09:56:24 UTC), so the block is roughly twenty minutes
+after the stamping — later, as it must be.
+
+**Cross-check, done without a Bitcoin node.** Each proof's operation chain was executed to the hash
+it commits to at each attestation, and those hashes were compared against the block merkle roots
+reported by blockstream.info. All 28 pairs (7 proofs × 4 blocks) match the table above. `ots verify`
+still cannot run here — it wants a local node — so this replaces it rather than being skipped; the
+ladder is in the gotcha section below.
+
+The anchor still hashes to its stamped value
+(`5234ce36210d833a1dd9939c93102b7fbd60dccb88e6a26f4abe9ac78e0d58ed`), so it verifies in place. Only
+the seven `.ots` files changed in the upgrade; the anchor text was not touched.
+
+**What this now proves:** the 206 pp finished text, its sources and its three release PDFs existed in
+exactly these bytes before 2026-08-21 10:14:08 UTC. The second gap named above is closed. OTS-3 is
+unaffected and still waits on the tag.
 
 **On the PDF proofs specifically.** pdflatex embeds a build timestamp, so rebuilding from the same
 sources does **not** reproduce these bytes. Those three proofs are worth something only while those
@@ -97,13 +123,16 @@ anchored, and authorship rests on the sources.
 The release anchor per `process/FLIP_CHECKLIST.md`: tagged commit hash + sha256 of the final
 interior PDFs (digital + print), final cover PDF, and the tex; stamp, upgrade, record here.
 
-**What is not yet stamped, stated plainly:** the finished book. OTS-1 covers the draft as it stood on
-**30 July** — 142-odd pages, before the hostile read, the index, both plates, the ISBN, the sanguine
-cover, and P17–P19. The book now standing at 206 pp is **outside every existing anchor**. That is by
-design (the release anchor wants the tagged commit hash, which does not exist until the proof is
-approved), but it means priority-of-authorship for everything written since 30 July currently rests
-on git history alone, not on a Bitcoin attestation. If the gap matters, an interim stamp of the final
-text is free and independent of OTS-3 — see the runbook's Rule 2 on interim stamps.
+**What is not yet stamped, stated plainly:** the *published* state — the tagged commit and whatever
+the physical proof turns out to change. The **text** is no longer the gap: the 2026-08-21 interim
+stamp covers the 206 pp book, its sources and its three release PDFs, confirmed in Bitcoin on
+2026-08-23. What OTS-3 adds is the tag hash, which does not exist until the proof is approved.
+
+For the record, since it was true for three weeks and is worth remembering: between 30 July and
+21 August the finished book lay outside every anchor — OTS-1 covers a ~142 pp draft, before the
+hostile read, the index, both plates, the ISBN, the sanguine cover and P17–P19 — so authorship of
+everything written in that window rested on git history alone. That is what the interim stamp was
+for.
 
 ## The Windows OpenSSL gotcha — diagnosed and fixed on this desktop, 2026-08-21
 
