@@ -114,9 +114,30 @@ unaffected and still waits on the tag.
 **On the PDF proofs specifically.** pdflatex embeds a build timestamp, so rebuilding from the same
 sources does **not** reproduce these bytes. Those three proofs are worth something only while those
 exact files survive — they live in `FINAL/1_upload/` with their `.ots` beside them, and `FINAL/` is
-gitignored. The `.tex`/`.bib` proofs have no such problem: those files are committed, and git keeps
+gitignored. **Those travelling copies were upgraded too, on 2026-08-23** — they had been left at the
+pending state by the first upgrade run, which only walked this folder, so for two days the proofs
+that actually accompany the PDFs were the weak ones. They now carry the same four attestations.
+Anything that copies a PDF out of `FINAL/` must take the upgraded `.ots` with it. (The three
+PDFs were re-hashed the same day and still match `CHECKSUMS.sha256`.) The `.tex`/`.bib` proofs have no such problem: those files are committed, and git keeps
 them byte-exact forever. **If the PDFs are lost, nothing that matters is lost** — the sources are
 anchored, and authorship rests on the sources.
+
+## Standing audit — 2026-08-23
+
+Every proof in this folder re-inspected, not just the batch being upgraded. Result: **all eighteen
+committed proofs are complete**, and every recorded block above is what the files actually carry
+(4 / 4 / 3 attestations for the three batches — the 31 July batch has three because two calendars
+landed in one block, as its section already says).
+
+The three source files the 2026-08-21 batch stamps still hash to their anchored values in the working
+tree today — `billiard_ball_universe.tex` `c279d309…`, `ref.bib` `5be3836a…`, `cover_wrap.tex`
+`ce6d20b9…` — so those proofs verify against the live files, not merely against history. The 30 July
+draft PDF committed here is likewise still `25bf5f23…5735e02`.
+
+`ots upgrade` leaves a `.ots.bak` beside each proof it rewrites. Those are pre-upgrade copies,
+superfluous once the upgrade succeeds, and `*.bak` is gitignored — but three of them are sitting in
+`FINAL/1_upload/`, which is the folder the release files are uploaded from. Harmless, worth not
+mistaking for the real proofs.
 
 ## first-edition-1.0 — at release (OTS-3, pending)
 
