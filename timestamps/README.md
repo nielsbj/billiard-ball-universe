@@ -129,10 +129,18 @@ committed proofs are complete**, and every recorded block above is what the file
 (4 / 4 / 3 attestations for the three batches — the 31 July batch has three because two calendars
 landed in one block, as its section already says).
 
-The three source files the 2026-08-21 batch stamps still hash to their anchored values in the working
-tree today — `billiard_ball_universe.tex` `c279d309…`, `ref.bib` `5be3836a…`, `cover_wrap.tex`
-`ce6d20b9…` — so those proofs verify against the live files, not merely against history. The 30 July
-draft PDF committed here is likewise still `25bf5f23…5735e02`.
+At the time of the audit all three source files the 2026-08-21 batch stamps still hashed to their
+anchored values in the working tree — `billiard_ball_universe.tex` `c279d309…`, `ref.bib`
+`5be3836a…`, `cover_wrap.tex` `ce6d20b9…`. **Patch P20, later the same day, changed the manuscript**,
+so the tex no longer matches its anchored hash; `ref.bib` and `cover_wrap.tex` still do, and the
+30 July draft PDF committed here is still `25bf5f23…5735e02`. Verify the tex proof with
+`ots verify -f` against a checkout of `2de4de2`, not against the working tree.
+
+**No re-stamp was taken for P20, deliberately.** P20 is a pure deletion — every word of the text as
+it now stands was already inside the 2026-08-21 anchor, so nothing newly written needs protecting and
+priority of authorship is untouched. A stamp proves *not later than*; removing a sentence cannot
+weaken that. The two superseded interior PDFs' proofs moved with their bytes to
+`FINAL/_superseded_2026-08-21/`. OTS-3 will anchor whatever the tag finally points at.
 
 `ots upgrade` leaves a `.ots.bak` beside each proof it rewrites. Those are pre-upgrade copies,
 superfluous once the upgrade succeeds, and `*.bak` is gitignored — but three of them are sitting in
