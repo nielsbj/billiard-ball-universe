@@ -211,7 +211,39 @@ matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits besi
 `FINAL/1_upload/`; the copy here is the archive one.
 
 **Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
-Upgrade this batch and the P21 batch together after confirmation and record the block heights here.
+
+**Superseded by P23 the same morning.** The P22 wrap PDF's bytes were replaced by the P23 build; its
+travelling proof moved to `FINAL/_superseded_2026-08-24-p22/` (its own folder — the P21 proof already
+holds the filename in `_superseded_2026-08-24/`). The tex proof here verifies against a checkout of
+`7874a1c`.
+
+## 2026-08-24-p23-cover — the P23 cover (interim stamp)
+
+**Kind: interim protection stamp, not the release anchor.** P23, the day's third cover patch, cut
+"by name" from the Bell sentence — the book's own phrasing is bare (Ch. 7: "it is aimed at the first
+sentence of this book"). It came out of chat-claude's fact-checked pass over the KDP description,
+which also grew two listing-only sentences; the cover change is the shared-sentence part. Full patch
+record in `record/PROSE_PATCH_P23_kdp_description_2026-08-24.md`.
+
+**Anchored state:** commit `e0bc4251772f41577a52d7e7fb54efcf2f9d713b`; cover rebuilt at 0 errors /
+0 Overfull, geometry unchanged. The manuscript, `ref.bib` and both interior PDFs are unchanged since
+21 August and are not re-stamped.
+
+**Three proofs, all four calendars each:**
+
+| proof | binds sha256 |
+|---|---|
+| `ANCHOR-2026-08-24-p23-cover.txt.ots` | `da6b110b…3abaacd4` (the anchor itself) |
+| `cover_wrap.tex.ots` | `c586ab71…88546a47` |
+| `BBU_cover_wrap_206pp.pdf.ots` | `b2c80fb0…172321a0` |
+
+Each proof's recorded hash was read back with `ots info` and matches the anchor; the PDF hash also
+matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits beside it in
+`FINAL/1_upload/`; the copy here is the archive one.
+
+**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
+**Upgrade all three of the day's batches (p21, p22, p23) together** after confirmation and record
+the block heights here.
 
 ## first-edition-1.0 — at release (OTS-3, pending)
 
