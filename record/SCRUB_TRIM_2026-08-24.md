@@ -8,8 +8,9 @@ gate's rule is "no silent fixes" — this file is the noise.*
 P20 removed the invited-readers clause from the printed book because *the invited-readers clause
 hands recognizable people guilt*. On 2026-08-24, reading the repository before its flip, the author
 extended the same ruling to the repo's surface: the working notes carried per-person accounts of the
-beta window ("R1 was invited and never replied; R2 was contingent on R1…") that the book itself had
-already been stripped of. The facts stay; the attribution goes.
+beta window — who was invited, who answered, what was contingent on whom — that the book itself had
+already been stripped of. The facts stay; the attribution goes. (This record deliberately does not
+quote the removed sentences: a trim record that reprints what it trimmed has trimmed nothing.)
 
 ## What changed
 
