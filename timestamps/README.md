@@ -167,10 +167,15 @@ anchor cannot say *not later than* about words it never contained. Full patch re
 | `cover_wrap.tex.ots` | `b0d6dff0…2830a1f7` |
 | `BBU_cover_wrap_206pp.pdf.ots` | `bd183ddd…2474eb8` |
 
-Each proof's recorded hash was read back with `ots info` and matches the anchor; the PDF hash also
-matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits beside it in
-`FINAL/1_upload/`; the copy here is the archive one. The superseded 21 August wrap PDF's proof moved
-to `FINAL/_superseded_2026-08-21/`, joining the P20 interiors'.
+Each proof's recorded hash was read back with `ots info` and matched the anchor and
+`CHECKSUMS.sha256` on the day. The superseded 21 August wrap PDF's proof moved to
+`FINAL/_superseded_2026-08-21/`, joining the P20 interiors'.
+
+**Superseded by P22 within hours, same day.** The P21 wrap PDF's bytes were replaced by the P22
+build, and its travelling proof moved to `FINAL/_superseded_2026-08-24/`. The tex proof here stays
+meaningful — those bytes are committed at `3667202`, verify with `ots verify -f` against that
+checkout. The upgrade below still applies to this folder's proofs; they prove the P21 state, which
+is a real state the record keeps.
 
 **Consequence for the 2026-08-21 batch:** `cover/cover_wrap.tex` no longer matches its anchored hash
 `ce6d20b9…` — verify that proof with `ots verify -f` against a checkout of `2de4de2`, exactly as the
@@ -179,6 +184,34 @@ working tree.
 
 **Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
 Upgrade after confirmation and record the block heights here.
+
+## 2026-08-24-p22-cover — the P22 cover (interim stamp)
+
+**Kind: interim protection stamp, not the release anchor.** P22, hours after P21, changed one word in
+the back-cover blurb — "As a child, Niels Bonde Jensen *decided* that two things were cheating"
+became "*felt*" — the book's own staging ("I felt it then and I will say it stronger now"), which the
+blurb had compressed. A substituted word lies outside every earlier anchor, so the P21 rule applies:
+new words get their own stamp. Full patch record in
+`record/PROSE_PATCH_P22_felt_not_decided_2026-08-24.md`.
+
+**Anchored state:** commit `7874a1c1123c3d094af8bcb142dc92aecb40bffe`; cover rebuilt at 0 errors /
+0 Overfull, geometry unchanged. The manuscript, `ref.bib` and both interior PDFs are unchanged since
+21 August and are not re-stamped.
+
+**Three proofs, all four calendars each:**
+
+| proof | binds sha256 |
+|---|---|
+| `ANCHOR-2026-08-24-p22-cover.txt.ots` | `fcf952b1…9fa50ebf` (the anchor itself) |
+| `cover_wrap.tex.ots` | `3036c9a6…3e0bdd96` |
+| `BBU_cover_wrap_206pp.pdf.ots` | `45717b47…4c821e34` |
+
+Each proof's recorded hash was read back with `ots info` and matches the anchor; the PDF hash also
+matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits beside it in
+`FINAL/1_upload/`; the copy here is the archive one.
+
+**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
+Upgrade this batch and the P21 batch together after confirmation and record the block heights here.
 
 ## first-edition-1.0 — at release (OTS-3, pending)
 
