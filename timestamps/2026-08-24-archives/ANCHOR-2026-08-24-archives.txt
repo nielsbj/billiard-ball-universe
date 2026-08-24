@@ -1,0 +1,53 @@
+ANCHOR — 2026-08-24 — the conversation archives, second batch (OTS interim)
+================================================================================
+
+WHAT THIS IS
+------------
+The second conversation-archive stamp, under the standing rule stated in
+conversations/README.md: every batch of development conversations is
+OpenTimestamps-stamped BEFORE any redaction exists, so the published,
+scrubbed transcripts can be proven consistent with dated pre-scrub originals
+without revealing the originals.
+
+The first batch (2026-07-31-archives) anchored the record up to 30 July.
+This batch anchors the working conversations since: the chats in which the
+book was finished, hostile-read findings were closed, the release was
+prepared, the KDP description was written and fact-checked, and the P20-P23
+rulings were made. The chat-claude working session closed on this date.
+
+WHAT WAS EXPORTED, AND HOW
+--------------------------
+A Claude account export (account nielsbj@gmail.com), requested 2026-08-24,
+manifest created 16:23:10 UTC, scope "last 30 days". Full-history export was
+attempted first and failed repeatedly ("Invalid link" — the export URLs are
+single-use per the manifest's own instructions, and the links were consumed
+before use, most plausibly by mail-scanner prefetch). The 30-day scope
+suffices: the export filter selects by activity, so chats updated in the
+window are included IN FULL — and the payload confirms it: 3 conversations,
+created 2026-07-29..31, the largest (274 messages of 312 total) updated
+through 2026-08-24T09:31Z. Continuity with the first batch is by overlap:
+everything up to 30 July lives in the full export stamped in
+2026-07-30-draft; everything since lives here. No gap.
+
+SHA-256 OF THE ANCHORED FILES
+-----------------------------
+The files live in archive/ outside git (with a copy to follow on the
+external mirror and Dropbox), per the convention in timestamps/README.md.
+
+3858d35af8a67b7db39e8033c29e3f93baef61a807fdfa4b9fe8e46f57e196c5  conversations-000.zip
+be09193bed1067bfe83282b7698943dd0be0049085124d12727541110ce9f7ef  projects-000.zip
+7b25fce52f835ee4156a766d5ac0fbafeb34ca4aa967bdc3d8127eb0cd94a045  light_metadata-000.zip
+4f83ca1729bb5b35de494127f4c5a4608d50da38d402f0f352a67a594597a67c  manifest-93119b11-ffb8-4ef8-82f5-f1c844e17440-1787588582-38bda7d5-2026-08-24-16-23-10.json
+
+WHAT IS NOT CLAIMED
+-------------------
+- Not a publication. The exports are private and stay private; what may one
+  day be published is the marked-redaction scrub (CONV-1), and this stamp
+  exists precisely so that scrub can be checked against the clock.
+- Not the last batch. Conversations that continue past this date get the
+  same treatment in their own dated batch.
+- Nothing about the release train. This is the conversations tier, which is
+  deliberately non-blocking.
+
+This file is frozen. It is itself stamped, so editing it after stamping
+would break its own proof.

@@ -155,7 +155,11 @@
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
 - [ ] **The a-kasse conversation**, already scheduled — publishing income and its treatment.
-- [ ] Re-export the Claude data once this chat closes, so the archive holds the full transcript instead of the snapshot (the converter re-runs idempotently).
+- [x] Re-export the Claude data once this chat closes — **done 2026-08-24**: last-30-days export
+      (full-history links failed as single-use/consumed; the 30-day filter includes active chats in
+      full, largest chat complete through the close), filed in `archive/export-2026-08-24/`, stamped
+      pre-scrub as `timestamps/2026-08-24-archives/`. Remaining: copy to the external mirror +
+      Dropbox, and re-run the converter when CONV-1 starts.
 - [ ] CONV-1 with chat-claude: the marked-redaction scrub of both transcripts + per-chat INDEX → conversations/ tier goes public.
 - [ ] Watch the letterbox: repo issues → gate → patch → ERRATA line → next printing. The book said it can lose; this is where it finds out.
 - [ ] Someday, not now: RM-1's entrainment debt — edition two's first question, waiting in memos/.

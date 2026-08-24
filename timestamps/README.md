@@ -278,6 +278,26 @@ August proof verifies against a checkout of `2de4de2`; its current bytes are anc
 **Upgrade all four of the day's batches (p21, p22, p23, p24) together** after confirmation and
 record the block heights here.
 
+## 2026-08-24-archives — the conversation archives, second batch
+
+**Kind: pre-scrub archive stamp, under the standing rule in `conversations/README.md`** — every
+batch of development conversations is stamped before any redaction exists. The first batch
+(2026-07-31-archives) anchors the record to 30 July; this one anchors the working chats since —
+the book's completion, the release preparation, the P20–P23 rulings — via a Claude account export
+taken 2026-08-24 16:23 UTC, scope last-30-days (full-history links failed as single-use and
+consumed; the 30-day filter selects by activity, so the active chats are included in full: 3
+conversations, the largest updated through 2026-08-24T09:31Z). Continuity with the first batch is
+by overlap; no gap. The export files live in `archive/export-2026-08-24/` outside git, `.ots`
+beside them; copies of the proofs are committed here.
+
+**Five proofs, all four calendars each** — the anchor (`585252bc…e142fdc0`), `conversations-000.zip`
+(`3858d35a…57e196c5`), `projects-000.zip` (`be09193b…0ce9f7ef`), `light_metadata-000.zip`
+(`7b25fce5…cd94a045`), and the export manifest (`4f83ca17…4597a67c`). Each read back with
+`ots info` and matching the anchor.
+
+**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted. Upgrade with the
+day's other batches and record the blocks here.
+
 ## first-edition-1.0 — at release (OTS-3, pending)
 
 The release anchor per `process/FLIP_CHECKLIST.md`: tagged commit hash + sha256 of the final
