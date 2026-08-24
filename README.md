@@ -23,13 +23,16 @@ please read it as such.
 - **`art/`** — chapter openers and plates, with generation provenance.
 - **`cover/`** — the cover builder, integrated art, and `PROVENANCE.md`.
 - **`record/`** — the correction record: dated patches, the fact-check report, gate reports.
+- **`conversations/`** — the development conversations with the machines, at native resolution;
+  transcripts arrive after a marked-redaction scrub (its README states the policy and how the
+  redaction can be verified against pre-scrub timestamps).
 - **`memos/`** — research beyond the frozen first edition (e.g. `RM-1`).
 - **`process/`** — `MANUAL`, `FILE_OWNERSHIP`, the outline and working notes: how the book was made.
 - **`ERRATA.md`** — post-publication corrections, versioned against printings.
 
 ## Build
-From `manuscript/`: `pdflatex` → `biber` → `pdflatex` ×2 (or run `build.bat`). Zero `Overfull
-\hbox` is the standard; a build with any is not done.
+From `manuscript/`: `pdflatex` → `biber` → `makeindex` → `pdflatex` ×2 (or run `build.bat`).
+Zero `Overfull \hbox` is the standard; a build with any is not done.
 
 ## Report an error
 The book's research programme says it can lose — this is the letterbox. Found something wrong?
