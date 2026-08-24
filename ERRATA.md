@@ -1,7 +1,7 @@
 # Errata
 
 Post-publication corrections to *The Billiard Ball Universe: A World With No Bottom*, versioned
-against printings. Nothing here yet — the first edition is not yet printed.
+against printings. Nothing here yet.
 
 The loop that fills this file: an issue is opened → the claim is gated (checked, not merely
 accepted) → a dated patch lands in `record/` → the text is fixed → a line is added here → the
@@ -12,5 +12,5 @@ reader can tell which corrections their copy already contains.
 |------|-------------------|----------|------------|--------|
 | —    | —                 | —        | (none yet) | —      |
 
-[RULING PENDING: the first printing is tagged `first-edition-1.0` at publication; entries here
-are dated against that tag and later printings.]
+The first printing is the tag `first-edition-1.0`; entries here are dated against that tag and
+later printings.

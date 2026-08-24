@@ -40,9 +40,13 @@ The book's research programme says it can lose — this is the letterbox. Found 
 `ERRATA.md` → the next printing.
 
 ## Which tag is the printed book
-[RULING PENDING: at publication, the commit matching the printed interior is tagged
-`first-edition-1.0`; this README will name it "the book you are holding." Everything after that
-tag is visibly *after* the book.]
+**`first-edition-1.0` is the book you are holding.** That tag's commit carries the exact printed
+interior (`manuscript/billiard_ball_universe.pdf`, force-added for the release per the built-PDF
+policy) — the same bytes, checksum for checksum, that went to the printer. Everything after that
+tag is visibly *after* the book.
+
+Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots`
+client against the Bitcoin blockchain.
 
 ## License
 Split by directory — **book text and art: © 2026 Niels Bonde Jensen, all rights reserved**;
