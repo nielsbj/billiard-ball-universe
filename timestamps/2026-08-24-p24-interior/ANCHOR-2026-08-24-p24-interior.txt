@@ -1,0 +1,68 @@
+ANCHOR — 2026-08-24 — the P24 interior (OTS interim)
+================================================================================
+
+WHAT THIS IS
+------------
+An INTERIM protection stamp, in the sense of the OpenTimestamps runbook's Rule 2.
+It is NOT the release anchor. The release anchor (OTS-3) remains a separate,
+later event, tied to the tag `first-edition-1.0` and fired only after the
+physical proof is approved.
+
+WHY IT EXISTS
+-------------
+On KDP upload day the previewer rejected the print interior: the folio sat
+13 pt from the bottom trim, inside KDP's 18 pt minimum, on 191 of 206 pages.
+Patch P24 fixed it with one geometry line (footskip=36pt); not one word of
+the book changed, and the pagination was proven identical page by page. Both
+interiors are new bytes, and the day's rule is kept simple: every restaged
+artifact carries a fresh anchor. This stamp covers the new manuscript source
+and both new interior PDFs, and nothing else. ref.bib and the P23 cover are
+unchanged and not re-stamped.
+
+STATE ANCHORED
+--------------
+repository : github.com/nielsbj/billiard-ball-universe (private at this date)
+commit     : dff00f659cbdb8df4b9d2e842be99c08ff551e05
+             ("layout: the folio rises 12 points --- KDP wants 18pt of margin
+              and the page number sat at 13 (P24)")
+working tree at that commit: CLEAN for all tracked files except this
+timestamps batch, added by the commit that follows the stamping.
+
+interior   : 206 pages, both editions, pagination byte-identical to P20's
+             except the folio y-position; 0 errors, 0 Overfull,
+             0 Float-too-large, 0 undefined references
+margins    : all 206 pages now satisfy KDP: ink >= 18 pt from every trim
+             edge (folio baseline at 25 pt), gutter >= 27 pt
+trim       : 6 x 9 in (432 x 648 pt) · cream · spine 0.5150 in unchanged
+ISBN       : 978-87-977519-1-6
+
+SHA-256 OF THE ANCHORED FILES
+-----------------------------
+Source (committed in git at the commit above, byte-exact and recoverable):
+
+14657f3bd64b52d2e69e6b3f7f2b851f270c36cab67dbf5620d93af6ef789c3e  manuscript/billiard_ball_universe.tex
+
+Built artifacts (NOT committed — they live in FINAL/1_upload/, gitignored,
+with their .ots beside them):
+
+2b72c2f22a50ad4549f727f3485193a0aa677d344fccafe2c1d157cbaed40bf0  BBU_interior_print_206pp.pdf
+082509677693068ba1ec3de43339ca552eda03445cbe25dc995c88102ec52af6  BBU_interior_digital_206pp.pdf
+
+A WARNING ABOUT THE PDFs
+------------------------
+pdflatex embeds a build timestamp, so rebuilding from the same source does NOT
+reproduce these bytes. The PDF proofs are only worth something while those
+exact files survive. If they are lost, nothing important is lost — the source
+is anchored, committed, and byte-exact in git forever.
+
+WHAT IS NOT CLAIMED
+-------------------
+- Not the published edition. No tag exists; the repository is private; no
+  proof copy has been printed or approved.
+- Not a claim that this interior is unchanged from here. Proof findings are
+  expected and may change it; they change the price of a correction, not its
+  possibility.
+- Not a substitute for OTS-3.
+
+This file is frozen. It is itself stamped, so editing it after stamping would
+break its own proof.

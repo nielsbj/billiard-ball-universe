@@ -242,8 +242,41 @@ matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits besi
 `FINAL/1_upload/`; the copy here is the archive one.
 
 **Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
-**Upgrade all three of the day's batches (p21, p22, p23) together** after confirmation and record
-the block heights here.
+
+## 2026-08-24-p24-interior — the P24 interior (interim stamp)
+
+**Kind: interim protection stamp, not the release anchor.** On KDP upload day the previewer rejected
+the print interior: the folio's ink sat 13 pt from the bottom trim, inside KDP's 18 pt minimum, on
+191 of 206 pages (KDP listed a truncated 20). P24 is one geometry line — `footskip=36pt` — lifting
+the folio baseline to 25 pt; **not one word of the book changed**, and pagination was proven
+identical page by page. Both interiors are new bytes. Full record in
+`record/LAYOUT_PATCH_P24_folio_raised_2026-08-24.md`.
+
+**Anchored state:** commit `dff00f659cbdb8df4b9d2e842be99c08ff551e05`; both editions 206 pp at
+0 errors / 0 Overfull / 0 Float-too-large / 0 undefined; all 206 pages now satisfy KDP's margin
+rules; spine and the P23 cover unchanged. `ref.bib` and the cover are not re-stamped.
+
+**Four proofs, all four calendars each:**
+
+| proof | binds sha256 |
+|---|---|
+| `ANCHOR-2026-08-24-p24-interior.txt.ots` | `14548d79…04222c70` (the anchor itself) |
+| `billiard_ball_universe.tex.ots` | `14657f3b…ef789c3e` |
+| `BBU_interior_print_206pp.pdf.ots` | `2b72c2f2…aed40bf0` |
+| `BBU_interior_digital_206pp.pdf.ots` | `08250967…ec52af6` |
+
+Each proof's recorded hash was read back with `ots info` and matches the anchor; the PDF hashes also
+match `FINAL/1_upload/CHECKSUMS.sha256`. The PDFs' travelling `.ots` sit beside them in
+`FINAL/1_upload/` — for the first time since P20 the interiors travel with proofs again (P20 took no
+re-stamp, so its interiors had none). The superseded P20 interiors' bytes are simply gone; they
+carried no proofs to move.
+
+**The manuscript tex has now diverged twice from the 21 August anchor** (P20, then P24). Its 21
+August proof verifies against a checkout of `2de4de2`; its current bytes are anchored here.
+
+**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
+**Upgrade all four of the day's batches (p21, p22, p23, p24) together** after confirmation and
+record the block heights here.
 
 ## first-edition-1.0 — at release (OTS-3, pending)
 
