@@ -1,0 +1,31 @@
+# Release gates (FLIP_CHECKLIST rows 5-6): the two checks the authoring
+# environment honestly could not run --- gitleaks-the-tool over full history
+# (entropy pass, not just regex), and reuse lint for the licensing map.
+name: release-gates
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  gitleaks:
+    name: gitleaks (full history)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  reuse-lint:
+    name: reuse lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: fsfe/reuse-action@v5
