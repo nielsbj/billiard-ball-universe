@@ -34,12 +34,18 @@ to reject exactly that.
 
 ## How the honesty of the redaction can be checked
 
-The unscrubbed originals — both account exports and five verbatim conversation extracts — were
-OpenTimestamps-stamped on 2026-07-31, before any scrub existed; the proofs are committed in
-`timestamps/2026-07-31-archives/` with their Bitcoin block heights recorded in
-`timestamps/README.md`. The published transcripts can therefore be proven consistent with
-dated, pre-scrub originals without revealing the originals themselves. The redaction is
-checkable against the clock, not taken on trust.
+The rule, applied to every batch: **the unscrubbed original is OpenTimestamps-stamped before
+any redaction exists**, so a published transcript can be proven consistent with a dated,
+pre-scrub original without revealing the original itself. The redaction is checkable against
+the clock, not taken on trust.
+
+The first application: both account exports and five verbatim conversation extracts were
+stamped on 2026-07-31 — proofs in `timestamps/2026-07-31-archives/`, Bitcoin block heights in
+`timestamps/README.md`. The conversations did not stop there: the work continued through the
+hostile read, the release preparation, and publication itself, and those later exchanges are
+anchored the same way — exported at close, stamped pre-scrub in their own dated batch under
+`timestamps/`, then scrubbed. Each published transcript names the stamp batch its original
+lives under.
 
 ## What each transcript will carry
 
