@@ -5,7 +5,7 @@ vector plates**, not hand-drawn. They are authored and verified in Niels's **pro
 this directory carries a *declared snapshot* of the source so the self-checking claim is
 inspectable inside the book repo.
 
-- **Upstream:** `proofviz` (in `D:\Niels\Proj-2026\FuncGraph\`), snapshot at commit **`ec9db61`**.
+- **Upstream:** `proofviz` (a sibling private project), snapshot at commit **`ec9db61`**.
   proofviz is the source of truth; this snapshot is a copy for the record, not the live studio.
 - **`programs/`** — the seven plate programs (`bbu_actorsbelow`, `bbu_circulation`,
   `bbu_inverse_square`, `bbu_layers`, `bbu_lightpair`, `bbu_shadowpush`, `bbu_sixthwound`),

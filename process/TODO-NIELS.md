@@ -18,12 +18,10 @@
 ## 1. The beta send — the only clock that matters. This week.
 - [x] **Stamped-PDF safeguard — done 2026-07-31.** The stamped bytes (sha256 `25bf5f23…5735e02`) were found byte-exact on the external-disk mirror (`E:\…\manuscript\billiard_ball_universe.pdf`, disk untouched) and committed as `timestamps/billiard_ball_universe.pdf` beside its proof; ANCHOR updated. Desktop rebuilds are now harmless. Remaining thirty-second bit: drop a copy in Dropbox beside the archive. (The other three stamped artifacts were already safe: anchor + tex + cover_wrap byte-exact in git at `f79ba9b`; export zip has its Dropbox copy per §0.)
 - [ ] Choose 2–4 readers: at least one physicist, at least one who owns no physics. Write their names in archive/ only; here they are R1–R4.
-  - [x] **R1 — the "owns no physics" slot, secured 2026-08-01.** Name in archive/ only.
-        **R1 has a personal stake in this book and in your feelings about it**, which makes him
-        the hardest reader to get an honest answer from. The ask must release him from politeness
-        in as many words: say that *"I liked it"* is the one reply that is no use, and that what
-        you want is where he stopped understanding, where he got bored, and where he did not
-        believe you. "Somewhere in chapter 5" is precision enough.
+  - [x] **R1 — the "owns no physics" slot, secured 2026-08-01.** Name in archive/ only. The ask
+        was designed to release the reader from politeness in as many words: *"I liked it"* is
+        the one reply that is no use; wanted instead was where the reading stopped, bored, or
+        disbelieved. "Somewhere in chapter 5" is precision enough.
   - [ ] **The physicist slot is still open — this does not block the send.** Stagger it: R1's
         three weeks start now, the physicist's start whenever he says yes. Waiting for a matched
         pair costs calendar and buys only a tidier comparison.
@@ -83,21 +81,14 @@
       figure for the first read. It needed no preamble change: the master already defines
       `bbuBlue`/`bbuRed`/`bbuGold` against `\ifdigitaledition` and already loads the `calc` library,
       so the grayscale twin (song 0.60, cascade 0.42, push 0.22) came through untouched.
-- [ ] **R1 as childhood witness — a separate conversation, after he has read.** Ch. 1's open
-      draftnote (`manuscript/billiard_ball_universe.tex:223`) says the border-intuition still has
-      no concrete scene: *"if a memory exists, add it, but the chapter works without it."* R1 was
-      there and may remember what you do not. Keep this out of the beta email and out of the
-      reading window — asking a reader to help write the book contaminates his read, and you
-      cannot get both from the same conversation. If a scene comes back, it is a prose patch and
-      goes through the standing pipeline, not straight into the tex.
 - [ ] **Uzan craft item** (the last open fact-check flag): read the quasar-constants passage's two sentences once against Uzan's abstract → tell code-claude to mark the craft note resolved.
-- [ ] **CONV-0c** — export DONE (2026-07-30 16:22; zip on the external mirror, `E:\Niels\Proj-2026\repo\ed720115…zip`, sha256 `9f35cd53…284885c`, OTS-stamped 2026-07-31 with the .ots committed in `timestamps/`). Remaining, at the desktop: zip → archive/ + Dropbox, then tell code-claude to update the chatgpt_README completeness line.
+- [ ] **CONV-0c** — export DONE (2026-07-30 16:22; zip on the external mirror, sha256 `9f35cd53…284885c`, OTS-stamped 2026-07-31 with the .ots committed in `timestamps/`). Remaining, at the desktop: zip → archive/ + Dropbox, then tell code-claude to update the chatgpt_README completeness line.
 
 ## 3. Beta close (~20 August)
 - [x] **Beta window closed 2026-08-20 — and it closed empty. Recorded plainly, 2026-08-21.**
-      The window ran 30 July–20 August. **R1 was invited and never replied. R2 was contingent on R1
-      and never happened. The physicist seat was never filled.** So: **no external human read this
-      book before publication.** Nobody but the author.
+      The window ran 30 July–20 August and closed empty: **no invited reader replied, and no seat
+      was filled.** So: **no external human read this book before publication.** Nobody but the
+      author.
       **What stood in for it** — all of it in `record/`, and all of it machine or author, not a
       stranger's eyes: the hostile read (P1–P16), the reference census, the cold check, and the
       pre-release audit of 2026-08-21 that found the shipping build was still the draft build.
@@ -111,8 +102,8 @@
       `README.md`'s issues route, the gate, the patch, the `ERRATA` line, the next printing. The book
       said it can lose; that is now where it finds out, in public, rather than in a reader's email.
 - [x] **Thank the readers — moot, closed 2026-08-21.** There is no feedback to thank anyone for and
-      none to quote. R1 was asked and did not reply; whether that deserves a word from you is a
-      personal matter, not a project one, and the ledger does not track it.
+      none to quote; anything personal around the invitations is a personal matter, not a project
+      one, and the ledger does not track it.
 - [x] **Declare the interior final — DONE 2026-08-21.** *"interior is final."* No further prose
       changes without a reopened ledger. The state being declared final: **202 pp, both editions
       0 errors / 0 Overfull**, index live on folios 191–192, both plates in, ISBN in the kolofon.
@@ -154,7 +145,6 @@
 - [ ] **Phase 2: IngramSpark**, two to three weeks behind KDP. The whole reason the ISBN came from DBC
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
-- [ ] **The a-kasse conversation**, already scheduled — publishing income and its treatment.
 - [x] Re-export the Claude data once this chat closes — **done 2026-08-24**: last-30-days export
       (full-history links failed as single-use/consumed; the 30-day filter includes active chats in
       full, largest chat complete through the close), filed in `archive/export-2026-08-24/`, stamped

@@ -10,7 +10,7 @@ revise the book.
 
 ## The headline change: six figures are now rendered plates, not TikZ
 
-Niels's **proofviz** studio (D:\Niels\Proj-2026\FuncGraph\proofviz) authors
+Niels's **proofviz** studio (a sibling private project) authors
 figures as small JavaScript "sketches" and exports them as cropped vector PDFs.
 Six of the book's most geometric figures were rebuilt there, because they are
 *about* three-dimensional geometry and the flat TikZ versions were quietly

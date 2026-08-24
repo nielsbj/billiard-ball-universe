@@ -107,7 +107,7 @@ running head. The section is titled one thing and argues another.
 Worth knowing *why* it survived: the 2026-08-03 reader-draft verification recorded
 *"`local surplus` ×6, `local ratio` ×0 — exactly the mirror of July's ×0/×6"* and passed. That
 check was case-sensitive, so it never saw `The Local Ratio`. The heading has been in every draft
-since, including the one sent to R1.
+since, including the reader draft that went out.
 
 It is a section title, so it is prose and it is the author's call — not edited. If the answer is
 the obvious one, it is a single exact-string change plus a rebuild, and it will move nothing but

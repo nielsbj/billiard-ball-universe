@@ -6,9 +6,10 @@ was checked.*
 
 ## The beta window closed empty, and the book claims nothing it did not get
 
-From chat-claude: the window ran **30 July – 20 August**. **R1 was invited and never replied. R2 was
-contingent on R1 and never happened. The physicist seat was never filled.** So **no external human
-read this book before publication.**
+From chat-claude: the window ran **30 July – 20 August** and closed empty — **no invited reader
+replied, and no seat was filled.** So **no external human read this book before publication.**
+*(Generalized at the 2026-08-24 scrub gate: the per-person detail hands recognizable people guilt —
+see `record/SCRUB_TRIM_2026-08-24.md`.)*
 
 **What stood in for it**, all of it in `record/` and all of it machine or author rather than a
 stranger's eyes: the hostile read (P1–P16), the reference census, the cold check, and the
