@@ -35,7 +35,7 @@
 
 **Main blurb (~210 words):**
 
-As a child, Niels Bonde Jensen decided that two things were cheating: forces that pull across empty space, and borders that end the questions. This book is the adult case for the universe the child demanded — infinitely layered, everything pushing, everything made of something smaller, without end.
+As a child, Niels Bonde Jensen felt that two things were cheating: forces that pull across empty space, and borders that end the questions. This book is the adult case for the universe the child demanded — infinitely layered, everything pushing, everything made of something smaller, without end.
 
 It is not a book that claims victory. Its central argument was fought out, round by round, against an artificial mind armed with the strongest objections in the written tradition — and the concessions, in both directions, are kept on the page. Its physics chapter grades its own wounds: the three-hundred-year-old pincer of drag and heat; the gravitational waves of LIGO; Bell's theorem, aimed at the book's first sentence by name. Where the world wounds the toy, the wounds are shown — in a table, which the book then reads backward, as a specification of the layer below.
 
