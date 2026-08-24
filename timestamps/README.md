@@ -147,6 +147,39 @@ superfluous once the upgrade succeeds, and `*.bak` is gitignored — but three o
 `FINAL/1_upload/`, which is the folder the release files are uploaded from. Harmless, worth not
 mistaking for the real proofs.
 
+## 2026-08-24-p21-cover — the P21 cover (interim stamp)
+
+**Kind: interim protection stamp, not the release anchor.** Taken because P21 changed one sentence on
+the back cover — "Where the toy universe breaks, the breaks are shown" became "Where the world wounds
+the toy, the wounds are shown" — and unlike P20, which only deleted, **P21 adds words**: the 21 August
+anchor cannot say *not later than* about words it never contained. Full patch record in
+`record/PROSE_PATCH_P21_wounds_not_breaks_2026-08-24.md`.
+
+**Anchored state:** commit `366720278d3a82a2cdc7ddae221bb8a1fffb8c57`; cover rebuilt at 0 errors /
+0 Overfull, geometry unchanged (206 pp, spine 0.5150 in, wrap 12.7650 × 9.25 in). The manuscript,
+`ref.bib` and both interior PDFs are unchanged since 21 August and are not re-stamped.
+
+**Three proofs, all four calendars each:**
+
+| proof | binds sha256 |
+|---|---|
+| `ANCHOR-2026-08-24-p21-cover.txt.ots` | `59afa34f…c8c28a1c` (the anchor itself) |
+| `cover_wrap.tex.ots` | `b0d6dff0…2830a1f7` |
+| `BBU_cover_wrap_206pp.pdf.ots` | `bd183ddd…2474eb8` |
+
+Each proof's recorded hash was read back with `ots info` and matches the anchor; the PDF hash also
+matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits beside it in
+`FINAL/1_upload/`; the copy here is the archive one. The superseded 21 August wrap PDF's proof moved
+to `FINAL/_superseded_2026-08-21/`, joining the P20 interiors'.
+
+**Consequence for the 2026-08-21 batch:** `cover/cover_wrap.tex` no longer matches its anchored hash
+`ce6d20b9…` — verify that proof with `ots verify -f` against a checkout of `2de4de2`, exactly as the
+manuscript's since P20. Of the 21 August source proofs only `ref.bib` still verifies against the
+working tree.
+
+**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
+Upgrade after confirmation and record the block heights here.
+
 ## first-edition-1.0 — at release (OTS-3, pending)
 
 The release anchor per `process/FLIP_CHECKLIST.md`: tagged commit hash + sha256 of the final

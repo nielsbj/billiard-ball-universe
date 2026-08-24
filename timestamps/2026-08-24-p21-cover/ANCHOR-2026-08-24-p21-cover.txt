@@ -1,0 +1,66 @@
+ANCHOR — 2026-08-24 — the P21 cover (OTS interim)
+================================================================================
+
+WHAT THIS IS
+------------
+An INTERIM protection stamp, in the sense of the OpenTimestamps runbook's Rule 2.
+It is NOT the release anchor. The release anchor (OTS-3) remains a separate,
+later event, tied to the tag `first-edition-1.0` and fired only after the
+physical proof is approved.
+
+WHY IT EXISTS
+-------------
+Patch P21 changed one sentence on the back cover: "Where the toy universe
+breaks, the breaks are shown" became "Where the world wounds the toy, the
+wounds are shown" — the verdict the wounds table actually supports. Unlike P20,
+which only deleted, P21 ADDS words, and the 2026-08-21 anchor cannot say
+"not later than" about words it never contained. This stamp covers the new
+cover source and the new wrap PDF, and nothing else. The manuscript, ref.bib
+and both interior PDFs are unchanged since the 2026-08-21 anchor and are not
+re-stamped.
+
+STATE ANCHORED
+--------------
+repository : github.com/nielsbj/billiard-ball-universe (private at this date)
+commit     : 366720278d3a82a2cdc7ddae221bb8a1fffb8c57
+             ("cover: the world wounds the toy --- 'breaks' claimed more than
+              the wounds table shows (P21)")
+working tree at that commit: CLEAN for all tracked files except this
+timestamps batch, added by the commit that follows the stamping.
+
+cover      : rebuilt at 0 errors, 0 Overfull; back-panel paragraph kept its
+             line count, everything below it pixel-identical to the 21 August
+             wrap
+geometry   : unchanged — trim 6 x 9 in, cream, spine 0.5150 in (206 pages),
+             full wrap 12.7650 x 9.25 in
+ISBN       : 978-87-977519-1-6
+
+SHA-256 OF THE ANCHORED FILES
+-----------------------------
+Source (committed in git at the commit above, byte-exact and recoverable):
+
+b0d6dff0c93d3f80b564433fb8e1d25e6a9b7e7c7d37efcd6791de7a2830a1f7  cover/cover_wrap.tex
+
+Built artifact (NOT committed — lives in FINAL/1_upload/, gitignored, with its
+.ots beside it):
+
+bd183ddd8b1922802731fc6dfdfae07503375c7b6a48a268757cd50be2474eb8  BBU_cover_wrap_206pp.pdf
+
+A WARNING ABOUT THE PDF
+-----------------------
+pdflatex embeds a build timestamp, so rebuilding from the same source does NOT
+reproduce these bytes. The PDF proof is only worth something while that exact
+file survives. If it is lost, nothing important is lost — the source is
+anchored, committed, and byte-exact in git forever.
+
+WHAT IS NOT CLAIMED
+-------------------
+- Not the published edition. No tag exists; the repository is private; no
+  proof copy has been printed or approved.
+- Not a claim that this cover is unchanged from here. Proof findings are
+  expected and may change it; they change the price of a correction, not its
+  possibility.
+- Not a substitute for OTS-3.
+
+This file is frozen. It is itself stamped, so editing it after stamping would
+break its own proof.
