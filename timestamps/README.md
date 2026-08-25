@@ -182,8 +182,19 @@ is a real state the record keeps.
 manuscript's since P20. Of the 21 August source proofs only `ref.bib` still verifies against the
 working tree.
 
-**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
-Upgrade after confirmation and record the block heights here.
+**Upgraded 2026-08-25 (complete).** All three proofs carry the same three Bitcoin attestations —
+four calendars, two of which landed in one block, as in the 31 July batch:
+
+| block | mined (UTC) | merkle root |
+|---|---|---|
+| 963829 | 2026-08-24 07:13:18 | `fc745c229171b533205d98d1f505a885d9cccc016b9bffecd07ca6a7c323c84f` |
+| 963856 | 2026-08-24 12:22:05 | `eb568edf2c33b18825ddfaebb138701e3b1741d60de440a117bcb6bc12bd5b56` |
+| 963867 | 2026-08-24 14:30:16 | `7a9d1e9be4fd7f5aff63fb7b5c8a2ff3fbc7341d1abf4dc28343b69e674271c1` |
+
+The stamp was taken just after commit `3667202` (06:52:02 UTC); earliest attestation is block
+963829 at 07:13:18 UTC — later, as it must be. Blocks 963856 and 963867 recur across all four of
+the day's patch batches: the calendars' afternoon aggregations batched them together. The
+superseded travelling proof in `FINAL/_superseded_2026-08-24/` was upgraded the same run.
 
 ## 2026-08-24-p22-cover — the P22 cover (interim stamp)
 
@@ -210,7 +221,20 @@ Each proof's recorded hash was read back with `ots info` and matches the anchor;
 matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits beside it in
 `FINAL/1_upload/`; the copy here is the archive one.
 
-**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
+**Upgraded 2026-08-25 (complete).** All three proofs carry the same four Bitcoin attestations,
+and the block set is identical to P23's — the two batches were stamped twenty minutes apart and
+the calendars aggregated them together:
+
+| block | mined (UTC) | merkle root |
+|---|---|---|
+| 963833 | 2026-08-24 08:24:28 | `b25fba87c2d40119ce873c219d787595053eb0959b38e2750c226551c42a230d` |
+| 963838 | 2026-08-24 09:14:05 | `0c96d17fad872c3df37c0f2cae7c26a31bb287c8a97400596fa43f132bc2d884` |
+| 963856 | 2026-08-24 12:22:05 | `eb568edf2c33b18825ddfaebb138701e3b1741d60de440a117bcb6bc12bd5b56` |
+| 963867 | 2026-08-24 14:30:16 | `7a9d1e9be4fd7f5aff63fb7b5c8a2ff3fbc7341d1abf4dc28343b69e674271c1` |
+
+The stamp was taken just after commit `7874a1c` (07:16:20 UTC); earliest attestation is block
+963833 at 08:24:28 UTC — later, as it must be. The superseded travelling proof in
+`FINAL/_superseded_2026-08-24-p22/` was upgraded the same run.
 
 **Superseded by P23 the same morning.** The P22 wrap PDF's bytes were replaced by the P23 build; its
 travelling proof moved to `FINAL/_superseded_2026-08-24-p22/` (its own folder — the P21 proof already
@@ -241,7 +265,12 @@ Each proof's recorded hash was read back with `ots info` and matches the anchor;
 matches `FINAL/1_upload/CHECKSUMS.sha256`. The PDF's travelling `.ots` sits beside it in
 `FINAL/1_upload/`; the copy here is the archive one.
 
-**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
+**Upgraded 2026-08-25 (complete).** All three proofs carry the same four Bitcoin attestations —
+the same block set as P22, whose section holds the table (963833 / 963838 / 963856 / 963867;
+stamped twenty minutes apart, aggregated together). The stamp was taken just after commit
+`e0bc425` (07:36:37 UTC); earliest attestation is block 963833 at 08:24:28 UTC — later, as it
+must be. The travelling proof beside the current wrap PDF in `FINAL/1_upload/` was upgraded the
+same run, and the PDF still matches `CHECKSUMS.sha256`.
 
 ## 2026-08-24-p24-interior — the P24 interior (interim stamp)
 
@@ -274,9 +303,20 @@ carried no proofs to move.
 **The manuscript tex has now diverged twice from the 21 August anchor** (P20, then P24). Its 21
 August proof verifies against a checkout of `2de4de2`; its current bytes are anchored here.
 
-**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted the submission.
-**Upgrade all four of the day's batches (p21, p22, p23, p24) together** after confirmation and
-record the block heights here.
+**Upgraded 2026-08-25 (complete).** All four proofs carry the same four Bitcoin attestations:
+
+| block | mined (UTC) | merkle root |
+|---|---|---|
+| 963845 | 2026-08-24 09:57:05 | `7207d18db5c886287b470c53be7ebe9bbad7f8e0d71dc08e4d0207f3d3d3c969` |
+| 963851 | 2026-08-24 11:23:49 | `cd2ee05d8f737d33fecc02294892303683f64c3834477ffff587392acde3adbc` |
+| 963856 | 2026-08-24 12:22:05 | `eb568edf2c33b18825ddfaebb138701e3b1741d60de440a117bcb6bc12bd5b56` |
+| 963867 | 2026-08-24 14:30:16 | `7a9d1e9be4fd7f5aff63fb7b5c8a2ff3fbc7341d1abf4dc28343b69e674271c1` |
+
+The stamp was taken just after commit `dff00f6` (09:48:18 UTC); earliest attestation is block
+963845 at 09:57:05 UTC — nine minutes later, as it must be. The travelling proofs beside both
+interior PDFs in `FINAL/1_upload/` were upgraded the same run, and both PDFs still match
+`CHECKSUMS.sha256` — the 21 August mistake of leaving the travelling copies weak was not
+repeated.
 
 ## 2026-08-24-archives — the conversation archives, second batch
 
@@ -295,8 +335,29 @@ beside them; copies of the proofs are committed here.
 (`7b25fce5…cd94a045`), and the export manifest (`4f83ca17…4597a67c`). Each read back with
 `ots info` and matching the anchor.
 
-**Status on the day: PENDING.** Stamped 2026-08-24; all four calendars accepted. Upgrade with the
-day's other batches and record the blocks here.
+**Upgraded 2026-08-25 (complete).** All five proofs carry the same four Bitcoin attestations —
+a later block set than the day's patch batches, since the export was taken at 16:23 UTC:
+
+| block | mined (UTC) | merkle root |
+|---|---|---|
+| 963878 | 2026-08-24 16:44:12 | `e472c37ef7e72c353b8dfae6cfc75661e075911e99d6e338c148f447823b5f68` |
+| 963879 | 2026-08-24 16:54:24 | `4d9bf02aed4d835d26ec3f76e3fe2648d450c0b82c380a27bb7389e2fe5394ac` |
+| 963914 | 2026-08-24 22:49:43 | `02f52e213e95140de56938885bf16cab29b5c4fcaf8e03b723275367fb87d30d` |
+| 963922 | 2026-08-24 23:42:10 | `e16dc1b69bfa492d1acca78e769fea95f128e5a6b521956a4473a3f43bfc216d` |
+
+Earliest attestation is block 963878 at 16:44:12 UTC — twenty-one minutes after the 16:23 export,
+as it must be. The travelling proofs beside the export files in `archive/export-2026-08-24/` were
+upgraded the same run. The scrub-honesty property this batch exists for now holds in Bitcoin: the
+pre-scrub bytes are provably older than any redaction that will ever exist.
+
+**Cross-check for all five 2026-08-24 batches, done without a Bitcoin node, 2026-08-25.** Each
+proof's operation chain was executed with `ots info` to the hash it commits to at each
+attestation, and the eleven distinct block/merkle-root pairs across the five batches were compared
+against blockstream.info (block hash by height, then the header's merkle root). All eleven match
+the tables above, and every proof in a batch carries the identical set. All five anchors still
+hash to their stamped values (`59afa34f…`, `fcf952b1…`, `da6b110b…`, `14548d79…`, `585252bc…`),
+so they verify in place; only `.ots` files changed. **Every proof this repository knows of —
+27 upgraded today across `timestamps/`, `FINAL/`, and `archive/` — is now complete.**
 
 ## first-edition-1.0 — at release (OTS-3, pending)
 
