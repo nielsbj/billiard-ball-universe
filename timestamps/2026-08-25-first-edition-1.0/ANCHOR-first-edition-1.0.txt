@@ -1,0 +1,78 @@
+ANCHOR — 2026-08-25 — first-edition-1.0 (OTS-3, the release anchor)
+================================================================================
+
+WHAT THIS IS
+------------
+The RELEASE ANCHOR. The event every earlier stamp deferred to: OTS-1 anchored
+a draft, the interim stamps anchored the finished text and its patches, and
+each of them said the same thing — the tag hash does not exist yet. Now it
+does. This stamp binds the tag `first-edition-1.0`, the commit it names, and
+the exact bytes of the published edition.
+
+THE SEQUENCING, STATED HONESTLY
+-------------------------------
+Earlier anchors said OTS-3 would fire "after the physical proof is approved."
+That plan died on a fact: Denmark is not in KDP's proof-shipping matrix at
+all, from any marketplace (verified 2026-08-24 on KDP's own help pages after
+two refused addresses). The author ruled 2026-08-24: publish without a
+physical proof; the eight checks run on a quiet retail copy afterward, and
+findings are corrections, not blockers. He then read all 229 tracked files
+and gave the word ("Godkendt") on 2026-08-25. The order of the remaining
+events, ruled 2026-08-25: this anchor → KDP Publish with the repository
+still private → repository public the moment the listing goes live.
+
+STATE ANCHORED
+--------------
+repository : github.com/nielsbj/billiard-ball-universe (private at this
+             hour; public the moment the book is live)
+tag        : first-edition-1.0 (annotated)
+tag object : 2191057fa272b462698b2b27f0c014d81fc3a7da
+commit     : 6a34ae7a56469b291c1e3c32d36823dbba40d8bd
+             ("process: publish before the flip --- the irreversible act
+              goes last")
+working tree at that commit: CLEAN; this timestamps batch is added by the
+commit that follows the stamping, as always.
+
+edition    : first edition, 2026 · 206 pages · 6 x 9 in (432 x 648 pt) ·
+             cream · spine 0.5150 in · wrap 12.7650 x 9.25 in
+ISBN       : 978-87-977519-1-6 (paperback)
+publisher  : Niels Bonde Jensen, Denmark (forlagsnummer 977519, DBC)
+gates      : both editions 0 errors, 0 Overfull, 0 Float-too-large,
+             0 undefined references, 0 collisions; all 206 pages inside
+             KDP's margin rules (P24); gitleaks full-history and reuse
+             lint green in CI at the tagged commit
+
+SHA-256 OF THE ANCHORED FILES
+-----------------------------
+Committed in git at the tagged commit (byte-exact and recoverable forever):
+
+14657f3bd64b52d2e69e6b3f7f2b851f270c36cab67dbf5620d93af6ef789c3e  manuscript/billiard_ball_universe.tex
+2b72c2f22a50ad4549f727f3485193a0aa677d344fccafe2c1d157cbaed40bf0  manuscript/billiard_ball_universe.pdf (the printed interior, force-added for release)
+
+Built artifacts (NOT committed — they live in FINAL/1_upload/, gitignored;
+the print interior's bytes are ALSO committed as the line above, so for the
+first time a PDF proof is backed by git):
+
+2b72c2f22a50ad4549f727f3485193a0aa677d344fccafe2c1d157cbaed40bf0  BBU_interior_print_206pp.pdf (uploaded to KDP)
+082509677693068ba1ec3de43339ca552eda03445cbe25dc995c88102ec52af6  BBU_interior_digital_206pp.pdf
+b2c80fb06f11dafe3e89b3d84bc6c1824db81b2506f0939e4259cc4c172321a0  BBU_cover_wrap_206pp.pdf (uploaded to KDP)
+
+RELATION TO THE INTERIM STAMPS
+------------------------------
+Every file hash above is already confirmed in Bitcoin by the interim stamps
+(the tex and interiors in 2026-08-24-p24-interior, the cover in
+2026-08-24-p23-cover, blocks 963829-963867). Those prove WHEN the bytes
+existed. What only this anchor can prove is WHAT WAS PUBLISHED: that the tag
+named first-edition-1.0, at this commit, carries exactly these bytes — the
+claim printed in the book's own colophon.
+
+WHAT IS NOT CLAIMED
+-------------------
+- Not that the book is live yet. At stamping time the KDP listing is a
+  draft; the button is pressed after this anchor exists.
+- Not that no correction will ever follow. The eight checks run on a retail
+  copy; ERRATA.md is dated against this tag and exists to be honest about
+  whatever they find.
+
+This file is frozen. It is itself stamped, so editing it after stamping would
+break its own proof.

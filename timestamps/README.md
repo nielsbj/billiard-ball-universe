@@ -359,15 +359,36 @@ hash to their stamped values (`59afa34f…`, `fcf952b1…`, `da6b110b…`, `1454
 so they verify in place; only `.ots` files changed. **Every proof this repository knows of —
 27 upgraded today across `timestamps/`, `FINAL/`, and `archive/` — is now complete.**
 
-## first-edition-1.0 — at release (OTS-3, pending)
+## 2026-08-25-first-edition-1.0 — the release (OTS-3)
 
-The release anchor per `process/FLIP_CHECKLIST.md`: tagged commit hash + sha256 of the final
-interior PDFs (digital + print), final cover PDF, and the tex; stamp, upgrade, record here.
+**Kind: the release anchor.** The event every earlier stamp deferred to. Taken 2026-08-25,
+minutes after the author's "Godkendt" (given after reading all 229 tracked files) and the
+creation of tag `first-edition-1.0` — annotated tag object `2191057f…`, commit
+`6a34ae7a56469b291c1e3c32d36823dbba40d8bd`. Sequencing per the author's 2026-08-25 ruling in
+`process/FLIP_CHECKLIST.md`: anchor → KDP Publish with the repository still private → repository
+public the moment the listing goes live. The physical-proof precondition died 2026-08-24 with
+the discovery that KDP ships proofs to no Danish address; the eight checks run on a retail copy
+after, and ERRATA.md is dated against this tag.
 
-**What is not yet stamped, stated plainly:** the *published* state — the tagged commit and whatever
-the physical proof turns out to change. The **text** is no longer the gap: the 2026-08-21 interim
-stamp covers the 206 pp book, its sources and its three release PDFs, confirmed in Bitcoin on
-2026-08-23. What OTS-3 adds is the tag hash, which does not exist until the proof is approved.
+**Five proofs, all four calendars each:**
+
+| proof | binds sha256 |
+|---|---|
+| `ANCHOR-first-edition-1.0.txt.ots` | `fe05619a…02b42d32` (the anchor itself) |
+| `billiard_ball_universe.tex.ots` | `14657f3b…ef789c3e` |
+| `BBU_interior_print_206pp.pdf.ots` | `2b72c2f2…aed40bf0` — also committed in git at the tag as `manuscript/billiard_ball_universe.pdf` |
+| `BBU_interior_digital_206pp.pdf.ots` | `08250967…ec52af6` |
+| `BBU_cover_wrap_206pp.pdf.ots` | `b2c80fb0…172321a0` |
+
+Each proof's recorded hash was read back with `ots info` and matches the anchor and
+`FINAL/1_upload/CHECKSUMS.sha256`. Every file hash was already confirmed in Bitcoin by the
+interim stamps (tex + interiors in p24, cover in p23) — those prove *when* the bytes existed;
+this anchor proves *what was published*: that the tag, at that commit, carries exactly these
+bytes. The travelling proofs beside the PDFs in `FINAL/1_upload/` remain the confirmed interim
+ones — same bytes, stronger attestations until this batch upgrades.
+
+**Status on the day: PENDING.** Stamped 2026-08-25; all four calendars accepted the submission.
+Upgrade in a day or two and record the blocks here.
 
 For the record, since it was true for three weeks and is worth remembering: between 30 July and
 21 August the finished book lay outside every anchor — OTS-1 covers a ~142 pp draft, before the
