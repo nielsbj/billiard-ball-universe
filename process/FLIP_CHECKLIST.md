@@ -49,8 +49,11 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       accepted, so the plates are now a proof-day inspection item rather than a settled matter.
 - [x] **Imprint placeholders filled — ALL THREE DONE.** Repository URL ✅ (2026-08-17), ISBN ✅
       (2026-08-20, `978-87-977519-1-6`, in the kolofon with the publisher line), and `\PAGECOUNT` ✅
-      (2026-08-21, on the author's declaration that the interior is final): **202 pp → spine
-      0.5050 in → full wrap 12.7550 × 9.25 in**, built and measured.
+      (2026-08-21, on the author's declaration that the interior is final): **206 pp → spine
+      0.5150 in → full wrap 12.7650 × 9.25 in**, built and measured.
+      *Corrected 2026-08-25: this line said 202 pp / 0.5050 / 12.7550 — the figures from before the
+      final count landed at 206 — while the staged release package and every gate already ran at
+      206. Second time this row has held stale numbers; it is the file's own warning, twice proven.*
       *This line previously read "spine 0.4549 in → full wrap 12.7049 × 9.25 in" — the **white**-stock
       figures, left behind by the cream ruling of 2026-08-20 and contradicting §"Paper stock" above
       it in this same file. Corrected. It is precisely the failure that section warns about: the
@@ -58,10 +61,19 @@ anything below requires real work, the airlock rule ("commit as if public") was 
 - [ ] **Release PDF** — `git add -f manuscript/billiard_ball_universe.pdf` in that release commit
       (see `PDF_POLICY.md`).
 - [ ] **OpenTimestamps Phase 2 (OTS-3)** — anchor the release in a new batch folder per the `timestamps/README.md` convention: `timestamps/YYYY-MM-DD-first-edition-1.0/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, record block heights in `timestamps/README.md` (anchors stay frozen), commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*
-- [ ] **billiardballuniverse.com resolves AND links the repository — BEFORE the publish button.**
+- [ ] **billiardballuniverse.com resolves AND links the repository — BEFORE the book is live.**
       **[NIELS]** The imprint page prints that URL as where "the manuscript, sources, and the full
       correction record" live, and the how-made note promises a repository anyone can inspect. If the
       site is up but does not link the repo on day one, the book's most distinctive claim — that you
-      can go and see the seams — dead-ends on a landing page. Hard gate, same day as the flip.
+      can go and see the seams — dead-ends on a landing page. Hard gate, same moment as the flip.
+      *Resequenced by Niels's ruling 2026-08-25 (below): the gate is the book going live, not the
+      publish button — no copy can exist before the listing is live, so the claim stays honest.*
 - [ ] **Tag** the release commit `first-edition-1.0`; `README.md` names it "the book you are holding."
-- [ ] **Flip repository visibility to public.** Nothing else should need touching.
+- [ ] **[NIELS] Press Publish on KDP — with the repository still private.** Ruled 2026-08-25,
+      inverting the original order: the flip is the irreversible act (public is public, cached is
+      cached), while a KDP draft that hits review trouble can still be fixed quietly. Publish first,
+      let the review clear (up to 72 h), and only show the record once the book is real.
+- [ ] **Flip repository visibility to public — when the listing goes live**, not on a timer. KDP
+      review can clear in hours; "live" is the event, watched via the Bookshelf status / KDP's
+      email. From that moment a buyer can follow the listing's open-record sentence and the site's
+      repo link, so live and public must be the same moment. Nothing else should need touching.
