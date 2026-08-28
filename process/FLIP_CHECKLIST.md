@@ -97,5 +97,5 @@ this list has been performed; the pre-flip gate rows above (markers, scrub, floa
 gitleaks, reuse, beta sweep, release PDF) ran green on release night 2026-08-24 and their boxes
 were never ticked here — `process/STATE_2026-08-24.md` is the record of that run, and this note
 is the honest substitute for back-dating checkmarks. What remains is post-flip and lives in the
-TODOs: the retail control copy from amazon.de and its eight checks, pligtaflevering, the a-kasse
-conversation, and the CONV-1 judgment calls.
+TODOs: the retail control copy from amazon.de and its eight checks, pligtaflevering, a
+personal-finance conversation, and the CONV-1 judgment calls.
