@@ -107,7 +107,8 @@ The sweep proper needs the names, which are correctly not in this repo. Proxy ch
   files — hashes, no content).
 - The only email address anywhere in tracked text is `nielsbj@gmail.com`, and only inside
   `record/REPO1_SCRUB_2026-07-30.md`, where it appears as the subject of the ruling about itself.
-- `process/TODO-NIELS.md` refers to readers as R1–R4 throughout, as its own header requires.
+- `process/TODO-NIELS.md` refers to readers only by pseudonym throughout, as its own header
+  requires *(wording generalized 2026-08-28 — see `record/SCRUB_TRIM_2026-08-28.md`)*.
 
 ## What this rehearsal says
 The two gates that can actually fail on flip day — floats and collisions — **pass clean in both

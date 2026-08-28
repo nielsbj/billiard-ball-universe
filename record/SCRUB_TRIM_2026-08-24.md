@@ -16,9 +16,9 @@ quote the removed sentences: a trim record that reprints what it trimmed has tri
 
 | file | change |
 |---|---|
-| `process/TODO-NIELS.md` | beta-close row generalized to "closed empty: no invited reader replied, and no seat was filled"; the thank-the-readers row loses its per-person line; one personal row (a private conversation planned around a reader) and one personal-finance row moved verbatim to the private drop-zone; one absolute local path (external-mirror location) trimmed to "the external mirror" |
+| `process/TODO-NIELS.md` | beta-close row generalized to "closed empty: no invited reader replied, and no seat was filled"; the thank-the-readers row loses its per-person line; two private rows moved verbatim to the private drop-zone *(this cell's own description of them was tightened 2026-08-28 — it described what it moved closely enough to leak it; see `record/SCRUB_TRIM_2026-08-28.md`)*; one absolute local path (external-mirror location) trimmed to "the external mirror" |
 | `process/STATE_2026-08-21.md` | the standing-fact paragraph generalized the same way — the fact ("the window closed empty, conceded in print") is untouched |
-| `process/TODO-NIELS.md` §1 | the reader-slot row loses its personal-stake characterization; the ask-design mechanics stay |
+| `process/TODO-NIELS.md` §1 | the reader-slot row loses a characterization *(cell tightened 2026-08-28, same reason as above)*; the ask-design mechanics stay |
 | `record/ISBN_AND_BARCODE_2026-08-20.md` | "the one sent to R1" → "the reader draft that went out" |
 | `figures/FIGURES_NOTE.md`, `figures/PROVENANCE.md` | local `D:\…` upstream paths genericized to "a sibling private project" — the July scrub's "genericize or accept" finding, now genericized |
 | `record/P18_REMAINDER_AND_BETA_CLOSE_2026-08-21.md` | the same three sentences generalized, with an inline note pointing here — a record file is edited only at the gate, never silently |

@@ -48,3 +48,40 @@ Same honesty caveats as above: the record file is edited only at this gate and s
 and the pre-trim wording remains in public history (commit `7c81cfc` onward), per the standing
 ruling that history is never rewritten. This trim, like every trim in this file, narrows what the
 surface advertises — not what history holds.
+
+## Third trim, same day — the five-agent scan
+
+After the flip, five independent fresh-context reviewers were run over the entire public surface
+and the full history, each briefed on the disclosure boundary and told to read everything rather
+than sample. Their findings, deduplicated, produced this trim — the largest of the three because
+it is the first sweep since the boundary rules matured that read *every* public file against them.
+On the author's ruling ("yes cut it"), the following changed. Descriptions are deliberately
+neutral; per this file's standing rule, nothing trimmed is reprinted.
+
+| file | change |
+|---|---|
+| `process/TODO-NIELS.md` | the dedication row loses the private process around the printed line (the ruling's editorial reasoning stays); the reader-slot rows lose their seat characterizations, a pronoun, and a closeness implication; the thank-the-readers row loses a clause pointing at private matters |
+| `process/STATE_2026-08-24.md` | the KDP account line loses its banking and tax particulars (the fact that setup completed stays); a grep-category list generalized; the proof-route line loses a third party's countries |
+| `process/FLIP_CHECKLIST.md` | the beta-name-sweep row no longer names where the private reader list is held |
+| `record/HOSTILE_READ_REPORTS_2026-08-10.md`, `record/HOSTILE_PHYSICS_READ_2026-08-10.md` | openings generalized — they characterized an unfilled reader seat by profession (the 2026-08-24 gate swept the process files but not these siblings) |
+| `record/FLIP_DRYRUN_2026-08-20.md`, `record/RELEASE_PREP_2026-08-20.md` | pseudonym-scheme wording generalized (it disclosed the count of planned seats, exceeding the public two); a beta-close phrasing that implied replies had been received corrected to "empty" — the P18 record had already superseded that wording, these two files still carried it |
+| `record/PLATES_2026-08-20.md` | two phrasings that implied replies had been received → "the beta window", same reason |
+| `record/PROSE_PATCH_local_surplus_heading_2026-08-20.md` | a present-tense attribution of a draft copy to a pseudonymous reader generalized — the identical construction the 2026-08-24 gate fixed in the ISBN record, missed here |
+| `record/SCRUB_TRIM_2026-08-24.md` | two of its own table cells tightened — they described what they moved closely enough to leak it (a trim record that describes what it trimmed too well has the same problem as one that reprints it) |
+| `record/PROSE_PATCH_P22_felt_not_decided_2026-08-24.md` | a sibling project's absolute path genericized — the class the 2026-08-24 gate ruled on, missed same-day |
+| `CLAUDE.md` | two stale facts corrected: the repo is public (the "private" flag was a hazard — the airlock habit depends on accurate flags) and the book is published at 206 pp, not a 93 pp draft |
+| `README.md` | the Map's "editions note" (a file that does not exist) → the collision check (which does) |
+| `.gitignore` | the drop-zone and reader-draft commentary shortened to the rules alone — explanatory prose about private material's nature and delivery removed |
+
+**Considered and deliberately KEPT, so the next sweep does not re-litigate them:** the P20
+rationale sentence in its three record sites (it is the record's honesty about *why* the printed
+book changed; the author may still rule otherwise); the committer email everywhere (ruled);
+the frozen anchor files in `timestamps/` including one email occurrence and two export-file
+identifiers (stamped — editing them breaks their own proofs, and the email is ruled public);
+the `C:\Users\niels` shim path in the timestamps runbook (accepted class); the flip-dry-run's
+own quoted paths (it is the audit of exactly that exposure); the art-delivery provenance JSONs'
+paths (machine provenance, graded and accepted by that same dry run); the two short attributed
+quotations printed in the book's bibliography (the book's own disclosure). **History:** all
+pre-trim wording, five commit messages carrying trimmed-class content, and the recoverable
+deleted files are permanent per the standing ruling; the scan cataloged them (the catalog lives
+with the author, not in the repo) so their retention is a decision, not an oversight.

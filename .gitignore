@@ -139,11 +139,10 @@ best-cover/
 FINAL/
 
 # ---- Drop-zone ----
-# nbj/ is Niels's private drop-zone for chat-claude outputs (duplicates, handoffs, scratch).
-# Never public: authoritative patches/reports are curated into record/ instead.
+# nbj/ — private, never committed.
 nbj/
 
-# Beta reader draft (emailed deliverable, regenerable) — not versioned
+# Reader drafts — not versioned
 bbu_reader_draft*.pdf
 
 # Built book PDF — not committed except tagged releases (see process/PDF_POLICY.md)

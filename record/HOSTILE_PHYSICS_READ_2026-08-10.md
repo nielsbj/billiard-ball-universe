@@ -1,6 +1,7 @@
 # Hostile-physicist read — consolidated findings (2026-08-10)
 
-**What this is.** With the physicist beta-reader slot unfilled, five independent adversarial
+**What this is.** With no external reader secured *(opening generalized 2026-08-28 at the
+post-flip privacy gate — see `record/SCRUB_TRIM_2026-08-28.md`)*, five independent adversarial
 AI readers (Opus-class) were run over the full manuscript at HEAD `8901947`, each briefed as
 a hostile physicist whose only job was to find overreach, broken arithmetic, misleading
 analogies, and anything a dismissive reviewer would quote — and to recompute every derivation

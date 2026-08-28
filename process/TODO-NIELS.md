@@ -2,29 +2,29 @@
 *Your ledger — every remaining item on the project that only you can move, in dependency order. Started 2026-07-30. Safe to commit under process/ (it is repo-destined) on one absolute condition, stated here so the file itself enforces it: **no beta-reader names ever appear in this file** — names live only in archive/, outside git. Refer to readers as R1, R2… here.*
 
 ## 0. Done — recorded because ledgers should show movement
-- [x] Brother's yes — 2026-07-30. The dedication stands. Gate one cleared.
+- [x] The dedication stands — gate one cleared 2026-07-30.
       **Reopened and closed again 2026-08-20: no change.** *"For my brother, who was not comforted."*
-      was weighed against plain *"For my brother"* and against naming him. Kept, because it is not
+      was weighed against plain *"For my brother"*. Kept, because it is not
       an unclear line but a plant: it pays off in Ch. 5's comfort section (*"I remember telling my
       brother. He was not comforted… this chapter is, among other things, my long answer to him"*)
       and again in the Epilogue's dated list. Plain *"For my brother"* could preface any book; this
-      could only preface this one. **Naming him was set aside deliberately, not forgotten** — the
-      yes of 30 July was to a line that names nobody, and putting a real private person's name in
-      print beside that story is a larger ask that would need its own fresh yes.
+      could only preface this one. *(The private process around this line was trimmed here
+      2026-08-28 — see `record/SCRUB_TRIM_2026-08-28.md`.)*
 - [x] Claude account export archived; both chats extracted; Dropbox copy confirmed.
 - [x] ChatGPT snippets archived (three threads, verbatim, provenance headers).
 - [x] All repo rulings delivered (route, process/, licenses, email, name, figures).
 
 ## 1. The beta send — the only clock that matters. This week.
 - [x] **Stamped-PDF safeguard — done 2026-07-31.** The stamped bytes (sha256 `25bf5f23…5735e02`) were found byte-exact on the external-disk mirror (`E:\…\manuscript\billiard_ball_universe.pdf`, disk untouched) and committed as `timestamps/billiard_ball_universe.pdf` beside its proof; ANCHOR updated. Desktop rebuilds are now harmless. Remaining thirty-second bit: drop a copy in Dropbox beside the archive. (The other three stamped artifacts were already safe: anchor + tex + cover_wrap byte-exact in git at `f79ba9b`; export zip has its Dropbox copy per §0.)
-- [ ] Choose 2–4 readers: at least one physicist, at least one who owns no physics. Write their names in archive/ only; here they are R1–R4.
-  - [x] **R1 — the "owns no physics" slot, secured 2026-08-01.** Name in archive/ only. The ask
-        was designed to release the reader from politeness in as many words: *"I liked it"* is
+- [ ] Choose 2–4 readers, one per promised audience. Write their names in archive/ only; here they are pseudonyms.
+  - [x] **The first seat — secured 2026-08-01.** Name in archive/ only. The ask
+        was designed to invite blunt failure reports in as many words: *"I liked it"* is
         the one reply that is no use; wanted instead was where the reading stopped, bored, or
         disbelieved. "Somewhere in chapter 5" is precision enough.
-  - [ ] **The physicist slot is still open — this does not block the send.** Stagger it: R1's
-        three weeks start now, the physicist's start whenever he says yes. Waiting for a matched
+  - [ ] **The second seat is still open — this does not block the send.** Stagger it: the first
+        reader's three weeks start now, the second's whenever the yes comes. Waiting for a matched
         pair costs calendar and buys only a tidier comparison.
+        *(Seat characterizations trimmed 2026-08-28 — see `record/SCRUB_TRIM_2026-08-28.md`.)*
 - [x] **Reply date set: Thursday 20 August 2026** (19 days out; matches §3's "~20 August", so the
       rest of the ledger needs no edit). A weekday deadline reads as a real one.
 - [ ] Fill the reader note: **[N] = 180** (confirmed 2026-08-01 against the reader-draft PDF),
@@ -102,8 +102,7 @@
       `README.md`'s issues route, the gate, the patch, the `ERRATA` line, the next printing. The book
       said it can lose; that is now where it finds out, in public, rather than in a reader's email.
 - [x] **Thank the readers — moot, closed 2026-08-21.** There is no feedback to thank anyone for and
-      none to quote; anything personal around the invitations is a personal matter, not a project
-      one, and the ledger does not track it.
+      none to quote; the ledger closes the item.
 - [x] **Declare the interior final — DONE 2026-08-21.** *"interior is final."* No further prose
       changes without a reopened ledger. The state being declared final: **202 pp, both editions
       0 errors / 0 Overfull**, index live on folios 191–192, both plates in, ISBN in the kolofon.

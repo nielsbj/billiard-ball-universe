@@ -16,7 +16,7 @@ reports, reversals, and wrong predictions that made it. The history is part of t
 please read it as such.
 
 ## Map
-- **`manuscript/`** — `billiard_ball_universe.tex`, `ref.bib`, the build script, editions note.
+- **`manuscript/`** — `billiard_ball_universe.tex`, `ref.bib`, the build script, the collision check.
 - **`figures/`** — the 16 machine-checked vector plates, plus `programs/` (the book's figure
   sources) and `harness/` (the strict self-checks, reproduced from proofviz for verification:
   **inspectable, not turnkey** — the engine stays in proofviz) and `PROVENANCE.md`.

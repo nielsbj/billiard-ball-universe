@@ -30,7 +30,8 @@ The 2026-08-03 reader-draft verification recorded, and passed on:
 > `local surplus` ×6, `local ratio` ×0 — exactly the mirror of July's ×0/×6
 
 That grep was **case-sensitive**. It could not see `The Local Ratio`, so the heading went out in
-the reader draft R1 is holding, and in every draft before it. The lesson is narrow and worth
+every reader draft cut to date *(wording generalized 2026-08-28 at the post-flip privacy gate —
+see `record/SCRUB_TRIM_2026-08-28.md`)*. The lesson is narrow and worth
 keeping: phrase-retirement sweeps must be case-insensitive, because a retired phrase most often
 survives where it is capitalised — headings, running heads, the TOC.
 

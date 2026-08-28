@@ -38,8 +38,8 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       installed) over full history for the entropy pass before going public.
 - [ ] **`reuse lint` clean** — LIC-1 built the REUSE structure but the `reuse` tool was not
       installable in the authoring environment; run `reuse lint` in CI and confirm zero errors.
-- [ ] **Beta-name sweep** — grep full history for the reader list held in `archive/`; expect zero
-      (readers live only outside the repo).
+- [ ] **Beta-name sweep** — grep full history against the privately held reader list; expect zero
+      (no reader's name has ever entered the repo).
 - [x] **Paper stock — CREAM, ruled 2026-08-20.** `cover_wrap.tex` now computes the spine at
       **0.0025 in/page** (was 0.002252, KDP white — an inherited default, not a decision). At 202 pp
       that is **0.5050 in**, and the wrap **12.7550 × 9.25 in**. The constant and `\PAGECOUNT` must

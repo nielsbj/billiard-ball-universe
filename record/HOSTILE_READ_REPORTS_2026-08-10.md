@@ -1,6 +1,7 @@
 # Hostile-physicist read — the five reader reports, verbatim (2026-08-10)
 
-With the physicist beta-reader slot unfilled and publication set for end of August 2026, five
+With no external reader secured and publication set for end of August 2026 *(opening generalized
+2026-08-28 at the post-flip privacy gate — see `record/SCRUB_TRIM_2026-08-28.md`)*, five
 independent adversarial AI readers (Opus-class) were run over the manuscript at HEAD `8901947`,
 each briefed as a hostile physicist: find overreach, broken arithmetic, misleading analogies,
 anything a dismissive reviewer would quote; recompute every derivation possible; report honestly

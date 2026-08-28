@@ -1,9 +1,10 @@
 # CLAUDE.md — The Billiard Ball Universe
 
 Book project: **"The Billiard Ball Universe: A World With No Bottom"** by Niels Bonde Jensen.
-A philosophical trade book (6×9 in, ~93 pp typeset): an infinitely layered, mechanical
-universe, argued on grounds of minimal arbitrariness. Complete illustrated Draft 1;
-current work is **revision**, not drafting.
+A philosophical trade book (6×9 in, 206 pp): an infinitely layered, mechanical
+universe, argued on grounds of minimal arbitrariness. **First edition published August 2026**
+(tag `first-edition-1.0`); current work is **post-publication stewardship** — errata via the
+letterbox, the conversations tier, Phase 2 distribution.
 
 ## Repository layout (post REPO-2 restructure, 2026-07-30 — REPO_SPEC §3)
 `manuscript/` (tex, ref.bib, build.bat, built PDF) · `figures/` (16 plate PDFs +
@@ -12,7 +13,9 @@ plates + generation provenance) · `cover/` (cover_wrap.tex, cover_art_build.tex
 PROVENANCE, BOOK_COVER) · `record/` (correction record: patches, reports, gates) ·
 `memos/` (RM-1 + successors) · `process/` (MANUAL, FILE_OWNERSHIP, book_outline, TODOs) ·
 README/LICENSE/ERRATA at root. `nbj/` is the private drop-zone (gitignored, never public).
-Remote: private `github.com/nielsbj/billiard-ball-universe` (working dir still named code-claude).
+Remote: **public** `github.com/nielsbj/billiard-ball-universe` since 2026-08-28 (working dir still
+named code-claude). The airlock rule is retired by events: every commit IS public the moment it
+is pushed — write accordingly.
 
 ## Read these first (in order)
 1. `process/book_outline.md` — chapter-by-chapter status, figure plan, illustration plan, to-dos.

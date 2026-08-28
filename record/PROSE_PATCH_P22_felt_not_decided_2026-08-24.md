@@ -42,8 +42,8 @@ The short variant therefore stands as it was, in all three of its locations (`FI
 `COVER_SPEC.md`, `BOOK_COVER.md`), and its verb "grown into a full cosmology" already carries the
 maturation. The manuscript was untouched throughout, as it must be.
 
-Also checked: the website repo (`D:\Niels\Proj-2026\billiardballuniverse`) carries neither phrase —
-nothing to fix there.
+Also checked: the website repo (a sibling project; path genericized 2026-08-28 — see
+`record/SCRUB_TRIM_2026-08-28.md`) carries neither phrase — nothing to fix there.
 
 ## The checks
 

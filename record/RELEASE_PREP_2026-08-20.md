@@ -1,6 +1,7 @@
 # Release prep — the checklist run at the final state (2026-08-20)
 
-*Beta closed the same day with no further replies expected. The interior is **not** declared final —
+*Beta closed the same day, empty *(wording generalized 2026-08-28 — see
+`record/SCRUB_TRIM_2026-08-28.md`)*. The interior is **not** declared final —
 the author's own cold read is still open — so this is the safe half of the release work: everything
 verified, nothing committed to a number. `\PAGECOUNT` deliberately untouched at 182.*
 
@@ -25,8 +26,8 @@ performed. That is exactly the trap the checklist warns about, and the gate beha
 - **Personal residue (REPO_SPEC §5.3)** — unchanged at 7 tracked files; **no `C:\Users\…` anywhere**.
 - **History size (§5.4)** — 162.52 MiB, steady. Report, do not act.
 - **Beta-name proxies** — `nbj/` gitignored and untracked; no `archive/` content tracked; the only
-  email in tracked text is the committer's own, inside the ruling about itself; readers are R1–R4
-  throughout `TODO-NIELS`.
+  email in tracked text is the committer's own, inside the ruling about itself; readers are
+  pseudonymous throughout `TODO-NIELS` *(wording generalized 2026-08-28, same gate as above)*.
 
 **Checklist repaired.** The dry run found that the marker grep can never return zero, because this
 checklist line contains the string it greps for. Worse by the afternoon: the dry-run *report* now
