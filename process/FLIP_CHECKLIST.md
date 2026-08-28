@@ -60,7 +60,9 @@ anything below requires real work, the airlock rule ("commit as if public") was 
       constant and the count must be right together, or the wrap is wrong twice over.*
 - [ ] **Release PDF** — `git add -f manuscript/billiard_ball_universe.pdf` in that release commit
       (see `PDF_POLICY.md`).
-- [ ] **OpenTimestamps Phase 2 (OTS-3)** — anchor the release in a new batch folder per the `timestamps/README.md` convention: `timestamps/YYYY-MM-DD-first-edition-1.0/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, record block heights in `timestamps/README.md` (anchors stay frozen), commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*
+- [x] **OpenTimestamps Phase 2 (OTS-3) — DONE 2026-08-28.** Stamped 2026-08-25 (`87740fc`),
+      upgraded and blocks recorded 2026-08-28 (963989 / 963990 / 964033, cross-checked against
+      blockstream.info; `timestamps/README.md` holds the table). Original row: anchor the release in a new batch folder per the `timestamps/README.md` convention: `timestamps/YYYY-MM-DD-first-edition-1.0/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, record block heights in `timestamps/README.md` (anchors stay frozen), commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*
 - [ ] **billiardballuniverse.com resolves AND links the repository — BEFORE the book is live.**
       **[NIELS]** The imprint page prints that URL as where "the manuscript, sources, and the full
       correction record" live, and the how-made note promises a repository anyone can inspect. If the
