@@ -28,8 +28,9 @@ Inserted after it, as its own paragraph:
 > printing. The book said it can lose. You are how it finds out.
 
 **The flagged wording change stands.** Sentence one reads *"No one but its author read this book
-before publication"* rather than the earlier phrasing, which implied family readers existed. None
-did.
+before publication"* rather than the earlier phrasing, which implied readers existed. None did.
+*(One word generalized 2026-08-28 at the post-flip privacy gate — see
+`record/SCRUB_TRIM_2026-08-28.md`; a record file is edited only at a gate, never silently.)*
 
 > **RULED "KEEP", 2026-08-21.** The invited-readers clause — *"I invited readers, and the window
 > closed empty"* — was offered for softening and the author ruled **keep**. It stays whole: sought,

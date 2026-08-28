@@ -34,3 +34,17 @@ Unlike the 2026-08-24 trims, this one ran **after** the repository went public: 
 wording was on the public surface for roughly a day (2026-08-27/28) and may be cached. The trim is
 still worth making — a surface detail and a history detail differ in discoverability — but this
 record does not pretend the words were never public.
+
+## Second trim, same day — one word in the P19 record
+
+Found by the transcript-scrub re-read, then traced back to the public surface: the P19 record's
+note on the flagged wording change characterized the *earlier draft* phrasing in a way that
+connected the invited readers to a category of people the 2026-08-24 trim record exists to keep
+unconnected. The connection is precisely what P20 removed from the printed book ("hands
+recognizable people guilt") and what the conversations tier's redaction policy cuts. One word
+generalized in `record/P19_CONCESSION_AND_RELEASE_PACKAGE_2026-08-21.md`, with an inline note at
+the site; the sentence stays true — the earlier phrasing did imply readers existed, and none did.
+Same honesty caveats as above: the record file is edited only at this gate and says so in place,
+and the pre-trim wording remains in public history (commit `7c81cfc` onward), per the standing
+ruling that history is never rewritten. This trim, like every trim in this file, narrows what the
+surface advertises — not what history holds.
