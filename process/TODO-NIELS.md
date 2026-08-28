@@ -141,6 +141,14 @@
       deadline attached and nothing upstream reminds you of it.
 - [ ] **Lektørudtalelse** — submit and get it accepted; it is what puts the book in front of Danish
       libraries, and it is week-one work, not someday work.
+- [ ] **Decide US Copyright Office registration — by mid-November 2026, and lean yes.** Copyright
+      exists automatically under Berne; *registration* (~$65 online, eco.copyright.gov, one deposit
+      copy) is what buys standing for statutory damages and attorney's fees in US courts — and in
+      practice it has been the entry ticket to AI-training settlements, which is not hypothetical
+      for this book's primary market. Registering within three months of first publication
+      (2026-08-25 → deadline ~2026-11-25) preserves those benefits retroactively to publication
+      day; later registration covers only what comes after it. No US deposit copies otherwise —
+      mandatory deposit and the LoC cataloging programs do not apply to a Danish publisher.
 - [ ] **Phase 2: IngramSpark**, two to three weeks behind KDP. The whole reason the ISBN came from DBC
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
