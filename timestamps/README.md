@@ -387,8 +387,24 @@ this anchor proves *what was published*: that the tag, at that commit, carries e
 bytes. The travelling proofs beside the PDFs in `FINAL/1_upload/` remain the confirmed interim
 ones — same bytes, stronger attestations until this batch upgrades.
 
-**Status on the day: PENDING.** Stamped 2026-08-25; all four calendars accepted the submission.
-Upgrade in a day or two and record the blocks here.
+**Upgraded 2026-08-28 (complete).** All five proofs carry the same three Bitcoin attestations —
+four calendars, two of which landed in one block, as in earlier batches:
+
+| block | mined (UTC) | merkle root |
+|---|---|---|
+| 963989 | 2026-08-25 10:42:55 | `01355c758c336ba731ba38ae68c913ac86aa56cb29d27e3ac3d7c4ea6e99631e` |
+| 963990 | 2026-08-25 10:51:53 | `963221f2c44f2d6db7679194b15554d6371196ecd8e98de6155039c4a5628d19` |
+| 964033 | 2026-08-25 17:16:33 | `d0fc66cbc194874a82d3673195ff1cb9e62ca54a19d13b076f7f0bad3a8e87c1` |
+
+Cross-checked without a Bitcoin node, same method as the 2026-08-24 batches: each proof's
+operation chain was executed with `ots -v info` to the digest each attestation commits to, and
+those digests, byte-reversed, match the merkle roots blockstream.info reports for the three
+heights (block hash by height, then the header's merkle root). All five proofs carry the
+identical block set. Sequencing is honest: the stamp was committed as `87740fc` at
+2026-08-25 10:32:46 UTC (fifty minutes after the tag commit), and the earliest attestation is
+block 963989 at 10:42:55 UTC — later, as it must be. The anchor still hashes to its stamped
+`fe05619a…`; only `.ots` files changed. The release is now anchored in Bitcoin end to end:
+the tag, the tex, both interiors, and the cover.
 
 For the record, since it was true for three weeks and is worth remembering: between 30 July and
 21 August the finished book lay outside every anchor — OTS-1 covers a ~142 pp draft, before the
