@@ -63,19 +63,39 @@ anything below requires real work, the airlock rule ("commit as if public") was 
 - [x] **OpenTimestamps Phase 2 (OTS-3) — DONE 2026-08-28.** Stamped 2026-08-25 (`87740fc`),
       upgraded and blocks recorded 2026-08-28 (963989 / 963990 / 964033, cross-checked against
       blockstream.info; `timestamps/README.md` holds the table). Original row: anchor the release in a new batch folder per the `timestamps/README.md` convention: `timestamps/YYYY-MM-DD-first-edition-1.0/ANCHOR-first-edition-1.0.txt` (tagged commit hash + sha256 of the final interior PDFs (digital + print), the final cover PDF, and the tex); stamp, upgrade, record block heights in `timestamps/README.md` (anchors stay frozen), commit. Add one sentence to `README.md`: *"Release artifacts are OpenTimestamps-anchored; proofs in `timestamps/`, verifiable with the `ots` client against the Bitcoin blockchain."*
-- [ ] **billiardballuniverse.com resolves AND links the repository — BEFORE the book is live.**
+- [x] **billiardballuniverse.com resolves AND links the repository — DONE, deployed at the flip
+      2026-08-28** (site repo commits `76178f2` + `3f5d036`: repo link, tag line, purchase links;
+      verified live over the custom domain, and the redirect holds). Original row:
+      **BEFORE the book is live.**
       **[NIELS]** The imprint page prints that URL as where "the manuscript, sources, and the full
       correction record" live, and the how-made note promises a repository anyone can inspect. If the
       site is up but does not link the repo on day one, the book's most distinctive claim — that you
       can go and see the seams — dead-ends on a landing page. Hard gate, same moment as the flip.
       *Resequenced by Niels's ruling 2026-08-25 (below): the gate is the book going live, not the
       publish button — no copy can exist before the listing is live, so the claim stays honest.*
-- [ ] **Tag** the release commit `first-edition-1.0`; `README.md` names it "the book you are holding."
-- [ ] **[NIELS] Press Publish on KDP — with the repository still private.** Ruled 2026-08-25,
+- [x] **Tag — DONE 2026-08-25**: `first-edition-1.0` = `6a34ae7` (tag object `2191057f`), pushed
+      minutes after "Godkendt." Original row: tag the release commit `first-edition-1.0`;
+      `README.md` names it "the book you are holding."
+- [x] **[NIELS] Press Publish on KDP — DONE 2026-08-25** ($14.99 / €12.99 / £10.99); the
+      "published" email arrived 2026-08-27 14:22. Original row: with the repository still
+      private. Ruled 2026-08-25,
       inverting the original order: the flip is the irreversible act (public is public, cached is
       cached), while a KDP draft that hits review trouble can still be fixed quietly. Publish first,
       let the review clear (up to 72 h), and only show the record once the book is real.
-- [ ] **Flip repository visibility to public — when the listing goes live**, not on a timer. KDP
+- [x] **Flip repository visibility to public — DONE 2026-08-28, by Niels's hand** (the command
+      needed his permission), with the site deploy following inside the minute. The listing had
+      been live since 2026-08-27 (confirmed on amazon.com/dp/879775191X and amazon.de — in stock,
+      shipping to Denmark) before either happened, so a buyer's path was whole from the first
+      public second: listing → billiardballuniverse.com → repository → tag → proofs. Original
+      row: **when the listing goes live**, not on a timer. KDP
       review can clear in hours; "live" is the event, watched via the Bookshelf status / KDP's
       email. From that moment a buyer can follow the listing's open-record sentence and the site's
       repo link, so live and public must be the same moment. Nothing else should need touching.
+
+**THE FLIP IS COMPLETE — 2026-08-28. The book is real and the record is public.** Every act in
+this list has been performed; the pre-flip gate rows above (markers, scrub, float, collision,
+gitleaks, reuse, beta sweep, release PDF) ran green on release night 2026-08-24 and their boxes
+were never ticked here — `process/STATE_2026-08-24.md` is the record of that run, and this note
+is the honest substitute for back-dating checkmarks. What remains is post-flip and lives in the
+TODOs: the retail control copy from amazon.de and its eight checks, pligtaflevering, the a-kasse
+conversation, and the CONV-1 judgment calls.
