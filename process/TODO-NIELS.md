@@ -13,6 +13,12 @@
 - [x] Claude account export archived; both chats extracted; Dropbox copy confirmed.
 - [x] ChatGPT snippets archived (three threads, verbatim, provenance headers).
 - [x] All repo rulings delivered (route, process/, licenses, email, name, figures).
+- [x] **Public-surface sweep 2026-09-03.** Site, repository, and both Amazon listings verified
+      live (amazon.com $14.99, amazon.de 121,40 DKK with free first-order delivery to DK — relevant
+      when ordering the control copy; description wording intact on both, 206 pp, publisher of
+      record correct). The isbn.dk register check closed: the page serves its data from the public
+      search endpoint regardless of login, and the public view carries name, website, and the ISBN
+      list only — no address, no email, no phone. All ten ISBNs still read "Brugt: Nej".
 
 ## 1. The beta send — the only clock that matters. This week.
 - [x] **Stamped-PDF safeguard — done 2026-07-31.** The stamped bytes (sha256 `25bf5f23…5735e02`) were found byte-exact on the external-disk mirror (`E:\…\manuscript\billiard_ball_universe.pdf`, disk untouched) and committed as `timestamps/billiard_ball_universe.pdf` beside its proof; ANCHOR updated. Desktop rebuilds are now harmless. Remaining thirty-second bit: drop a copy in Dropbox beside the archive. (The other three stamped artifacts were already safe: anchor + tex + cover_wrap byte-exact in git at `f79ba9b`; export zip has its Dropbox copy per §0.)
