@@ -155,6 +155,14 @@
       (2026-08-25 → deadline ~2026-11-25) preserves those benefits retroactively to publication
       day; later registration covers only what comes after it. No US deposit copies otherwise —
       mandatory deposit and the LoC cataloging programs do not apply to a Danish publisher.
+- [ ] **LessWrong — not visited yet (noted 2026-09-07), and it is the book's most natural room.**
+      The audience that takes minimal-arbitrariness arguments seriously reads there. The right form
+      is not an announcement but a post that can lose on its own: the core argument (*less arbitrary,
+      one mystery*) stated at full strength in one or two thousand words, the concessions kept on the
+      page as the book keeps them, the book linked at the end rather than led with. Site norms point
+      the same way — new accounts are moderated and promotion-shaped posts are received badly, so the
+      post has to be a contribution first and a pointer second, which is conveniently the book's own
+      standard. code-claude drafts on ask.
 - [ ] **Phase 2: IngramSpark**, two to three weeks behind KDP. The whole reason the ISBN came from DBC
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
