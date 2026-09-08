@@ -65,19 +65,25 @@ one shelf copy is thin.
 ## Package 2 — DBC (Dansk Bogfortegnelse; the lektørudtalelse door)
 
 - [ ] **2 copies** in a padded envelope or small box.
-- [ ] Print and fill in the **"Oplysningsskema til Dansk
-      Bogfortegnelse"** (PDF on dbc.dk — search the site for
-      "oplysningsskema"; a mirrored copy also floats around as
-      DBC_skema.pdf). ISBN, title, publisher, price, publication date.
+- [ ] Fill in the **oplysningsskema** digitally, then PRINT it and put
+      it in the package ("Du kan udfylde skemaet digitalt, men derefter
+      skal det udskrives og vedlægges fysisk"):
+      https://dbcdigital.dk/for-udgivere/registrering-af-boeger/oplysningsskema-til-registrering-af-boeger/
+      (instructions: https://dbcdigital.dk/for-udgivere/registrering-af-boeger/;
+      old mirror: https://img.lasertryk.dk/scb/downloads/DBC_skema.pdf).
+      ISBN, title, publisher, price, publication date.
       The ISBN is already in DBC's system (registered 2026-08-10,
       forlagsnummer 977519) — the skema ties the physical book to that
       record.
 - [ ] Address:
 
-      Dansk Bogfortegnelse
       DBC DIGITAL A/S
+      Dansk Bogfortegnelse
       Tempovej 7-11
       2750 Ballerup
+
+- [ ] DBC asks that it be sent **to the address, not to a pakkeshop
+      pickup** — in Route A below, choose delivery to address.
 
 - [ ] Know what this buys: registration in Dansk Bogfortegnelse (the
       national bibliography → visible on bibliotek.dk, in front of
@@ -94,7 +100,8 @@ stopped delivering letters 2025-12-31; **dao** runs letters now, and
 PostNord stamps are invalid. Two working routes:
 
 **Route A — parcel (recommended; simplest, tracked):**
-1. Go to postnord.dk (or gls.dk or dao.as) → *Send pakke*.
+1. Go to https://www.postnord.dk (or https://gls-group.com/DK/da/
+   or https://www.dao.as) → *Send pakke*.
 2. Enter the recipient address (business address delivery, not
    pakkeshop pickup), pay by card, get a **QR code on your phone** —
    no printer needed.
@@ -103,7 +110,8 @@ PostNord stamps are invalid. Two working routes:
    and attaches the label. Roughly 50–60 kr per package.
 
 **Route B — dao letter (books under 2 kg can go as a brev):**
-1. Buy a *brevmærke* on dao.as or the dao app (or in a daoSHOP).
+1. Buy a *brevmærke* on https://www.dao.as or the dao app (or in a
+   daoSHOP).
 2. Drop the envelope in a **red dao mailbox inside a daoSHOP** —
    street mailboxes are gone; the boxes live in ~1,550 shops.
 
@@ -116,9 +124,12 @@ Write your sender address on the back of whatever goes.
 
 ## Sources (checked 2026-09-08)
 
+- KB pligtaflevering of books (the operative page — free label button,
+  afleveringsliste, address, deadline):
+  https://pro.kb.dk/pligtaflevering/boeger
 - KB legal deposit Q&A: https://pro.kb.dk/en/legal-deposit/questions-and-answers-about-legal-deposit
   (two copies, address, six-month window, printer-deposit exception)
-- DBC submission for self-publishers: https://www.dbc.dk/produkter/nyttige-links-og-blanketter-mappe/fremsendelse-af-boger-til-registrering-i-dansk-bogfortegnelse
+- DBC registration for publishers (canonical): https://dbcdigital.dk/for-udgivere/registrering-af-boeger/
   (two copies + oplysningsskema, Tempovej address)
 - Trafikstyrelsen, "Hvordan sender du et brev fra 1. januar 2026?":
   https://www.trafikstyrelsen.dk/arbejdsomraader/post-og-koerekort/landsdaekkende-omdeling-af-breve/hvordan-sender-du-et-brev-fra-1-januar-2026-
