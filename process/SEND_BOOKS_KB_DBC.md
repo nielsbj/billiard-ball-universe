@@ -33,10 +33,30 @@ one shelf copy is thin.
       it, tape it on, hand the package to a PostNord pakkeshop. Write
       "Pligtaflevering" on the package too.
       **NB 2026-09-08: the portal errored (SMRP1024, "Retur kan ikke
-      oprettes") — a fault at KB/Shipmondo's end.** Retry a day later;
-      if it persists, email **pligtaflevering.kbh@kb.dk** and ask for a
-      label (draft in the session log). Paid shipping via Route A below
-      is a legal fallback — the free label is convenience, not law.
+      oprettes") — a fault at KB/Shipmondo's end, not ours. DECIDED:
+      wait and retry 2026-09-09.** If it fails again, email
+      **pligtaflevering.kbh@kb.dk** — ready draft below, fill in the
+      address line. Paid shipping via Route A below is a legal
+      fallback — the free label is convenience, not law.
+
+      > **Emne:** Pligtaflevering af bog — pakkelabel-portalen fejler
+      > (SMRP1024)
+      >
+      > Til Pligtafleveringen,
+      >
+      > Jeg vil pligtaflevere to eksemplarer af en nyudgivet bog:
+      > *The Billiard Ball Universe: A World With No Bottom*,
+      > ISBN 978-87-977519-1-6, udgivet 25. august 2026, udgiver
+      > Niels Bonde Jensen. Bogen er trykt i udlandet
+      > (print-on-demand), så afleveringspligten ligger hos mig som
+      > udgiver.
+      >
+      > Jeres pakkelabel-portal (return.shipmondo.com) giver fejlen
+      > SMRP1024 og henviser til denne adresse. Kan I sende mig en
+      > pakkelabel — eller skal jeg fremsende på anden vis?
+      >
+      > Venlig hilsen
+      > Niels Bonde Jensen, [adresse], nielsbj@gmail.com
 - [ ] Deadline: "løbende eller senest et halvt år efter udgivelse" →
       **~2027-02-25 hard, this month good.** The duty is yours
       personally: books printed abroad (KDP) put the aflevering duty
