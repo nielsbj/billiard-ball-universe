@@ -32,6 +32,11 @@ one shelf copy is thin.
       Off. **Label valid 30 days** — create it the day you pack. Print
       it, tape it on, hand the package to a PostNord pakkeshop. Write
       "Pligtaflevering" on the package too.
+      **NB 2026-09-08: the portal errored (SMRP1024, "Retur kan ikke
+      oprettes") — a fault at KB/Shipmondo's end.** Retry a day later;
+      if it persists, email **pligtaflevering.kbh@kb.dk** and ask for a
+      label (draft in the session log). Paid shipping via Route A below
+      is a legal fallback — the free label is convenience, not law.
 - [ ] Deadline: "løbende eller senest et halvt år efter udgivelse" →
       **~2027-02-25 hard, this month good.** The duty is yours
       personally: books printed abroad (KDP) put the aflevering duty
