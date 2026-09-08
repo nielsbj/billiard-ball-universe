@@ -141,10 +141,14 @@
 - [ ] On proof approval: the release commit — imprint URL + ISBN + \PAGECOUNT in one commit, tagged first-edition-1.0 → code-claude runs the flip checklist (pending markers zero, CI gitleaks + reuse lint, beta-name sweep) → **flip the repo public** → publish on KDP. One day, all of it.
 
 ## 5. After publication
-- [ ] **Pligtaflevering — this one is law, not housekeeping.** Four copies to the deposit
-      administration (Ballerup) / the Royal Danish Library, within the statutory window. It was not in
-      this ledger before 2026-08-21; it is now, because it is the only item on the list with a legal
-      deadline attached and nothing upstream reminds you of it.
+- [ ] **Pligtaflevering — this one is law, not housekeeping. NOW ACTIONABLE: author copies
+      arrived 2026-09-08 (five, inspected, fine).** CORRECTED 2026-09-08 against KB's own
+      legal-deposit Q&A (pro.kb.dk): **two copies**, not four — sent to Det Kgl. Bibliotek,
+      Christians Brygge 8, 1219 København K; deadline up to six months after publication
+      (2026-08-25 → ~2027-02-25). The duty is the publisher's own here: the Danish-printer
+      automatic route does not apply to KDP print-on-demand. Budget from the five in hand:
+      2 to KB, 1 to DBC if the lektørudtalelse route wants a physical copy (check when
+      submitting, next item), leaving 2.
 - [ ] **Lektørudtalelse** — submit and get it accepted; it is what puts the book in front of Danish
       libraries, and it is week-one work, not someday work.
 - [ ] **Decide US Copyright Office registration — by mid-November 2026, and lean yes.** Copyright
