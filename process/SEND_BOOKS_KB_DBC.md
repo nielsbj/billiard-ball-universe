@@ -21,13 +21,21 @@ one shelf copy is thin.
       Christians Brygge 8
       1219 København K
 
-- [ ] Include a slip of paper (no official form required): title, ISBN
-      978-87-977519-1-6, publisher **Niels Bonde Jensen, Denmark**,
-      publication date 2026-08-25, your return address.
-- [ ] Deadline: KB allows up to six months after publication →
+- [ ] Enclose KB's **afleveringsliste** (their own PDF template —
+      one line: title, ISBN 978-87-977519-1-6, publisher, 2 copies):
+      https://pro.kb.dk/pligtaflevering/afleveringsliste/afleveringsliste.pdf
+- [ ] **Shipping is FREE — KB pays** (verified on pro.kb.dk/pligtaflevering/boeger
+      2026-09-08): create a prepaid label at their Shipmondo portal,
+      https://return.shipmondo.com/det-kgl-bibliotek-pligtaflevering-publikationer
+      — fill in your own name ("privatperson udfylder blot med eget
+      navn"), address, email, mobile; method is PostNord Return Drop
+      Off. **Label valid 30 days** — create it the day you pack. Print
+      it, tape it on, hand the package to a PostNord pakkeshop. Write
+      "Pligtaflevering" on the package too.
+- [ ] Deadline: "løbende eller senest et halvt år efter udgivelse" →
       **~2027-02-25 hard, this month good.** The duty is yours
-      personally: the Danish-printer automatic route does not apply to
-      KDP print-on-demand.
+      personally: books printed abroad (KDP) put the aflevering duty
+      on the publisher.
 
 ## Package 2 — DBC (Dansk Bogfortegnelse; the lektørudtalelse door)
 
@@ -55,8 +63,10 @@ one shelf copy is thin.
 
 ## How to actually send anything in Denmark, September 2026
 
-PostNord stopped delivering letters 2025-12-31; **dao** runs letters
-now, and PostNord stamps are invalid. Two working routes:
+The KB package needs none of this — its label is prepaid (above).
+This section is for the DBC package and anything else. PostNord
+stopped delivering letters 2025-12-31; **dao** runs letters now, and
+PostNord stamps are invalid. Two working routes:
 
 **Route A — parcel (recommended; simplest, tracked):**
 1. Go to postnord.dk (or gls.dk or dao.as) → *Send pakke*.
