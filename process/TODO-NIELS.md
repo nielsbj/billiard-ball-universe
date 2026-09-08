@@ -147,10 +147,15 @@
       Christians Brygge 8, 1219 København K; deadline up to six months after publication
       (2026-08-25 → ~2027-02-25). The duty is the publisher's own here: the Danish-printer
       automatic route does not apply to KDP print-on-demand. Budget from the five in hand:
-      2 to KB, 1 to DBC if the lektørudtalelse route wants a physical copy (check when
-      submitting, next item), leaving 2.
+      2 to KB, 2 to DBC (their submission page asks for two + the oplysningsskema), leaving 1.
+      **Full walk-through — addresses, the DBC form, and how mailing works post-PostNord —
+      in `SEND_BOOKS_KB_DBC.md` (2026-09-08).**
 - [ ] **Lektørudtalelse** — submit and get it accepted; it is what puts the book in front of Danish
-      libraries, and it is week-one work, not someday work.
+      libraries, and it is week-one work, not someday work. **Clarified 2026-09-08: it cannot be
+      applied for** — you send 2 copies + the oplysningsskema to Dansk Bogfortegnelse (DBC,
+      Ballerup) for national-bibliography registration, and DBC's lektors select from what
+      arrives; the sending IS the submission. Same afternoon as the KB package —
+      see `SEND_BOOKS_KB_DBC.md`.
 - [ ] **Decide US Copyright Office registration — by mid-November 2026, and lean yes.** Copyright
       exists automatically under Berne; *registration* (~$65 online, eco.copyright.gov, one deposit
       copy) is what buys standing for statutory damages and attorney's fees in US courts — and in
