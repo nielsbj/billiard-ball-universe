@@ -171,8 +171,14 @@ Write your sender address on the back of whatever goes.
 
 ## When done
 
-- [ ] Tick the two §5 items in `TODO-NIELS.md` (pligtaflevering,
-      lektørudtalelse-submission half) and note the send date here.
+- [x] **SHIPPED 2026-09-09, both packages, via postnord.dk paid labels
+      (QR at pakkeshop).** KB: 2 copies + signed afleveringsliste
+      (filled copy in `nbj/`), "Pligtaflevering" on the box; FYI email
+      sent to pligtaflevering.kbh@kb.dk (portal down two days,
+      SMRP1024/SMRP1013). DBC: 2 copies + printed oplysningsskema
+      (filled via dbcdigital.dk web form; PDF in `nbj/`). Both §5
+      items in `TODO-NIELS.md` ticked same day. Copy budget: 1 author
+      copy remains at home — consider ordering more from KDP.
 
 ## Sources (checked 2026-09-08)
 

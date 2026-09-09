@@ -141,8 +141,10 @@
 - [ ] On proof approval: the release commit — imprint URL + ISBN + \PAGECOUNT in one commit, tagged first-edition-1.0 → code-claude runs the flip checklist (pending markers zero, CI gitleaks + reuse lint, beta-name sweep) → **flip the repo public** → publish on KDP. One day, all of it.
 
 ## 5. After publication
-- [ ] **Pligtaflevering — this one is law, not housekeeping. NOW ACTIONABLE: author copies
-      arrived 2026-09-08 (five, inspected, fine).** CORRECTED 2026-09-08 against KB's own
+- [x] **DONE 2026-09-09 — Pligtaflevering: 2 copies + signed afleveringsliste shipped to KB
+      via postnord.dk (paid label; KB's free-label portal was down two days, SMRP1024/SMRP1013 —
+      FYI email sent to pligtaflevering.kbh@kb.dk same day). Was: this one is law, not
+      housekeeping. Author copies arrived 2026-09-08 (five, inspected, fine).** CORRECTED 2026-09-08 against KB's own
       legal-deposit Q&A (pro.kb.dk): **two copies**, not four — sent to Det Kgl. Bibliotek,
       Christians Brygge 8, 1219 København K; deadline up to six months after publication
       (2026-08-25 → ~2027-02-25). The duty is the publisher's own here: the Danish-printer
@@ -150,7 +152,10 @@
       2 to KB, 2 to DBC (their submission page asks for two + the oplysningsskema), leaving 1.
       **Full walk-through — addresses, the DBC form, and how mailing works post-PostNord —
       in `SEND_BOOKS_KB_DBC.md` (2026-09-08).**
-- [ ] **Lektørudtalelse** — submit and get it accepted; it is what puts the book in front of Danish
+- [x] **SUBMITTED 2026-09-09 — Lektørudtalelse door: 2 copies + printed oplysningsskema
+      shipped to DBC Ballerup via postnord.dk. The sending IS the submission; DBC's lektors
+      select from what arrives — if written, publishes ~3 months later. Was:** submit and get
+      it accepted; it is what puts the book in front of Danish
       libraries, and it is week-one work, not someday work. **Clarified 2026-09-08: it cannot be
       applied for** — you send 2 copies + the oplysningsskema to Dansk Bogfortegnelse (DBC,
       Ballerup) for national-bibliography registration, and DBC's lektors select from what
