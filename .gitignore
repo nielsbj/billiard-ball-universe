@@ -147,3 +147,6 @@ bbu_reader_draft*.pdf
 
 # Built book PDF — not committed except tagged releases (see process/PDF_POLICY.md)
 manuscript/billiard_ball_universe.pdf
+
+# Filled pligtaflevering form — contains home address and phone; PRIVATE, never commit
+process/afleveringsliste_*.pdf
