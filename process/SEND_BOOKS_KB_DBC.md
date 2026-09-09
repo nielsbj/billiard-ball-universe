@@ -107,10 +107,47 @@ one shelf copy is thin.
       sending the copies is the whole application. If one is written,
       it publishes ~3 months later. Free either way.
 
+## Send-day walkthrough (2026-09-09): BOTH packages via postnord.dk
+
+*KB's prepaid label died with the portal (SMRP1024/SMRP1013), so both
+packages go the same paid route. ~50–60 kr each, tracked, no printer
+needed.*
+
+1. Go to **https://www.postnord.dk** → **Send pakke** (som privat).
+2. Package 1 — recipient (choose **levering til adresse**, not
+   pakkeshop):
+
+       Det Kgl. Bibliotek
+       Pligtaflevering
+       Christians Brygge 8
+       1219 København K
+
+3. Package 2 — recipient (DBC explicitly wants address delivery):
+
+       DBC DIGITAL A/S
+       Dansk Bogfortegnelse
+       Tempovej 7-11
+       2750 Ballerup
+
+4. Weight: two copies + padding is well under 2 kg — pick the
+   smallest bracket that fits (weigh if unsure; one copy ≈ 300 g).
+5. Sender: name + home address (this file is public — the address is
+   on the filled afleveringsliste in `nbj/`); write it on the back of
+   each package too.
+6. Pay by card → you get a **QR code per package** on your phone.
+7. Contents check before sealing: KB box = 2 copies + signed
+   afleveringsliste (filled 2026-09-09, in `nbj/`), "Pligtaflevering"
+   written on the outside. DBC box = 2 copies + printed
+   oplysningsskema.
+8. Take both boxes + both QR codes to the nearest pakkeshop (the site
+   shows Ringsted locations); the shop prints and attaches the labels.
+9. Keep the two tracking numbers — note them in this file when done,
+   and send the KB FYI email (drafted in Gmail) the same day.
+
 ## How to actually send anything in Denmark, September 2026
 
-The KB package needs none of this — its label is prepaid (above).
-This section is for the DBC package and anything else. PostNord
+*(Background reference — the walkthrough above supersedes the "KB is
+prepaid" line for this shipment.)* PostNord
 stopped delivering letters 2025-12-31; **dao** runs letters now, and
 PostNord stamps are invalid. Two working routes:
 
