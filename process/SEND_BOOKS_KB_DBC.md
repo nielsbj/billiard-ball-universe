@@ -35,11 +35,14 @@ one shelf copy is thin.
       **NB 2026-09-08: the portal errored (SMRP1024, "Retur kan ikke
       oprettes") — a fault at KB/Shipmondo's end, not ours. DECIDED:
       wait and retry 2026-09-09.**
-      **Retry 2026-09-09: portal is back up — the form loads and
-      renders fully (all fields, PostNord Return Drop Off method,
-      Fortsæt button). Whether SMRP1024 recurs only shows at submit;
-      create the label the day you pack (it's valid 30 days).**
-      If it fails again at submit, email
+      **Retry 2026-09-09: portal form loads and renders fully, but
+      creation FAILED again at submit — now error SMRP1013 ("Det er
+      ikke muligt at returnere på nuværende tidspunkt"), which itself
+      refers to pligtaflevering.kbh@kb.dk for help. Two consecutive
+      days, two different codes (SMRP1024 → SMRP1013): fault is at
+      KB/Shipmondo's end. DECIDED 2026-09-09: stop retrying, use the
+      email fallback below (draft opened in Gmail compose same day).**
+      Email
       **pligtaflevering.kbh@kb.dk** — ready draft below, fill in the
       address line. Paid shipping via Route A below is a legal
       fallback — the free label is convenience, not law.
