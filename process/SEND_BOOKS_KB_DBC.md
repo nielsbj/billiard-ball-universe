@@ -40,8 +40,15 @@ one shelf copy is thin.
       ikke muligt at returnere på nuværende tidspunkt"), which itself
       refers to pligtaflevering.kbh@kb.dk for help. Two consecutive
       days, two different codes (SMRP1024 → SMRP1013): fault is at
-      KB/Shipmondo's end. DECIDED 2026-09-09: stop retrying, use the
-      email fallback below (draft opened in Gmail compose same day).**
+      KB/Shipmondo's end. DECIDED 2026-09-09 (Niels): stop retrying —
+      ship the KB package via Route A (paid postnord.dk label,
+      delivery to the Christians Brygge address) same day as DBC,
+      and send KB an FYI email instead: portal broken two days,
+      copies dispatched by PostNord at own expense, package marked
+      "Pligtaflevering" with afleveringsliste enclosed. FYI draft
+      opened in Gmail compose 2026-09-09; Niels inserts address and
+      sends. The original label-request draft below is kept for
+      reference only.**
       Email
       **pligtaflevering.kbh@kb.dk** — ready draft below, fill in the
       address line. Paid shipping via Route A below is a legal
