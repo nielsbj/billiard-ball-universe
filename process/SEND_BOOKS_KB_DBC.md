@@ -180,6 +180,63 @@ Write your sender address on the back of whatever goes.
       items in `TODO-NIELS.md` ticked same day. Copy budget: 1 author
       copy remains at home — consider ordering more from KDP.
 
+### Tracking (recorded 2026-09-12, step 9 finally done)
+
+| package | order | forsendelsesnummer | cost | outcome |
+|---|---|---|---|---|
+| DBC, Dansk Bogfortegnelse | SBP2ZFY0GWKHXGWC | 00073215400700584536 | 72 DKK | **Delivered 2750 Ballerup, Thu 10 Sept — correct.** |
+| Det Kgl. Bibliotek Pligtaflevering | SBPB30X2DK6A2258 | 00073215400700552894 | 72 DKK | **MIS-SENT — delivered 4100 Ringsted, Fri 11 Sept 11.44.** |
+
+## The KB package went to the wrong address — RESEND (opened 2026-09-12)
+
+**What happened.** The KB label was bought with the right *recipient
+name* ("Det Kgl. Bibliotek Pligtaflevering" — it is on the PostNord
+receipt) but the wrong *address*: PostNord's tracking shows the parcel
+delivered on **Friday 11 September at 11.44 in 4100 Ringsted**, the
+sender's own town, not 1219 København K. The DBC parcel on the same
+morning went to 2750 Ballerup correctly, so this was one slip in one
+form, not a systemic error. The two copies and the signed
+afleveringsliste are therefore still in hand, not lost — **the legal
+deposit has NOT been made.** The §5 item is reopened in
+`TODO-NIELS.md`.
+
+**The deadline is unaffected:** six months from publication,
+~2027-02-25. There is no penalty in a repeat; only the duty stands.
+
+**Resend steps**
+
+1. Repack the same two copies with the same signed afleveringsliste
+   (still valid — nothing on it is dated to the shipment). Write
+   **"Pligtaflevering"** on the outside again.
+2. Buy the label at **https://www.postnord.dk → Send pakke** and, at
+   the recipient step, choose **levering til adresse** and type the
+   address out in full — then **read it back before paying**:
+
+       Det Kgl. Bibliotek
+       Pligtaflevering
+       Chr. Brygge 8
+       1219 København K
+
+   *(Verified again 2026-09-12 on https://pro.kb.dk/pligtaflevering/boeger.
+   KB writes it "Chr. Brygge 8"; "Christians Brygge 8" is the same
+   street and also deliverable.)*
+   **The check that would have caught this one: the postal code must
+   read 1219, not 4100.** If the form offers a saved or autofilled
+   address, it is the sender's own — overwrite it.
+3. Optional, saves 72 DKK: KB's free prepaid label at
+   https://return.shipmondo.com/det-kgl-bibliotek-pligtaflevering-publikationer
+   failed at submit on both 09-08 (SMRP1024) and 09-09 (SMRP1013).
+   It is worth exactly one attempt before paying — if it errors again,
+   do not spend a third day on it; the paid route is a legal fallback,
+   as established.
+4. Note the new tracking number in the table above, and **check the
+   tracking page after delivery** — the destination postal code is
+   shown there, which is how this error surfaced at all.
+5. No new email to KB is required: the 09-09 FYI already told them
+   copies were dispatched at own expense. If a reply from KB has since
+   arrived, read it before resending in case they ask for something
+   different.
+
 ## Sources (checked 2026-09-08)
 
 - KB pligtaflevering of books (the operative page — free label button,

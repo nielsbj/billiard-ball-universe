@@ -141,10 +141,18 @@
 - [ ] On proof approval: the release commit — imprint URL + ISBN + \PAGECOUNT in one commit, tagged first-edition-1.0 → code-claude runs the flip checklist (pending markers zero, CI gitleaks + reuse lint, beta-name sweep) → **flip the repo public** → publish on KDP. One day, all of it.
 
 ## 5. After publication
-- [x] **DONE 2026-09-09 — Pligtaflevering: 2 copies + signed afleveringsliste shipped to KB
-      via postnord.dk (paid label; KB's free-label portal was down two days, SMRP1024/SMRP1013 —
-      FYI email sent to pligtaflevering.kbh@kb.dk same day). Was: this one is law, not
-      housekeeping. Author copies arrived 2026-09-08 (five, inspected, fine).** CORRECTED 2026-09-08 against KB's own
+- [ ] **REOPENED 2026-09-12 — the KB package never reached KB.** Shipped 2026-09-09 with the
+      right recipient *name* on the label but the wrong *address*: PostNord tracking
+      (00073215400700552894) shows it delivered **4100 Ringsted, Fri 11 Sept 11.44** — your own
+      town, not 1219 København K. The two copies and the signed afleveringsliste are in hand, so
+      nothing is lost and nothing needs reprinting; **the deposit itself has not been made.**
+      Deadline is untouched (~2027-02-25). Resend steps, with the postal-code check that would
+      have caught it, are in `SEND_BOOKS_KB_DBC.md` §"The KB package went to the wrong address".
+      *(The DBC package on the same morning went to 2750 Ballerup correctly — that item stands
+      done.)* Was: DONE 2026-09-09 — pligtaflevering shipped via postnord.dk (paid label; KB's
+      free-label portal was down two days, SMRP1024/SMRP1013 — FYI email sent to
+      pligtaflevering.kbh@kb.dk same day); this one is law, not housekeeping. Author copies
+      arrived 2026-09-08 (five, inspected, fine). CORRECTED 2026-09-08 against KB's own
       legal-deposit Q&A (pro.kb.dk): **two copies**, not four — sent to Det Kgl. Bibliotek,
       Christians Brygge 8, 1219 København K; deadline up to six months after publication
       (2026-08-25 → ~2027-02-25). The duty is the publisher's own here: the Danish-printer
