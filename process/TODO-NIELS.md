@@ -169,7 +169,19 @@
       Ballerup) for national-bibliography registration, and DBC's lektors select from what
       arrives; the sending IS the submission. Same afternoon as the KB package —
       see `SEND_BOOKS_KB_DBC.md`.
-- [ ] **Decide US Copyright Office registration — by mid-November 2026, and lean yes.** Copyright
+- [ ] **Decide US Copyright Office registration — DEADLINE MOVED UP to late September / early
+      October 2026 (was mid-November), and still lean yes.** Researched properly 2026-09-12; the
+      whole plan is in `US_COPYRIGHT_REGISTRATION.md`. Three things the old row got wrong: what
+      must arrive by ~2026-11-25 is the application **and fee and deposit copy**, and the deposit
+      is a **printed book mailed from Denmark** through offsite mail screening, so the real
+      deadline is weeks earlier; it is the **Standard application ($65), not the Single ($45)**,
+      because only the Standard can disclaim the AI plates and filing the wrong one is refused
+      rather than corrected; and the fee rises to $85 around 2026-11-11. Decision 0, which sets
+      everything else: the amazon.com listing went live two days after publication, so this most
+      likely counts as a **US publication** — which also triggers §407 mandatory deposit to the
+      Library of Congress, satisfied by the same copy. Settle the public claimant address first
+      (it goes in the public catalogue permanently), and order a spare author copy now. Was:
+      by mid-November 2026, and lean yes. Copyright
       exists automatically under Berne; *registration* (~$65 online, eco.copyright.gov, one deposit
       copy) is what buys standing for statutory damages and attorney's fees in US courts — and in
       practice it has been the entry ticket to AI-training settlements, which is not hypothetical
