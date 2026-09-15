@@ -197,7 +197,17 @@
       the same way — new accounts are moderated and promotion-shaped posts are received badly, so the
       post has to be a contribution first and a pointer second, which is conveniently the book's own
       standard. code-claude drafts on ask.
-- [ ] **Phase 2: IngramSpark**, two to three weeks behind KDP. The whole reason the ISBN came from DBC
+- [ ] **Phase 2: IngramSpark — researched 2026-09-12, full setup guide now in
+      `INGRAMSPARK_PHASE2.md` (written up 2026-09-15), and the schedule ("two to three weeks
+      behind KDP") makes it due now.** The short version: spine maths identical (206 pp →
+      0.5150"), no title transfer needed because Expanded Distribution was never on, setup free —
+      but the cover must be re-wrapped onto their per-title template, and **one question must be
+      answered before opening the account**: whether a Danish bank can receive the EUR payout
+      (Denmark is not eurozone; currency choice is effectively permanent) — ask
+      ingramsparkinternational@ingramcontent.com first, fallback is USD PayPal with a $30
+      threshold. Three decisions to make up front: payout currency, wholesale discount
+      (55%+Yes-Destroy for stockability vs 40%+non-returnable for margin), per-market list
+      prices (US stays $14.99 to match KDP). The whole reason the ISBN came from DBC
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
 - [x] Re-export the Claude data once this chat closes — **done 2026-08-24**: last-30-days export
