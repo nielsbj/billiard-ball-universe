@@ -171,6 +171,10 @@ Write your sender address on the back of whatever goes.
 
 ## When done
 
+- [x] **CLOSED 2026-09-15: KB acknowledged receipt by email — the
+      pligtaflevering is made, and both statutory errands are now
+      complete** (DBC delivered 09-10, KB acknowledged 09-15 after the
+      resend). See the acknowledgement section below.
 - [x] **SHIPPED 2026-09-09, both packages, via postnord.dk paid labels
       (QR at pakkeshop).** KB: 2 copies + signed afleveringsliste
       (filled copy in `nbj/`), "Pligtaflevering" on the box; FYI email
@@ -186,15 +190,37 @@ Write your sender address on the back of whatever goes.
 |---|---|---|---|---|
 | DBC, Dansk Bogfortegnelse | SBP2ZFY0GWKHXGWC | 00073215400700584536 | 72 DKK | **Delivered 2750 Ballerup, Thu 10 Sept — correct.** |
 | Det Kgl. Bibliotek Pligtaflevering | SBPB30X2DK6A2258 | 00073215400700552894 | 72 DKK | **MIS-SENT — delivered 4100 Ringsted, Fri 11 Sept 11.44.** |
-| Det Kgl. Bibliotek Pligtaflevering (resend) | *(to note)* | *(to note)* | | **Resent by 2026-09-15 — delivery check pending: postal code must read 1219.** |
+| Det Kgl. Bibliotek Pligtaflevering (resend) | *(not noted)* | *(not noted)* | | **ARRIVED — receipt acknowledged by KB by email 2026-09-15.** |
 
-## The KB package went to the wrong address — RESEND (opened 2026-09-12; RESENT by 2026-09-15)
+## PLIGTAFLEVERINGEN IS DONE — KB acknowledged receipt 2026-09-15
 
-**RESENT (reported by Niels 2026-09-15).** The two copies + signed
-afleveringsliste went out again. Still open, the two checks from step 4
-below: note the new forsendelsesnummer in the tracking table, and after
-delivery confirm on the tracking page that the destination postal code
-reads **1219** — that check is how the first error surfaced at all.
+**KB's Fysisk pligtaflevering / Legal Deposit office emailed the same
+day the resent package arrived: "Tak for den tilsendte leverance."**
+That is the acknowledgement, and it closes the duty — no tracking
+lookup is needed now that the recipient has confirmed in writing.
+(Their one reservation, quoted so it is not forgotten: if anything
+turns out to be unclear or missing during processing, *"vil vi tillade
+os at vende tilbage"*. So an unlikely follow-up is possible; nothing is
+owed unless they ask.) Contact for any such reply:
+pligtaflevering.kbh@kb.dk, tlf. 91 32 47 26.
+
+**One correction to the record, from the same email: the free-label
+portal works.** KB point future deliveries at
+https://return.shipmondo.com/det-kgl-bibliotek-pligtaflevering-publikationer
+as a matter of routine, with two operating notes worth keeping: labels
+**expire 30 days** after creation, so print immediately before use,
+and **one form submission per label** — fill it in as many times as
+there are packages. The SMRP1024/SMRP1013 failures of 09-08 and 09-09
+were therefore a transient fault at their end, exactly as diagnosed,
+not a permanently dead route. **Next time: try the portal first, and
+give it more than two days before paying.** Paying was still the right
+call under a broken portal with a legal duty outstanding.
+
+*(The KB officer's name is in the mail and deliberately not recorded
+here: the repo is public, the person is incidental, and the office
+address is the durable fact.)*
+
+## The KB package went to the wrong address — RESEND (opened 2026-09-12; RESENT 2026-09-15, ARRIVED same week)
 
 **What happened.** The KB label was bought with the right *recipient
 name* ("Det Kgl. Bibliotek Pligtaflevering" — it is on the PostNord
