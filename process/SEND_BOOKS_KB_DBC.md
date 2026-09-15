@@ -186,8 +186,15 @@ Write your sender address on the back of whatever goes.
 |---|---|---|---|---|
 | DBC, Dansk Bogfortegnelse | SBP2ZFY0GWKHXGWC | 00073215400700584536 | 72 DKK | **Delivered 2750 Ballerup, Thu 10 Sept — correct.** |
 | Det Kgl. Bibliotek Pligtaflevering | SBPB30X2DK6A2258 | 00073215400700552894 | 72 DKK | **MIS-SENT — delivered 4100 Ringsted, Fri 11 Sept 11.44.** |
+| Det Kgl. Bibliotek Pligtaflevering (resend) | *(to note)* | *(to note)* | | **Resent by 2026-09-15 — delivery check pending: postal code must read 1219.** |
 
-## The KB package went to the wrong address — RESEND (opened 2026-09-12)
+## The KB package went to the wrong address — RESEND (opened 2026-09-12; RESENT by 2026-09-15)
+
+**RESENT (reported by Niels 2026-09-15).** The two copies + signed
+afleveringsliste went out again. Still open, the two checks from step 4
+below: note the new forsendelsesnummer in the tracking table, and after
+delivery confirm on the tracking page that the destination postal code
+reads **1219** — that check is how the first error surfaced at all.
 
 **What happened.** The KB label was bought with the right *recipient
 name* ("Det Kgl. Bibliotek Pligtaflevering" — it is on the PostNord

@@ -141,7 +141,11 @@
 - [ ] On proof approval: the release commit — imprint URL + ISBN + \PAGECOUNT in one commit, tagged first-edition-1.0 → code-claude runs the flip checklist (pending markers zero, CI gitleaks + reuse lint, beta-name sweep) → **flip the repo public** → publish on KDP. One day, all of it.
 
 ## 5. After publication
-- [ ] **REOPENED 2026-09-12 — the KB package never reached KB.** Shipped 2026-09-09 with the
+- [x] **RESENT by 2026-09-15 (Niels) — closing again, with one residual check.** The two copies +
+      signed afleveringsliste went out on a new label. Remaining before this is beyond doubt:
+      note the new tracking number in `SEND_BOOKS_KB_DBC.md`'s table, and after delivery confirm
+      the tracking page shows destination **1219** — the check that caught the first error.
+      Was: REOPENED 2026-09-12 — the KB package never reached KB. Shipped 2026-09-09 with the
       right recipient *name* on the label but the wrong *address*: PostNord tracking
       (00073215400700552894) shows it delivered **4100 Ringsted, Fri 11 Sept 11.44** — your own
       town, not 1219 København K. The two copies and the signed afleveringsliste are in hand, so
