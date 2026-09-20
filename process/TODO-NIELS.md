@@ -198,6 +198,19 @@
       (2026-08-25 → deadline ~2026-11-25) preserves those benefits retroactively to publication
       day; later registration covers only what comes after it. No US deposit copies otherwise —
       mandatory deposit and the LoC cataloging programs do not apply to a Danish publisher.
+- [ ] **Rights-evidence folder built 2026-09-19 — `nbj/rights/` (private, stays out of git).**
+      A signable one-page publishing-rights declaration plus an indexed exhibit pile, ready so
+      that a platform rights query becomes a ten-minute reply instead of a week of digging —
+      plausible rather than hypothetical, since the manuscript source is public while the book
+      is paid. The paperwork side is done: declaration built (1 pp, 0 errors), title/copyright
+      pages extracted from the exact uploaded interior, commit history exported, exhibit index
+      written. **Yours to finish, ~30 min, and one item is time-ordered:** read the folder's
+      `README.md` first — it names one check to make at the publishing dashboard *before* any
+      query arrives, and that check is the only thing in the folder that could cost anything —
+      then export the three e-mails listed in `EVIDENCE_INDEX.md` §C (ISBN registration
+      2026-08-10, legal-deposit list 2026-09-09, KB acknowledgement 2026-09-15) and re-save the
+      one password-locked PDF openably. This folder is also the evidence base the US copyright
+      registration (row above) will draw on.
 - [ ] **LessWrong — not visited yet (noted 2026-09-07), and it is the book's most natural room.**
       The audience that takes minimal-arbitrariness arguments seriously reads there. The right form
       is not an announcement but a post that can lose on its own: the core argument (*less arbitrary,
