@@ -64,6 +64,14 @@ Payment references and receipts belong in `nbj/rights/`, never in this file.*
 - [ ] CONV-1 transcript scrub → conversations/ tier.
 - [ ] Watch the letterbox: repo issues → gate → patch → ERRATA line.
 
+## Checked and closed, same day
+
+- **Public-surface e-mail check (author's concern, 2026-09-25): CLEAN.** Live HTML of
+  billiardballuniverse.com, synthesizedroots.com and nielsbondejensen.com fetched and
+  scanned — the only addresses anywhere are the two deliberate letterboxes
+  (contact@ each book domain); the personal address appears on none of them, and
+  only in private repo docs locally. Nothing to change, nothing to notify.
+
 ## Then: quiet
 
 When the package is mailed, this whole errand goes silent for 4–6 months, until the
