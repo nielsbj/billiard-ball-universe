@@ -7,7 +7,10 @@ sheet could not be read directly, so fee figures come from IngramSpark's
 public FAQ plus trade press and are flagged where they conflict. The
 ledger row is TODO-NIELS §5; this file is what that row points at.
 Phase 2's own schedule ("two to three weeks behind KDP", live
-2026-08-27) puts this due now.*
+2026-08-27) put this due mid-September; **author's decision 2026-09-25:
+deferred to October 2026.** The slip costs distribution reach, not
+correctness — nothing here goes stale except the fee figures, which
+were already flagged as re-check-at-signup.*
 
 **The book: 6×9 paperback, 206 pp, b&w on crème, ISBN
 978-87-977519-1-6 (own forlagsnummer — not a Bowker record), KDP list

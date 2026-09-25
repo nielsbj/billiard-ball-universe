@@ -219,9 +219,13 @@
       the same way — new accounts are moderated and promotion-shaped posts are received badly, so the
       post has to be a contribution first and a pointer second, which is conveniently the book's own
       standard. code-claude drafts on ask.
-- [ ] **Phase 2: IngramSpark — researched 2026-09-12, full setup guide now in
-      `INGRAMSPARK_PHASE2.md` (written up 2026-09-15), and the schedule ("two to three weeks
-      behind KDP") makes it due now.** The short version: spine maths identical (206 pp →
+- [ ] **Phase 2: IngramSpark — DEFERRED TO OCTOBER 2026 (author's call, 2026-09-25).**
+      Researched 2026-09-12, full setup guide in `INGRAMSPARK_PHASE2.md` (written up
+      2026-09-15). The original "two to three weeks behind KDP" schedule would have made it
+      due mid-September; waiting a month costs reach, not correctness. The one item worth
+      doing *during* the wait, because it is a round-trip to Tennessee by email: send the
+      DK-payout question to ingramsparkinternational@ingramcontent.com now, so the answer is
+      in hand when the account opens. The short version: spine maths identical (206 pp →
       0.5150"), no title transfer needed because Expanded Distribution was never on, setup free —
       but the cover must be re-wrapped onto their per-title template, and **one question must be
       answered before opening the account**: whether a Danish bank can receive the EUR payout
