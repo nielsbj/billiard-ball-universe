@@ -135,8 +135,13 @@ treat this as effectively irreversible and settle it first.
    exit from letters); the chosen provider is Mail Boxes Etc. Danmark
    (Anytime Mailbox platform, mbedenmark.anytimemailbox.com), Bronze plan,
    paid annually — DKK 1,799/yr + DKK 450 startup, ex moms, ≈ DKK 2,800
-   first year incl. moms. Address: Østerbrogade 226, st. 1, 2100
-   København Ø (+ assigned box number). The recipient name on the box
+   first year incl. moms. Signed up 2026-09-25 (DKK 2,248.75 incl. moms
+   at checkout; the DKK 450 startup fee did not appear there — watch for
+   it as a separate charge). **Assigned claimant address: Niels Bonde
+   Jensen, Østerbrogade 226, st. 1, Suite #514, 2100 Copenhagen,
+   Denmark** — this exact form, suite included, goes on the eCO claimant
+   screen. Auto-renews annually: calendar note ~August 2027 to
+   renew-or-cancel. The recipient name on the box
    must match the claimant name exactly. The subscription needs to live
    through the registration cycle (~4–6 months to certificate); after
    that it may lapse — the catalogue records the address as of
