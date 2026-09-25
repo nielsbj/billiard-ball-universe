@@ -179,8 +179,9 @@
       arrives; the sending IS the submission. Same afternoon as the KB package —
       see `SEND_BOOKS_KB_DBC.md`.
 - [ ] **US Copyright Office registration — FILED AND PAID 2026-09-25.** Case
-      **1-15268305891**, Standard/TX, $65 paid via Pay.gov (Danish card works; confirmation
-      # 120307, tracking 2669QK09). Claimant address = the MBE box (Bronze/annual, signed up
+      **1-15268305891**, Standard/TX, $65 paid via Pay.gov (a Danish card works; payment
+      references live on the saved confirmation in `nbj/rights/`, not here).
+      Claimant address = the MBE box (Bronze/annual, signed up
       same day; ID verification pending). Full record + all numbers in
       `US_COPYRIGHT_REGISTRATION.md` §"FILED AND PAID". **Remaining, and it has the clock:
       (a) Create Shipping Slip in eCO** — failed on filing day (button spins, no record;
