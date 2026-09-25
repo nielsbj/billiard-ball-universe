@@ -137,10 +137,13 @@ treat this as effectively irreversible and settle it first.
    paid annually — DKK 1,799/yr + DKK 450 startup, ex moms, ≈ DKK 2,800
    first year incl. moms. Signed up 2026-09-25 (DKK 2,248.75 incl. moms
    at checkout; the DKK 450 startup fee did not appear there — watch for
-   it as a separate charge). **Assigned claimant address: Niels Bonde
-   Jensen, Østerbrogade 226, st. 1, Suite #514, 2100 Copenhagen,
-   Denmark** — this exact form, suite included, goes on the eCO claimant
-   screen. Auto-renews annually: calendar note ~August 2027 to
+   it as a separate charge). **Assigned claimant address, in the
+   provider's own canonical ASCII form — use exactly this on eCO, which
+   predates Unicode:** Niels Bonde Jensen / Oesterbrogade 226 st 1 /
+   Suite #514 / Copenhagen, 2100 / Denmark. Mailbox confirmed active
+   2026-09-25 (ID verification pending; gates mail viewing only, not
+   use of the address). Provider support: mailbox@mbedenmark.dk,
+   +45 31 20 36 16. Auto-renews annually: calendar note ~August 2027 to
    renew-or-cancel. The recipient name on the box
    must match the claimant name exactly. The subscription needs to live
    through the registration cycle (~4–6 months to certificate); after
