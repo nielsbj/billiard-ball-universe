@@ -10,6 +10,13 @@ Payment references and receipts belong in `nbj/rights/`, never in this file.*
 - [ ] **Save the Pay.gov confirmation page into `nbj/rights/`** (if not already done).
       Print-to-PDF of the "Payment successful" page. It is the only proof of payment
       that will ever exist — Pay.gov sends no email.
+- [ ] **Save the Office's confirmation-of-receipt email into `nbj/rights/`**
+      (arrived 2026-09-25 12:03 from noreply@loc.gov — the Office-side proof that
+      application + payment were received on 9/25/2026).
+- [ ] **Download the printable application copy** — available within 24 hours of
+      filing under "My Applications" (top-left menu on the eCO home screen). It is
+      the exact record of the claim as filed; save it into `nbj/rights/`. Natural to
+      grab during the shipping-slip retry.
 - [ ] **Retry "Create Shipping Slip" in eCO.** Log in → Open Cases → case
       1-15268305891 → scroll to "Send Your Work(s) by Mail" → Create Shipping Slip →
       OK on the popup. It failed on filing day (button spins, nothing appears) —
