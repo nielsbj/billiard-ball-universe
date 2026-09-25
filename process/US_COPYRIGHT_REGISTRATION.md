@@ -130,6 +130,18 @@ treat this as effectively irreversible and settle it first.
 ## Sequence
 
 1. Settle the public address (PO box or equivalent).
+   **DECIDED 2026-09-25: a rented virtual address, not the home address.**
+   Classic PO boxes no longer exist in Denmark (they went with PostNord's
+   exit from letters); the chosen provider is Mail Boxes Etc. Danmark
+   (Anytime Mailbox platform, mbedenmark.anytimemailbox.com), Bronze plan,
+   paid annually — DKK 1,799/yr + DKK 450 startup, ex moms, ≈ DKK 2,800
+   first year incl. moms. Address: Østerbrogade 226, st. 1, 2100
+   København Ø (+ assigned box number). The recipient name on the box
+   must match the claimant name exactly. The subscription needs to live
+   through the registration cycle (~4–6 months to certificate); after
+   that it may lapse — the catalogue records the address as of
+   registration, and Office correspondence goes to the correspondence
+   address, so a later-dead box costs nothing.
 2. Create the eCO account at copyright.gov/registration — allow pop-ups;
    Pay.gov and the shipping slip both open in new windows.
 3. **Order a spare author copy now** — it has its own lead time, and the

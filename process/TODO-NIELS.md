@@ -178,7 +178,15 @@
       Ballerup) for national-bibliography registration, and DBC's lektors select from what
       arrives; the sending IS the submission. Same afternoon as the KB package —
       see `SEND_BOOKS_KB_DBC.md`.
-- [ ] **Decide US Copyright Office registration — DEADLINE MOVED UP to late September / early
+- [ ] **US Copyright Office registration — IN MOTION 2026-09-25: the decision is yes, and the
+      address gate is settled.** Session work with code-claude in the browser: eCO reached
+      (login page loads; the Firefox-warning dialog must be dismissed by hand before any
+      automation can see the page), account creation is Niels's next step; **claimant address
+      decided — MBE virtual address (Bronze, annual), not the home address** — details now in
+      `US_COPYRIGHT_REGISTRATION.md` §Sequence step 1. Remaining after both accounts exist:
+      the Standard application (code-claude drives, Niels confirms each submit), $65 Pay.gov
+      by card (Niels), shipping slip, one copy mailed tracked by mid-October. Was: **Decide US
+      Copyright Office registration — DEADLINE MOVED UP to late September / early
       October 2026 (was mid-November), and still lean yes.** Researched properly 2026-09-12; the
       whole plan is in `US_COPYRIGHT_REGISTRATION.md`. Three things the old row got wrong: what
       must arrive by ~2026-11-25 is the application **and fee and deposit copy**, and the deposit
