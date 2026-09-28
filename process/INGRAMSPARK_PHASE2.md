@@ -78,6 +78,37 @@ Two further traps in §3:
 Payment timing regardless of method: **90 days after the end of the
 month of sale**.
 
+**Paste-ready email for that question** (drafted 2026-09-28 so the
+answer is in hand when the account opens in October; send from the
+address the account will use):
+
+> **To:** ingramsparkinternational@ingramcontent.com
+> **Subject:** Pre-signup question: EUR payout to a Danish bank (EU, non-eurozone)
+>
+> Hello,
+>
+> I am about to open an IngramSpark account as a self-publisher based in
+> Denmark — one paperback title, my own ISBN. Before signing up I want to
+> settle the payout method, since the currency choice is effectively
+> permanent.
+>
+> Denmark is in the EU but not the eurozone. My bank is Danish (DK IBAN)
+> and can hold a EUR-denominated account. Your compensation guide says the
+> EUR BACS payout "must be EUROZONE based bank."
+>
+> 1. Does a EUR account at a Danish bank (Danish IBAN) qualify for the
+>    EUR BACS payout, or is that route strictly limited to banks located
+>    in eurozone countries?
+> 2. If it does not qualify, is USD PayPal the recommended route for a
+>    Danish publisher, or is there another option I have missed?
+> 3. If you can answer a tax question in the same reply: which US–Denmark
+>    treaty withholding rate do you apply to royalties once a W-8BEN with
+>    the treaty claim is on file?
+>
+> Thank you,
+> Niels Bonde Jensen
+> Publisher of record, ISBN 978-87-977519-1-6
+
 ## 2. Fees in 2026
 
 | item | status |

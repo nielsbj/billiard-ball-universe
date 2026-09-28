@@ -10,9 +10,11 @@ Payment references and receipts belong in `nbj/rights/`, never in this file.*
 - [ ] **Save the Pay.gov confirmation page into `nbj/rights/`** (if not already done).
       Print-to-PDF of the "Payment successful" page. It is the only proof of payment
       that will ever exist — Pay.gov sends no email.
-- [ ] **Save the Office's confirmation-of-receipt email into `nbj/rights/`**
-      (arrived 2026-09-25 12:03 from noreply@loc.gov — the Office-side proof that
-      application + payment were received on 9/25/2026).
+- [x] **Save the Office's confirmation-of-receipt email into `nbj/rights/` — DONE
+      2026-09-25** (`usco-confirmation-of-receipt-2026-09-25.pdf` in place, indexed as
+      exhibit 9 in `EVIDENCE_INDEX.md` §A). Was: arrived 2026-09-25 12:03 from
+      noreply@loc.gov — the Office-side proof that application + payment were
+      received on 9/25/2026.
 - [ ] **Download the printable application copy** — available within 24 hours of
       filing under "My Applications" (top-left menu on the eCO home screen). It is
       the exact record of the claim as filed; save it into `nbj/rights/`. Natural to
@@ -56,7 +58,9 @@ Payment references and receipts belong in `nbj/rights/`, never in this file.*
 - [ ] **IngramSpark Phase 2** — deferred to October by your call (2026-09-25). Guide:
       `INGRAMSPARK_PHASE2.md`. Worth doing during the wait: email the DK-payout
       question to ingramsparkinternational@ingramcontent.com now, so the answer is in
-      hand when the account opens.
+      hand when the account opens. **The email is drafted, paste-ready, in
+      `INGRAMSPARK_PHASE2.md` §1 right under the payout-methods list** (added
+      2026-09-28) — send it from the address the account will use.
 
 ## No clock, still open (from TODO-NIELS §5)
 
