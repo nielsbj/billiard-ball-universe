@@ -206,12 +206,47 @@ trip to the post office.** A small job with a hard date on it.
   either/or ("do not do both"), so no archival PDF upload (step 8 void).
 
 **REMAINING — the deposit (steps 6–7), one item stuck:**
-- **Create Shipping Slip failed 2026-09-25** — the button spins and no
-  attachment record appears, with popups allowed and after a fresh
-  login. Known-flaky eCO behaviour. Retry on a later day (avoid the
-  Sat-night/Sun-morning ET maintenance window); if it stays dead, ask
-  the Office via Contact Us / +1 202-707-3000 quoting the case #.
-  **The slip is mandatory** — the deposit cannot be matched without it.
+- ~~**Create Shipping Slip failed 2026-09-25**~~ — **RESOLVED
+  2026-09-30 on the planned retry** (Claude in Niels's browser,
+  session "everything"): same button, same case page, worked first
+  click on a Wednesday — the attachment record now reads
+  **Shipping_Slip .pdf, 4,417 bytes, 9/30/2026 02:27:14 AM** in the
+  case's Send-by-Mail table. So the 09-25 failure was the known
+  flakiness, not anything about the case. The slip PDF lives in eCO
+  under the case (Open Cases → 1-15268305891 → bottom table); it was
+  downloaded by Niels the same day
+  (`Shipping_Slip_CORCPT_1-70IH4W2.pdf`) and printed on A4. The
+  slip's own text: attach it securely to the deposit copy and mail
+  **within 30 days of the case date 9/25** (→ by ~2026-10-25, not
+  10-30 as first noted here); effective date = the date the Office
+  receives copies **with the slip attached**. The mid-October target
+  stands and is now the only clock. **Step-by-step mailing list
+  (first US parcel): `TODO_NIELS_USCO_MAIL_2026-09-30.md`.**
+- **POSTAGE BOUGHT 2026-09-30, same morning** — PostNord Tracked to
+  USA, 269 kr, shipment SBPK5N0RTY06E312, **tracking
+  LP011301063DK**, no-signature service (deliberate: Rekommanderet
+  converts to US Registered Mail, the slowest class, and a signature
+  demand fights the Office's offsite screening). CN22 on the label:
+  Other; "Printed book (deposit copy)" (30-char field limit forced
+  the shorter wording); 1 × 0.322 kg × 17 USD; HS 4901990000;
+  **origin PL** — the copy's own last page says Printed in Poland,
+  and origin now matters to US customs even though printed books
+  are informational material and duty-free. Recipient fielded as
+  business: company "U.S. Copyright Office" (60-char limit cut the
+  full line), Attn "Materials Control and Analysis Division - TX",
+  phone the Office switchboard. Label + kvittering + slip archived
+  in `nbj/rights/usco-mailing/`.
+- **DEPOSIT MAILED 2026-09-30, the same morning.** Slip filled
+  (Materials Submitted 1 / Paperback book; LP011301063DK on the
+  Internal Tracking line; barcode clean), rubber-banded to the book,
+  CN22 signed and dated 30 SEP 2026, both photographed before
+  sealing (photos in `nbj/rights/usco-mailing/`), and the package
+  handed in at a pakkeshop — slip created, filled, packed and posted
+  in one day, 25 days ahead of the slip's own ~10-25 limit. ALL THAT
+  REMAINS: watch LP011301063DK to delivery and screenshot the
+  delivered status (a screening-facility delivery is normal;
+  effective date = the Office's receipt of book + slip), then the
+  ~4–6 month certificate wait to the MBE box.
 - Deposit copy: in hand (Niels confirmed 2026-09-25). Mail one copy +
   slip, tracked, to the address printed on the slip. eCO says mail
   within 30 days of the slip; target stays **mailed by mid-October**.
