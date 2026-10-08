@@ -242,11 +242,16 @@ trip to the post office.** A small job with a hard date on it.
   CN22 signed and dated 30 SEP 2026, both photographed before
   sealing (photos in `nbj/rights/usco-mailing/`), and the package
   handed in at a pakkeshop — slip created, filled, packed and posted
-  in one day, 25 days ahead of the slip's own ~10-25 limit. ALL THAT
-  REMAINS: watch LP011301063DK to delivery and screenshot the
-  delivered status (a screening-facility delivery is normal;
-  effective date = the Office's receipt of book + slip), then the
-  ~4–6 month certificate wait to the MBE box.
+  in one day, 25 days ahead of the slip's own ~10-25 limit.
+- **DEPOSIT DELIVERED 2026-10-07, 08:36, Washington DC 20540** —
+  seven days door to door (left DK 2 Oct, US customs cleared 3 Oct,
+  sorting 4 Oct, delivered 7 Oct). Checked and screenshotted
+  2026-10-08; three delivered-status screenshots in
+  `nbj/rights/usco-mailing/` (`20261008_tracking_delivered_*.jpg`).
+  The 20540 delivery is likely the screening intake; effective date
+  = the Office's receipt of book + slip, which may lag a few days —
+  normal, no action. ALL THAT REMAINS: the ~4–6 month certificate
+  wait to the MBE box (roughly Feb–Apr 2027).
 - Deposit copy: in hand (Niels confirmed 2026-09-25). Mail one copy +
   slip, tracked, to the address printed on the slip. eCO says mail
   within 30 days of the slip; target stays **mailed by mid-October**.
@@ -260,5 +265,7 @@ trip to the post office.** A small job with a hard date on it.
   (Moot for the fee already paid; relevant only if a refile were needed.)
 - ~~Whether **Pay.gov accepts a Danish card**.~~ **CLOSED 2026-09-25: yes**
   (Danske Bank card, first attempt, ASCII billing address).
-- How long **offsite mail screening** adds. The Office says it delays
-  delivery and does not say by how much — the reason for the buffer.
+- ~~How long **offsite mail screening** adds.~~ **MOOT 2026-10-08:**
+  the package was delivered 2026-10-07, 18 days before the slip's
+  limit and 7 weeks before the retroactive window closes — whatever
+  screening adds, the buffer absorbs it many times over.

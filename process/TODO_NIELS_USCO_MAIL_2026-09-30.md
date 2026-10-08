@@ -62,20 +62,28 @@ remain — you are two weeks ahead of the target.*
       the slip was created. Filed → posted in one day, 25 days ahead
       of the slip's ~25 Oct limit.
 
-## 5. After posting — the only thing left, and it is a watch, not a task
+## 5. After posting — DONE, delivered 2026-10-07
 
-- [ ] Watch **LP011301063DK** to delivery
-      (postnord.dk/track-and-trace, or usps.com/tracking once it is
-      in the US). Delivery to a **screening facility** rather than
-      the Office's own address is normal — all Office mail is
-      screened offsite first.
-- [ ] Screenshot the delivered status → `nbj/rights/usco-mailing/`.
-      The **effective date of registration** = the day the Office
-      receives book + slip together.
+- [x] **DELIVERED Wednesday 2026-10-07 at 08:36**, receiver
+      20540 Washington DC (checked 2026-10-08 on
+      tracking.postnord.com). Full route: dropped off 30 Sept 10:17
+      (Pakkeshop Deko by Lind) → Køge → Brøndby → left DK 2 Oct →
+      arrived US + customs cleared 3 Oct → sorting 4 Oct →
+      distribution terminal 7 Oct 05:48 → delivered 7 Oct 08:36.
+      Seven days door to door — well inside every deadline (slip
+      limit ~25 Oct, retroactive window ~25 Nov).
+- [x] Delivered-status screenshots saved 2026-10-08 →
+      `nbj/rights/usco-mailing/` (`20261008_tracking_delivered_*.jpg`,
+      3 files: status page, US leg, DK leg). The **effective date of
+      registration** = the day the Office receives book + slip
+      together; delivery at 20540 was likely the screening intake —
+      the Office's internal receipt may lag a few days, which is
+      normal and needs no action.
 
-## 6. Then nothing — the wait
+## 6. Then nothing — the wait (ACTIVE as of 2026-10-08)
 
-Certificate in ~4–6 months to the MBE box. Do not buy special
+The deposit is delivered; the errand is silent now. Certificate in
+~4–6 months to the MBE box (so roughly Feb–Apr 2027). Do not buy special
 handling (it would not move the effective date). Keep the MBE box
 active until the certificate arrives (auto-renews ~Aug 2027). The
 case stays visible at eco.copyright.gov → Open Cases, where the slip
