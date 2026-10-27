@@ -150,3 +150,6 @@ manuscript/billiard_ball_universe.pdf
 
 # Filled pligtaflevering form — contains home address and phone; PRIVATE, never commit
 process/afleveringsliste_*.pdf
+
+# Ebook build artifacts - the pipeline is tracked, its output is not
+ebook/build/

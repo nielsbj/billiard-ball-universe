@@ -1,0 +1,70 @@
+/* The Billiard Ball Universe - ebook stylesheet.
+   Deliberately modest: serif body left to the device default, restrained
+   decoration, nothing that fights a reader's own typography settings. */
+
+body { margin: 0.5em 1em; line-height: 1.5; }
+
+h1 { font-size: 1.5em; text-align: center; margin: 1.4em 0 1em 0;
+     font-weight: bold; }
+h2 { font-size: 1.15em; margin: 1.6em 0 0.6em 0; font-weight: bold; }
+.chapnum { font-size: 0.75em; letter-spacing: 0.08em; text-transform: uppercase;
+           font-weight: normal; }
+
+p { margin: 0 0 0.65em 0; text-indent: 0; text-align: justify; }
+p.runin { margin-top: 0.9em; }
+p.speakerline { margin-top: 0.7em; }
+.speaker { font-weight: bold; }
+
+.dropcap { font-size: 1.6em; font-weight: bold; }
+
+.sep { text-align: center; margin: 1.1em 0; font-size: 1.1em; }
+
+.small, .small-italic { font-size: 0.88em; }
+.small-italic, .italic, .large-italic { font-style: italic; }
+.large, .large-italic { font-size: 1.1em; }
+.bold, .huge-bold { font-weight: bold; }
+.huge-bold { font-size: 1.6em; }
+
+figure { margin: 1.2em 0; text-align: center; page-break-inside: avoid; }
+figure img { max-width: 100%; }
+figure.chapterart img { max-width: 70%; }
+figcaption { font-size: 0.85em; text-align: justify; margin-top: 0.5em; }
+
+table { border-collapse: collapse; margin: 1em auto; font-size: 0.85em; }
+th, td { padding: 0.3em 0.5em; vertical-align: top; text-align: left; }
+th { border-bottom: 1px solid #888; font-weight: bold; }
+
+ul { margin: 0.6em 0 0.6em 1.4em; }
+li { margin-bottom: 0.5em; }
+
+.noteref { text-decoration: none; }
+.fnrule { margin-top: 2em; width: 30%; }
+.footnotes { font-size: 0.85em; }
+.footnote p { text-align: left; }
+
+.cite { font-size: 0.85em; }
+.cite a { text-decoration: none; }
+.bibentry { font-size: 0.9em; text-align: left; margin-bottom: 0.6em;
+            text-indent: -1.2em; margin-left: 1.2em; }
+
+.math i { font-style: italic; }
+.fbox { border: 1px solid currentColor; padding: 0 0.2em; }
+
+.titlepage { text-align: center; margin-top: 18%; }
+.booktitle { font-size: 1.9em; margin-bottom: 0.4em; }
+.subtitle { font-size: 1.2em; margin-bottom: 3em; }
+.authorname { font-size: 1.1em; margin-bottom: 6em; }
+.edline { font-size: 0.85em; }
+
+.kolofon { font-size: 0.85em; margin-top: 30%; }
+.kolofon p { text-align: left; }
+
+.dedication { text-align: center; margin-top: 35%; font-style: italic;
+              font-size: 1.1em; }
+
+.partpage { text-align: center; margin-top: 30%; }
+.partnum { letter-spacing: 0.12em; text-transform: uppercase;
+           font-size: 0.9em; }
+.parttitle { font-size: 1.7em; }
+
+.centerbox { margin: 1.4em 8%; text-align: center; }

@@ -246,7 +246,10 @@
       prices (US stays $14.99 to match KDP). The whole reason the ISBN came from DBC
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
-- [ ] **Kindle ebook edition — DECIDED YES 2026-10-27, sequenced after IngramSpark.** ISBN
+- [ ] **Kindle ebook edition — DECIDED YES 2026-10-27, and RE-SEQUENCED same day: ebook FIRST,
+      IngramSpark waits (author's call — "ebook is important to start selling, IngramSpark not so
+      much"; the Phase 2 guide and the unsent DK-payout email keep, nothing goes stale but fee
+      figures already flagged re-check-at-signup).** ISBN
       **978-87-977519-4-7** (own forlagsnummer, assigned same day). Coexists with the free repo
       PDF deliberately — different audiences; the listing may say so. Quality target: reflowable
       EPUB built from the master tex, judged on an actual Kindle before it goes up; KDP Select
