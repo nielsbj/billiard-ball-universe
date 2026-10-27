@@ -330,3 +330,31 @@ you because it authenticates with MitID.
 No deadline is stated on KB's e-book page, but doing it this week keeps
 the pattern of the physical deposit: discharged while fresh. The free
 website PDF is harvested automatically by Netarkivet and needs nothing.
+
+**Fallback if the portal fights you — e-mail, paste-ready.** KB's own
+page routes portal-incapable material to pligtaflevering@kb.dk, and the
+fysisk office (pligtaflevering.kbh@kb.dk) already knows this title from
+September's physical deposit. Attach
+`nbj/ebook-deposit/billiard_ball_universe_ebook.epub` and send:
+
+> Emne: Pligtaflevering af e-bog — ISBN 978-87-977519-4-7
+>
+> Til pligtafleveringen,
+>
+> Hermed pligtafleveres e-bogsudgaven af en titel, hvis trykte udgave
+> blev afleveret i september 2026 (kvitteret af Fysisk pligtaflevering
+> 15. september 2026):
+>
+> Titel: The Billiard Ball Universe — A World With No Bottom
+> Forfatter og udgiver: Niels Bonde Jensen (forlagsnummer 977519)
+> ISBN (e-bog): 978-87-977519-4-7 · EPUB · engelsk · udgivet 27.10.2026
+> Distribution: sælges via Amazon Kindle Store; bogen er desuden frit
+> tilgængelig som PDF på billiardballuniverse.com. Ikke Publizon.
+>
+> Filen er vedhæftet. Jeg forsøgte/foretrækker e-mail frem for
+> upload-portalen — sig til, hvis I hellere vil have den ad anden vej.
+>
+> Venlig hilsen,
+> Niels Bonde Jensen
+
+Either route closes the item; the portal is the canonical one.
