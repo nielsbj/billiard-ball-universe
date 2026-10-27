@@ -282,3 +282,46 @@ deposit has NOT been made.** The §5 item is reopened in
 - Trafikstyrelsen, "Hvordan sender du et brev fra 1. januar 2026?":
   https://www.trafikstyrelsen.dk/arbejdsomraader/post-og-koerekort/landsdaekkende-omdeling-af-breve/hvordan-sender-du-et-brev-fra-1-januar-2026-
   (dao letters, red boxes in daoSHOPs, PostNord stamps invalid)
+
+---
+
+## THE E-BOOK EDITION (added 2026-10-27, the day it was published)
+
+The EPUB edition (ISBN 978-87-977519-4-7, published to KDP 2026-10-27 at
+USD 6.99, DRM-free) has its own pligtaflevering and registration duties.
+Only e-books distributed via Publizon are deposited automatically; an
+Amazon-only e-book must be delivered by hand, to both houses. The deposit
+file is the EXACT bytes uploaded to KDP, preserved at
+`nbj/ebook-deposit/billiard_ball_universe_ebook.epub`
+(sha256 0f434f41e14d979744f6406306e5507e9b485a13022e6854fc630618beb1f75a,
+OTS-stamped in `timestamps/2026-10-27-ebook-first-edition/`).
+
+### DBC - DONE 2026-10-27, submitted by code-claude (author-directed)
+
+Route: the "Anmeld e-bog til registrering" form on DBC's service desk
+(dbcjira.atlassian.net, portal 3, request type 140 - linked from
+dbcdigital.dk/for-udgivere/registrering-af-boeger/). Submitted with the
+EPUB attached and full metadata (both ISBNs, publisher + forlagsnummer,
+date, price, DRM-free, Amazon-not-Publizon noted, website link).
+**Reference: SDKUN-38862.** Confirmation + updates go to
+contact@billiardballuniverse.com (the letterbox; lands labeled in Gmail).
+Evidence item: save the confirmation e-mail when it arrives.
+
+### KB - YOURS, ~10 minutes, needs MitID
+
+KB's e-book deposit is a self-service upload portal; nobody can do it for
+you because it authenticates with MitID.
+
+1. Go to **pro.kb.dk/en/legal-deposit/e-books** (Danish: /pligtaflevering/e-boeger).
+2. Click "Login and upload your e-book" -> log in with MitID.
+3. Upload `nbj/ebook-deposit/billiard_ball_universe_ebook.epub`.
+4. Publication information, ready to paste:
+   - Title: The Billiard Ball Universe. Subtitle: A World With No Bottom.
+   - Author & publisher: Niels Bonde Jensen (forlagsnummer 977519).
+   - ISBN (e-book): 978-87-977519-4-7. Year: 2026. Language: English.
+   - Format: EPUB. Distribution: Amazon Kindle Store (not Publizon).
+5. Evidence item: screenshot/save the upload confirmation.
+
+No deadline is stated on KB's e-book page, but doing it this week keeps
+the pattern of the physical deposit: discharged while fresh. The free
+website PDF is harvested automatically by Netarkivet and needs nothing.

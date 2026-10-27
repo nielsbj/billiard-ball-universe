@@ -82,14 +82,32 @@ within ~72 h, ASIN assigned on approval.
 Both formats are now in review simultaneously (the paperback's cover
 revision from this morning, and the ebook's first publication).
 
+## Same day, later still: timestamped, and the deposits set in motion
+
+- **OTS-stamped.** The exact uploaded bytes (sha256 `0f434f41…beb1f75a`) and
+  a frozen ANCHOR file are stamped in
+  `timestamps/2026-10-27-ebook-first-edition/` (four calendars, Bitcoin
+  attestation pending as always). The EPUB bytes themselves stay out of the
+  public repo (paid product file) — preserved in `nbj/ebook-deposit/`, which
+  doubles as the deposit copy.
+- **DBC: SUBMITTED 2026-10-27** via the "Anmeld e-bog til registrering"
+  service-desk form, EPUB attached, full metadata, **reference SDKUN-38862**,
+  confirmation to the letterbox. Only Publizon-distributed e-books deposit
+  automatically; Amazon-only ones go by this form — the sending IS the
+  registration, as with the physical copies.
+- **KB: waiting on Niels** — the e-book pligtaflevering is a self-service
+  upload portal behind **MitID** (pro.kb.dk/en/legal-deposit/e-books), so no
+  one can do it for him. Ten-minute walkthrough with paste-ready metadata
+  appended to `process/SEND_BOOKS_KB_DBC.md` §"THE E-BOOK EDITION".
+
 ## Remaining tail
 
+- **KB e-book upload [NIELS, MitID, ~10 min]** — walkthrough in
+  `SEND_BOOKS_KB_DBC.md`.
 - Check in ~72 h: ebook live at $6.99 with the formats linked on one product
   page, AND the paperback showing the new back-cover headline.
-- Digital pligtaflevering: an ebook edition has its own legal-deposit rule
-  (digital works are covered by pligtaflevering — the KB route for e-books
-  differs from the physical one). Research and discharge once the ebook is
-  live; noted in the TODO-NIELS row.
+- Evidence items: save the DBC confirmation e-mail (ref SDKUN-38862) and the
+  KB upload confirmation when they exist.
 - Optional v1.1 polish, batched for some future correction: promote figure
   captions into image alt text and upgrade the KDP accessibility answer from
   "Some" to "All".

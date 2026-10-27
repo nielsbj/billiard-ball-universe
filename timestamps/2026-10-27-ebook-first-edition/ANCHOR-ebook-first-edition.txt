@@ -1,0 +1,51 @@
+ANCHOR — 2026-10-27 — ebook first edition (the Kindle/EPUB publication)
+================================================================================
+
+WHAT THIS IS
+------------
+The anchor for the book's SECOND FORMAT: the reflowable EPUB edition,
+submitted to KDP for publication on 2026-10-27 at 12:xx GMT and "In review"
+at stamping time. It binds the exact bytes uploaded to KDP — the EPUB and
+its cover image — to this date, the same way the 2026-08-25 release anchor
+bound the paperback's upload files.
+
+STATE ANCHORED
+--------------
+edition    : ebook (reflowable EPUB 3), first edition, 2026
+ISBN       : 978-87-977519-4-7 (ebook) — the paperback stays 978-87-977519-1-6
+publisher  : Niels Bonde Jensen, Denmark (forlagsnummer 977519, DBC)
+price      : $6.99 USD list, 70% royalty plan, all marketplaces based on US
+DRM        : OFF (author's ruling, 2026-10-27, in session: "no need to use
+             drm"; permanent once live) — buyers may download their copy
+KDP Select : NOT enrolled (the free repository PDF forecloses exclusivity,
+             deliberately)
+source     : built from manuscript/billiard_ball_universe.tex at the
+             interior-final state by the committed pipeline ebook/build_ebook.py
+             (repo commits 57c3b91, 0858b17; publication recorded in 8460e42;
+             full trail in record/EBOOK_BUILD_2026-10-27.md)
+deviations : exactly three from the print interior, author-ruled same day:
+             kolofon carries both ISBNs and the reworded Palatino line;
+             index omitted; references re-rendered from the .bbl.
+
+SHA-256 OF THE ANCHORED FILES
+-----------------------------
+The bytes uploaded to KDP (NOT committed — the EPUB is the paid product
+file; it is gitignored under ebook/build/ and preserved privately in
+nbj/ebook-deposit/, which also serves as the pligtaflevering deposit copy):
+
+0f434f41e14d979744f6406306e5507e9b485a13022e6854fc630618beb1f75a  billiard_ball_universe_ebook.epub (uploaded to KDP 2026-10-27)
+be2c9c33d95c2f487f3534bfe41b1c4e516c180331d38d82381e8226784185d6  cover.jpg (ebook cover, 1800x2700, cropped from cover_wrap.pdf front panel at 300 dpi — the 2026-10-27 reworded-headline state)
+
+The .ots proofs beside this file stamp the EPUB and this anchor.
+
+WHAT IS NOT CLAIMED
+-------------------
+- Not that the ebook is live yet. At stamping time KDP's review is running
+  ("up to 72 hours"); the paperback's same-day cover revision is in the same
+  queue.
+- Not that these bytes are the final forever-edition: corrections flow
+  through the same errata loop as the paperback, and a corrected EPUB would
+  be a new upload with its own record.
+
+This file is frozen. It is itself stamped, so editing it after stamping
+would break its own proof.
