@@ -311,7 +311,19 @@ date, price, DRM-free, Amazon-not-Publizon noted, website link).
 contact@billiardballuniverse.com (the letterbox; lands labeled in Gmail).
 Evidence item: save the confirmation e-mail when it arrives.
 
-### KB - YOURS, ~10 minutes, needs MitID
+### KB - DONE 2026-10-27, 14:43 (and 14:08)
+
+Submitted through the aflevering.kb.dk e-book form in Niels's
+authenticated session: all metadata (author, title/subtitle, 1. udgave,
+2026, publisher, English, ISBN 978-87-977519-4-7), the EPUB (7.22 MB)
+AND the cover image attached; portal confirmed "Tak for dit upload" and
+the Sendt list shows **Gennemført 27/10/2026 14:43:07**. A second
+completed entry from 14:08:44 is Niels's own earlier submission the same
+afternoon - KB thus holds the deposit twice, which is harmless (they
+reconcile on ISBN). Receipts went by e-mail; **save one as the evidence
+item.** The walkthrough below is kept for the record of how it works.
+
+### The portal route, for the record (~10 minutes, needs MitID)
 
 KB's e-book deposit is a self-service upload portal; nobody can do it for
 you because it authenticates with MitID.

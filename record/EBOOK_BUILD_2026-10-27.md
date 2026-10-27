@@ -104,14 +104,22 @@ revision from this morning, and the ebook's first publication).
   one can do it for him. Ten-minute walkthrough with paste-ready metadata
   appended to `process/SEND_BOOKS_KB_DBC.md` §"THE E-BOOK EDITION".
 
+## KB: DONE same day too — both deposits discharged on publication day
+
+The e-book pligtaflevering to KB was completed 2026-10-27 at 14:43 through
+the aflevering.kb.dk form in Niels's authenticated session (all metadata,
+EPUB + cover attached, "Tak for dit upload", Sendt list shows Gennemført).
+Niels's own earlier submission at 14:08 means KB holds the deposit twice —
+harmless, reconciled on ISBN. With DBC's SDKUN-38862 from the same
+afternoon, **the e-book's entire deposit picture closed on publication day**,
+before the listing even cleared Amazon's review.
+
 ## Remaining tail
 
-- **KB e-book upload [NIELS, MitID, ~10 min]** — walkthrough in
-  `SEND_BOOKS_KB_DBC.md`.
-- Check in ~72 h: ebook live at $6.99 with the formats linked on one product
-  page, AND the paperback showing the new back-cover headline.
-- Evidence items: save the DBC confirmation e-mail (ref SDKUN-38862) and the
-  KB upload confirmation when they exist.
+- Check in ~72 h (~Oct 30): ebook live at $6.99 with the formats linked on
+  one product page, AND the paperback showing the new back-cover headline.
+- Evidence items: save the DBC confirmation (ref SDKUN-38862) and one KB
+  receipt e-mail.
 - Optional v1.1 polish, batched for some future correction: promote figure
   captions into image alt text and upgrade the KDP accessibility answer from
   "Some" to "All".

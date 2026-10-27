@@ -252,10 +252,12 @@
       (author's call, permanent), Select OFF, worldwide, ISBN + publisher in the KDP record.
       Full trail in `record/EBOOK_BUILD_2026-10-27.md`. Same day: EPUB bytes OTS-stamped
       (`timestamps/2026-10-27-ebook-first-edition/`), DBC e-bog registration SUBMITTED
-      (ref SDKUN-38862, confirmation to the letterbox). **Remaining tail: (a) KB e-book
-      upload — YOURS, needs MitID, ~10 min, walkthrough in `SEND_BOOKS_KB_DBC.md`
-      §"THE E-BOOK EDITION"; (b) ~72 h live-check (both formats linked, one product page);
-      (c) save the two confirmation e-mails as evidence.**
+      (ref SDKUN-38862, confirmation to the letterbox). KB e-book deposit DONE same day
+      too (14:43 via aflevering.kb.dk, EPUB+cover, "Gennemført"; Niels's own 14:08
+      submission makes it a harmless duplicate — KB reconciles on ISBN). **Remaining
+      tail: (a) ~72 h live-check ~Oct 30 (both formats linked, one product page, new
+      back cover); (b) save the confirmation e-mails (DBC SDKUN-38862 + one KB
+      receipt) as evidence.**
       Was: **Kindle ebook edition — DECIDED YES 2026-10-27, and RE-SEQUENCED same day: ebook FIRST,
       IngramSpark waits (author's call — "ebook is important to start selling, IngramSpark not so
       much"; the Phase 2 guide and the unsent DK-payout email keep, nothing goes stale but fee
