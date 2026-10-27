@@ -289,8 +289,12 @@ deposit has NOT been made.** The §5 item is reopened in
 
 The EPUB edition (ISBN 978-87-977519-4-7, published to KDP 2026-10-27 at
 USD 6.99, DRM-free) has its own pligtaflevering and registration duties.
-Only e-books distributed via Publizon are deposited automatically; an
-Amazon-only e-book must be delivered by hand, to both houses. The deposit
+Not Amazon-only: the book is also freely available as PDF from
+billiardballuniverse.com and the public repository — but the deposit
+question turns on Publizon, not Amazon. Only e-books distributed via
+Publizon are deposited automatically; this EPUB is not, so it must be
+delivered by hand, to both houses. (The free website PDF is harvested
+automatically by Netarkivet and needs nothing.) The deposit
 file is the EXACT bytes uploaded to KDP, preserved at
 `nbj/ebook-deposit/billiard_ball_universe_ebook.epub`
 (sha256 0f434f41e14d979744f6406306e5507e9b485a13022e6854fc630618beb1f75a,
@@ -319,7 +323,8 @@ you because it authenticates with MitID.
    - Title: The Billiard Ball Universe. Subtitle: A World With No Bottom.
    - Author & publisher: Niels Bonde Jensen (forlagsnummer 977519).
    - ISBN (e-book): 978-87-977519-4-7. Year: 2026. Language: English.
-   - Format: EPUB. Distribution: Amazon Kindle Store (not Publizon).
+   - Format: EPUB. Distribution: sold via Amazon Kindle Store; the book is
+     also freely available as PDF at billiardballuniverse.com. Not Publizon.
 5. Evidence item: screenshot/save the upload confirmation.
 
 No deadline is stated on KB's e-book page, but doing it this week keeps

@@ -93,8 +93,12 @@ revision from this morning, and the ebook's first publication).
 - **DBC: SUBMITTED 2026-10-27** via the "Anmeld e-bog til registrering"
   service-desk form, EPUB attached, full metadata, **reference SDKUN-38862**,
   confirmation to the letterbox. Only Publizon-distributed e-books deposit
-  automatically; Amazon-only ones go by this form — the sending IS the
-  registration, as with the physical copies.
+  automatically; this one is not on Publizon, so it goes by this form — the
+  sending IS the registration, as with the physical copies. (Author's
+  correction, same day: the ebook is NOT Amazon-only — the book is also
+  freely available as PDF from the website and the public repository; Amazon
+  is where the EPUB edition is *sold*. The DBC submission itself stated the
+  operative facts correctly: sold via Amazon, not Publizon, website linked.)
 - **KB: waiting on Niels** — the e-book pligtaflevering is a self-service
   upload portal behind **MitID** (pro.kb.dk/en/legal-deposit/e-books), so no
   one can do it for him. Ten-minute walkthrough with paste-ready metadata
