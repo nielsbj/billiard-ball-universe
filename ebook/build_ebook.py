@@ -730,7 +730,7 @@ def stage_html() -> None:
             if p == "CODAPLATE":
                 out.append('<figure class="plate"><img src="../images/cover_recursive_ball.jpg" alt="The recursive ball"/></figure>')
                 continue
-            am = re.fullmatch(r"ARTTOKEN:(art/[^\s]+)", p)
+            am = re.fullmatch(r"ARTTOKEN:([^\s]+)", p)
             if am:
                 stem = Path(am.group(1)).name
                 out.append(f'<figure class="chapterart"><img src="../images/{stem}.jpg" alt="chapter plate"/></figure>')
@@ -838,7 +838,10 @@ def stage_html() -> None:
     # residual-command check
     residual = {}
     for f in TEXTDIR.glob("*.xhtml"):
-        for m in re.finditer(r"\\[a-zA-Z]+|\\[^a-zA-Z\s]", f.read_text(encoding="utf-8")):
+        body_txt = f.read_text(encoding="utf-8")
+        for m in re.finditer(r"\\[a-zA-Z]+|\\[^a-zA-Z\s]", body_txt):
+            residual.setdefault(m.group(0), set()).add(f.name)
+        for m in re.finditer(r"(?:ART|FIG)TOKEN[:\w]*|CODAPLATE|BLK[A-Z]+\d+", body_txt):
             residual.setdefault(m.group(0), set()).add(f.name)
     for cmd, files in sorted(residual.items()):
         warn(f"residual tex command {cmd} in {', '.join(sorted(files))}")

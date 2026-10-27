@@ -41,6 +41,29 @@ pages via a Calibre PDF render.
 
 No other content differs from the print interior.
 
+## Same day, later: KDP draft created — and the previewer caught a bug
+
+The Kindle eBook was set up as a **draft** on KDP (author authorized browser
+work; nothing published): all metadata inherited from the paperback and
+verified (title, subtitle, author, description, the same three categories and
+seven keywords, rights, audience), plus ebook-specific settings —
+**DRM = No** (author's call in-session: "no need to use drm"; acknowledgment
+ticked; note: permanent once published), **ISBN 978-87-977519-4-7** +
+publisher "Niels Bonde Jensen" (KDP's ebook ISBN field exists after all),
+AI-content answers identical to the paperback's, accessibility = "Some
+informative images include alternative text" (alts exist but are labels, not
+descriptions — a future build could promote captions into alts and upgrade
+this answer).
+
+**Amazon's own previewer then caught a converter bug the local review had
+missed:** the eight `\chapterart` plates leaked as literal `ARTTOKEN:…` text
+(the token regex demanded an `art/` prefix the macro argument doesn't carry).
+Fixed, a leaked-token class check added to the build's failure conditions,
+EPUB rebuilt and re-uploaded; KDP reprocessed clean. The previewer's "9
+possible spelling errors" were all verified false positives — *massion* (the
+book's own coinage, 7 hits) and two DOI fragments in the references — and
+marked ignored in the quality panel.
+
 ## Next
 
 Niels judges the EPUB on a real Kindle (Send-to-Kindle accepts EPUB), rules
