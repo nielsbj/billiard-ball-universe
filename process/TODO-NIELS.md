@@ -246,6 +246,14 @@
       prices (US stays $14.99 to match KDP). The whole reason the ISBN came from DBC
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
+- [ ] **Kindle ebook edition — DECIDED YES 2026-10-27, sequenced after IngramSpark.** ISBN
+      **978-87-977519-4-7** (own forlagsnummer, assigned same day). Coexists with the free repo
+      PDF deliberately — different audiences; the listing may say so. Quality target: reflowable
+      EPUB built from the master tex, judged on an actual Kindle before it goes up; KDP Select
+      stays OFF (exclusivity is foreclosed by the free PDF). The back-cover/listing copy it
+      inherits is the 2026-10-27 wording — see `record/COVER_HEADLINE_2026-10-27.md`. code-claude
+      scopes and builds the conversion on ask. Note: a digital edition raises its own
+      pligtaflevering question (digital deposit is its own rule) — check when it ships.
 - [x] Re-export the Claude data once this chat closes — **done 2026-08-24**: last-30-days export
       (full-history links failed as single-use/consumed; the 30-day filter includes active chats in
       full, largest chat complete through the close), filed in `archive/export-2026-08-24/`, stamped

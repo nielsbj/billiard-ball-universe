@@ -31,7 +31,8 @@
 ## 3. BACK COVER COPY
 
 **Headline:**
-> A universe with no bottom — argued by an author who shows you where he loses.
+> A universe with no bottom — argued by an author who shows you where he loses, and what survives.
+> *(Reworded 2026-10-27 — the original ended at "loses", which a five-second reader could take as the verdict on the thesis; see `record/COVER_HEADLINE_2026-10-27.md`.)*
 
 **Main blurb (~210 words):**
 
@@ -51,7 +52,7 @@ What survives is smaller and harder than what the author walked in with: not pro
 > Niels Bonde Jensen is a Danish software engineer. He has believed the universe has no bottom since before he could say why.
 
 **Short blurb variant (~70 words, for online listings):**
-> Two childhood convictions — that pulling across empty space is cheating, and that every border only multiplies the questions — grown into a full cosmology: an infinitely layered, mechanical universe with one mystery and no magic anywhere else. Argued against an AI with the concessions kept on the page; its physics graded, wound by wound, in its own tables. Not proof. Something rarer: an honest attempt that shows where it loses.
+> Two childhood convictions — that pulling across empty space is cheating, and that every border only multiplies the questions — grown into a full cosmology: an infinitely layered, mechanical universe with one mystery and no magic anywhere else. Argued against an AI with the concessions kept on the page; its physics graded, wound by wound, in its own tables. Not proof. Something rarer: an honest attempt that shows where it loses — and what survives.
 
 ---
 
