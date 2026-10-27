@@ -64,10 +64,32 @@ possible spelling errors" were all verified false positives — *massion* (the
 book's own coinage, 7 hits) and two DOI fragments in the references — and
 marked ignored in the quality panel.
 
-## Next
+## PUBLISHED — same day, 2026-10-27
 
-Niels judges the EPUB on a real Kindle (Send-to-Kindle accepts EPUB), rules
-on the three deviations, picks a price ($2.99–9.99 for the 70 % band), then
-KDP ebook setup (Select OFF, own ISBN, AI-content answers consistent with
-the how-made note). A digital edition's own pligtaflevering question is
-noted in the TODO-NIELS row.
+The author reviewed the build in KDP's online previewer (no Kindle device
+needed or owned) and approved: *"it works"*, *"it is all fine"* — which
+closed the rendering verdict and the three deviation rulings. Price picked
+via explicit choice: **$6.99 USD** (the 70 % band had quietly expanded to
+$2.99–$12.99). Pricing page settings verified before the click: KDP Select
+**not enrolled**, territories worldwide, 70 % plan, all marketplace prices
+auto-converted from the US price (one UI quirk: the conversion only fires on
+a real change event — same-value retyping does nothing). Converted file
+3.17 MB → $0.47 delivery → **$4.56 royalty per US sale**. Amazon.in is 35 %
+by KDP rule (70 % there requires Select). "Publish Your Kindle eBook"
+clicked; **"Your Kindle eBook has been submitted"** — status In review, live
+within ~72 h, ASIN assigned on approval.
+
+Both formats are now in review simultaneously (the paperback's cover
+revision from this morning, and the ebook's first publication).
+
+## Remaining tail
+
+- Check in ~72 h: ebook live at $6.99 with the formats linked on one product
+  page, AND the paperback showing the new back-cover headline.
+- Digital pligtaflevering: an ebook edition has its own legal-deposit rule
+  (digital works are covered by pligtaflevering — the KB route for e-books
+  differs from the physical one). Research and discharge once the ebook is
+  live; noted in the TODO-NIELS row.
+- Optional v1.1 polish, batched for some future correction: promote figure
+  captions into image alt text and upgrade the KDP accessibility answer from
+  "Some" to "All".

@@ -246,7 +246,13 @@
       prices (US stays $14.99 to match KDP). The whole reason the ISBN came from DBC
       rather than KDP is that this edition has to stay one edition across both. Expanded Distribution
       stays **OFF** on KDP (§4).
-- [ ] **Kindle ebook edition — DECIDED YES 2026-10-27, and RE-SEQUENCED same day: ebook FIRST,
+- [x] **PUBLISHED 2026-10-27 — submitted to KDP at $6.99 (70 %, $4.56/US sale), In review,
+      live within ~72 h.** Same day as decided: pipeline built (`ebook/`), EPUB verified,
+      author previewed in KDP's online previewer and approved ("it works"), DRM OFF
+      (author's call, permanent), Select OFF, worldwide, ISBN + publisher in the KDP record.
+      Full trail in `record/EBOOK_BUILD_2026-10-27.md`. **Remaining tail: ~72 h live-check
+      (both formats linked, one product page), digital pligtaflevering research once live.**
+      Was: **Kindle ebook edition — DECIDED YES 2026-10-27, and RE-SEQUENCED same day: ebook FIRST,
       IngramSpark waits (author's call — "ebook is important to start selling, IngramSpark not so
       much"; the Phase 2 guide and the unsent DK-payout email keep, nothing goes stale but fee
       figures already flagged re-check-at-signup).** ISBN
