@@ -252,11 +252,28 @@ trip to the post office.** A small job with a hard date on it.
   = the Office's receipt of book + slip, which may lag a few days —
   normal, no action. ALL THAT REMAINS: the ~4–6 month certificate
   wait to the MBE box (roughly Feb–Apr 2027).
-- Deposit copy: in hand (Niels confirmed 2026-09-25). Mail one copy +
+- ~~Deposit copy: in hand (Niels confirmed 2026-09-25). Mail one copy +
   slip, tracked, to the address printed on the slip. eCO says mail
-  within 30 days of the slip; target stays **mailed by mid-October**.
-  Effective date = date the Office receives application + fee + deposit,
-  so the three-month window (~2026-11-25) is met at receipt, not send.
+  within 30 days of the slip; target stays **mailed by mid-October**.~~
+  **DISCHARGED — posted 09-30, delivered 10-07, i.e. six weeks inside
+  the mid-October target and the slip's own 30 days.** Kept because it
+  states the rule that made the date safe: effective date = date the
+  Office receives application + fee + deposit, so the three-month
+  window (~2026-11-25) is met at receipt, not send — and receipt
+  happened 2026-10-07, seven weeks early.
+
+**Evidence gap found 2026-10-28, and it is the only open item on this
+file.** The bullet above claims the Pay.gov confirmation number,
+tracking ID and agency tracking ID "are on the saved confirmation page
+in `nbj/rights/`". **They are not.** The folder holds
+`usco-confirmation-of-receipt-2026-09-25.pdf`, which is eCO's
+*application* receipt email and carries no payment reference at all
+(checked by text extraction, not by filename). So the $65 is recorded
+nowhere in the evidence folder, and Pay.gov sends no email. Two routes,
+either is enough and neither is urgent: eCO → Open Cases →
+1-15268305891 shows the case's payment status, and the card statement
+for 2026-09-25 shows the $65 line. Worth closing before the certificate
+arrives, because that is when the folder gets used.
 
 ## Open, and flagged rather than guessed
 

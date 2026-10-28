@@ -178,17 +178,23 @@
       Ballerup) for national-bibliography registration, and DBC's lektors select from what
       arrives; the sending IS the submission. Same afternoon as the KB package —
       see `SEND_BOOKS_KB_DBC.md`.
-- [ ] **US Copyright Office registration — FILED AND PAID 2026-09-25.** Case
-      **1-15268305891**, Standard/TX, $65 paid via Pay.gov (a Danish card works; payment
-      references live on the saved confirmation in `nbj/rights/`, not here).
-      Claimant address = the MBE box (Bronze/annual, signed up
-      same day; ID verification pending). Full record + all numbers in
-      `US_COPYRIGHT_REGISTRATION.md` §"FILED AND PAID". **Remaining, and it has the clock:
-      (a) Create Shipping Slip in eCO** — failed on filing day (button spins, no record;
-      known-flaky), retry on a later day, Office phone +1 202-707-3000 if it stays dead;
-      **(b) mail one copy + slip, tracked, by mid-October** (copy is in hand). Also: export
-      the Pay.gov confirmation + this filing's papers into `nbj/rights/`. Then wait ~4–6
-      months for the certificate (arrives at the MBE box). Was: IN MOTION 2026-09-25; was:
+- [x] **US Copyright Office registration — EVERY ACTIVE STEP DONE; only the certificate
+      wait is left.** Case **1-15268305891**, Standard/TX, filed and $65 paid 2026-09-25 via
+      Pay.gov (a Danish card works). Claimant address = the MBE box. The two items that
+      carried the clock are both discharged: the **shipping slip** was created on the planned
+      retry 2026-09-30 (the 09-25 failure was the known eCO flakiness, nothing about the
+      case), and the **deposit was posted the same morning and DELIVERED Washington DC
+      2026-10-07, 08:36** — seven days door to door, six weeks inside the mid-October target
+      and seven weeks inside the retroactive window (~2026-11-25). Effective date is the
+      Office's receipt, which has happened; the offsite-screening worry is moot. Tracking
+      screenshots in `nbj/rights/usco-mailing/`. **Nothing to do but wait ~4–6 months for the
+      certificate at the MBE box (roughly Feb–Apr 2027) — which is the reason the MBE box has
+      to stay alive, and the one live dependency.** One loose end, not on the clock: *the $65
+      is not evidenced in `nbj/rights/`.* The folder's USCO PDF is eCO's application receipt
+      and carries no payment reference; Pay.gov sends no email. Pull it from eCO's case
+      payment status or the 09-25 card statement before the certificate lands — recorded in
+      `US_COPYRIGHT_REGISTRATION.md` §"Evidence gap". Was: FILED AND PAID 2026-09-25 with (a)
+      the slip and (b) the mailing outstanding; was: IN MOTION 2026-09-25; was:
       decide by late September / early October, lean yes. Researched properly 2026-09-12; the
       whole plan is in `US_COPYRIGHT_REGISTRATION.md`. Three things the old row got wrong: what
       must arrive by ~2026-11-25 is the application **and fee and deposit copy**, and the deposit
