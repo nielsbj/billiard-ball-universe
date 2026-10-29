@@ -285,6 +285,18 @@
       full, largest chat complete through the close), filed in `archive/export-2026-08-24/`, stamped
       pre-scrub as `timestamps/2026-08-24-archives/`; `archive/` copied to the external mirror +
       Dropbox same day. Remaining: re-run the converter when CONV-1 starts.
+- [ ] **Audiobook — STARTED 2026-10-29 (author's call: "we need to expand also with
+      options… it is an experiment"; AI narration, author-owned master).** Route:
+      ElevenLabs Studio (~$99 one-time, one month of Pro at render time), distribute
+      Spotify + Google Play + Kobo + site, NOT Audible (ACX bars third-party AI
+      narration for now), pligtaflevering on release via the same DBC/KB digital
+      doors. Pipeline built and run clean same day: `audiobook/` converts the
+      verified ebook build into 18 narration files (53k words ≈ 6 h) with 92
+      flagged adaptation points. **Yours at the gate (audiobook/README.md §Open
+      author decisions): voice pick, flag-resolution rulings (code-claude drafts
+      the patches), opening/closing credits + disclosure sentence, the audio
+      edition's own ISBN from forlagsnummer 977519, price.** Render gate: zero
+      unresolved `[[` markers — the audio sibling of zero-overfull.
 - [ ] CONV-1 with chat-claude: the marked-redaction scrub of both transcripts + per-chat INDEX → conversations/ tier goes public.
 - [ ] Watch the letterbox: repo issues → gate → patch → ERRATA line → next printing. The book said it can lose; this is where it finds out.
 - [ ] Someday, not now: RM-1's entrainment debt — edition two's first question, waiting in memos/.

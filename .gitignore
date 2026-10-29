@@ -153,3 +153,6 @@ process/afleveringsliste_*.pdf
 
 # Ebook build artifacts - the pipeline is tracked, its output is not
 ebook/build/
+
+# Audiobook build artifacts - same rule: pipeline tracked, output not
+audiobook/build/

@@ -136,4 +136,8 @@ before the listing even cleared Amazon's review.
   twice and reconciles on ISBN.
 - Optional v1.1 polish, batched for some future correction: promote figure
   captions into image alt text and upgrade the KDP accessibility answer from
-  "Some" to "All".
+  "Some" to "All". **Added 2026-10-29 (found while building the audiobook
+  pipeline): the wounds table in the published ch7.xhtml carries a leaked
+  LaTeX column spec as its first header cell (`<th>P3.05cmP2.9cmP2.6cm`) —
+  renders as a junk header row; fix the converter's table-header handling and
+  re-pack in the same v1.1 batch.**
