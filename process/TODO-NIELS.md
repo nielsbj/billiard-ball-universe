@@ -292,11 +292,17 @@
       narration for now), pligtaflevering on release via the same DBC/KB digital
       doors. Pipeline built and run clean same day: `audiobook/` converts the
       verified ebook build into 18 narration files (53k words ≈ 6 h) with 92
-      flagged adaptation points. **Yours at the gate (audiobook/README.md §Open
-      author decisions): voice pick, flag-resolution rulings (code-claude drafts
-      the patches), opening/closing credits + disclosure sentence, the audio
-      edition's own ISBN from forlagsnummer 977519, price.** Render gate: zero
-      unresolved `[[` markers — the audio sibling of zero-overfull.
+      flagged adaptation points. **All 95 flags are now DRAFTED with a proposed
+      ruling and the exact spoken words — `audiobook/NARRATION_RULINGS.md` —
+      and the spoken credits are in `audiobook/CREDITS_DRAFT.md`. Your sitting
+      is the only thing blocking the render.** You need only disagree; anything
+      untouched stands. Four calls are genuinely yours: (1) the three PAGEREF
+      sentences that point at the page ("the table above") and are untrue in
+      audio — the fix is prose; (2) whether the how-made note gains one sentence
+      naming the narration (recommendation: yes, your words); (3) voice pick from
+      samples; (4) the audio edition's own ISBN from forlagsnummer 977519, and
+      price. Render gate: zero unresolved `[[` markers — the audio sibling of
+      zero-overfull.
 - [ ] CONV-1 with chat-claude: the marked-redaction scrub of both transcripts + per-chat INDEX → conversations/ tier goes public.
 - [ ] Watch the letterbox: repo issues → gate → patch → ERRATA line → next printing. The book said it can lose; this is where it finds out.
 - [ ] Someday, not now: RM-1's entrainment debt — edition two's first question, waiting in memos/.
