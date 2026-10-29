@@ -69,6 +69,36 @@ in-voice; strike it on review if it doesn't listen well).
 - **Pligtaflevering**: the audio edition is its own deposit — same two doors
   as the EPUB (DBC e-material form + KB aflevering.kb.dk), on release day.
 
+## Render and delivery spec (researched 2026-10-29)
+
+The three target stores converge on one spec, so there is a single master
+target and no per-store encode:
+
+| property | value |
+|---|---|
+| container | MP3, **constant** bit rate (VBR is rejected) |
+| bit rate | 192 kbps or higher |
+| sample rate | 44.1 kHz |
+| peak | −3 dBFS, not exceeded |
+| loudness | −23 to −18 dBRMS |
+| noise floor | below −60 dBFS |
+| structure | **one file per chapter**, with metadata |
+
+Spotify also accepts a single M4B with chapter markers; per-chapter MP3 is the
+common denominator and is what we will produce. The 18 script files already
+match the one-file-per-chapter shape, which is why the pipeline is split that
+way rather than into one long document.
+
+This is why the ElevenLabs **Pro** tier is the right one: it outputs 44.1 kHz
+PCM, so the chain is `PCM/WAV per segment → concatenate per chapter → master
+(loudness-normalise, peak-limit) → encode 192 kbps CBR MP3 → verify`. Starting
+from a lossy 192 kbps render and then normalising would be a second generation
+of loss for no saving.
+
+**Prerequisite not yet met on this machine:** the `ffmpeg` on PATH is a 2013
+build with no `loudnorm` filter (only `volumedetect`). The mastering stage
+needs a current ffmpeg; install before render day.
+
 ## Status
 
 - 2026-10-29 — pipeline built and run clean against the as-published ebook
