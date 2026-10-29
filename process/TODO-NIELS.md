@@ -260,10 +260,15 @@
       (`timestamps/2026-10-27-ebook-first-edition/`), DBC e-bog registration SUBMITTED
       (ref SDKUN-38862, confirmation to the letterbox). KB e-book deposit DONE same day
       too (14:43 via aflevering.kb.dk, EPUB+cover, "Gennemført"; Niels's own 14:08
-      submission makes it a harmless duplicate — KB reconciles on ISBN). **Remaining
-      tail: (a) ~72 h live-check ~Oct 30 (both formats linked, one product page, new
-      back cover); (b) save the confirmation e-mails (DBC SDKUN-38862 + one KB
-      receipt) as evidence.**
+      submission makes it a harmless duplicate — KB reconciles on ISBN). **Tail CLOSED
+      2026-10-29: (a) live-check PASSED a day early — ebook went live the same day it
+      was submitted (KDP email 10-27 15:46 UTC), both formats linked on one product
+      page, Kindle $6.99 (shows $8.74 from DK = + 25 % VAT, not an error), and the
+      listing's gallery already serves the new back cover ("…and what survives");
+      (b) evidence FILED in `nbj/ebook-deposit/DEPOSIT_EVIDENCE_2026-10-29.md` — DBC
+      SDKUN-38862 verbatim + KDP live emails + back-cover screenshot. One
+      expectation corrected: aflevering.kb.dk sends no receipt e-mail; KB's receipt
+      is the portal's own Sendt list ("Gennemført"), re-viewable with MitID.**
       Was: **Kindle ebook edition — DECIDED YES 2026-10-27, and RE-SEQUENCED same day: ebook FIRST,
       IngramSpark waits (author's call — "ebook is important to start selling, IngramSpark not so
       much"; the Phase 2 guide and the unsent DK-payout email keep, nothing goes stale but fee

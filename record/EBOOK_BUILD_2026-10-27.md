@@ -116,10 +116,24 @@ before the listing even cleared Amazon's review.
 
 ## Remaining tail
 
-- Check in ~72 h (~Oct 30): ebook live at $6.99 with the formats linked on
-  one product page, AND the paperback showing the new back-cover headline.
-- Evidence items: save the DBC confirmation (ref SDKUN-38862) and one KB
-  receipt e-mail.
+- **Live-check PASSED 2026-10-29, a day early.** KDP's "Your book is available
+  in the Kindle Store!" landed 2026-10-27 15:46 UTC — live the same day it was
+  submitted — and the paperback republication email came the same afternoon.
+  Verified on amazon.com/dp/879775191X 2026-10-29: Kindle and Paperback linked
+  on one product page; Kindle shows $8.74 from Denmark, which is exactly $6.99
+  + 25 % Danish VAT (US buyers see $6.99 — not an error); paperback $14.99 In
+  Stock; description still the headline-free three-paragraph blurb; and the
+  listing's second gallery image is the back cover carrying the new headline
+  "…where he loses, and what survives" — so the [NIELS eyeball] item is closed
+  without waiting for Look Inside (~7 business days).
+- **Evidence FILED 2026-10-29** in `nbj/ebook-deposit/DEPOSIT_EVIDENCE_2026-10-29.md`:
+  the DBC SDKUN-38862 confirmation verbatim, the two KDP live emails (pointers),
+  the live-check findings, and the back-cover screenshot. One correction to this
+  file's expectation: **aflevering.kb.dk sends no receipt email** (Gmail swept
+  2026-10-29, nothing from kb.dk about the upload) — KB's receipt is the
+  portal's authenticated Sendt list showing "Gennemført", re-viewable any time
+  with MitID; a screenshot of that row is optional since KB holds the deposit
+  twice and reconciles on ISBN.
 - Optional v1.1 polish, batched for some future correction: promote figure
   captions into image alt text and upgrade the KDP accessibility answer from
   "Some" to "All".
