@@ -57,10 +57,11 @@ sitting — once four hours ago, once now — may read as a deliberate refrain o
 as a repetition fault. *Recommendation: keep.* The Coda already works by
 reprise, and this is the book's one standing invitation.
 
-**Deliberately not spoken:** the two ISBNs and the Palatino typesetting line.
+**Deliberately not spoken:** the ISBNs and the Palatino typesetting line.
 They serve a reader holding an object; in speech they are noise. The audio
-edition's own ISBN lives in the distributor's metadata where it is actually
-used. *Author may overrule — some publishers read the ISBN aloud.*
+edition's own ISBN — **978-87-977519-5-4**, assigned 2026-10-29, check digit
+verified — lives in the distributor's metadata where it is actually used.
+*Author may overrule — some publishers read the ISBN aloud.*
 
 ---
 

@@ -300,9 +300,10 @@
       sentences that point at the page ("the table above") and are untrue in
       audio — the fix is prose; (2) whether the how-made note gains one sentence
       naming the narration (recommendation: yes, your words); (3) voice pick from
-      samples; (4) the audio edition's own ISBN from forlagsnummer 977519, and
-      price. Render gate: zero unresolved `[[` markers — the audio sibling of
-      zero-overfull.
+      samples; (4) price. **ISBN DONE 2026-10-29: 978-87-977519-5-4** (your own
+      forlagsnummer 977519, check digit verified — paperback -1-6, e-book -4-7,
+      audio -5-4; register with DBC at release as the other two were). Render
+      gate: zero unresolved `[[` markers — the audio sibling of zero-overfull.
 - [ ] CONV-1 with chat-claude: the marked-redaction scrub of both transcripts + per-chat INDEX → conversations/ tier goes public.
 - [ ] Watch the letterbox: repo issues → gate → patch → ERRATA line → next printing. The book said it can lose; this is where it finds out.
 - [ ] Someday, not now: RM-1's entrainment debt — edition two's first question, waiting in memos/.

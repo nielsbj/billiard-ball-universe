@@ -1,5 +1,10 @@
 # audiobook/ — the AI-narrated audio edition pipeline
 
+**Audiobook ISBN 978-87-977519-5-4** (assigned by the author 2026-10-29 from
+his own forlagsnummer 977519; check digit verified). The three editions never
+share a number: paperback 978-87-977519-1-6, e-book 978-87-977519-4-7,
+audio 978-87-977519-5-4.
+
 *Started 2026-10-29 (author's decision: "we will do our best, but it is an
 experiment"). The route is author-owned end to end, like everything else in
 this project: ElevenLabs Studio production (~$99, one month of Pro, cancel
@@ -54,7 +59,9 @@ in-voice; strike it on review if it doesn't listen well).
 3. **Credits scripts** — opening and closing, including the AI-narration
    disclosure sentence (and whether the how-made note gains one sentence
    naming the narration; recommendation: yes, it is the note's whole ethos).
-4. **ISBN** — the audio edition needs its own from forlagsnummer 977519.
+4. ~~**ISBN**~~ — **DONE 2026-10-29: 978-87-977519-5-4**, check digit verified.
+   Still to do at release: register it with DBC the way the other two were,
+   and carry it in the distributors' metadata and the spoken/stored credits.
 5. **Price** — free/pay-what-you-want on the site beside the sold copies
    mirrors the PDF stance; store pricing is the author's.
 
