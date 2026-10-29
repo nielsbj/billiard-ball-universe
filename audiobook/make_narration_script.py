@@ -75,8 +75,27 @@ class Converter:
         out = []
         self.current = fname
 
+        # <head> carries a <title> duplicating the chapter heading; left in, the
+        # narrator says every chapter title twice.
+        src = re.sub(r"<head>.*?</head>", "", src, flags=re.S)
+        # Heading internals: "Chapter 1" and its title are separate elements
+        # with a <br/> between, which flattens to "Chapter 1No Magic Anywhere".
+        # Spoken headings want a full stop and the numeral as a word.
+        src = re.sub(r'<span class="chapnum">([^<]*)</span><br/>', r"\1. ", src)
+        # Roman numerals are a known TTS hazard ("Part I" read as "Part eye"),
+        # so the four part pages are spelled out.
+        roman = {"I": "One", "II": "Two", "III": "Three", "IV": "Four"}
+        src = re.sub(r'<p class="partnum">Part ([IVX]+)</p>',
+                     lambda m: f"<p>Part {roman.get(m.group(1), m.group(1))}. </p>", src)
+
         # Footnote bodies, keyed by id, removed from the flow first.
         notes = {}
+        # Citations are stripped FIRST, before footnote bodies are harvested -
+        # otherwise a cite inside a footnote (ch3 fn1 has one) is flattened to
+        # a spoken "[5]" that no later sweep can see.
+        src, n = re.subn(r'[  ]*<span class="cite">.*?</span>', "", src, flags=re.S)
+        self.cite_count += n
+
         def grab_note(m):
             body = untag(re.sub(r"<a[^>]*>[^<]*</a>", "", m.group(2), count=1))
             notes[m.group(1)] = body
@@ -96,10 +115,6 @@ class Converter:
             return f" [[FOOTNOTE {n}: {body}]] "
         src = re.sub(r'<a class="noteref"[^>]*href="#(fn\d+)"[^>]*>.*?</a>',
                      put_note, src, flags=re.S)
-
-        # Citations: strip silently (with the nbsp glue before them), count.
-        src, n = re.subn(r'[  ]*<span class="cite">.*?</span>', "", src, flags=re.S)
-        self.cite_count += n
 
         # Figures.
         def do_figure(m):
@@ -136,18 +151,32 @@ class Converter:
 
         # Inline math spans: trivial ones (plain words/numbers, no sup) pass
         # through as text; anything with a superscript or operators is flagged.
+        def flatten_sup(s):
+            # Innermost-first, repeatedly, so NESTED superscripts survive:
+            # 10<sup>10<sup>29</sup></sup> -> 10^(10^(29)) -> 10^(10^29).
+            # A flattening pass that is not repeated would silently turn the
+            # book's double exponents into "1010^29" - the Tegmark numbers are
+            # load-bearing in Ch. 4/5, so this is checked by the self-test.
+            prev = None
+            while prev != s:
+                prev = s
+                s = re.sub(r"<sup>([^<]*)</sup>", r"^(\1)", s)
+            return re.sub(r"\^\(([^()]*)\)", r"^\1", s)
+
         def do_math(m):
             inner = m.group(1)
             if "<sup>" in inner or re.search(r"[×·√∝≈≤≥−/^]", untag(inner)):
-                spoken = untag(re.sub(r"<sup>([^<]*)</sup>", r"^\1", inner))
+                spoken = untag(flatten_sup(inner))
                 self.flag(fname, "MATH", spoken)
                 return f"[[MATH: {spoken}]]"
             return untag(inner)
         src = re.sub(r'<span class="math">(.*?)</span>', do_math, src, flags=re.S)
         # Superscripts outside math spans (rare) get the same treatment.
-        src = re.sub(r"(\S*)<sup>([^<]+)</sup>",
-                     lambda m: (self.flag(fname, "MATH", f"{m.group(1)}^{m.group(2)}"),
-                                f"[[MATH: {m.group(1)}^{m.group(2)}]]")[1], src)
+        def do_bare_sup(m):
+            spoken = untag(flatten_sup(m.group(0)))
+            self.flag(fname, "MATH", spoken)
+            return f"[[MATH: {spoken}]]"
+        src = re.sub(r"\S*<sup>.*?</sup>", do_bare_sup, src, flags=re.S)
 
         # Separators and speakers.
         src = re.sub(r'<p class="sep">.*?</p>', "\n[[PAUSE]]\n", src, flags=re.S)
@@ -178,7 +207,12 @@ class Converter:
         src = re.sub(r"<[^>]+>", "", src)
 
         text = html.unescape(src)
+        # Non-breaking spaces were typographic glue (mostly before citations);
+        # in speech they are just spaces, and the stripped citations leave them
+        # stranded in front of punctuation.
+        text = text.replace(" ", " ")
         text = re.sub(r"[ \t]+", " ", text)
+        text = re.sub(r" +([,.;:!?])", r"\1", text)
         text = re.sub(r" ?\n ?", "\n", text)
         text = re.sub(r"\n{3,}", "\n\n", text).strip()
         if notes:
@@ -209,6 +243,29 @@ def main():
     if conv.unknown:
         for fname, tags in conv.unknown:
             print(f"ERROR unplanned tags in {fname}: {tags}", file=sys.stderr)
+        sys.exit(1)
+
+    # --- verification, in the spirit of the ebook pipeline's zero-warning rule.
+    all_text = "\n".join((OUT / n).read_text(encoding="utf-8") for n, _ in index)
+    problems = []
+    # Double exponents must survive as 10^(10^29), never flattened to 1010^29.
+    if re.search(r"\b10\d{2,}\^", all_text):
+        problems.append("a double exponent looks flattened (e.g. '1010^29')")
+    for want in ("10^(10^29)", "10^(10^118)"):
+        if want not in all_text:
+            problems.append(f"missing expected double exponent {want}")
+    # The voice-rule phrases must all survive the conversion.
+    for phrase in ("it is clearly cheating", "the local surplus",
+                   "locally special, not globally special", "no magic anywhere",
+                   "the point is: it has to make sense"):
+        if phrase.lower() not in all_text.lower():
+            problems.append(f"voice-rule phrase missing: {phrase!r}")
+    # Citation residue: no bare "[66]" or ", pp. 517-522]" left in the speech.
+    if re.search(r"\[\d+(,\s*pp\.[^\]]*)?\]", all_text):
+        problems.append("citation residue left in the narration text")
+    if problems:
+        for p in problems:
+            print(f"ERROR verification: {p}", file=sys.stderr)
         sys.exit(1)
 
     total_words = sum(w for _, w in index)
