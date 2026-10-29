@@ -35,6 +35,7 @@ gate is **zero unresolved markers** — the audio sibling of zero-overfull.
 | BOX | 3 | read in place, introduced plainly |
 | SPEAKER (Ch. 3) | 29 | **single narrator**, speaker names spoken ("Kai." / "Me.") — one voice arguing with itself is truer to how the chapter was made than two synthetic actors |
 | PAUSE (❦) | — | long break at render time |
+| PAGEREF | 3 | prose that directs the reader's *eye* ("the table above") and so is untrue in audio; **only the author can fix these**, since the fix is prose |
 
 Citations are stripped silently (109 of them) — standard audiobook practice;
 the references live in print/ebook/PDF. Skipped sections: titlepage and
@@ -101,8 +102,32 @@ needs a current ffmpeg; install before render day.
 
 ## Status
 
-- 2026-10-29 — pipeline built and run clean against the as-published ebook
-  text: 18 script files, 53,049 words, 92 flags, 0 unplanned-markup errors.
-  Next: draft the flag-resolution patches and the two credits scripts for
-  ruling; voice samples after that; no ElevenLabs subscription needed until
-  render day.
+**2026-10-29 — pipeline built, hardened, and every flag drafted. Waiting on
+the author.**
+
+- Script: 18 files, 52,956 words ≈ 5.9 h. Flags: **95** (38 footnote,
+  26 math, 23 figure, 3 box, 3 pageref, 2 table).
+- **All 95 drafted with a proposed ruling and exact spoken words** in
+  `NARRATION_RULINGS.md`; spoken credits in `CREDITS_DRAFT.md`. Nothing is
+  adopted — this is the author's sitting.
+- `scan_pronunciation.py` emits `build/PRONUNCIATION.md`: 58 items that carry
+  no flag because they need no decision, only a correct reading (Ørsted,
+  Poincaré, Gödel, Alfvén, ångström, ℏ, π loose in prose), plus 11 house terms
+  to listen to for stress.
+- Six converter bugs found by inspection and fixed, each now a build failure:
+  nested double exponents flattening (`10^(10^29)` → `1010^29`); the HTML
+  `<head><title>` spoken, so every chapter title was read twice; chapter number
+  run into its title; Roman-numeral part pages; a citation inside ch3's first
+  footnote surviving as a spoken "[5]"; and `untag()` destroying superscripts
+  inside boxes and captions (`p²/2M` → `p2/2M`).
+- Two claimed errors in the *published* book were checked against the master
+  and are **false alarms** — "Appendix B's five sentences" is correct (that is
+  the appendix's own section title), and "a range of one massion" is the
+  deliberate punchline to "smaller than one corpuscle diameter" two sentences
+  earlier. Recorded in `NARRATION_RULINGS.md` so neither is re-reported.
+
+**Next, in order:** author rules `NARRATION_RULINGS.md` + `CREDITS_DRAFT.md`
+→ apply rulings and re-run the generator to a zero-marker script → voice
+samples → one chapter rendered and listened to → full render → master to the
+delivery spec above → ISBN, deposit, upload. No ElevenLabs subscription is
+needed until render day.

@@ -57,7 +57,29 @@ def fail(msg):
     sys.exit(1)
 
 
+def flatten_sup(s):
+    """Turn <sup> markup into spoken-safe caret form, innermost first.
+
+    Repeated until stable so NESTED superscripts survive: the book's Tegmark
+    numbers are 10<sup>10<sup>29</sup></sup>, and a single pass would leave
+    "1010^29". Parentheses are kept only where they disambiguate.
+    """
+    prev = None
+    while prev != s:
+        prev = s
+        s = re.sub(r"<sup>([^<]*)</sup>", r"^(\1)", s)
+    # Unwrap only SIMPLE exponents, so the function is idempotent: stripping
+    # the parentheses from ^(10^29) as well would turn 10^(10^29) into the
+    # ambiguous 10^10^29 on any second pass, and untag() now calls this too.
+    return re.sub(r"\^\((\w+)\)", r"^\1", s)
+
+
 def untag(s):
+    # Superscripts are flattened BEFORE the tags are dropped. Anything that
+    # untags a whole block wholesale - boxes, tables, figure captions,
+    # footnote bodies - would otherwise silently turn p<sup>2</sup>/2M into
+    # "p2/2M", which is not the same physics and reads as a typo aloud.
+    s = flatten_sup(s)
     s = re.sub(r"<[^>]+>", "", s)
     return re.sub(r"\s+", " ", html.unescape(s)).strip()
 
@@ -151,18 +173,6 @@ class Converter:
 
         # Inline math spans: trivial ones (plain words/numbers, no sup) pass
         # through as text; anything with a superscript or operators is flagged.
-        def flatten_sup(s):
-            # Innermost-first, repeatedly, so NESTED superscripts survive:
-            # 10<sup>10<sup>29</sup></sup> -> 10^(10^(29)) -> 10^(10^29).
-            # A flattening pass that is not repeated would silently turn the
-            # book's double exponents into "1010^29" - the Tegmark numbers are
-            # load-bearing in Ch. 4/5, so this is checked by the self-test.
-            prev = None
-            while prev != s:
-                prev = s
-                s = re.sub(r"<sup>([^<]*)</sup>", r"^(\1)", s)
-            return re.sub(r"\^\(([^()]*)\)", r"^\1", s)
-
         def do_math(m):
             inner = m.group(1)
             if "<sup>" in inner or re.search(r"[×·√∝≈≤≥−/^]", untag(inner)):
@@ -217,6 +227,25 @@ class Converter:
         text = re.sub(r"\n{3,}", "\n\n", text).strip()
         if notes:
             fail(f"{fname}: footnote bodies never referenced: {sorted(notes)}")
+
+        # Prose that points at the page. These carry no markup of their own -
+        # they are ordinary sentences - but they direct the reader's EYE, and a
+        # listener has nowhere to look. Patterns are deliberately narrow: this
+        # book uses "the figure" to mean "the number" several times ("the
+        # figure is nearer fifty million"), and those must not be flagged.
+        pageref = [
+            r"\b(?:the|this)\s+(?:figure|diagram|plate|table|picture|sketch)\s+"
+            r"(?:above|below|opposite|overleaf|on the facing page)\b",
+            r"\b(?:of|in|from)\s+the\s+(?:figure|diagram|plate)\b",
+            r"\bsee\s+(?:the\s+)?(?:figure|diagram|plate|table)\b",
+            r"\b(?:left|right)[- ]hand\s+panel\b",
+            r"\b(?:overleaf|on the facing page|opposite page)\b",
+        ]
+        for pat in pageref:
+            for m in re.finditer(pat, text, re.I):
+                a, b = max(0, m.start() - 55), min(len(text), m.end() + 55)
+                self.flag(fname, "PAGEREF",
+                          "…" + text[a:b].replace("\n", " ").strip() + "…")
         return text
 
 
