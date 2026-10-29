@@ -1,3 +1,5 @@
+**Start here: `audiobook/FOR_NIELS.md`** — the nine things that actually need the author, with context. Everything else in this directory is drafted and waiting on those.
+
 # audiobook/ — the AI-narrated audio edition pipeline
 
 **Audiobook ISBN 978-87-977519-5-4** (assigned by the author 2026-10-29 from
@@ -25,7 +27,7 @@ python audiobook/make_narration_script.py
 
 Output (gitignored, like all build output): `audiobook/build/script/*.txt`
 (18 files, ~53k words ≈ 6 h at audiobook pace) and `audiobook/build/FLAGS.md`
-(currently 92 flags: 38 footnotes, 23 figures, 26 math, 2 tables, 3 boxes).
+(95 flags: 38 footnotes, 26 math, 23 figures, 3 boxes, 3 pagerefs, 2 tables).
 A sweep for `[[` in the script files finds anything unresolved; the render
 gate is **zero unresolved markers** — the audio sibling of zero-overfull.
 
@@ -34,7 +36,7 @@ gate is **zero unresolved markers** — the audio sibling of zero-overfull.
 | class | count | proposed default |
 |---|---|---|
 | FOOTNOTE | 38 | read inline at the marker, set off by a beat — the book's footnotes rescue terms and are in-voice; author strikes any that don't speak well |
-| FIGURE | 23 | chapter plates stay silent; each diagram gets a one-or-two-sentence spoken bridge, drafted by code-claude **as a patch for author ruling** (prose is the author's) |
+| FIGURE | 23 | chapter plates silent — and on drafting, **all 23 diagrams were ruled silent too**: the figures were added to finished prose, so each one's content is carried by nearby sentences (verified at Figure 3.1). No bridges drafted; the author can call for one anywhere he wrote toward a picture |
 | MATH | 26 | spoken forms drafted the way the book already speaks numbers ("ten to the twenty-sixth", "a part in a thousand million million"), patch for ruling |
 | TABLE | 2 | the wounds table is narrated row by row (the prose already reads it backward); same patch route |
 | BOX | 3 | read in place, introduced plainly |
@@ -42,7 +44,8 @@ gate is **zero unresolved markers** — the audio sibling of zero-overfull.
 | PAUSE (❦) | — | long break at render time |
 | PAGEREF | 3 | prose that directs the reader's *eye* ("the table above") and so is untrue in audio; **only the author can fix these**, since the fix is prose |
 
-Citations are stripped silently (109 of them) — standard audiobook practice;
+Citations are stripped silently (99 in the narrated sections) — standard
+audiobook practice;
 the references live in print/ebook/PDF. Skipped sections: titlepage and
 kolofon (replaced by short authored opening/closing credits, to be drafted),
 references, the index. Kept: dedication, How to Read, all chapters, Coda,
